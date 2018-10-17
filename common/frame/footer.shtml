@@ -1,0 +1,138 @@
+
+<!--#include virtual="/root.shtml"-->
+
+<html>
+<head>
+<title>The RGD Database</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=stylesheet type="text/css" href='<!--#echo var="webroot"-->/common/style/rgd_styles.css'>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!--#set var="on-color" value="#AACCFD"-->
+<!--#set var="off-color" value="#CCCCCC"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="3" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/commonimages/shim.gif' width="1" height="2"></td>
+  </tr>
+  
+  <tr>
+    <td width="6"  background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="6" height="1"></td>
+    <td background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'>
+
+
+
+<table width="960" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/' target="_top" class="atitle">Home</a></p></td>
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <!--#if expr="$category = data" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/data-entry.shtml' target="_top" class="atitle">Data</a>&nbsp;</p></td>
+          <!--#else -->
+          <td align="center"><p>&nbsp;<a href='<!--#echo var="webroot"-->/data-entry.shtml' target="_top" class="atitle">Data</a>&nbsp;</p></td>
+          <!--#endif -->
+		  
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <!--#if expr="$category = tools" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/tool-entry.shtml' target="_top" class="atitle">Tools</a>&nbsp;</p></td>
+          <!--#else -->
+          <td align="center"><p>&nbsp;<a href='<!--#echo var="webroot"-->/tool-entry.shtml' target="_top" class="atitle">Tools</a>&nbsp;</p></td>
+          <!--#endif -->
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <!--#if expr="$category = tools" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/portal-entry.shtml' target="_top" class="atitle">Portals</a>&nbsp;</p></td>
+          <!--#else -->
+          <td align="center"><p>&nbsp;<a href='<!--#echo var="webroot"-->/portal-entry.shtml' target="_top" class="atitle">Portals</a>&nbsp;</p></td>
+          <!--#endif -->
+		  
+		  
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <!--#if expr="$category = forum" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p><a href='<!--#echo var="webroot"-->/community-entry.shtml' target="_top" class="atitle">Rat&nbsp;Community</a></p></td>
+          <!--#else -->
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/community-entry.shtml' target="_top" class="atitle">Rat&nbsp;Community</a></p></td>
+          <!--#endif -->
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <!--#if expr="$category = download" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p><a href='http://rgd.mcw.edu/pub/' target="_top" class="atitle">Download</a></p></td>
+          <!--#else -->
+          <td align="center"><p><a href='http://rgd.mcw.edu/pub/' target="_top" class="atitle">Download</a></p></td>
+          <!--#endif -->
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <!--#if expr="$category = download" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p><a href='<!--#echo var="toolroot"-->/strains/strainRegistrationIndex.cgi' target="_top" class="atitle">Submit&nbsp;Data</a></p></td>
+          <!--#else -->
+          <td align="center"><p><a href='<!--#echo var="toolroot"-->/strains/strainRegistrationIndex.cgi' target="_top" class="atitle">Submit&nbsp;Data</a></p></td>
+          <!--#endif -->
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <!--#if expr="$category = resource" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p><a href='<!--#echo var="webroot"-->/contact/index.shtml' target="_top" class="atitle"><font color="#FF0000">Contact</font></a></p></td>
+          <!--#else -->
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/contact/index.shtml' target="_top" class="atitle"><font color="#FF0000">Contact</font></a></p></td>
+          <!--#endif -->
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <!--#if expr="$category = aboutRGD" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p><a href='<!--#echo var="webroot"-->/about.shtml' target="_top" class="atitle">About&nbsp;RGD</a></p></td>
+          <!--#else -->
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/about.shtml' target="_top" class="atitle">About&nbsp;RGD</a></p></td>
+          <!--#endif -->
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <!--#if expr="$category = help" -->
+          <td align="center" background='<!--#echo var="webroot"-->/common/images/menu2_bkgd.gif'><p><a href='<!--#echo var="webroot"-->/tu/' target="_top" class="atitle">Help</a></p></td>
+          <!--#else -->
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/tu/' target="_top" class="atitle">Help</a></p></td>
+          <!--#endif -->
+
+		  
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <td align="left"><p>&nbsp;&nbsp;<a href='<!--#echo var="webroot"-->/GenomeErrorReport/errEntry.jsp' target="_top" class="atitle"><strong><font color="#FF0000">Submit&nbsp;Genome&nbsp;Discrepancies</font></strong></a></p></td>
+          <td width="40"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+        </tr>
+      </table>
+
+
+	
+	</td>
+    <td width="100%" background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="3" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#EEEEEE"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>
+
+<TABLE width=100% border=0 cellpadding=2 cellspacing=0 bgcolor="#E3EEFF">
+<TR>
+ <TD background='<!--#echo var="webroot"-->/common/images/home_footer-bkgd.gif'>&nbsp;</TD>
+ <TD background='<!--#echo var="webroot"-->/common/images/home_footer-bkgd.gif'>
+ <p class="asubtitle">&nbsp;<br>
+        The <a href="http://brc.mcw.edu/" target="_top">Bioinformatics 
+        Program</a> is a part of the <a href="http://www.mcw.edu/" target="_top">Medical 
+        College of Wisconsin</a>. RGD is funded by grant <strong>HL64541</strong> 
+        from the <a href="http://www.nhlbi.nih.gov" target="_top">National 
+        Heart, Lung, and Blood Institute</a> on behalf of the <a href="http://www.nih.gov" target="_top">NIH</a>. 
+        <br>
+        &nbsp; </p>
+</td>
+  <TD background='<!--#echo var="webroot"-->/common/images/home_footer-bkgd.gif'>&nbsp;</TD>
+</tr>
+</table>
+
+
+
+
+
+</body>
+</html>
+

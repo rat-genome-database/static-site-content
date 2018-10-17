@@ -1,0 +1,212 @@
+	
+
+      <P class=menu2><A name=top></A><A href='<!--#echo var="webroot"-->/'>RGD</A> &gt; <A href='<!--#echo var="webroot"-->/tu/'>Help</A> &gt; 
+      <B>Search Tools </B> &nbsp;&nbsp;&nbsp; <a href="advancedsearch.shtml">Advanced Search Help</a> </P>
+      <TABLE class=menu1 cellPadding=2 width="90%" align=center border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD bgColor=#66cc66>
+            <DIV align=left><STRONG><FONT size=+1>Search Tools Help</FONT></STRONG></DIV></TD>
+          <TD width="24%" rowSpan=2>
+          <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+		  </TD></TR>
+        <TR vAlign=top>
+          <TD width="76%">
+            <UL>
+              <LI><A href="#definition">What are the Search Tools</A>? 
+              <LI><A href="#finding">How do I find information using the Search Tools</A> 
+              <LI><A href="#related">How else can I search the database</A>? 
+              <LI><A href="#report">What 
+              do the general search tool results look like?</A>
+			<!--
+        <li>Let me use Search Tools: Use the Search RGD box in the top right of 
+          every page</li>
+--></LI></UL>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top bgColor=#99ff99>
+          <TD colSpan=2><A name=definition></A><B>RGD Definition</B></TD></TR>
+        <TR vAlign=top>
+          <TD colSpan=2>
+            <P>"<EM>RGD provides a variety of search or query tools to allow 
+            users to find information within the database. These typically 
+            require a text query such as a gene or marker name that the user 
+            desired to find. The results returned depend on the tool being used 
+            but typically consist of a list of database records (hits) that 
+            match the query text."</EM></P>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> 
+            ]</FONT></P></TD></TR>
+        <TR vAlign=top bgColor=#99ff99>
+          <TD colSpan=2><A name=finding></A><B>Finding information using the 
+            Search Tools</B></TD></TR>
+        <TR vAlign=top>
+          <TD colSpan=2>
+            <P>There are two main methods for finding information in RGD: </P>
+            <P><STRONG>1. Using the General Search</STRONG></P>
+            <P><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border=0></a> 
+            <P>The general RGD search available at the top of each page is 
+            a<STRONG> quick route to accessing data reports in RGD</STRONG>.
+            The  general search tool searches the following fields: 
+            <UL>
+              <LI>RGD ID (Example: 2003)
+              <LI>Genes: Symbol, name, description, aliases, curated annotations 
+                for both ontologies and curator notes
+              <LI>Homologs: Symbol, name, description, functional annotations
+              <LI>SSLPs: Symbol, name, aliases 
+              <LI>QTLs: Symbol, name,trait name, sub-trait name, aliases, curated 
+                annotations for both ontologies and curator notes
+              <LI>Sequences: accession number
+              <LI>ESTs: accession number, definition
+              <LI>Strains: Symbol, aliases, genetics, origin, curated annotations 
+                for both ontologies and curator notes
+              <LI>References: Title, citation
+              <LI>Ontology terms: term, synonym, descendent terms, descendent 
+                synonyms annotated to RGD objects
+              <LI>Maps: <STRONG>Not covered</STRONG> by general search tool, use 
+                the <A href='<!--#echo var="webroot"-->/maps/'>Map selection page</A> 
+                instead. Information about individual markers (Genes, SSLPs, etc) 
+                is searchable. </LI>
+            </UL>
+            <P>Wildcard characters are allowed in the search fields, the asterisk 
+              '*' is the accepted wildcard character. It can be used to retrieve 
+              records matching a general search query as shown in the following 
+              table:</P>
+            <P>There is a list of query parameters and symbols that CANNOT be 
+              used with the * (wildcard).</P>
+            <p>The terms that may give unusual results are: OR, | , AND , &amp; 
+              , ACCUM , ' , MINUS , - , NEAR , ; , NOT , ~ , EQUIV , = , {} , 
+              % , _ , $ , ? , ! , ()</p>
+            <p>The unusual results are due to using a special search function 
+              of Oracle 9i where the above listed terms tell Oracle to perform 
+              special functions with the query term.</p>
+	      <p>If you wish to use operators such as; AND, OR, NOT, try using the Advanced Search tool.</p>
+            <TABLE width="85%" border=1>
+              <TBODY>
+              <TR bgColor=#999999>
+                <TD><STRONG>Search term</STRONG></TD>
+                <TD><STRONG>Returns</STRONG></TD></TR>
+              <TR>
+                <TD>Atp1a1</TD>
+                <TD>Atp1a1</TD></TR>
+              <TR>
+                <TD>Atp1a*</TD>
+                <TD>Atp1a1, Atp1a2, Atp1a3, Atp1a4, ATP1A1 (SSLP alias), 
+                  Atp1a2 (SSLP alias) </TD></TR></TBODY></TABLE>
+            <P>If your search returns many hits, the results will be spread over 
+              mutiple pages grouped by database object (genes, QTLs, strains, 
+              etc.).</P>
+            <p>The summary page will be displayed if more than one RGD object 
+              (genes, QTLs, strains, etc.) matches the keywords used for searching 
+              or if the number of records found is greater than 10 for a single RGD object type. For example, if 12 gene records 
+              are found that match the keyword searched, the summary page will 
+              be displayed.</p>
+            <p>If your search returns less than 10 records for the same RGD object 
+              type (genes, QTLs, strains, etc.) the results page will 
+              be displayed directly.</p>
+            <P align=left>The order in how the results are reported is based on 
+              the data found in the database. The results with exact matches to
+            the keyword will be listed as the first group.&nbsp;&nbsp; 
+            </P>
+            <P align=left>Results that begin with the keyword will be grouped
+            second in the list. 
+            </P>
+            <P align=left>And results that contain the keyword will be grouped
+            third in the list. 
+            </P>
+            <P align=left>Within each grouping of results exact, begins with, or
+            contains there will not be any specific order in the list.&nbsp; 
+            </P>
+            <P align=left>The user has the option to select the records he/she
+            is interested in the group and view the records selected on the the
+            Selected Items Report. </P>
+            <p>&nbsp;</p>
+            <P><STRONG>2. Using the individual object search tools</STRONG></P>
+            <P>Each category of data within the database has an individual 
+            search tool that often provides more customizable search options, 
+            follow these links to read more about these individual tools:</P>
+            <UL>
+              <LI><A href='<!--#echo var="webroot"-->/tu/genes/index.shtml#finding'>Gene search</A> 
+              <LI><A href='<!--#echo var="webroot"-->/tu/qtls/index.shtml#finding'>QTL search</A> 
+              <LI><A href='<!--#echo var="webroot"-->/tu/sslps/index.shtml#finding'>SSLPs search</A> 
+              <LI><A href='<!--#echo var="webroot"-->/tu/sequence/index.shtml#finding'>Sequence search</A> 
+              <LI><A href='<!--#echo var="webroot"-->/tu/ests/index.shtml#finding'>EST search</A> 
+              <LI><A href='<!--#echo var="webroot"-->/tu/strains/index.shtml#finding'>Strain search</A> 
+              <LI><A href='<!--#echo var="webroot"-->/tu/references/index.shtml#finding'>References search</A> </LI>
+              <LI><a href='<!--#echo var="webroot"-->/tu/how_do_i/ontology.shtml'>Ontology search</a></LI>
+              <LI><a href='<!--#echo var="webroot"-->/tu//maps/index.shtml#finding'>Maps</a></LI>
+            </UL>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P></TD></TR>
+        <TR vAlign=top bgColor=#99ff99>
+          <TD colSpan=2>
+            <DIV align=left><A name=related></A><B>Related 
+            Information/Links</B></DIV></TD></TR>
+        <TR vAlign=top>
+          <TD colSpan=2>
+            <P>The search tools provide the main route into the RGD records, 
+            however, other databases link in to RGD and hence can also be used 
+            to find records within RGD by searching at these other sites. The 
+            following are some of the databases that link into RGD:</P>
+            <UL>
+              <LI><A href="http://www.ncbi.nlm.nih.gov/LocusLink/">LocusLink</A> 
+              - NCBI database providing gene locus data for Rat, Mouse, Human 
+              and many other organisms. 
+              <LI><A href="http://ratmap.gen.gu.se/">Ratmap</A> - Ratmap 
+              database in Sweden 
+              <LI><A href="http://www.genome.ad.jp/kegg/">KEGG</A> - Kyoto 
+              encyclopedia of Genes and Genomes (Pathway database) 
+              <LI><A href="http://www.geneontology.org">Gene Ontology</A>
+               - Multi-organism database listing genes sharing 
+              common Molecular Processes, Cellular Components or Biological 
+              Pathways. </LI></UL>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P></TD></TR>
+        <TR vAlign=top bgColor=#99ff99>
+          <TD colSpan=2><A name=report></A><B>The Search Tools Report</B></TD></TR>
+        <TR vAlign=top> 
+          <TD colSpan=2> 
+            <P>The general search tool returns results such as shown below, the 
+              term 'atp1a*' was used in this example.</P>
+            <P><img src="quick_search_summary.jpg" width="639" height="760" border="1"></P>
+            <P align=left>The keyword used in the search is shown along with a 
+              table of the matching results. The total number of results is shown 
+              at the top (in this example '4 genes, 2 strains, 4 homologs, and 
+              2 sslps'&nbsp; indicating this is showing hits 1 and 2 of two total 
+              hits). </P>
+            <P align=left>In this example, following the hyperlinks to genes will 
+              take you to the genes results page. </P>
+            <P><img src="quick_search_genes_result.gif" border="1"></P>
+            <p>There are serveral functions provided on the results page for user 
+              to easilly navigate through detailed information about the objects 
+              that match the search criteria.</p>
+            <ul>
+              <li> Allow to select all results on all pages by clicking on &quot;Select 
+                all results&quot; button</li>
+              <li>Allow to un-select all results on all pages by clicking on &quot;Unselect 
+                all results&quot; button</li>
+              <li>Allow to select all results on current page by clicking on the 
+                check box on the header line</li>
+              <li>Allow to select wanted item by checking the checkbox at the 
+                beginning of each record</li>
+              <li>Allow to navigate records by clicking on page number</li>
+              <li>Allow to view all checked items in one page only by clicking 
+                on &quot;Selected Items Report&quot; button</li>
+              <li>Allow to view all checked items in excel format by clicking 
+                on &quot;Download Report&quot; button</li>
+              <li>Allow to go back to result summary page by clicking on &quot;Results 
+                Summary Page&quot; button</li>
+              <li>Allow user to sort results the way user wants by clicking on 
+                the black triangle toggle icon in the grey header line</li>
+            </ul>
+            <p>The Selected Items Report looks like the following example.</p>
+            <p><img src="quicksearch_selected_result.gif" border="1"></p>
+            <p>The quick search Download Report looks like the following report.
+              The file can be saved as an Excel file by clicking on the File
+              button in the upper left corner of the web browser window and saved
+              by selecting Save as type: Microsoft Excel Workbook.</p>
+            <p><img src="quicksearch_download_report.gif" border="1"></p>
+            <p>&nbsp; View <a href="advancedsearch.shtml">Advanced Search Help</a></p>
+            <p>&nbsp;</p>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P>
+          </TD>
+        </TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P><A href='<!--#echo var="webroot"-->/'>Back to RGD Home</A></P>

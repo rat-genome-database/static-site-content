@@ -1,0 +1,45 @@
+
+
+<table width="115" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="24"></td>
+  </tr>
+
+  <tr align="left" valign="top"> 
+    <td width="115">
+
+	  <TABLE border="0" cellpadding="0" cellspacing="0" width="115">
+        <TR valign="top" align="left" bgcolor="#CCCCCC"> 
+          <TD><p>&nbsp;</p></TD>
+          <TD><p class="atitle">&nbsp;<b>Related Sites</b></p></TD>
+        </TR>
+        <TR valign="top" align="left"> 
+          <TD><p>&nbsp;</p></TD>
+          <TD> <div class="links"> 
+              <p><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+                &#8226; <a href='http://www.ncbi.nlm.nih.gov/'>NCBI Home</a><br>
+                &nbsp; - <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&amp;DB=unigene'>UniGene</a><br>
+                &nbsp; - <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene'>Entrez Gene </a><br>
+                &#8226; <a href='http://dvrnet.ors.od.nih.gov/ratcenter/index.html'>NIH Rat Center</a><br>
+                &#8226; <a href='http://www.nrrrc.missouri.edu/'>RRRC</a><br>
+                <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="9"><br>
+				
+				&#8226; <a href='http://pga.mcw.edu/'>PGA (PhysGen)</a><br>
+				&#8226; <a href='http://www.informatics.jax.org/'>MGI </a><br>
+				&#8226; <a href='http://www.gmod.org/'>GMOD </a><br>
+				&#8226; <a href='http://www.genome.jp/kegg/'>KEGG </a><br>
+				&#8226; <a href='http://www.bind.ca/'>BIND </a><br>
+				&#8226; <a href='http://www.genmapp.org/'>GenMAPP </a><br>
+				&#8226; <a href='http://www.ddbj.nig.ac.jp/'>DDBJ </a><br>
+				&#8226; <a href='http://www.jbirc.aist.go.jp/index_E.html'>JBIRC </a><br>
+                &#8226; <a href='http://tesuque.stanford.edu/biocurator.org/'>Biocurator</a> 
+				
+				<br><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="5"></p>
+            </div></TD>
+        </TR>
+      </TABLE>
+
+	</td>
+  </tr>
+
+</table>

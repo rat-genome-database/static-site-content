@@ -1,0 +1,30 @@
+<!-- 
+
+-----------------
+cnt_linking.shtml 
+-----------------
+
+  author: Nathan Pedretti 
+ Created: Wed May 31 17:22:47 CDT 2000
+
+-->
+
+<h2>Linking to the Rat Genome Database</h2>
+<h3>Site Links</h3>
+<p>If you would like to create a link between your site and 
+the Rat Genome Database, please copy the following code to your page:
+<pre>
+ &lt;p&gt;&lt;a href='http://rgd.mcw.edu'&gt;&lt;b&gt;Rat Genome Database&lt;/b&gt;&lt;/a&gt;
+</pre>
+<p>The link should appear as follows:
+<pre>
+<a href='http://rgd.mcw.edu'><b>Rat Genome Database</b></a>
+</pre>
+
+<h3>Linking to cgi-queried data</h3>
+<p>If you would like to link to data which has been queried from the database, copy the RGD ID from the viewing form.
+Paste the RGD ID onto the end of the following url to link directly to the record:
+<pre>
+http://rgd.mcw.edu/query/query.cgi?id= {paste rgd id here}
+</pre>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a>

@@ -1,0 +1,168 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; <b>Sequences</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#99CCFF">
+
+      <div align="left"><strong><font size="+1">Sequence Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td width="76%">
+
+      <ul>
+
+        <li><a href="#definition">What is a Sequence</a>?</li>
+
+        <li><a href="#finding">How do I find information about a Sequence?</a></li>
+
+        <li><a href="#report">What information do you have on each Sequence?</a></li>
+
+        <li><a href="#related">What other information can I get to via a Sequence?</a></li>
+
+        <li><a href="/sequences/">Let me start searching...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>&quot;<em>Sequences in RGD are limited to nucleotide sequence data at 
+        the current time and include oligo sequences, SSLP and EST clone sequences 
+        and RefSeq nucleotide entries for Gene records. Protein (amino acid) sequence 
+        data is not currently being stored within RGD though many genes have the 
+        appropriate protein accession numbers listed.&quot;</em></p>
+      <p>We are currently expanding our sequence data and enhancing its representation 
+        in the database to prepare for the genomic sequence. As this expansion 
+        proceeds, we will be aiming to have sequence data for as many genes and 
+        markers as possible<font size="-1">.</font></p>
+
+		
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>Finding Sequence 
+      information</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p><strong>1. Using the General Search</strong></p>
+
+      <p>The general RGD search available at the top of each page is a<strong> 
+        quick route to finding Sequences</strong>. This will search sequence accession 
+        numbers and aliases only. (See General RGD Search help for more information). 
+      <p><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><strong>2. Using the Sequence Search Form</strong></p>
+      <p>The sequence search form currently searches the sequence symbol (GenBank 
+        accession number), however, as more sequence data is entered into RGD 
+        this will be expanded to provide more comprehensive search functions.</p>
+
+      <p><em><strong><font color="#CC0000">Quick Guide</font></strong></em></p>
+
+      <ol>
+        <li>Enter a sequence accession number or RGD IDs ('*' can be used as a 
+          wild card character)</li>
+        <li>Click 'Search for Sequence' button.</li>
+      </ol>
+
+      <p><a href="/sequences/"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>Sequence records provide access to a variety of associated objects within 
+        RGD. Primer and clone sequences are linked to their parent object (e.g. 
+        a <a href="/tu/sslps/">SSLP</a> or <a href="/tu/genes/">Gene</a> record), 
+        links are provided to GenBank to view the original sequence record. Mapping 
+        data will link out to the appropriate <a href="/tu/maps/">maps</a> and 
+        map regions.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a><b>The Sequence Report</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The following fields are present on the sequence report:</p>
+      <p><font size="-1"> 
+        <!--#include virtual="sequence_report_help.html"-->
+        </font></p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+

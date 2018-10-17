@@ -1,0 +1,145 @@
+<script language='JavaScript'>
+function start_help(anchor) {
+   top.rgdhelp=open("/tu/qtls/qtl_form_help.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400,height=300");
+   top.rgdhelp.focus();
+}
+</script>
+
+
+<h2><b><a name="help"></a></b>QTL Query Form 
+<a href="#instructions"><img src='<!--#echo var="webroot"-->/common/images/help.gif' width="20" height="20" border="0"></a></h2>
+<form name="qtls_search" action='<!--#echo var="toolroot"-->/qtls/qtls_search4.cgi' method="post">
+  <table border="0" cellspacing="0" cellpadding="2" align="center" width="95%">
+    <tr bgcolor="#999999"> 
+      <td colspan="2"><b><font color="#FFFFFF">Search Parameters</font></b></td>
+    </tr>
+    <tr> 
+      <td class=links><a href="javascript:start_help('qtl_symbol')">QTL Symbol/Alias/Keyword</a></td>
+      <td> 
+        <select name="match_type">
+          <option value="equals" selected>Equals</option>
+          <option value="contains">Contains</option>
+          <option value="begins">Begins with</option>
+          <option value="ends">Ends with</option>
+        </select>
+        <input type="text" name="keyword" size="20">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td class=links><a href="javascript:start_help('trait')">Trait</a></td>
+      <td><!--#include virtual="${toolroot}/qtls/qtl_form.cgi"--></td>
+    </tr>
+    <tr> 
+      <td class=links><a href="javascript:start_help('chromosome')">Chromosome</a></td>
+      <td> 
+        <select name="chr">
+          <option value="any" selected>Any </option>
+          <option value="1">1 </option>
+          <option value="2">2 </option>
+          <option value="3">3 </option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9 </option>
+          <option value="10">10 </option>
+          <option value="11">11 </option>
+          <option value="12">12 </option>
+          <option value="13">13 </option>
+          <option value="14">14 </option>
+          <option value="15">15 </option>
+          <option value="16">16 </option>
+          <option value="17">17 </option>
+          <option value="18">18 </option>
+          <option value="19">19 </option>
+          <option value="20">20 </option>
+          <option value="X">X </option>
+          <option value="Y">Y </option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td class=links><a href="javascript:start_help('search')">Search</a> </td>
+      <td> 
+        <select name="search_fields">
+          <option value="symbols">Current Symbols</option>
+          <option value="symbols_names">Current Symbols/Names</option>
+          <option value="active_retired">Current and Withdrawn</option>
+          <option value="all_with_aliases" selected>Current &amp; withdrawn &amp; 
+          Aliases</option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#CCCCCC"> 
+      <td colspan="2" height="21"><b>Options</b></td>
+    </tr>
+    <tr> 
+      <td class=links><a href="javascript:start_help('limit_lod')">Limit to QTLs with LOD 
+        score greater than</a></td>
+      <td> 
+        <input type="text" name="lod_limit" size="5" value="0">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td class=links><a href="javascript:start_help('results_ordered_by')">Results ordered 
+        by</a></td>
+      <td> 
+        <p> 
+          <input type="radio" name="order" value="symbol" checked>
+          Symbol <br>
+          <input type="radio" name="order" value="name">
+          Name <br>
+          <input type="radio" name="order" value="chromosome">
+          Chromosome </p>
+      </td>
+    </tr>
+    <tr> 
+      <td class=links><a href="javascript:start_help('results_per_page')">Records per page</a></td>
+      <td> 
+        <input type="radio" name="num_hits" value="25" checked>
+        25 
+        <input type="radio" name="num_hits" value="50">
+        50 
+        <input type="radio" name="num_hits" value="100">
+        100 </td>
+    </tr>
+    <!--
+	 <tr> 
+      <td>Records per page</td>
+      <td> 
+        <input type="radio" name="num_hits" value="25" checked>
+        25 
+        <input type="radio" name="num_hits" value="50">
+        50 
+        <input type="radio" name="num_hits" value="100">
+        100 </td>
+    </tr>
+	--> 
+    <tr> 
+      <td>&nbsp;</td>
+      <td> 
+        <input type="submit" name="search" value="Find QTLs">
+        &nbsp; 
+        <input type="reset" name="reset" value="Reset">
+      </td>
+    </tr>
+  </table>
+</form>
+<HR>
+<h3><b><a name="instructions"></a>
+<a href="#help"><img src='<!--#echo var="webroot"-->/common/images/help_grey.gif' width="20" height="20" border="0"></a>
+  QTL Query Form Instructions</b></h3>
+To find a particular QTL(s), enter the symbol or keyword. Searches can be limited 
+to a particular trait or chromosome and to current and withdrawn QTL symbols, 
+names and aliases. To find all QTLs for a particular trait or chromosome leave 
+the keyword field blank and select the trait and/or chromosome desired. The options 
+section allows further refinement of the search, selecting QTLs with LOD scores 
+greater than a particular value. <b>NB</b> Currently this does not handle QTLs 
+with P-values rather than LOD scores. Selecting a LOD limit greater than 0 will 
+screen out all QTLs with P-values. More <a href="/tu/qtls/index.shtml#finding">comprehensive 
+search instructions</a> are available. <BR> 
+<p> <a href='<!--#echo var="webroot"-->/'>Back to RGD Home </a>

@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>RGD Staff</title>
+
+<script language="javascript">
+
+function printEmailAddress (thisname,thisdomain) {
+
+  document.write('<a href="');
+  document.write('mai' + 'lto:');
+  document.write(thisname);
+  document.write('&#64;');
+  document.write(thisdomain);
+  document.write('" title="Click to send email">');
+  document.write('Email Me<\/a>');
+
+}
+
+</script>
+
+
+</head>
+
+<body>
+<table width="606" border="2" cellpadding="2" cellspacing="2" bordercolor="#666666">
+  <caption>
+  <strong><font size="4">The Rat Genome Database Team  </font></strong>
+  </caption>
+  <tr>
+    <th width="205" bordercolor="#B2B2B2" bgcolor="#003399" scope="col"><font color="#FFFFFF" size="2">RGD Investigators </font></th>
+    <th width="202" bgcolor="#003399" scope="col"><font color="#FFFFFF" size="2">Position</font></th>
+    <th width="99" bgcolor="#003399" scope="col"><font color="#FFFFFF" size="2">Phone</font></th>
+    <th width="62" bgcolor="#003399" scope="col"><font color="#FFFFFF" size="2">Email</font></th>
+  </tr>
+  <tr>
+    <td bordercolor="#B2B2B2"><font size="2"><strong>Howard Jacob, Ph.D. </strong></font></td>
+    <td><font size="2"><strong>Principle Investigator </strong></font></td>
+    <td><font size="2">(414) 456-4885</font></td>
+    <td> <font size="2">
+<script type="text/javascript">
+<!--
+  var name = '&#106;&#97;&#99;&#111;&#98;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript>
+</font></td>
+  </tr>
+  <tr>
+    <td bordercolor="#B2B2B2"  ><font size="2"><strong>Melinda Dwinell, Ph.D. </strong></font></td>
+    <td  ><font size="2"><strong>Co-Principle Investigator </strong></font></td>
+    <td  ><font size="2">(414) 456-4498</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#109;&#114;&#100;&#119;&#105;&#110;&#101;&#108;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td bordercolor="#B2B2B2"><font size="2"><strong>Mary Shimoyama, Ph.D. </strong></font></td>
+    <td><font size="2"><strong>Co-Principle Investigator </strong></font></td>
+    <td><font size="2">(414) 955-7505</font></td>
+    <td><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#115;&#104;&#105;&#109;&#111;&#121;&#97;&#109;&#97;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td bordercolor="#B2B2B2"><font size="2"><strong>Liz Worthey, Ph.D. </strong></font></td>
+    <td><font size="2"><strong>Co-Principle Investigator </strong></font></td>
+    <td><font size="2">(414) 955-7426</font></td>
+    <td><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#115;&#104;&#105;&#109;&#111;&#121;&#97;&#109;&#97;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress ("eworthey","mcw.edu");
+// -->
+</script>
+
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td bordercolor="#B2B2B2"><font size="2"><strong>Diane Munzenmaier, Ph.D. </strong></font></td>
+    <td><font size="2"><strong>Co-Principle Investigator </strong></font></td>
+    <td><font size="2">(414) 955-8557</font></td>
+    <td><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#115;&#104;&#105;&#109;&#111;&#121;&#97;&#109;&#97;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress ("dmunz","mcw.edu");
+// -->
+</script>
+
+
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#003399"><div align="center"><font color="#FFFFFF" size="2"><strong>RGD Curation Team </strong></font></div></td>
+    <th bgcolor="#003399" scope="col"><font size="2"></font></th>
+    <th bgcolor="#003399" scope="col"><font size="2"></font></th>
+    <th bgcolor="#003399" scope="col"><font size="2"></font></th>
+  </tr>
+  <tr>
+    <td><font size="2"><strong>Victoria Petri, Ph.D. </strong></font></td>
+    <td><font size="2"><strong>Research Scientist </strong></font></td>
+    <td><font size="2">(414)-456-7507</font></td>
+    <td><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#118;&#112;&#101;&#116;&#114;&#105;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td  ><font size="2"><strong>Stan Laulederkind, Ph.D. </strong></font></td>
+    <td  ><font size="2"><strong>Research Scientist (Team Lead) </strong></font></td>
+    <td  ><font size="2">(414)-456-7513</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#115;&#108;&#97;&#117;&#108;&#101;&#100;&#101;&#114;&#107;&#105;&#110;&#100;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td  ><font size="2"><strong>Tom Hayman, Ph.D. </strong></font></td>
+    <td  ><font size="2"><strong>Research Scientist </strong></font></td>
+    <td  ><font size="2">(414)-456-7507</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#103;&#116;&#104;&#97;&#121;&#109;&#97;&#110;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td  ><font size="2"><strong>Tim Lowry, Ph.D. </strong></font></td>
+    <td  ><font size="2"><strong>Research Scientist </strong></font></td>
+    <td  ><font size="2">(414)-456-8819</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#116;&#108;&#111;&#119;&#114;&#121;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td  ><font size="2"><strong>Shur-Jen Wang, Ph.D. </strong></font></td>
+    <td  ><font size="2"><strong>Research Scientist </strong></font></td>
+    <td  ><font size="2">(414)-456-5711</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#115;&#106;&#119;&#97;&#110;&#103;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td><font size="2"><strong>Jennifer Smith, M.S. </strong></font></td>
+    <td><font size="2"><strong>Curator</strong></font></td>
+    <td><font size="2">(414)-456-7512</font></td>
+    <td><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#106;&#114;&#115;&#109;&#105;&#116;&#104;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td  ><font size="2"><strong>Rajni Nigam, M.S. </strong></font></td>
+    <td  ><font size="2"><strong>Curator</strong></font></td>
+    <td  ><font size="2">(414)-456-7508</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#114;&#110;&#105;&#103;&#97;&#109;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#003399"><div align="center"><font color="#FFFFFF" size="2"><strong>RGD Bioinformatics Team </strong></font></div></td>
+    <th bgcolor="#003399" scope="col"><font size="2"></font></th>
+    <th bgcolor="#003399" scope="col"><font size="2"></font></th>
+    <th bgcolor="#003399" scope="col"><font size="2"></font></th>
+  </tr>
+  
+  <tr>
+    <td  ><font size="2"><strong>Jeff&nbsp; De Pons</strong></font></td>
+    <td  ><font size="2"><strong>Manager, Bioinformatics </strong></font></td>
+    <td  ><font size="2">(414)-955-7517</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#106;&#100;&#101;&#112;&#111;&#110;&#115;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  
+  <tr>
+    <td  ><font size="2"><strong>Kent Brodie, M.S. </strong></font></td>
+    <td  ><font size="2"><strong>Systems Administrator </strong></font></td>
+    <td  ><font size="2">(414)-955-8590</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#98;&#114;&#111;&#100;&#105;&#101;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+
+  <tr>
+    <td  ><font size="2"><strong>Pushkala Jayaraman, M.S.</strong></font></td>
+    <td  ><font size="2"><strong>Programmer/Analyst </strong></font></td>
+    <td  ><font size="2">(414)-955-2229</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#112;&#106;&#97;&#121;&#97;&#114;&#97;&#109;&#97;&#110;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+
+  <tr>
+    <td  ><font size="2"><strong>Weisong Liu, Ph.D.</strong></font></td>
+    <td  ><font size="2"><strong>Programmer/Analyst </strong></font></td>
+    <td  ><font size="2">(414)-955-4057</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#119;&#108;&#105;&#117;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+
+  <tr>
+    <td  ><font size="2"><strong>Marek Tutaj, M.S.</strong></font></td>
+    <td  ><font size="2"><strong>Programmer/Analyst </strong></font></td>
+    <td  ><font size="2">(414)-955-2227</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#109;&#116;&#117;&#116;&#97;&#106;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td  ><font size="2"><strong>Stacy Zacher, M.S. </strong></font></td>
+    <td  ><font size="2"><strong>Database Administrator </strong></font></td>
+    <td  ><font size="2">(414)-456-5654</font></td>
+    <td  ><font size="2">
+      <script type="text/javascript">
+<!--
+  var name = '&#115;&#122;&#97;&#99;&#104;&#101;&#114;';
+  var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+  printEmailAddress (name,domain);
+// -->
+</script>
+<noscript>
+  <p>JavaScript is required to view this email address</p>
+</noscript></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+    <td bgcolor="#999999">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="RHMap Server - Rat Genome Database"-->
+<!--#set var="desc" value="This tool will run RHMAPPER [1] and create a RH placement map of your submitted RH Vectors based on the 1999 RH Framework of the Rat [2]."-->
+<!--#set var="links" value="${webroot}/links.shtml"-->
+<!--#set var="main" value="${webroot}/RHMAPSERVER/cnt_index.shtml"-->
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+

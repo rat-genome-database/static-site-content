@@ -1,0 +1,380 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>QTL Registration Form</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="" name=Author>
+<META content=2/22/05 name=Date>
+<META content="this page will display some form fields for user input and then submit the form" name=Description>
+<META content="MSHTML 6.00.2800.1276" name=GENERATOR>
+</HEAD>
+<BODY>
+
+<h2>Genome Error Report</h2>
+<p><b>Please use this form to tell RGD about any errors you've found in the 
+Genome resources. <FONT color=red>Please report only one 
+type of error per form.</FONT></b></p>
+
+<FORM name="" onsubmit="return verify(this)" action="/thankyou.shtml" method="get">
+
+
+<TABLE width=100% border=0 align=center cellpadding="3" cellspacing="1" bgcolor="#999999">
+<TBODY>
+  <TR bgcolor="#9DCEFF">
+    <TD><p><b>Contact Information</b>&nbsp;&nbsp;(The fields with <FONT color=red>*</FONT> cannot be empty)</p></TD> 
+  </TR>
+  <TR bgcolor="#FFFFFF">
+    <TD><p>If the corresponding author's contact details are 
+           already in RGD, you only need to enter the name and e-mail 
+           address.</p></TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD bgcolor="#FFFFFF">
+		<table width="520" border="0" align="left" cellpadding="1" cellspacing="1" bgcolor="#FFFFFF">
+		  <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD width="280" vAlign=top><A href="javascript:help('authorLName')">Last name of the PI</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorLName></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorFName')">First name of the PI</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorFName></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorMName')">Middle Initial of the PI</A></TD>
+          <TD><INPUT maxLength=3 size=3 name=authorMName></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorMail')">E-mail address of the PI</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorEmail></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorOrg')">Institute/Organization </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorOrganization></TD></TR>
+		</table></TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD bgcolor="#FFFFFF">		
+		<table width="520" border="0" align="left" cellpadding="1" cellspacing="1" bgcolor="#FFFFFF">
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD width="280" vAlign=top><A href="javascript:help('authorAddress')">Address</A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorAddress></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorAddress')">City </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorCity></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorAddress')">State/Province </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorState></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorAddress')">Postal code or Zip code</A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorPostalCode></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorAddress')">Country </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorCountry></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorPhone')">Telephone number </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorPhone></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('authorFax')">Fax number </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorFax></TD></TR>
+		</table></TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD bgcolor="#FFFFFF">		
+		<table width="520" border="0" align="left" cellpadding="1" cellspacing="1" bgcolor="#FFFFFF">
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD width="280" vAlign=top><A href="javascript:help('userLName')">Last name of the submitter</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=userLname></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('userFName')">First name of the submitter</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=userFname></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('userMName')">Middle Initial of the submitter</A></TD>
+          <TD><INPUT maxLength=3 size=3 name=userMname></TD></TR>
+        <TR bgcolor="#FFFFFF">
+          <TD><p>&nbsp;</p></TD>
+		  <TD vAlign=top><A href="javascript:help('userMail')">E-mail address of the submitter</A><FONT color=red>*</FONT> </TD>
+          <TD><INPUT maxLength=200 size=30 name=userEmail></TD></TR>
+		</table>
+		
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+
+<br>
+
+
+<TABLE width="100%" border="0" cellPadding="5" cellspacing="1" bgcolor="#999999">
+
+  <TR bgcolor="#9DCEFF">
+    <TD colspan="3"><p><B>Please indicate the category of genome project data needing correction</B>
+          <BR>
+          <I>(one type of error per form)</I> </p></TD>
+  </TR>
+  
+  <TR bgcolor="#BDC6DE">
+    <TD colspan="3"><INPUT type=radio value=assembly name=category> 
+      There appears to be a major assembly error such that the 
+      order of the reported sequence does not resemble the genome. (I will use 
+      the "Explanatory remarks" box below to explain my reasons). </TD>
+  </TR>
+  
+  <TR align=left bgcolor="#BDC6DE">
+    <TD colspan="3"><INPUT type=radio value=dna name=category> 
+       I believe there is an error in the genomic DNA sequence. (I realize the 
+      strain sequenced was the BN/NHsdMcwi strain, and this 
+      change is not a polymorphism.) </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD>At position <INPUT size=8 name=dnaBase></TD>
+    <TD colspan="2">The 20 nucleotides immediately upstream of the error are: <INPUT name=dnaUpstream></TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=sub name=dnaError> The error appears 
+      to be a single nucleotide substitution </TD>
+    <TD colspan="2">I think nucleotide 
+      <INPUT size=1 name=dnaBefore> should be 
+      <INPUT size=1 name=dnaAfter> instead </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=ins name=dnaError> The error appears 
+      to be an insertion of <INPUT size=2 name=dnaInSize> bases. </TD>
+    <TD colspan="2">The following bases should be deleted 
+      <INPUT name=dna2Del> 
+      <BR>so that the corrected sequence reads <INPUT size=40 name=dnaAfterDel> 
+    </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=del name=dnaError> The error appears 
+      to be a deletion of <INPUT size=2 name=dnaDelSize> bases. </TD>
+    <TD colspan="2">The following bases should be inserted 
+      <INPUT name=dna2Ins> <BR>
+      so that the corrected sequence reads <INPUT size=40 name=dnaAfterIns> 
+    </TD>
+  </TR>
+  
+  <TR bgcolor="#BDC6DE">
+    <TD colspan="3"><INPUT type=radio value=gene name=category> 
+      I have an error to report for a gene annotation (I will use the 
+      "Explanatory remarks" box below to explain my reasons). </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=symbol name=annot>Gene <INPUT value="" name=symbol1 G?> </TD>
+    <TD>corresponds to RGD symbol 
+      <INPUT value="" name=symbol2> </TD>
+    <TD>and/or GenBank Accession number 
+      <INPUT name=symbol3> </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=merge name=annot>Gene 
+      <INPUT value="" name=merge1 G?> </TD>
+    <TD>and gene 
+      <INPUT value="" name=merge2> </TD>
+    <TD>should be merged. </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=split name=annot>Gene <INPUT value="" name=split1 G?> </TD>
+    <TD colspan="2">should be split into two genes. </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD><INPUT type=radio value=pelement name=annot>Gene <INPUT value="" name=pelement1 G?> </TD>
+    <TD colspan="2">appears to have an insertion/deletion
+      <INPUT name=pelement2> </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD colspan="3"><INPUT type=radio value=intron name=annot> There is a 
+      mistake in the intron-exon structure of gene <INPUT value="" name=intron1 G?> </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD colspan="3"><INPUT type=radio value=function name=annot> There is a 
+      mistake in the supporting evidence or functional assignment of gene <INPUT value="" name=function1 G?> </TD>
+  </TR>
+  
+  <TR bgcolor="#FFFFFF">
+    <TD colspan="3"><INPUT type=radio value=newevidence name=annot> I have new 
+      evidence or a functional assignment for gene <INPUT value="" name=newevidence1 G?> </TD>
+  </TR>
+  
+  <TR bgcolor="#BDC6DE">
+    <TD colspan="3"><INPUT type=radio value=cDNA name=category> 
+      I have an update for a full-length cDNA or EST (I will use the 
+      "Explanatory remarks" box to explain my reasons). </TD>
+  </TR>
+  
+  <TR bgcolor="#BDC6DE">
+    <TD colspan="3"><INPUT type=radio value=missed name=category> I would like to add a new gene annotation (I will use the 
+      "Explanatory remarks" box to explain my reasons). </TD>
+  </TR>
+
+  <TR bgcolor="#FFFFFF">
+    <TD><A href="javascript:help('comments')">Comments</A></TD>
+    <TD colspan="2"><TEXTAREA name=comments rows=4 cols=25></TEXTAREA></TD>
+  </TR> 
+  <TR bgcolor="#FFFFFF">
+   <TD colspan="3" height=27><INPUT type=submit value=Send>&nbsp;<INPUT type=reset value=Reset></TD>
+  </TR>
+</TABLE>
+		
+</FORM>
+
+<p>back to <a href='/'>RGD Home</a></p>
+
+<SCRIPT language=javascript>
+	function verify(field){
+		var message;
+		var msg1;
+		var msg2;
+		var need_field="";
+		var error_field1="";
+		var error_field2="";
+		var display_name;
+
+		for(var i=0; i<field.length; i++){
+		
+			var e=field.elements[i];
+			if(e.name=="authorLName"){
+				display_name="Last name of the author";
+			}
+			if(e.name=="authorFname"){
+				display_name="First name of the author";
+			}
+			if(e.name=="authorEmail"){
+				display_name="E-mail address of the author";
+			}
+			if(e.name=="userLname"){
+				display_name="Last name of the submitter";
+			}
+			if(e.name=="userFname"){
+				display_name="First name of the submitter";
+			}
+			if(e.name=="userEmail"){
+				display_name="E-mail address of the submitter";
+			}
+			if(e.name=="qtl_symbol"){
+				display_name="QTL Symbol";
+			}
+			if(e.name=="qtl_name"){
+				display_name="QTL Name";
+			}
+			if(e.name=="trait"){
+				display_name="Trait";
+			}
+
+			if((e.name=="authorLName")||(e.name=="authorFName")||(e.name=="authorEmail")||(e.name=="userLname")||(e.name=="userFname")||(e.name=="userEmail")||(e.name=="qtl_symbol")||(e.name=="qtl_name")||(e.name=="trait")){
+				if((e.value==null)||(e.value=="")||isblank(e.value)){
+					need_field += "\n          " + display_name;
+				}
+			} 
+
+			if(e.name=="userEmail"){
+				error_field1=checkFormat1(e.value);
+			}
+
+			if(e.name=="authorEmail"){
+				error_field2=checkFormat2(e.value);	
+			}
+		}
+	  
+		if(need_field){
+			message="The form can not be submitted because the following fields must be filled in:\n\n"	+ need_field+"\n";
+			alert(message);
+			return false;
+		}
+		if(error_field1){
+			msg1="-" + error_field1;
+			alert(msg1);
+			return false;
+		}
+		if(error_field2){
+			msg2="-" + error_field2;
+			alert(msg2);
+			return false;
+		}	
+	}
+
+	function isblank(s){
+		for(var i=0; i<s.length; i++){
+			var c=s.charAt(i);
+			if((c !=' ')&&(c !='\n')&&(c !='\t')) return false;
+		}
+		
+		return false;	
+	}
+
+	function checkFormat1(value){
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(miss @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function checkFormat2(value){
+		//alert("value="+value);
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(missing @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function help(anchor) {
+
+		top.qtlhelp=open("/qtls/qtlRegistrationHelp.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400, height=200");
+   
+		top.qtlhelp.focus();
+	}
+</SCRIPT>
+</BODY></HTML>

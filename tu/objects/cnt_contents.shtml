@@ -1,0 +1,71 @@
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> &gt; 
+  RGD Contents</p>
+<h2>RGD Contents<a name="contents"></a></h2>
+<p>RGD focuses on rat genetic and genomic information and contains data on the 
+  following objects<b></b>: </p>
+<p>&nbsp;</p>
+<table width="75%" border="0" cellpadding="2">
+  <tr valign="top" bgcolor="#CCCCFF"> 
+    <td><strong>Object</strong></td>
+    <td>&nbsp;</td>
+    <td><strong>Description</strong></td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href='/tu/%3C!--#echo%20var=%22webroot%22--%3E/tu/genes'>Genes</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td>a physical unit for transcription- symbol, name, product, function, role, 
+      chromosome location, Gene Ontology and disease.</td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">Strains</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td>inbred rat strains- name, origin, genetic markers, and detailed information 
+      including coat color, drug and chemicals and physiology.</td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">QTL</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td><u>Q</u>uantitative <u>T</u>rait <u>L</u>oci- symbols, names and aliases 
+      mainly of diseases models including diabetes, arthritis, and blood pressure.</td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">SSLPs</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td><u>S</u>imple <u>S</u>equence <u>L</u>ength <u>P</u>olymorphism- name, 
+      expected size, primers sequences, cloned sequences.</td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">ESTs</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td><u>E</u>xpressed <u>S</u>equence <u>T</u>ags- symbol, alias, associated 
+      genes, associated sequences and primer pairs</td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">Maps</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td>genetic and radiation hybrid maps- map length, number of framework and 
+      placement markers.</td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">Sequences</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td>currently limited to SSLP cloned and primer sequences, EST clone and primer 
+      sequences. </td>
+  </tr>
+  <tr valign="top"> 
+    <td><strong><a href="#">References</a></strong></td>
+    <td><font size="-2">[Definition]</font></td>
+    <td><p>literature for manually curated or bulk-exchanged RGD information.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+

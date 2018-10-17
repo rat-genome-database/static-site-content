@@ -1,0 +1,234 @@
+
+
+
+
+<P><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/">Help</a> &gt; FAQs
+
+
+
+<P>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+
+
+  <tr valign="top"> 
+
+
+
+    <td bgcolor="#FFCCCC"> 
+
+
+
+      <div align="left"><strong><font size="+1">RGD FAQs list</font></strong></div>
+
+
+
+    </td>
+
+
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td>
+
+      <p><b>RGD General</b></p>
+
+      <ul>
+
+        <li><a href="#acquire_info">How does RGD acquire the information?</a></li>
+
+        <li><a href="#often">How often does new data appear on the RGD website?</a></li>
+
+        <li><a href="#update">How will I know when data is updated?</a></li>
+
+        <li><a href="#cite_RGD">How do I cite RGD?</a></li>
+
+        <li><a href="#RGD_ID">What is an 'RGD ID'?</a></li>
+
+        <li><a href="#blast">Can I do a BLAST or sequence comparison in RGD?</a></li>
+
+        <li><a href="#download">I would like to download rat data in bulk/batch 
+          form? Is there a central location from where I can download them?</a></li>
+
+      </ul>
+
+      <p><b>Data Curation</b></p>
+
+      <ul>
+
+        <li><a href="#choose_paper">How do you choose papers to curate?</a></li>
+
+        <li><a href="#contact">If I feel there is a mistake in the interpretation of 
+
+          data presented in the database, whom should I contact?</a></li>
+
+        <li><a href="#curate">I have just published a paper with exciting new information 
+
+          on a gene in your database. How can I be sure you will curate this paper?</a></li>
+
+        <li><a href="#submit">Can I submit my data to RGD?</a></li>
+
+      </ul>
+
+      <p><b>General rat questions</b></p>
+
+      <ul>
+
+        <li><a href="#status">How can I find the status of the rat sequencing project?</a></li>
+
+        <li><a href="#order">Where can I order rat strains (wild-type or mutant)?</a></li>
+
+<a href='http://rgd.mcw.edu/RCF/'>Rat Community</a></p>
+      </ul>
+
+    </td>
+
+
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+
+
+    <td bgcolor="#FFCCCC"><a name="faq_answer"></a><b>Answer for FAQs</b></td>
+
+
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+
+
+    <td> <DL>
+        <DT><a name="acquire_info"></a><B>How does RGD acquire the information?</B> 
+        <DD>The Rat Genome Database (RGD) is a fully curated database. Our staff 
+          scientists and data processing specialists have reviewed all data. Regardless 
+          of the original format of the data, RGD processes all data through a 
+          customized pipeline. In addition, RGD has a nomenclature team that collaborates 
+          with leaders in the rat, mouse and human model organism databases to 
+          try and assure proper names and symbols are assigned to the data in 
+          RGD. 
+        <DT><A NAME="often"></A><B>How often does new data appear on the RGD website?</B> 
+        <DD>New data is uploaded to the public web site on the first and fifteenth 
+          of each month. 
+        <DT><A NAME="update"></A><B>How will I know when data is updated?</B> 
+          <a href='/RCF/'>Rat Community</a></p> (RCF) and you 
+          will be kept abreast of the latest updates, modifications and events 
+          occurring within RGD. 
+        <DT><A NAME="cite_RGD"></A><B>How do I cite RGD?</B> 
+        <DD>You can see examples of RGD citations using the &quot;<a href="/wg/citing-rgd">Citing 
+          RGD</a>&quot; link in the general information menu on the left side 
+          of the web page. 
+        <DT><A NAME="RGD_ID"></A><B>What is an 'RGD ID'?</B> 
+        <DD>Every object (genes, QTLs, sequences, ESTs, SSLPs, references, maps) 
+          in RGD is given an identification number or RGD ID. If you know the 
+          RGD ID you can type it in the search window and retrieve the web page 
+          for that object. 
+        <DT><A NAME="blast"></A><B>Can I do a BLAST or sequence comparison in 
+          RGD?</B> 
+        <DD>RGD does not support BLAST at this moment, but provides external links 
+          to BLAST tools on the left column of the <a href="/sequences/">sequence</a> 
+          page. 
+        <DT><A NAME="download"></A><B>I would like to download rat data in bulk/batch 
+          form? Is there a central location from where I can download them?</B> 
+        <DD>Yes, you can download data from the RGD ftp site. This is located 
+          under the &quot;<a href="/pub/">download rat data</a>&quot; 
+          button on the RGD home page. The RGD ftp site is updated twice a month 
+          and covers the latest data on rat genes, ESTs, QTLs, Maps, SSLPs, RH 
+          Map v2.2 and alleles listed under the pub/data release file. 
+        <dt><br>
+          <font size="-1">[ <a href="#top">back to top</a> ]</font></dt>
+        <dt> 
+          <hr>
+          <br>
+        </dt>
+        <DT><A NAME="choose_paper"></A><B>How do you choose papers to curate?</B> 
+        <DD>In general, RGD curates only current articles that cover genes, QTLs, 
+          strains, and mapping data. However, for the purpose of clarification, 
+          we will search the archives. The current articles are chosen from the 
+          30 journals covering the greatest number of relevant articles. 
+        <DT><A NAME="contact"></A><B>If I feel there is a mistake in the interpretation 
+          of data presented in the database, whom should I contact?</B> 
+        <DD>You can send your comments to RGD via the <a href="/contact/index.shtml">Contact 
+          Us</a> link in the general information menu on the left side of the 
+          web page. In most cases, you should see the changes within a couple 
+          of weeks. 
+        <DT><A NAME="curate"></A><B>I have just published a paper with exciting 
+          new information on a gene in your database. How can I be sure you will 
+          curate this paper?</B> <a href='/contact/index.shtml'>Contact 
+          Us</a><br>
+          you should see the curation results within 3 weeks. 
+        <DT><A NAME="submit"></A><B>Can I submit my data to RGD?</B> 
+        <DD>Yes, RGD welcomes the opportunity to provide the rat research community 
+          with your data. If your data is supplemental, new or modified we encourage 
+          you to please contact <a href="mailto:shimoyma@mcw.edu">shimoyma@mcw.edu</a>. 
+        <dt><br>
+          <font size="-1">[ <a href="#top">back to top</a> ]</font></dt>
+        <dt> 
+          <hr>
+          <br>
+        </dt>
+        <DT><A NAME="status"></A><B>How can I find the status of the rat sequencing 
+          project?</B> 
+        <DD>You can find the link at the RGD home page under the <a href="/sequences/rgp_info.shtml#rgp">rat 
+          sequencing project news</a>. 
+        <DT><A NAME="order"></A><B>Where can I order rat strains (wild-type or 
+          mutant)? </B> 
+        <DD>RGD does not keep rat strains, but is a repository of data information, 
+          though there are links through <a href="http://pga.mcw.edu/">Programs 
+          for Genomic Applications</a> to commercial labs where these strains 
+          can be obtained. Even links to <a href="http://dels.nas.edu/ilar/index.asp?id=index">ILAR 
+          rat strains</a> can be helpful in ordering strains. <a href='/RCF/'>Rat 
+          Community</a></p> Forum [RCF]?</B> 
+        <DD>RGD encourages all researchers to become members of the RCF, so that 
+          all can utilize this forum for exchange of ideas. To register and become 
+          part of this, click on the RCF button on the left side of the RGD home 
+          page or <a href="/RCF/">click here</a>. 
+        <dt><br>
+          <font size="-1">[ <a href="#top">back to top</a> ]</font></dt>
+      </DL>
+
+
+
+
+
+
+
+      <!-- Markup for a definition
+
+
+
+        <P><DT><B><A NAME=""></A></B>
+
+
+
+        <DD>
+
+
+
+       End of markup -->
+
+
+
+      </td>
+
+
+
+  </tr>
+
+
+
+</table>

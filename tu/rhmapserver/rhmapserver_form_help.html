@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>RGD: RH Map Server Query Form Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=stylesheet type="text/css" href="/common/style/rgd_styles.css"> 
+</head>
+
+<body>
+<p>The Rat Radiation Hybrid Panel is a 106 hybrid panel. More information is available 
+  from Research Genetics. The Rat RH framework was generated using hybrids 1 through 
+  100. </p>
+<p>The RH vectors should consist of 0's, 1', or 2's from hybrids # 1-106 in that 
+  order. In the RH vectors, 0 represents negative, 1 positive and 2 ambiguous 
+  or missing data. If you have missed hybrids, please add 2's for those missing 
+  hybrids. If you have vectors with length shorter than 106, the tool will add 
+  2's at the end of your vector. </p>
+<p>Data Format - The data should be arranged in the following format:</p>
+<p>aldoa 0000000210000000000000001000000000010020000010000000001010100110001012100010000021011101000100222222<br>
+  atp1a3 0010000010000000000001100010000000000000000010000001001001000200100001010000000011010011000101222222<br>
+  atp4a 0001000100000000000001120010200000000000000000000001001000000110100010010000000011010001000201222222<br>
+  cgrat10 2011101010000001110201100000000000210210000010101121001100120000001000110001201100000020020000010001<br>
+</p>
+<p>The data consists of 2 columns delimited by a tab, space or comma: the first 
+  is the marker name which is limited to 11 characters; the second is the RH vector 
+  string. Any columns beyond the first two will be discarded. </p>
+</body>
+</html>

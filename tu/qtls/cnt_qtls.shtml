@@ -1,0 +1,191 @@
+
+
+
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; 
+
+  <b>QTLs</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#99CCFF">
+
+      <div align="left"><strong><font size="+1">QTLs Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td width="76%">
+
+      <ul>
+
+        <li><a href="#definition">Definition of a QTL</a>?</li>
+
+        <li><a href="#finding">How do I find information about a QTL?</a></li>
+
+        <li><a href="#related">What does a QTL query return?</a></li>
+		
+		<li><a href="#report">What information does RGD have for QTLs?</a></li>
+
+        <li><a href='<!--#echo var="webroot"-->/objectSearch/qtlQuery.jsp'>Let me start searching...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>Definition of a QTL</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2">
+<P><EM><B>Q</B>uantitative <B>T</B>rait <B>L</B>ocus (QTL) is a polymorphic 
+              locus which contains alleles that differentially affect the expression 
+              of a continuously distributed phenotypic trait. Usually it is a 
+              marker described by statistical association to quantitative variation 
+              in the particular phenotypic trait that is thought to be controlled 
+              by the cumulative action of alleles at multiple loci.</EM></P>
+            <P>A disease-specific QTL in a rat model is obtained by intensive 
+              genetic crossing and analysis and is expected to contain one to 
+              many genetic elements that would be contributing to the phenotype 
+              in the rat. An affected strain (showing the phenotype) is crossed 
+              with an unaffected strain (lacking the phenotype), the progeny are 
+              genotyped and phenotyped and through statistical techniques, a correlation 
+              is made between a particular genotype and the phenotype being measured. 
+              This is covered in more detail in the "<A 
+            href='<!--#echo var="webroot"-->/tu/how_do_i/mapping.shtml#genetic_mapping'>How 
+              do I do genetic mapping?</A>" section.</P>
+            <P>For a comprehensive review of QTL mapping techniques in the rat 
+            see "<EM>Genetic Analysis of Inherited Hypertension in the Rat</EM>" 
+            by John Rapp, <A 
+            href="http://physrev.physiology.org/cgi/content/abstract/80/1/135">Physiological 
+            Reviews, 90:135-172,2000</A></P>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>How do I find information about a QTL</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p>RGD provides several methods for locating information on QTLs. Users can either perform quick or specific queries to obtain information. </p>
+      <p><strong>1. RGD Search:</strong></p>
+      <p> This will search QTL symbols, names, aliases, trait name, subtrait name, trait description/method, and annotations. (See General <a href="http://rgd.mcw.edu/tu/searchtools/">RGD Search help</a> for more information).</p>
+	  
+	        <P><EM><STRONG><FONT color=#cc0000>Quick Guide</FONT></STRONG></EM></P>
+            <OL>
+              <ol>
+                <li><a href="http://rgd.mcw.edu/">http://rgd.mcw.edu</a></li>
+                <li> Enter symbol or keyword in search box in the upper right </li>
+                <li>Click &ldquo;GO </li>
+              </ol>
+            </OL>
+	  
+      <p><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><STRONG>2. QTL Search Form</STRONG> - Provides more customizable options for locating specific QTL information. <a href="#paradetails">Details about search parameters are outlined below</a>. (link this to section below)</p>
+
+      <P><EM><STRONG><FONT color=#cc0000>Quick Guide</FONT></STRONG></EM></P>
+            <OL>
+              <li><a href="http://rgd.mcw.edu/objectSearch/qtlQuery.jsp">http://rgd.mcw.edu/objectSearch/qtlQuery.jsp</a></li>
+              <li> Choose a species and submit </li>
+              <li> Enter the symbol or keyword </li>
+              <li> Searches can be limited to a particular trait, strain, chromosome, genome start or stop location, LOD* score, or P-value. </li>
+              <li> To find all QTLs for a particular trait or chromosome leave the keyword field blank and select the trait and/or chromosome and/or LOD* score and/or P-value. </li>
+              <li> Searches can be limited to a particular trait, strain, chromosome, genome start or stop location, LOD* score, or P-value. </li>
+              <li> To find all QTLs for a particular trait or chromosome leave the keyword field blank and select the trait and/or chromosome and/or LOD* score and/or P-value.</li>
+              </OL>
+            <P>(LOD = A statistical estimate of the likelihood that two loci lie 
+              near each other on a chromosome and are therefore likely to be inherited 
+              together. A LOD score of three or more is generally taken to indicate 
+              that the two loci are close)</P>
+            <P><img src="qtl_query.gif" border="1"><A href='<!--#echo var="webroot"-->/objectSearch/qtlQuery.jsp'><IMG src="../images/try_it.gif" border=0></A></P>
+            <P>Below is a <STRONG>more detailed explanation</STRONG> of each 
+            element of the search form which will allow you greater flexibility 
+            to refine your searches.</P>
+            <P><a name="paradetails"></a> <strong> Details of search parameters will allow you greater flexibility to refine your searches.</strong> </P>
+            <font size="-1">
+        <!--#include virtual="qtl_form_help.html"-->
+      </font>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#E1E8FF"> 
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> 
+      <p>No.
+	   <!-- The report contains information on objects related to the queried QTL. 
+        These include: strains, reported candidate genes, mapping data consisting 
+        of marker position, name and type of map. External database link to RATMAP 
+        and related references are also provided wherever available.
+	  -->
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a> <strong> What information does RGD have for QTLs</strong> </td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p> RGD generates QTL reports, which are divided into sections containing different categories of information. Not all information will be available for every QTL. The report also has summary icons at the top of the report. The icons are displayed, if data is available in the icon's section of the report. The icons hyperlink to their sections on the report allowing easier navigation on large reports. </p>
+      <p> Descriptions for each information section are given below:</p>
+      <ul>
+        <li><strong> <a href="#SummaryIcons">Summary Icons</a></strong></li>
+        <li><strong> <a href="#NameSection">Name Section</a></strong></li>
+        <li><strong> <a href="#DescriptionSection">Description Section</a></strong></li>
+        <li><strong> <a href="#GenomeSection">Genome Section</a></strong></li>
+        <li><strong> <a href="#AnnotationsSection">Annotations Section</a></strong></li>
+        <li><strong> <a href="#OtherDatabaseLinksSection">Other Database Links Section</a></strong></li>
+        <li><strong> <a href="#ReferencesSection">References Section</a></strong></li>
+        <li><strong> <a href="#DatabaseInformationSection">Database Information Section</a></strong></li>
+      </ul>
+      <p><strong> An Example QTL Report Page:</strong></p>      
+      <P><img src="qtl_report.gif" border="1"></P>
+            <P><strong> <a name="SummaryIcons"></a>Summary Icons:</strong></P>
+            <P><img src="summary_icon_links.gif" border="1"></P>
+
+      <p><font size="-1"> 
+        <!--#include virtual="qtl_report_help.html"-->
+        </font>
+
+    <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+
+</table>
+

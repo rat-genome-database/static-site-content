@@ -1,0 +1,13 @@
+<!-- Sub-Menu -->
+<form method=post action="/query/query.cgi">
+  <TABLE width="100%" border=0 cellpadding=2 cellspacing=0 class=searchtable>
+    <TR> 
+      <TD class=searchtitletd>Search RGD</TD>
+    </TR>
+    <TR> 
+      <TD class=searchfieldtd> 
+        <input type=text name=kw size=10>
+      </TD>
+    </TR>
+</TABLE>
+</FORM>

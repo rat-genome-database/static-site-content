@@ -1,0 +1,93 @@
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMap 
+  Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp.shtml'>Detailed Help</a> &gt; <strong>Search 
+  VCMap</strong></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#CCFFCC"> 
+      <b>4. Search VCMap</b></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td>
+	  <table width="180" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><!--#include virtual="${webroot}/tu/vcmap/navi.shtml"--></td>
+        </tr>
+      </table>
+	  <br><p><strong>Searching for a specific Marker</strong></p>
+      <p>From the VCMap start page, clicking on <a href='<!--#echo var="webroot"-->/VCMAP/query.shtml'>VCMap Query</a> 
+          will allow the user to search for specific information from the VCMap 
+          build. There are two options:</p>
+       
+      <blockquote> 
+        <p><strong><a name="search"></a>4.1 Query by Marker</strong></p>
+        <p>&#8216;Querying by marker (Option 1)&#8217; allows the user to search 
+          the anchor file to generate reports for an individual marker.</p>
+  <p>Enter the marker or cR details and click the display button.</p>
+  <p>For example, For Rn.14443 , the result will look like:<br>
+          <a href="\tools\vcmap\vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=&RelPos2=&QMarker=Display+Marker+Report&Species=human&Chr=01&FirstPos=&SecondPos"><img src="images/marker1.gif" alt="Click to see result" hspace="2" vspace="4" border="0"></a> 
+          <br>
+          <a href="\tools\vcmap\vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=&RelPos2=&QMarker=Display+Marker+Report&Species=human&Chr=01&FirstPos=&SecondPos">Click 
+    to see result</a>.
+        <p>This will generate individual marker report. To obtain data not shown in 
+          the report the search query can be expanded to have map positions flanking 
+          the marker:<br>
+          Since Rn.14443 is mapped, choosing a region between 0 and 60 will result 
+          in:<br>
+          <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=0&RelPos2=60&QMarker=Display+Marker+Report&Species=human&Chr=01&FirstPos=&SecondPos"><img src="images/marker2.gif" alt="Click to see result" width="586" height="61" vspace="8" border="0"></a><br>
+          <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=0&RelPos2=60&QMarker=Display%2BMarker%2BReport&Species=human&Chr=01&FirstPos=&SecondPos">Click 
+          to see result</a>. 
+        <p>This tabulated report displays hyperlinked marker list, bin and stream 
+          predictions in the given chromosomal region where the query marker is 
+          mapped. 
+
+        <p><strong><a name="query"></a>4.2 Query by Chromosomal regions</strong></p>
+
+        <p>&#8216;Querying by chromosomal region (option 2)&#8217; displays the 
+          <em>Chromosomal Region Report</em> plus <em>Bin</em> and <em>Stream 
+          Prediction Reports</em> based on a specified backbone species for the 
+          entire chromosome or a selected region. Either distances or marker names 
+          can be entered to define the displayed region. Entering a single marker 
+          name will display the region +/- 50cR from the marker.</p>
+        <p>For rat chromosome 1, between 0 and 60 cR, the Query Result would look like:<br>
+          <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=0&RelPos2=60&Species=rat&Chr=01&FirstPos=0&SecondPos=60&QRegion=Display+Bin+Report"><img src="images/region.gif" alt="Click to see result" vspace="8" border="0"></a><br>
+          <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=0&RelPos2=60&Species=rat&Chr=01&FirstPos=0&SecondPos=60&QRegion=Display+Bin+Report">Click 
+          to see result</a>.</p>
+        <p>&nbsp;</p>
+
+    <p><strong>Question: What do I see if I query for specific region from the 
+      map?</strong></p>
+        <p>Querying for a chromosomal region generates a Chromosomal Region Report 
+          consisting of table with hyperlinked marker symbols and corresponding 
+          genes if any. In this report, mapped markers for human, mouse and rat 
+          are listed in 3 columns.</p>
+    <blockquote> 
+      <p><a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=300&SecondPos=500&QRegion=Display+Bin+Report'>Click 
+        to see result</a>.</p>
+    </blockquote>
+        <p><em>Bin predictions</em> and <em>Stream predictions</em>, unique to 
+          VCMap are also listed on the same page.</p>
+        <p>&nbsp;</p>
+
+</blockquote>
+
+      </td>
+  </tr>
+
+  <tr valign="top" bgcolor="#EEFFEE"> 
+    <td> 
+      <p>You are visiting: <a href="dthelp3.shtml">View VCMap</a> << <strong>Search 
+        VCMap</strong> >> <a href="dthelp5.shtml">VCMap Reports</a></p>
+	</td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td>
+	 <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

@@ -1,0 +1,7 @@
+
+<!-- Global Variables initialized //-->
+
+<!--#set var="webcommon" value="/common"-->
+<!--#set var="scriptcommon" value="/tools/common"-->
+<!--#set var="webroot" value=""-->
+<!--#set var="toolroot" value="/tools"-->

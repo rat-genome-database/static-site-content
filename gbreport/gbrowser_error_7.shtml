@@ -1,0 +1,11 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title"   value="Rat Genome Database: GBrowse Error Report"-->
+<!--#set var="category"   value="data"-->
+<!--#set var="links"   value="null"-->
+<!--#set var="main"    value="${webroot}/gbreport/cnt_gbrowser_error_7.html"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+

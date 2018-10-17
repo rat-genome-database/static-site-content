@@ -1,0 +1,115 @@
+
+<h2>Rat Nomenclature Guidelines</h2>
+
+<p>The Rat Genome Nomenclature Committee (RGNC) exists to develop internationally accepted standard genetic nomenclature for
+     rat genes and other genetic loci and rat strains.
+&nbsp;</p>
+
+Questions?  RGD has put together an introduction to biological nomenclature video series!&nbsp;&nbsp;  
+<a style="font-size:20px;" href="http://rgd.mcw.edu/wg/home/the-introduction-to-biomedical-nomenclature-video-series">View Nomenclature Video Series</a>
+
+
+<h3>Rat Nomenclature Updates</h3>
+<p>Updates to the names and symbols of Rat Genes, Strains, QTLs and SSLPs are 
+  continually being made to ensure rat symbols follow the accepted guidelines 
+  and wherever possible to bring these symbols in line with those used in Human 
+  and Mouse. These changes are tracked in RGD for the benefit of the Rat Community 
+  and can be displayed by selecting a timespan in the form below.</p>
+<form method="post" action='<!--#echo var="toolroot"-->/nomen/nomen_report.cgi' name="nomen">
+  <table border="0" cellspacing="0" cellpadding="2" align="center">
+    <tr bgcolor="#CCCCCC"> 
+      <td>View nomenclature updates occuring in the last</td>
+      <td> 
+        <select name="date">
+          <option value="week" selected>Week</option>
+          <option value="two_weeks">Two Weeks</option>
+          <option value="month">Month</option>
+          <option value="year">Year</option>
+          <option value="all">All Updates</option>
+        </select>
+        <input type="submit" name="Submit" value="Go"></td>
+    </tr>
+  </table>
+</form>
+<h3>Rules for Rat Gene, QTL, Genetic Marker, Allele, and Mutation Nomenclature</h3>
+<p>Nomenclature of rat genes is coordinated
+    with that of human and mouse so that in most cases, homologous genes in the
+    three organisms will carry the same symbol and name. Guidelines
+    for naming genes, alleles, QTLs, SSLPs, ESTs, and other loci have been developed
+    in conjunction with the  <A href="http://www.informatics.jax.org/mgihome//nomen/inc.shtml">International
+    Committee on Standardized Genetic Nomenclature for Mice</A> . In addition
+    brief versions of the guidelines are available along with a list of QTL traits
+    and preferred symbols.</p>
+<p>Researchers can register new genes and QTL
+    using the RGD <A href='<!--#echo var="webroot"-->/tools/genes/geneRegistrationIndex.cgi'>gene registration</A> and 
+	<A href='<!--#echo var="webroot"-->/tools/qtls/qtlRegistrationIndex.cgi'>QTL registration</A> pages. An
+    RGD ID will be assigned and the data will be kept private until publication. Help
+    with nomenclature can be obtained by emailing 
+	<script type="text/javascript">
+<!--
+	var first = 'ma';
+	var second = 'il';
+	var third = 'to:';
+	var address = '&#82;&#71;&#68;&#46;&#68;&#97;&#116;&#97;';
+	var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+	document.write('<a href="');
+	document.write(first+second+third);
+	document.write(address);
+	document.write('&#64;');
+	document.write(domain);
+	document.write('" title="Click here to email RGD Data">');
+	document.write('RGD Data<\/a>.');
+// -->
+</script>
+<noscript>
+            <p>JavaScript is required to view this email address</p>
+</noscript> </p>
+<ul>
+  <li><A href='http://www.informatics.jax.org/mgihome/nomen/gene.shtml' target="new">Rules for Nomenclature of Genes, Genetic
+            Markers, Alleles, and Mutations in Mouse and Rat</A> </li>
+  <li><A href='<!--#echo var="webroot"-->/nomen/quick_guide_gene_nomenclature.html'>Quick
+            Guide to Gene Nomenclature</A></li>
+  <li><A href='<!--#echo var="webroot"-->/nomen/quick_guide_qtl_nomenclature.html'>Quick
+            Guide to QTL Nomenclature</A></li>
+  <li><A href='<!--#echo var="webroot"-->/nomen/rgd_traits.html'>Rat QTL Trait/Subtrait List</A></li>
+  <li><A href='<!--#echo var="webroot"-->/nomen/hu_traits.html'>Human QTL Trait/Subtrait List</A></li>
+  <li><A href='<!--#echo var="webroot"-->/nomen/quick_guide_sslp_nomenclature.html'>Quick
+            Guide to SSLP Nomenclature</A></li>
+</ul>
+
+<p>&nbsp;</p>
+<h3><a name="StrainNomenclature"></a>Rules for Rat Strain Nomenclature</h3>
+<P>Joint rat and mouse guidelines
+    have been approved by the Rat Genome Nomenclature Committee and
+    the <A href="http://www.informatics.jax.org/mgihome/nomen/inc.shtml">International
+    Committee on Standardized Genetic Nomenclature for Mice</A>. In
+    addition a brief version of the guidelines is available.</P>
+
+<P>New rat strains should be
+    registered using the online RGD <A href='<!--#echo var="webroot"-->/tools/strains/strainRegistrationIndex.cgi'>strain
+    registration form</A>. Help with nomenclature can be obtained by writing <script type="text/javascript">
+<!--
+	var first = 'ma';
+	var second = 'il';
+	var third = 'to:';
+	var address = '&#82;&#71;&#68;&#46;&#68;&#97;&#116;&#97;';
+	var domain = '&#109;&#99;&#119;&#46;&#101;&#100;&#117;';
+	document.write('<a href="');
+	document.write(first+second+third);
+	document.write(address);
+	document.write('&#64;');
+	document.write(domain);
+	document.write('" title="Click here to email RGD Data">');
+	document.write('RGD Data<\/a>.');
+// -->
+</script>
+<noscript>
+            <p>JavaScript is required to view this email address</p>
+</noscript>
+<ul>
+  <li><A href='http://www.informatics.jax.org/mgihome/nomen/strains.shtml'>Rules for Nomenclature of Mouse and Rat Strains</A></li>
+  <!--original link, now out-of-date, was /nomen/rules-for-nomen.shtm --mt mar-2011 -->
+  <li><A href='<!--#echo var="webroot"-->/nomen/quick_guide_strain_nomenclature.html'>Quick Guide to Rat Strain Nomenclature</A></li>
+</ul>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

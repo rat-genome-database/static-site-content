@@ -1,0 +1,102 @@
+ 
+<table width="150" border="0" cellspacing="2" cellpadding="2" align="right" vspace="15" hspace="10">
+  <tr bgcolor="#CCCCCC"> 
+    <td><b>Contents</b></td>
+  </tr>
+  <tr> 
+    <td><font size="-2"><a href="#go"><font size="-1">Gene Ontology<br>
+      GO Publications</font></a><font size="-1"><br>
+      <a href="#go_rgd">GO in RGD</a></font></font></td>
+  </tr>
+</table>
+<h2><a name="go"></a>Gene Ontology</h2>
+<p>The goal of the Gene Ontology project is to design a set of structured-controlled 
+  vocabulary terms to describe gene products in any organism. The vocabulary terms 
+  are used as attributes of genes in databases from a wide variety of species 
+  and facilitate computational queries across species. All the information about 
+  the GO consortium (including the lists of the current ontologies, extensive 
+  <a href="http://www.geneontology.org/#docs">documentation</a>, definition of 
+  terms, and detailed discussions) is available at the web site: <a href="http://www.geneontology.org">www.geneontology.org</a></p>
+<p>Currently the Gene Ontology Project comprises of three separate ontologies 
+  to describe the attributes of gene product or gene product groups, these are:</p>
+<ol>
+  <li>Molecular Function: This describes what a gene product does at biochemical 
+    level.</li>
+  <li>Biological Process: This refers to a biological objective to which a gene 
+    product contributes.</li>
+  <li>Cellular Component: This refers to the place in the cell where a gene product 
+    is found.</li>
+</ol>
+<p>These ontologies are structured vocabularies which are in the form of direct 
+  acyclic graphs (DAGs) that represent a network in which each term maybe a 'child' 
+  of one or more than one 'parent'. A link to <a href="http://www.godatabase.org/">AmiGO</a> 
+  is included on each GO (Gene Ontology) annotation. The BDGP Java-based GO browser 
+  provides a query interface to the ontologies that allows users to use either 
+  regular expressions or simple 'wild card' characters to query the database. 
+  The display includes a full DAG representation of the query results. AmiGO was 
+  developed at <a href="http://www.fruitfly.org/">BDGP</a> (Berkeley Drosophila 
+  Genome Project), and allows the user to view gene products from yeast and other 
+  species annotated to a specific GO term. In the future GO may expand and incorporate 
+  other sophisticated biological concepts, here this effort is an essential start 
+  to creating a shared language of Biology.</p>
+<p>&nbsp;</p>
+<h4><a name="go_pubs"></a>Related Publications describing the Gene Ontology</h4>
+<ul>
+  <li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=11483584&amp;dopt=Abstract">Creating 
+    the gene ontology resource: design and implementation</a>. The Gene Ontology 
+    Consortium (2001) Genome Res. 11:1425-1433</li>
+  <li><a href="http://www.geneontology.org/GO_nature_genetics_2000.pdf">Gene Ontology: 
+    tool for the unification of biology</a>. The Gene Ontology Consortium (2000) 
+    Nature Genet. 25: 25-29</li>
+</ul>
+<hr width="60%">
+<h3><a name="go_rgd"></a>GO Annotations in RGD</h3>
+<p>A sample annotation from RGD is shown below (from gene F2, 
+<a href="<!--#echo var="toolroot"-->/genes/genes_view.cgi?id=61996">RGD 
+  ID: 61996</a>). Five columns are shown for each GO Term annotated to a given 
+  gene product:</p>
+<table width="80%" border="0" cellspacing="2" cellpadding="2">
+  <tr bgcolor="#CCCCCC"> 
+    <td width="16%"><b>Column</b></td>
+    <td width="84%"><b>Description</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="16%">GO Term</td>
+    <td width="84%">The Gene Ontology term, a brief text description of the biological 
+      nature of this annotation. This is linked to the AmiGO ontology browser 
+      entry for this GO Term (see below).</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="16%">GO ID</td>
+    <td width="84%">The unique identifier (or accession number) for this GO term 
+      in the ontology</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="16%">Evidence</td>
+    <td width="84%">The <a href="http://www.geneontology.org/GO.evidence.html">evidence 
+      code</a> supporting the annotation of this gene product with this GO term. 
+      If this evidence is derived by way of a database entry from another database, 
+      the accession number and a link to the record at the original database is 
+      provided.</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="16%">Ontology</td>
+    <td width="84%">Which ontology this GO term is from (Function, Process, Component)</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="16%">Reference</td>
+    <td width="84%">A link to the reference in RGD from which this annotation 
+      was derived</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="<!--#echo var="webroot"-->/GO/images/go_example.gif" width="545" height="182" border="1"></p>
+<h3 align="left">Using AmiGO links for more information</h3>
+<p align="left">The <a href="http://godatabase.org/">AmiGO browser</a> is an ontology 
+  browser that has the added benefit of listing all other genes annotated with 
+  the same GO Term that have been provided to GeneOntology.org. All GO Terms from 
+  RGD are hyperlinked to the corresponding AmiGO browser page allowing the RGD 
+  user access to a comprehensive list of gene products from other organisms that 
+  have been annotated with the same GO Term.</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>

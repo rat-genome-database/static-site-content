@@ -1,0 +1,197 @@
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMap 
+  Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp.shtml'>Detailed Help</a> &gt; <strong>Additional 
+  Details</strong></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#CCFFCC"> <b>6. Additional Details</b></td>
+  </tr>
+
+
+
+  <tr valign="top"> 
+    <td>
+	  <table width="180" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><!--#include virtual="${webroot}/tu/vcmap/navi.shtml"--></td>
+        </tr>
+      </table>
+	  
+	  <p><br>
+        <strong><a name="comp_mapping"></a>What is comparative mapping?</strong></p>
+<blockquote> 
+        <p>Comparative mapping is a strategy based on sequence conservation between 
+          species that allows sequence-related information derived from one species 
+          to be mapped to the corresponding (syntenic) region in another. This 
+          is particularly applicable to model organism research as it allows the 
+          data generated in genetically tractable organisms such as the Rat to 
+          be related to the human genome and to the genetic basis of human disease.<br>
+  </p>
+  </blockquote>
+<p><strong>What is VCMap?</strong></p>
+<blockquote> 
+        <p>The Virtual Comparative Map (VCMap) tool was developed to explore these 
+          syntenic relationships between Rat, Mouse and Human. Massive sequence 
+          comparisons between ESTs and cDNAs derived from the three organisms 
+          were combined with Raditation Hybrid map locations to define the regions 
+          of synteny. The comparative maps were then extended by the prediction 
+          of locations for markers unmapped in a species based on their known 
+          locations in the syntenic region of another species (Virtual Mapping).<br>
+  </p>
+</blockquote>
+<p><strong>What are the general features of VCMap?</strong></p>
+<blockquote> 
+        <p>Below is shown the top section of the VCMap for Rat Chr 1 [ <a href="/tools/vcmap/vcmap.cgi?Ver=5.0_HS&Species=Rat&Chr=01&MapName=maps" target="new">Open 
+          this VCMap</a> ]. Rat is the backbone organism and Chr 1 is shown in 
+          <font color="#FF6600"><strong>color</strong></font> in the middle of 
+          the diagram with syntenic regions of Human and Mouse shown to the left 
+          and right respectively. As this is a static image there is a limit to 
+          the number of markers that can be shown whilst keeping the image to 
+          a reasonable size, consequently only a proportion of mapped markers 
+          can be shown. The locations of other markers on the backbone strain 
+          are indicated by black tick marks and clicking on the shaded intervals 
+          of the backbone strain will bring up a <em>Chromosomal Region Report</em> 
+          for that interval listing all markers in the region.<br>
+    <img src="images/6vcmap.gif" hspace="4" vspace="4" border="1"></p>
+        <p> Mapped Genes, UniGenes and STSs are shown on all chromosomal segments, 
+          anchor lines are shown connecting markers in different organisms predicted 
+          to be homologs by the VCMap alogorithm only where both markers are visible 
+          on the graphic map. Markers shown in <font color="#FF0000"><strong>red</strong></font> 
+          on the backbone map are RH framework markers, all other mapped markers 
+          are shown in black. Clicking on the framework markers will take you 
+          to a <em>map data report</em> for that marker, clicking on a Gene/UniGene 
+          will take you to the <em>individual marker report</em>.</p>
+  <p>The chromosome number of the syntenic regions is shown in <font color="#0000FF"><strong>blue</strong></font> 
+    above each syntenic chromosomal segment. Clicking on this chromosomal number 
+    will bring up the appropriate organism's VCMap for that chromosome, eg. clicking 
+    on Chr.06 above the Human chromosome 6 segment will bring up the VCMap for 
+    Human Chr 6 (Human will be the backbone organism, Rat and Mouse syntenic regions 
+    will then be shown for HSA6). Please note that you may have to search a little 
+    to find the corresponding region on the new map, in the example shown the 
+    corresponding segment of Rat Chr1 is right at the bottom of Human Chr 6. [ 
+    <a href="/tools/vcmap/vcmap.cgi?Ver=5.0_HS&Species=Human&Chr=06&MapName=maps" target="new">Open 
+    this VCMap</a> ] <br>
+  </p>
+</blockquote>
+<p><strong>What are the features of VCMap reports?</strong></p>
+<ul>
+  <li> 
+          <p><a name="Marker_Report"></a><strong>Individual Marker (Gene, UniGene, and 
+            EST) Report</strong></p>
+    <p>Example: Query Result for Rn.14443 [ <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=&RelPos2=&QMarker=Display+Marker+Report&Species=rat&Chr=01&FirstPos=&SecondPos=" target="new">View 
+      this VCMap Report</a> ]</p>
+    <p>This report displays the underlying VCMap build data for a particular marker 
+      including the ESTs and UniGenes that were involved in creating the relationship 
+      and the best blast result scores between sequences from the Backbone and 
+      Reference (non-backbone) UniGene clusters.</p>
+    <P><img src="images/6report.gif" width="565" height="493"></P>
+  </li>
+  <li> 
+    <p><a name="Chrom_Report"></a><strong>Chomosomal Region Report</strong></p>
+    <p>Example: Genes and UniGenes (markers) between 0.0 cR (Centi-Ray) and 51.4 
+      cR in Rat Chr.01. [ <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=0&SecondPos=54&QRegion=Display+Bin+Report" target="new">View 
+      this VCMap Report</a> ]</p>
+    <p>The chromosomal region report is a combination of UniGene data and RH map. 
+      Results from RH map carry the placement lod score (eg. P&gt;3.0 indicates 
+      a placement at greater than LOD 3.0). Framework markers are denoted as letter 
+      &#8216;F&#8217;s. Whenever available, the UniGenes will also follow by gene 
+      symbols. Clicking on any of the UniGene IDs will take you to the individual 
+      marker's report.</p>
+  </li>
+  <li> 
+    <p><a name="Map_Report"></a><strong>Map Data Report</strong></p>
+    <p>Clicking on any of the SSLP markers from the VCMaps or on any of the reports 
+      will display a Map Data report such as this one shown for D10Got105 listing 
+      the locus name, position in centirays, LOD score of placement (or F for 
+      framework marker) and a list of aliases - alternative names for this marker 
+      in RGD and other databases. Genetic map data is also shown for Human markers.</p>
+    <p><img src="images/6rhmap.gif" width="535" height="77"></p>
+    <p>Map data for Rat, Mouse and Human was obtained from the following sources: 
+    <ul>
+      <li>Rat: Rat Genome Database, <a href="http://rgd.mcw.edu/">http://rgd.mcw.edu/</a> 
+      </li>
+      <li> Mouse: Whitehead Institute: <a href="http://www-genome.wi.mit.edu/mouse_rh/">http://www-genome.wi.mit.edu/mouse_rh/</a> 
+      </li>
+      <li>Human: GB4 RH maps (<a href="http://www.ncbi.nlm.nih.gov/genemap99/">NCBI 
+        GeneMap99</a>, raw data: EBI http://corba.ebi.ac.uk/RHdb/species/HUMAN/gm99.html)</li>
+    </ul>
+  </li>
+</ul>
+      	
+<p><br>
+<a name="Predictions"></a><strong>VCMap Predictions</strong></p>
+<blockquote> 
+  <p>When the gene or EST of interest is not mapped, a prediction can be made 
+    if the position of the homologous gene or EST in the reference (non-backbone) 
+    species is known. The gene (UniGene) prediction is based upon the BLAST result 
+    and the known syntenic region of chromosome between the different species. 
+    The borders of chromosomal conservation are also known as the chromosomal 
+    breakpoints. They are referred to as anchors in VC Map.
+	<p>Two kinds of predictions are available for VC Map, Bin and Stream predictions.</p>
+	
+  <ul>
+    <li>'Bin' - Prediction within two anchored markers. (defining the limits of 
+      the bin).</li>
+    <li>'Stream' - Prediction outside a bin, only one anchor. (prediction is up 
+      or down stream of the anchor).</li>
+  </ul>
+  </blockquote>
+  
+<p><strong>Bin Predictions</strong></p>
+<blockquote> 
+  <p>A 'bin' prediction is made by predicting the location of the homologous UniGenes 
+    of the backbone species, based upon the mapped borders (breakpoints) of the 
+    homologous region of the reference (non-backbone) species. The position of 
+    the predicted UniGene is defined by the first flanking UniGene anchor (Anchor1 
+    UniGene) and its position (Anchor1 Position), and the second flanking UniGene 
+    anchor (Anchor2 UniGene) and its position (Anchor2 Position). This is shown 
+    diagrammatically in the example below:</p>
+	
+  <p><img src="images/7-1.gif" border="1"></p>
+  <p>The top of a bin report for the Rat Chr01, 0-54cR region is shown below: 
+    [ <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=0&SecondPos=54&QRegion=Display+Bin+Report" target="new">View 
+    this VCMap Report</a> ]. An explanation of each column heading is provided 
+    in the table below.</p>
+	
+  <p><img src="images/7-2.gif"><br>
+    &nbsp; </p>
+</blockquote>
+<p><strong>Stream Predictions</strong></p>
+<blockquote> 
+  <p>A 'stream' prediction, either upstream or downstream of the gene, is based 
+    upon the position of the homologous UniGene in the reference (non-backbone) 
+    species. A diagram illustrating this is shown below. In this example the location 
+    of Rn.34 has been predicted to be between Rn.12 and Rn13 on Rat Chr 4 based 
+    on the sequence-based homology between Rn.34 and Hs.26. Rn.34 could lie anywhere 
+    between Rn.12 and Rn.13 as there are no other anchors between the two species 
+    to limit the syntenic region. This would be a downstream prediction as Hs.26 
+    lies downstream of the nearest syntenic anchor, Hs.25.
+  </p>
+  <p> <img src="images/7-3.gif" border="1"></p>
+  <p>Below is shown the Stream predictions for Rat Chr01, 0-54cR region [ <a href="/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=0&SecondPos=54&QRegion=Display+Bin+Report" target="new">View 
+    this VCMap Report</a> ]. An explanation of each column heading is provided 
+    in the table below.</p>
+  <p><img src="images/7-4.gif"></p>
+</blockquote>
+
+      <p>&nbsp;</p>
+	  
+      </td>
+  </tr>
+
+  <tr valign="top" bgcolor="#EEFFEE"> 
+    <td> 
+      <p>You are visiting: <a href="dthelp5.shtml">VCMap Reports</a> << <strong>Additional 
+        Details</strong> >> <a href="/tu/glossary.shtml">Glossary</a></p>
+	</td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td>
+	 <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

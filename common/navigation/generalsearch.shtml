@@ -1,0 +1,4 @@
+<form method=post action="/query/query.cgi">
+<p><b>Search RGD:</b>
+<br><input type=text name=kw size=10>
+</form>

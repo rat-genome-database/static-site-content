@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Strain Registration Form </TITLE>
+<META NAME="Author" CONTENT="Henry Fan">
+<META NAME="Date" CONTENT="03/26/03">
+<META NAME="Description" CONTENT="this page will display some form fields for user input and then submit the form">
+</HEAD>
+<BODY>
+<table border='0'width='80%' align="center"><tr><td>
+
+<table border='0'width='100%' align="center">
+<tr><td width=15%></td><td><b><font size="6" color='black'>Strain Registration Form</font></b></td></tr>
+<tr><td colspan=2><b><font size='4' color='bule'>&nbsp;</font></b></td></tr>
+<tr><td width=15%></td><td><font size=2>If the corresponding author's contact details are already in RGD, you only need to enter the name and e-mail address.</font></td></tr>
+</table>
+    
+<FORM method="post" action="strainRegistrationConfirmation.cgi" name="" onSubmit="return verify(this)">
+<table border='0' width='100%' align="center">
+<tr><td colspan=2><font color='black' size=3>Contact Information</font><font size=2>&nbsp;&nbsp;(The fields with <font color=red>*</font> cannot be empty)</font></td></tr>
+<tr><td colspan=2><b><font color='red'><hr width="100%" align="left"></font></b></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorLName')">Last name of the PI</a><font color=red>*</font></td><td><INPUT type="text" name="authorLName" size=30, maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorFName')">First name of the PI</a><font color=red>*</font></td><td><INPUT type="text" name="authorFName" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorMName')">Middle Initial of the PI</a></td><td><INPUT type="text" name="authorMName" size=3 maxlength=3></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorMail')">E-mail address of the PI</a><font color=red>*</font></td><td><INPUT type="text" name="authorEmail" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorOrg')">Institute/Organization </a></td><td><INPUT type="text" name="authorOrganization" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorAddress')">Address</a></td><td><INPUT type="text" name="authorAddress" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorAddress')">City </a></td><td><INPUT type="text" name="authorCity" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorAddress')">State/Province </a></td><td><INPUT type="text" name="authorState" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorAddress')">Postal code or Zip code</a></td><td><INPUT type="text" name="authorPostalCode" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorAddress')">Country </a></td><td><INPUT type="text" name="authorCountry" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorPhone')">Telephone number </a></td><td><INPUT type="text" name="authorPhone" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('authorFax')">Fax number </a></td><td><INPUT type="text" name="authorFax" size=30 maxlength=200></td></tr>
+<tr><td colspan=2><b><font color='red'><hr width="100%" align="left"></font></b></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('userLName')">Last name of the submitter</a><font color=red>*</font></td><td><INPUT type="text" name="userLname" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('userFName')">First name of the submitter</a><font color=red>*</font></td><td><INPUT type="text" name="userFname" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('userMName')">Middle Initial of the submitter </a></td><td><INPUT type="text" name="userMname" size=3 maxlength=3></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('userMail')">E-mail address of the submitter</a><font color=red>*</font> </td><td><INPUT type="text" name="userEmail" size=30 maxlength=200></td></tr>
+<tr><td colspan=2>&nbsp </font></td></tr>
+</td><tr></table>
+<table border='0' width='100%' align="center">
+<tr><td colspan=2><font color='black' size=3>Strain Information</font><font size=2>&nbsp;&nbsp;(The fields with <font color=red>*</font> cannot be empty)</font></td></tr>
+<tr><td colspan=2><b><font color='red'><center><hr width="100%" align="left"></center></font></b></td></tr>
+<tr><td width=80% valign="top">  <a href="javascript:help('strain_code')">ILAR laboratory code</a>(desirable) </td><td><INPUT type="text" name="code" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top">  <a href="javascript:help('strain_symbol')">Strain Symbol </a><font color=red>*</font></td><td><INPUT type="text" name="strainSymbol" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top">  <a href="javascript:help('p_strain')">Parent Strain </a></td><td><INPUT type="text" name="parentStrain" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top">  <a href="javascript:help('strain_type')">Strain type</a></td><td>
+<SELECT NAME="strainType" SIZE="1" size=30>
+	<OPTION SELECTED>inbred
+	<OPTION>related inbred 
+	<OPTION>recombinant inbred 
+	<OPTION>coisogenic 
+	<OPTION>congenic 
+	<OPTION>consomic  
+	<OPTION>segregating inbred
+	<OPTION>conplastic  
+	<OPTION>outbred  
+	<OPTION>mutant
+	<OPTION>transgenic  
+</SELECT>
+</td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('strain_origin')">Origin </a></td><td><TEXTAREA NAME="origin" ROWS=4 COLS=20></TEXTAREA><td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('source')">Source </a><font color=red>*</font></td><td><INPUT type="text" name="strainSource" size=30 maxlength=200></td></tr>
+<tr><td width=80% valign="top"> <a href="javascript:help('reference')">Reference (if published) </a></td><td><INPUT type="text" name="reference" size=30 maxlength=200></td></tr>
+<tr><td colspan=2><b><font color='red'><hr width="100%" align="left"></font></b></td></tr>
+<tr><td colspan=2><font color='black' size=3>Please let us know if you want this strain to be displayed on the RGD website. If not, check Non Public (we can hold a strain until instructed by you to release it).</font></td></tr>
+<tr><td colspan=2>
+<p>
+Public&nbsp<input type=radio name=public value="Public" checked>
+Non Public&nbsp<input type=radio name=public value="nonPublic">
+</p>
+</tr></td>
+<tr><td colspan=2><b><font color='red'><hr width="100%" align="left"></font></b></td></tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr><td colspan=2><INPUT type="submit" value="Send" >&nbsp;<INPUT type="reset"></td><td></td></tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+
+</table>
+</FORM>
+</td></tr></table>       
+</body>
+
+<script language="javascript">
+	function verify(field){
+		var message;
+		var msg1;
+		var msg2;
+		var need_field="";
+		var error_field1="";
+		var error_field2="";
+		var display_name;
+
+		for(var i=0; i<field.length; i++){
+		
+			var e=field.elements[i];
+			if(e.name=="authorLName"){
+				display_name="Last name of the author";
+			}
+			if(e.name=="authorFname"){
+				display_name="First name of the author";
+			}
+			if(e.name=="authorEmail"){
+				display_name="E-mail address of the author";
+			}
+			if(e.name=="userLname"){
+				display_name="Last name of the submitter";
+			}
+			if(e.name=="userFname"){
+				display_name="First name of the submitter";
+			}
+			if(e.name=="userEmail"){
+				display_name="E-mail address of the submitter";
+			}
+			if(e.name=="strainSymbol"){
+				display_name="Strain Symbol";
+			}
+			if(e.name=="strainSource"){
+				display_name="Source/group where available";
+			}
+
+			if((e.name=="authorLName")||(e.name=="authorFName")||(e.name=="authorEmail")||(e.name=="userLname")||(e.name=="userFname")||(e.name=="userEmail")||(e.name=="strainSymbol")||(e.name=="strainSource")){
+				if((e.value==null)||(e.value=="")||isblank(e.value)){
+					need_field += "\n          " + display_name;
+				}
+			} 
+
+			if(e.name=="userEmail"){
+				error_field1=checkFormat1(e.value);
+			}
+
+			if(e.name=="authorEmail"){
+				error_field2=checkFormat2(e.value);	
+			}
+		}
+	  
+		if(need_field){
+			message="The form can not be submitted because the following fields must be filled in:\n\n"	+ need_field+"\n";
+			alert(message);
+			return false;
+		}
+		if(error_field1){
+			msg1="-" + error_field1;
+			alert(msg1);
+			return false;
+		}
+		if(error_field2){
+			msg2="-" + error_field2;
+			alert(msg2);
+			return false;
+		}	
+	}
+
+	function isblank(s){
+		for(var i=0; i<s.length; i++){
+			var c=s.charAt(i);
+			if((c !=' ')&&(c !='\n')&&(c !='\t')) return false;
+		}
+		
+		return true;	
+	}
+
+	function checkFormat1(value){
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(miss @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function checkFormat2(value){
+		//alert("value="+value);
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(miss @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function help(anchor) {
+
+		top.strainhelp=open("/strains/strainRegistrationHelp.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400, height=200");
+   
+		top.strainhelp.focus();
+	}
+</script>

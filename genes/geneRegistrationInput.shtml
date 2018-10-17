@@ -1,0 +1,351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http:starr.brc.mcw.edu:8083/www/genes/geneRegistrationInput.html -->
+<HTML><HEAD><TITLE>Gene Registration Form</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Henry Fan, Pete Bazeley" name=Author>
+<META content=11/12/03 name=Date>
+<META 
+content="this page will display some form fields for user input and then submit the form" 
+name=Description>
+<META content="MSHTML 6.00.2800.1276" name=GENERATOR></HEAD>
+<BODY>
+<TABLE width="80%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD width="15%"></TD>
+          <TD><B><FONT color=black size=6>Gene Registration 
+        Form</FONT></B></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=#b00e size=4>&nbsp;</FONT></B></TD></TR>
+        <TR>
+          <TD width="15%"></TD>
+          <TD><FONT size=2>If the corresponding author's contact details are 
+            already in RGD, you only need to enter the name and e-mail 
+            address.</FONT></TD></TR></TBODY></TABLE>
+      <FORM name="" onsubmit="return verify(this)" 
+      action=geneRegistrationConfirmation.cgi method=post>
+      <TABLE width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD colSpan=2><FONT color=black size=3>Contact 
+            Information</FONT><FONT size=2>&nbsp;&nbsp;(The fields with <FONT 
+            color=red>*</FONT> cannot be empty)</FONT></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=red>
+            <HR align=left width="100%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorLName')">Last name of the PI</A><FONT 
+            color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorLName></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorFName')">First name of the PI</A><FONT 
+            color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorFName></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorMName')">Middle Initial of the 
+PI</A></TD>
+          <TD><INPUT maxLength=3 size=3 name=authorMName></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorMail')">E-mail address of the 
+            PI</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorEmail></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorOrg')">Institute/Organization </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorOrganization></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=red>
+            <HR align=left width="50%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorAddress')">Address</A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorAddress></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorAddress')">City </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorCity></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorAddress')">State/Province </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorState></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorAddress')">Postal code or Zip 
+          code</A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorPostalCode></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorAddress')">Country </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorCountry></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorPhone')">Telephone number </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorPhone></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('authorFax')">Fax number </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=authorFax></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=red>
+            <HR align=left width="50%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('userLName')">Last name of the 
+            submitter</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=userLname></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('userFName')">First name of the 
+            submitter</A><FONT color=red>*</FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=userFname></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('userMName')">Middle Initial of the submitter 
+            </A></TD>
+          <TD><INPUT maxLength=3 size=3 name=userMname></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('userMail')">E-mail address of the 
+            submitter</A><FONT color=red>*</FONT> </TD>
+          <TD><INPUT maxLength=200 size=30 name=userEmail></TD></TR>
+        <TR>
+          <TD colSpan=2>&nbsp; </FONT></TD></TR></TD>
+        <TR></TR></TBODY></TABLE>
+      <TABLE width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD colSpan=2><FONT color=black size=3>Gene Information</FONT><FONT 
+            size=2>&nbsp;&nbsp;(The fields with <FONT color=red>*</FONT> cannot 
+            be empty)</FONT></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=red>
+            <CENTER>
+            <HR align=left width="100%">
+            </CENTER></FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('gene_symbol')">Gene Symbol</A><FONT 
+            color=red>*</FONT> (<A 
+            href="/genes/QuickSymbolNomenclatureGuidelines.htm" 
+            target=_blank>Quick Symbol Nomenclature Guidelines</A>)</TD>
+          <TD><INPUT maxLength=200 size=30 name=gene_symbol></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('gene_name')">Gene Name</A> (<A 
+            href="/genes/QuickSymbolNomenclatureGuidelines.htm" 
+            target=_blank>Quick Symbol Nomenclature Guidelines</A>)<FONT 
+            color=red></FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=gene_name></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('acc_number')">GenBank Accession ID</A><FONT 
+            color=red>*</FONT> (If no GenBank ID is available, enter "none")</TD>
+          <TD><INPUT maxLength=200 size=30 name=acc_number></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('gene_type')">Gene Type</A></TD>
+          <TD><SELECT size=1 name=gene_type> <OPTION 
+              selected>gene<OPTION>spliced<OPTION>predicted<OPTION>pseudogene<OPTION>allele</OPTION></SELECT> 
+          </TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('gene_description')">Gene Description </A></TD>
+          <TD><TEXTAREA name=gene_description rows=4></TEXTAREA>
+          <TD></TD>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('map_position')">Map Position</A> (chromosome, 
+            position, map type)<FONT color=red></FONT></TD>
+          <TD><INPUT maxLength=200 size=30 name=map_position></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('ilar_code')">ILAR Code</A> (for alleles)</TD>
+          <TD><INPUT maxLength=200 size=30 name=ilar_code></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('related_types')">Related strains, QTLs, 
+            markers </A></TD>
+          <TD><INPUT maxLength=200 size=30 name=related_types></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('reference')">Reference PubMed ID</A><FONT 
+            color=red>*</FONT>  (if 
+            published) or title, authors if not published</TD>
+          <TD><INPUT maxLength=200 size=30 name=reference></TD></TR>
+        <TR>
+          <TD vAlign=top width="80%"><A 
+            href="javascript:help('comments')">Comments </A></TD>
+          <TD><TEXTAREA name=comments rows=4></TEXTAREA>
+          <TD></TD>
+        <TR>
+          <TD colSpan=2>&nbsp;</TD></TR>
+        <TR>
+          <TD colSpan=2><FONT color=black size=3>Please let us know if you 
+            want this gene to be displayed on the RGD website. If not, check Non 
+            Public (we can hold a gene until instructed by you to release 
+            it).</FONT></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=red>
+            <HR align=left width="100%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD colSpan=2>
+            <P>Public&nbsp;<INPUT type=radio CHECKED value=Public name=public> 
+            Non Public&nbsp;<INPUT type=radio value=nonPublic name=public> 
+          </P></TD></TD>
+        <TR>
+          <TD colSpan=2>&nbsp;</TD></TR>
+        <TR>
+          <TD colSpan=2><INPUT type=submit value=Send>&nbsp;<INPUT type=reset value=Reset></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD colSpan=2>&nbsp;</TD></TR>
+        <TR>
+          <TD colSpan=2><FONT size=2>Once you submit this completed form, the 
+            RGD_ID <BR>for this gene will be e-mailed to you. Thank 
+          you!</FONT></TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>
+	function verify(field){
+		var message;
+		var msg1;
+		var msg2;
+		var need_field="";
+		var error_field1="";
+		var error_field2="";
+		var display_name;
+
+		for(var i=0; i<field.length; i++){
+		
+			var e=field.elements[i];
+			if(e.name=="authorLName"){
+				display_name="Last name of the author";
+			}
+			if(e.name=="authorFname"){
+				display_name="First name of the author";
+			}
+			if(e.name=="authorEmail"){
+				display_name="E-mail address of the author";
+			}
+			if(e.name=="userLname"){
+				display_name="Last name of the submitter";
+			}
+			if(e.name=="userFname"){
+				display_name="First name of the submitter";
+			}
+			if(e.name=="userEmail"){
+				display_name="E-mail address of the submitter";
+			}
+			if(e.name=="gene_symbol"){
+				display_name="Gene Symbol";
+			}
+			if(e.name=="acc_number"){
+				display_name="GenBank Accession ID";
+			}
+
+			if((e.name=="authorLName")||(e.name=="authorFName")||(e.name=="authorEmail")||(e.name=="userLname")||(e.name=="userFname")||(e.name=="userEmail")||(e.name=="gene_symbol")||(e.name=="acc_number")){
+				if((e.value==null)||(e.value=="")||isblank(e.value)){
+					need_field += "\n          " + display_name;
+				}
+			} 
+
+			if(e.name=="userEmail"){
+				error_field1=checkFormat1(e.value);
+			}
+
+			if(e.name=="authorEmail"){
+				error_field2=checkFormat2(e.value);	
+			}
+		}
+	  
+		if(need_field){
+			message="The form can not be submitted because the following fields must be filled in:\n\n"	+ need_field+"\n";
+			alert(message);
+			return false;
+		}
+		if(error_field1){
+			msg1="-" + error_field1;
+			alert(msg1);
+			return false;
+		}
+		if(error_field2){
+			msg2="-" + error_field2;
+			alert(msg2);
+			return false;
+		}	
+	}
+
+	function isblank(s){
+		for(var i=0; i<s.length; i++){
+			var c=s.charAt(i);
+			if((c !=' ')&&(c !='\n')&&(c !='\t')) return false;
+		}
+		
+		return false;	
+	}
+
+	function checkFormat1(value){
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(miss @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function checkFormat2(value){
+		//alert("value="+value);
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(missing @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function help(anchor) {
+
+		top.genehelp=open("/genes/geneRegistrationHelp.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400, height=200");
+   
+		top.genehelp.focus();
+	}
+</SCRIPT>
+</BODY></HTML>

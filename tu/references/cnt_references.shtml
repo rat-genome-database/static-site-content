@@ -1,0 +1,190 @@
+ 
+
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> &gt; 
+
+  <b>References</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#99CCFF">
+
+      <div align="left"><strong><font size="+1">References Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td width="76%">
+
+      <ul>
+
+        <li><a href="#definition">What is a Reference</a>?</li>
+
+        <li><a href="#finding">How do I find information about a Reference?</a></li>
+
+        <li><a href="#report">What information do you have on each Reference?</a></li>
+
+        <li><a href="#related">What other information can I get to via a Reference?</a></li>
+
+        <li><a href="/references/">Let me start searching...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>&quot;<em>Much of the data that appears on the website comes from the 
+        scientific literature. The articles curated for information can be retrieved 
+        from the database using the reference query page or links on the object 
+        page. For each reference, information includes the title, abstract, and 
+        citation. References describing data obtained in bulk from various researchers 
+        and other sources are also included.</em>&quot;</p>
+      <p>RGD has two types of references - Curated and Uncurated. The curation staff has 
+	    manually reviewed curated references  
+        and information relevant to the database has been extracted into the database. 
+        <strong>Uncurated references are known to contain relevant data but have 
+        not yet been manually reviewed</strong>. These often take the form of 
+        PubMed links listed in the external database links section of a data report 
+        (e.g. a gene report).</p>
+
+		
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>Finding Reference 
+      information</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p><strong> Using the Reference Search Form</strong></p>
+
+      <p><em><strong><font color="#CC0000">Quick Guide</font></strong></em></p>
+
+      <ol>
+
+        <li>References can be searched by any word or word fragment in the title 
+
+          or abstract, by the author's last name, and/or by year of publication</li>
+
+        <li>Multiple words should be joined by 'AND'; otherwise they will be searched 
+
+          as a phrase. Searches are case insensitive</li>
+
+        <li>The reference report page contains the citation and abstract</li>
+
+      </ol>
+
+      <p><a href="/references/"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p>Below is a <strong>more detailed explanation</strong> of each element 
+
+        of the search form, which will allow you greater flexibility to refine 
+
+        your searches.</p>
+
+      <font size="-1">
+
+      <!--#include virtual="reference_form_help.html"-->
+
+      </font>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The reference report allows you to link out to curated references from 
+        <strong>any of the listed authors</strong> on a paper and to a <strong>list 
+        of the data objects</strong> that were curated from each paper (each hyperlinked 
+        to the appropriate report). Links are provided to <strong>PubMed and Medline</strong> 
+        and also to <strong>the full text article online</strong> where available 
+        (access to the full text is dependent on your personal or institutional 
+        subscription)</p>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p>
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a><b>The Reference Report</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> <p>The following fields are present on the Reference report:</p>
+
+      <p><font size="-1"> 
+
+        <!--#include virtual="reference_report_help.html"-->
+
+        </font></p>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+

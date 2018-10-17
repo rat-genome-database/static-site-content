@@ -1,0 +1,124 @@
+
+
+<p class="menu2">&nbsp;&nbsp;<a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; Help</p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td colspan="2"> <div align="left"> 
+        <h3>RGD Help Pages</h3>
+      </div></td>
+    <td>&nbsp;</td>
+    <td rowspan="3"><div align="center"> 
+        <p><strong>Click on a help topic</strong><br>
+          <img src="images/RGD_Help_overview.gif" alt="Help Topics" border="0" usemap="#Maphelp"></p>
+      </div></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <div align="left"> 
+        <p>The help pages are divided up as shown in the diagram opposite. The 
+          <strong>&quot;<a href='<!--#echo var="webroot"-->/tu/how_do_i/'>How Do I...?</a>&quot;</strong> 
+          section provides a <strong>guide to using the data and tools</strong> 
+          in RGD to perform common tasks. The <strong>Help Directory</strong> 
+          below lists more general help areas for the database contents, tools, 
+          and includes a <strong><a href='<!--#echo var="webroot"-->/tu/faq.shtml'>FAQ</a></strong> list and 
+          <strong><a href='<!--#echo var="webroot"-->/tu/glossary.shtml'>glossary</a></strong> of terms.</p>
+        <p>&nbsp;</p>
+      </div></td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"><p><strong>Can't find the help</strong> you need?</p>
+      <ul>
+        <li>Fill in the RGD <a href='<!--#echo var="webroot"-->/contact/'>User Request form</a> to get email 
+          help, or</li>
+        <li>Call us on 414-456-8871 (10-Noon, 2-4pm CST), ask for RGD User Support.</li>
+      </ul></td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="4" bgcolor="#CCCCCC"> <div align="center"><strong><font size="+1"><a name="help_directory"></a>Help 
+        Directory -</font></strong><font size="+1"> information organized by subject</font></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#FFFF99"> 
+      <div align="left"> 
+          <p>&nbsp;</p>
+      </div></td>
+    <td><strong><font size="+1"><a href='<!--#echo var="webroot"-->/tu/how_do_i/'>How Do I...?</a><br>
+      </font></strong>case studies using RGD</td>
+    <td width="3%" bgcolor="#9999FF">&nbsp;</td>
+    <td width="44%"><a href='<!--#echo var="webroot"-->/tu/objects/index.shtml'><strong><font size="+1">What's 
+      in RGD</font></strong></a><br> <a href='<!--#echo var="webroot"-->/tu/genes/'>Genes</a>, <a href='<!--#echo var="webroot"-->/tu/strains/'>Strains</a>, 
+      <a href='<!--#echo var="webroot"-->/tu/ests/'>ESTs</a>, <a href='<!--#echo var="webroot"-->/tu/qtls/'>QTLs</a>, <a href='<!--#echo var="webroot"-->/tu/maps/'>Maps</a>...</td>
+  </tr>
+
+  <tr valign="top"> 
+    <td width="4%" bgcolor="#99CC99"> 
+      <p>&nbsp;</p></td>
+    <td width="49%"><strong><font size="+1"><a href='<!--#echo var="webroot"-->/tu/searchtools/'>Searching 
+      RGD</a></font></strong><br>
+      <a href='<!--#echo var="webroot"-->/tu/searchtools/'>Quick searches</a>, <a href='<!--#echo var="webroot"-->/tu/searchtools/advancedsearch.shtml'>Advanced Search</a>, targeted searches...</td>
+    <td width="3%" bgcolor="#99CC99">&nbsp;</td>
+    <td width="44%"> <p><strong><font size="+1"><a href='<!--#echo var="webroot"-->/tu/tools/'>Bioinformatic 
+        Tools</a></font></strong><br>
+        <font color="#666666"><a href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMap</a>, <a href='<!--#echo var="webroot"-->/tu/genomescanner/'>Genome 
+        Scanner</a>, <a href='<!--#echo var="webroot"-->/tu/rhmapserver/'>RH Mapserver</a>...</font> </p>
+    </td>
+  </tr>
+
+  <tr valign="top"> 
+    <td width="4%" bgcolor="#FF99FF"> 
+      <p><BR>
+      </p></td>
+    <td width="49%"><strong><font size="+1"><a href='<!--#echo var="webroot"-->/tu/glossary.shtml'>Glossary of Terms</a></font></strong></td>
+    <td width="3%" bgcolor="#FF99FF">&nbsp;</td>
+    <td width="44%"> <p><strong><font size="+1"><a href='<!--#echo var="webroot"-->/tu/faq.shtml'>Frequently 
+        Asked Questions</a></font></strong><br>
+        <font color="#666666">Scientific, Database, Nomenclature...</font></p></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>&nbsp;</p></td>
+    <td width="3%">&nbsp;</td>
+    <td width="44%"><font size="-1">&nbsp;</font></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+<map name="Maphelp">
+  <area shape="rect" coords="209,171,266,190" href='<!--#echo var="webroot"-->/tu/ontology/'>
+  <area shape="rect" coords="6,5,266,44" href='<!--#echo var="webroot"-->/tu/how_do_i/'>
+  <area shape="rect" coords="7,51,129,78" href='<!--#echo var="webroot"-->/tu/objects/'>
+  <area shape="rect" coords="145,49,264,79" href='<!--#echo var="webroot"-->/tu/tools/'>
+  <area shape="rect" coords="7,88,63,108" href='<!--#echo var="webroot"-->/tu/genes/'>
+  <area shape="rect" coords="144,116,201,135" href='<!--#echo var="webroot"-->/tu/genomescanner/'>
+  <area shape="rect" coords="145,224,264,243" href='<!--#echo var="webroot"-->/tu/glossary.shtml'>
+  <area shape="rect" coords="145,199,201,213" href='<!--#echo var="webroot"-->/tu/acphaplotyper/'>
+  <area shape="rect" coords="209,199,265,213" href='<!--#echo var="webroot"-->/tu/gviewer/'>
+  <area shape="rect" coords="69,88,128,107" href='<!--#echo var="webroot"-->/tu/strains/'>
+  <area shape="rect" coords="8,115,62,134" href='<!--#echo var="webroot"-->/tu/qtls/'>
+  <area shape="rect" coords="69,116,127,135" href='<!--#echo var="webroot"-->/tu/ests/'>
+  <area shape="rect" coords="7,143,64,163" href='<!--#echo var="webroot"-->/tu/sslps/'>
+  <area shape="rect" coords="69,143,128,162" href='<!--#echo var="webroot"-->/tu/maps/'>
+  <area shape="rect" coords="7,171,63,190" href='<!--#echo var="webroot"-->/tu/references/'>
+  <area shape="rect" coords="8,224,126,243" href='<!--#echo var="webroot"-->/tu/faq.shtml'>
+  <area shape="rect" coords="69,172,128,189" href='<!--#echo var="webroot"-->/tu/sequence/'>
+  <area shape="rect" coords="144,88,201,107" href='<!--#echo var="webroot"-->/tu/vcmap/'>
+  <area shape="rect" coords="209,88,264,107" href='<!--#echo var="webroot"-->/tu/rhmapserver/'>
+  <area shape="rect" coords="144,142,201,161" href='<!--#echo var="webroot"-->/tu/metagene/'>
+  <area shape="rect" coords="209,142,264,161">
+  <area shape="rect" coords="144,171,200,191" href='<!--#echo var="webroot"-->/tu/searchtools/'>
+  <area shape="rect" coords="209,116,264,135">
+</map>

@@ -1,0 +1,184 @@
+ 
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> &gt; 
+
+  EbEST</p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">EbEST Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> 
+
+      <ul>
+
+        <li><a href="#definition">What is EbEST</a>?</li>
+
+        <li><a href="#report">What information do you have on EbEST?</a></li>
+
+        <li><a href="#related">What other information can I get to via EbEST</a> 
+
+        </li>
+
+        <li><a href="/EBEST/help.shtml">Detailed EbEST help documents</a></li>
+
+        <li><a href="/EBEST/">Let me use EbEST...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p><i>&quot;the DNA sequence necessary and sufficient to express the complete 
+
+        complement of functional products derived from a unit of transcription.&quot;</i></p>
+
+      <p><b>Does not include</b>: variations such as mutations, pseudogenes.</p>
+
+      <p>However, splice variants for each gene are listed in the gene report and specific 
+
+        information about these can be found in the associated splice variant report.</p>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Finding Gene and Marker information 
+
+      using EbEST</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p><strong>1. Using the General Search</strong></p>
+
+      <p>The general RGD search available at the top of each page is a<strong> 
+
+        quick route to finding genes</strong>. This will search gene symbols, 
+
+        names and aliases only. (See General RGD Search help for more information). 
+
+        <p><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><strong>2. Using the EbEST Search Form</strong></p>
+
+      <p><em><strong><font color="#CC0000">Quick Guide</font></strong></em></p>
+
+      <ol>
+
+        <li>Provides more customizable options, searches blahblah fields</li>
+
+      </ol>
+
+      <p><a href="/EBEST/"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p>Below is a <strong>more detailed explanation</strong> of each element 
+
+        of the search form which will allow you greater flexibility to refine 
+
+        your searches.</p>
+
+      <font size="-1">
+
+      <!--#include virtual="ebest_form_help.html"-->
+
+      </font>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The report also contains information on objects related to this gene, 
+
+        including QTLs, SSLPs, homologs, mapping, GO annotation, and external 
+
+        database IDs. Links to these objects will provide additional information.</p>
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b>The EbEST Reports</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>Symbol - The short text identifier currently in use for this gene.<br>
+
+        Full Name - descriptive name for this gene.</p>
+
+
+
+	    <p><font size="-1"> 
+
+        <!--#include virtual="ebest_report_help.html"-->
+
+        </font></p>
+
+
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

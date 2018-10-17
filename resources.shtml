@@ -1,0 +1,10 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Resource Links - Rat Genome Database"-->
+<!--#set var="desc" value="This page is a listing of genomic and bioinformatics resources that we are aware of that may be of interest to the users of RGD."-->
+<!--#set var="category" value="forum"-->
+<!--#set var="links" value="${webroot}/common/navigation/sidebar2.shtml"-->
+<!--#set var="main"  value="${webroot}/cnt_resources.shtml"-->
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->

@@ -1,0 +1,36 @@
+
+
+<table width="115" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="24"></td>
+  </tr>
+
+  <tr align="left" valign="top"> 
+    <td width="115">
+
+	  <TABLE border="0" cellpadding="0" cellspacing="0" width="115">
+        
+        <TR valign="top" align="left" bgcolor="#CCCCCC"> 
+          <TD><p>&nbsp;</p></TD>
+          <TD><p class="atitle">&nbsp;<b>About RGD</b></p></TD>
+        </TR>
+        <TR valign="top" align="left"> 
+          <TD><p>&nbsp;</p></TD>
+          <TD> <div class="links"> 
+              <p><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+                &#8226; <a href='<!--#echo var="webroot"-->/whatsnew.shtml'>RGD News</a><br>
+                &#8226; <a href='<!--#echo var="webroot"-->/nomen/nomen.shtml'>Nomenclature</a><br>
+                &#8226; <a href='<!--#echo var="webroot"-->/wg/citing-rgd'>Citing RGD</a><br>
+				&#8226; <a href='<!--#echo var="webroot"-->/linking.shtml'>Linking RGD</a><br>                
+				&#8226; <a href='<!--#echo var="webroot"-->/resources.shtml'>Resource Links</a><br>
+                &#8226; <a href='<!--#echo var="webroot"-->/disclaimer.shtml'>Disclaimer</a><br><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="9"><br>
+				&#8226; <a href='<!--#echo var="webroot"-->/rgd_staff.shtml'>RGD Staff</a><br>
+				&#8226; <a href='<!--#echo var="webroot"-->/news/jobs.shtml'>Job Openings</a><br>
+		</p>
+            </div></TD>
+        </TR>    
+
+      </TABLE>
+	</td>
+  </tr>
+</table>

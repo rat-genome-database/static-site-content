@@ -1,0 +1,11 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Rat Genome Sequencing - Rat Genome Database"-->
+<!--#set var="links" value="${webroot}/sequences/links.shtml"-->
+<!--#set var="main" value="${webroot}/sequences/cnt_rgp_info.shtml"-->
+<!--#set var="tools" value="${webroot}/sequences/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+

@@ -1,0 +1,115 @@
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> &gt; 
+  What's in RGD</p>
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#99CCFF"> <div align="left"><strong><font size="+1">What is in 
+        RGD? <br>
+        </font></strong></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td><p>RGD stores information about various biological <strong><a href="../glossary.shtml#object">objects</a>, 
+        </strong>which are shown below. RGD has other content such as <a href="../tools/">bioinformatic 
+        tools</a> which are described elsewhere</p>
+      <p>The data in RGD is stored in a <a href="../glossary.shtml#relational">relational 
+        database</a> which allows for data to be related or linked together forming 
+        connections between different sets of information, for example the map 
+        location of a gene is stored in a separate place in the database (known 
+        as a database <a href="../glossary.shtml#table">table</a>) than the gene 
+        information itself. This allows the user to reach all the associated data 
+        available for an object and also allows the database search tools to be 
+        more powerful by including this associated information in the database 
+        searches (e.g. &quot;Find all genes mapped on chromosome 4&quot;). You 
+        can view the <a href="/schema/">RGD database schema</a> which shows all 
+        the information that is stored in the database and the links between the 
+        various objects. </p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#E1E8FF"><a name="finding"></a><b>RGD Objects</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td><p>&nbsp;</p> <table width="95%" border="0" align="center" cellpadding="2">
+        <tr valign="top"> 
+          <td bgcolor="#CCCCFF"><strong>Object Name</strong></td>
+          <td width="59%" bgcolor="#CCCCFF"><strong> Available information includes...</strong></td>
+          <td width="18%" bgcolor="#CCCCFF"><strong>Also links to:</strong> </td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/genes/">Genes</a><br>
+            <font size="-2">[<a href="../glossary.shtml#gene">definition</a>]</font></strong></td>
+          <td>symbol, name, product, function, role, chromosome location, Gene 
+            Ontology annotations and disease associations</td>
+          <td>Maps, QTLs, SSLPs, Sequences</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/strains/">Strains</a><br>
+            <font size="-2">[<a href="../glossary.shtml#inbred_strain">definition</a>]</font> 
+            </strong></td>
+          <td>name, origin, genetic markers, and detailed information including 
+            coat color, drug and chemicals and physiology.</td>
+          <td>QTLs, SSLPs, Maps</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/qtls/">QTL</a><br>
+            <font size="-2">[<a href="../glossary.shtml#qtl">definition</a>]</font> 
+            </strong></td>
+          <td><strong>Q</strong>uantitative <strong>T</strong>rait <strong>L</strong>oci- 
+            symbols, names and aliases mainly of diseases models including diabetes, 
+            arthritis, and blood pressure.</td>
+          <td>Genes, SSLPs, Maps, Strains, Traits</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/sslps/">SSLPs</a><br>
+            <font size="-2">[<a href="../glossary.shtml#sslp">definition</a>]</font> 
+            </strong></td>
+          <td><strong>S</strong>imple <strong>S</strong>equence <strong>L</strong>ength 
+            <strong>P</strong>olymorphism- name, expected size, primers sequences, 
+            cloned sequences.</td>
+          <td>Genes, QTLs, Strains, Sequences, Maps</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/ests/">ESTs</a><br>
+            <font size="-2">[<a href="../glossary.shtml#est">definition</a>]</font> 
+            </strong></td>
+          <td><strong>E</strong>xpressed <strong>S</strong>equence <strong>T</strong>ags- 
+            symbol, alias, associated genes, associated sequences and primer pairs</td>
+          <td>Sequences, Genes</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/maps/">Maps</a><br>
+            <font size="-2">[<a href="../glossary.shtml#map">definition</a>]</font> 
+            </strong></td>
+          <td>genetic and radiation hybrid maps- map length, number of framework 
+            and placement markers.</td>
+          <td>ESTs, Genes, SSLPs, Strains</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/sequence/">Sequences</a><br>
+            <font size="-2">[<a href="../glossary.shtml#sequence">definition</a>]</font> 
+            </strong></td>
+          <td>currently limited to SSLP cloned and primer sequences, EST clone 
+            and primer sequences. </td>
+          <td>ESTs, Genes, SSLPs</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="/tu/references/">References</a><br>
+            <font size="-2">[<a href="../glossary.shtml#reference">definition</a>]</font> 
+            </strong></td>
+          <td><p>literature for manually curated or bulk-exchanged RGD information.</p>
+            <p>&nbsp;</p></td>
+          <td>All objects</td>
+        </tr>
+      </table>
+      <p><font size="-1"> </font> </p>
+      <p>&nbsp;</p></td>
+  </tr>
+</table>
+<p class="menu2">&nbsp;</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+

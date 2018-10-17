@@ -1,0 +1,9 @@
+<div class=tools>
+<p><b>Related Tools</b><br>
+&nbsp;<a href='<!--#echo var="webroot"-->/gatool/'>Gene Annotation</a><br>
+&nbsp;<a href='<!--#echo var="toolroot"-->/ontology/ont_search.cgi'>Ontology Search</a><br>
+&nbsp;<a href='<!--#echo var="webroot"-->/VCMAP/'>VCMap</a><font color="#FF0000"><sup>New Version</sup></font><br>
+&nbsp;<a href='<!--#echo var="webroot"-->/METAGENE/'>MetaGene</a><br>
+&nbsp;<a href='<!--#echo var="webroot"-->/RHMAPSERVER/'>RH Map Server</a><br>
+&nbsp;<a href='<!--#echo var="webroot"-->/GENOMESCANNER/'>Genome Scanner</a>
+</div>

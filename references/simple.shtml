@@ -1,0 +1,87 @@
+
+
+<script language='JavaScript'>
+
+function start_help(anchor) {
+   top.rgdhelp=open("/tu/references/reference_form_help.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400,height=300");
+   top.rgdhelp.focus();
+}
+
+</script>
+
+
+
+
+
+<h2><a name="help"></a>Reference Query Form <!-- #BeginLibraryItem "/Library/Help Icon.lbi" -->
+
+<a href="#instructions"><img src='<!--#echo var="webroot"-->/common/images/help.gif' width="20" height="20" border="0" alt="Help"></a><!-- #EndLibraryItem --></h2>
+
+
+
+<p>Use the form below to search for a curated reference in the Rat Genome Database. 
+
+  This form allows you to search for keywords, authors or years, or a combination 
+
+  of all three. 
+
+<form name="refs_search" action='/rgdweb/search/search.html' method="post">
+  <input type="hidden" name="type" value="nav">
+  <table border="0" cellspacing="0" cellpadding="2" align="center" width="95%">
+
+    <tr bgcolor="#999999"> 
+
+      <td colspan="2"><b><font color="#FFFFFF">Search Parameters</font></b></td>
+
+    </tr>
+
+    <tr> 
+
+      <td class=links><a href="javascript:start_help('keywords')">Keywords in title or citation or abstract or author:</a></td>
+
+      <td> 
+
+        <input type="text" name="term" size="35">
+
+      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td>&nbsp;</td>
+
+      <td> 
+
+        <input type="submit" name="search" value="Find References">
+
+        &nbsp; 
+
+        <input type="reset" name="reset" value="Reset">
+
+      </td>
+
+    </tr>
+
+  </table>
+
+</form>
+
+<h3>&nbsp;</h3>
+
+<h3><a name="instructions"></a><!-- #BeginLibraryItem "/Library/Help Icon Grey.lbi" -->
+
+<a href="#help"><img src='<!--#echo var="webroot"-->/common/images/help_grey.gif' width="20" height="19" border="0" alt="Back"></a><!-- #EndLibraryItem --> 
+
+  Reference Query Form Instructions</h3>
+
+<p>   <h4>Keyword Query</h4>
+
+ 
+
+<p>Multiple words should be joined by 'AND' otherwise they will be considered 
+  a phrase and searched as a whole. Compare search results for 'linkage map' and 
+  'linkage AND map' for a demonstration. Please note that searches on reference 
+  titles, citations and authors are now<b> case-insensitive</b>. More <a href="/tu/references/">comprehensive 
+  information on References</a> and searching for references within RGD is available.
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a>

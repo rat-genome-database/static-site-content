@@ -1,0 +1,4 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#include virtual="${toolroot}/contact/contact.cgi"-->
+

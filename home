@@ -1,0 +1,1191 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>	
+  <meta name="keywords" content="rat genome database,rat genome,rgd">
+  <meta name="description" content="The Rat Genome Database contains rat genomic data including genes,sslps,ests,qtls,strains,rhmap,sequences and tools such as vcmap,genome scanner, rhmap server,metagene,and hosts rat comunity forum." />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta name="author" content="RGD">
+
+<meta name="generator" content="WebGUI 7.4.8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript">
+function getWebguiProperty (propName) {
+var props = new Array();
+props["extrasURL"] = "/extras/";
+props["pageURL"] = "/wg/home";
+return props[propName];
+}
+</script>
+
+<link href="/wg/conference-watch.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+<style type="text/css">
+.firstColumn {
+
+}
+.secondColumn {
+}
+</style>
+
+
+<meta http-equiv="Cache-Control" content="must-revalidate" />
+
+<title>RGD - Rat Genome Database</title>
+
+<link rel="SHORTCUT ICON" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/common/modalDialog/subModal.css" />
+<link rel="stylesheet" type="text/css" href="/common/modalDialog/style.css" />
+<link href="/common/style/rgd_styles-3.css" rel="stylesheet" type="text/css" />
+<!-- CSS for Tab Menu #4 -->
+<link rel="stylesheet" type="text/css" href="/common/style/ddcolortabs.css" />
+
+<script type="text/javascript" src="/common/modalDialog/common.js"></script>
+<script type="text/javascript" src="/common/modalDialog/subModal.js"></script>
+<script type="text/javascript" src="/common/js/poll.js"></script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2739107-2";
+urchinTracker();
+</script>
+
+<script>
+window.onload = initTrackLinks
+
+function initTrackLinks() {
+	var anchors=document.getElementsByTagName("a");
+	for (i=0;i<anchors.length;i++) {
+		if (anchors[i].href.indexOf("rgd.mcw.edu") == -1 && anchors[i].href.indexOf("rgdtest.mcw.edu") == -1 && anchors[i].href.indexOf("rgddev.mcw.edu") == -1 && anchors[i].href.indexOf("curation.hmgc.mcw.edu") == -1) {
+			anchors[i].onclick=trackOutBoundLinks;
+		}
+	}
+}
+
+function trackOutBoundLinks(){
+var thelink=this.href;
+//if (thelink.indexOf(location.hostname) ==-1 ){
+   //urchinTracker('outgoing:'+thelink+'');
+   logLink(thelink);
+   document.location.href=''+thelink+'';
+   return false;;
+//   }
+}
+
+function logLink( theLink) {
+
+ //alert("about to log link " + theLink); 
+ var xmlhttp=false;
+ try {
+  xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+ } catch (e) {
+  try {
+   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  } catch (E) {
+   xmlhttp = false;
+  }
+ }
+
+if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+	try {
+		xmlhttp = new XMLHttpRequest();
+	} catch (e) {
+		xmlhttp=false;
+	}
+}
+if (!xmlhttp && window.createRequest) {
+	try {
+		xmlhttp = window.createRequest();
+	} catch (e) {
+		xmlhttp=false;
+	}
+}
+
+ xmlhttp.open("GET", "/plf/plfRGD/?module=log&func=link&link=" + theLink,true);
+ xmlhttp.onreadystatechange=function() {
+  if (xmlhttp.readyState==4) {
+    //alert(xmlhttp.responseText)
+  }
+ }
+ 
+ xmlhttp.send(null)
+
+}
+</script>
+
+<script type="text/javascript" src="/common/js/ddtabmenu.js">
+
+/***********************************************
+* DD Tab Menu script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript" src="/common/js/rgdHomeFunctions-2.js">
+</script>
+	
+</head>
+
+<body>
+
+<table class="wrapperTable" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<div class="wrapper">
+
+<div id="main">
+
+<div id="headWrapper">
+	<div class="top-bar">
+<table width="100% border="1" class="headerTable"> <tr><td align="left" style="color:white;">&nbsp;&nbsp;&nbsp;
+</td><td align="right" style="color:white;"><a href="/tu">Help</a>&nbsp;|&nbsp;
+		<a href="ftp://ftp.rgd.mcw.edu/pub">FTP Download</a>&nbsp;|&nbsp;
+		<a href="/wg/citing-rgd">Citing RGD</a>&nbsp;|&nbsp;
+				<a href="/contact/index.shtml">Contact Us</a>&nbsp;&nbsp;&nbsp;
+</td></tr></table>
+	</div>
+
+<table width="100%" border=0>
+<tr>
+	<td>
+	<table><tr><td>
+       <a class="homeLink" href="/wg/home"><img border="0" src="/common/images/rgd_LOGO_blue_rgd.gif"></a>
+       </td>
+       </tr>
+       </table>
+
+</td>
+<td width=250 align="right"><a href="http://pga.mcw.edu"><img src="/common/images/physGen_logo.gif" border=0/></a></td>
+<td align="right">
+
+      <div class="searchBorder">
+      <table border=0 cellpadding=0 cellspacing=0 >
+        <form method="post" action='/rgdweb/search/search.html' onSubmit="return verify(this);">     
+          <input type="hidden" name="type" value="nav" />
+          <tr> 
+	    <td class="searchKeywordLabel">Keyword</td>
+            <td class="atitle" align="right">                <input type=text name=term size=12 value="" onFocus="JavaScript:document.forms[0].term.value=''" class="searchKeywordSmall">
+              </td>
+            <td>
+<input type="image" src="/common/images/searchGlass.gif" class="searchButtonSmall"/>
+</td>
+          </tr>
+        </form>
+      </table>
+      </div>
+</td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<div id="ddtabs4" class="ddcolortabs">
+<ul>
+<li class="current" style="margin-left: 1px"><a href="/"  rel="ct1"><span>Home</span></a></li>
+<li><a href="/wg/data-menu" rel="ct2"><span>Data</span></a></li>
+<li><a href="/wg/tool-menu" rel="ct3"><span>Genome Tools</span></a></li>
+<li><a href="/wg/portals/" rel="ct4"><span>Diseases</span></a></li>
+<li><a href="/wg/physiology" rel="ct5"><span>Phenotypes & Models</span></a></li>
+<li><a href="/wg/com-menu" rel="ct6"><span>Community</span></a></li>
+<li id="curation-top" style="visibility: hidden;"><a href="/curation" rel="ct6"><span>Curation Web</span></a></li>
+</ul>
+</div>
+<div class="ddcolortabsline"><img src="/common/images/squareBullet.gif" /></div>
+
+<!--<div style="width:100%; height:5px; font-size:1px; background-color: #2865a3">&nbsp;</div>-->
+
+<DIV class="tabcontainer">
+
+<div id="ct1" class="tabcontent">
+<div id="subnav">
+     <ul>
+<li class="first"><a href="/wg/general-search" rel="ct2"><span>Search RGD</span></a></li>
+<li><a href="/wg/grants" rel="ct2"><span>Grant Resources</span></a></li>
+<li><a href="/RGDUpdate.doc" rel="ct2"><span>RGD Update</span></a></li>
+<li><a href="/wg/citing-rgd" rel="ct2"><span>Citing RGD</span></a></li>
+<li ><a href="/wg/about-us"  rel="ct1"><span>About Us</span></a></li>
+<li><a href="/contact/index.shtml" rel="ct2"><span>Contact Us</span></a></li>
+     </ul>
+</div>
+</div>
+
+<div id="ct2" class="tabcontent">
+<div id="subnav">
+     <ul>
+     <li class=first><a href="/rgdweb/search/genes.html?100" rel="ct1"><span>Genes</span></a></li>
+     <li><a href="/rgdweb/search/qtls.html?100" rel="ct2"><span>QTLs</span></a></li>
+     <li><a href="/rgdweb/search/strains.html?100" rel="ct3"><span>Strains</span></a></li>
+     <li><a href="/rgdweb/search/markers.html?100" rel="ct4"><span>Markers</span></a></li>
+     <li><a href="/ests" rel="ct3"><span>ESTs</span></a></li>
+     <li><a href="/maps" rel="ct3"><span>Maps</span></a></li>
+     <li><a href="/tools/ontology/ont_search.cgi" rel="ct5"><span>Ontologies</span></a></li>
+     <li><a href="/sequences" rel="ct6"><span>Sequences</span></a></li>
+     <li><a href="/rgdweb/search/references.html?100" rel="ct7"><span>References</span></a></li>
+     <li><a href="ftp://ftp.rgd.mcw.edu/pub/" rel="ct7"><span>FTP Download</span></a></li>
+     <li><a href="/registration-entry.shtml" rel="ct7"><span>Submit Data</span></a></li>
+     </ul>
+</div>
+</div>
+
+<div id="ct3" class="tabcontent">
+<div id="subnav">
+     <ul>
+     <li class="first"><a href="/fgb2/gbrowse/rgd_904/" rel="ct4"><span>Rat GBrowse</span></a></li>
+     <li ><a href="http://bioneos.com/VCMap/" rel="ct1"><span>VCMap</span></a></li>
+     <li ><a href="http://snplotyper.mcw.edu" rel="ct1"><span>SNPlotyper</span></a></li>
+     <li><a href="http://biomart.mcw.edu/" rel="ct2"><span>BioMart</span></a></li>
+     <li><a href="/rgdweb/gTool/Gviewer.jsp" rel="ct3"><span>GViewer</span></a></li>
+     <li><a href="/ACPHAPLOTYPER" rel="ct7"><span>ACP Haplotyper</span></a></li>
+     <li><a href="/GENOMESCANNER" rel="ct7"><span>Genome Scanner</span></a></li>
+     <li ><a href="/gbreport/gbrowser_error_conflicts.shtml" rel="ct3"><span>Genome Conflicts</span></a></li>
+     <li><a href="/wg/tool-menu" rel="ct8"><span>More Tools...</span></a></li>
+</div>
+</div>
+
+<div id="ct4" class="tabcontent">
+<div id="subnav">
+     <ul>
+     <li class=first><a href="/rgdCuration/?module=portal&func=show&name=cardio" rel="ct1"><span>Cardiovascular Disease Portal</span></a></li>
+     <li><a href="/rgdCuration/?module=portal&func=show&name=nuro" rel="ct2"><span>Neurological Disease Portal</span></a></li>
+     <li><a href="/rgdCuration/?module=portal&func=show&name=obesity" rel="ct2"><span>Obesity/Metabolic Syndrome Portal</span></a></li>
+     <li><a href="/rgdCuration/?module=portal&func=show&name=cancer" rel="ct2"><span>Cancer Portal</span></a></li>
+     </ul>
+</div>
+</div>
+
+<div id="ct5" class="tabcontent">
+<div id="subnav">
+     <ul>
+     <li class=first><a href="/wg/phenotype-data13" rel="ct1"><span>Phenotypes</span></a></li>
+     <li ><a href="/wg/strains-and-models2" rel="ct3"><span>Strains & Models</span></a></li>
+     </ul>
+</div>
+</div>
+
+<div id="ct6" class="tabcontent">
+<div id="subnav">
+     <ul>
+     <li class=first><a href="/nomen/nomen.shtml" rel="ct1"><span>Nomenclature</span></a></li>
+     <li ><a href="http://gray.hmgc.mcw.edu/mailman/listinfo/rat-forum" rel="ct1"><span>Rat Community Forum (RCF)</span></a></li>
+     <li ><a href="/registration-entry.shtml" rel="ct2"><span>Submit Data</span></a></li>
+     </ul>
+</div>
+</div>
+
+<div id="ct7" class="tabcontent">
+<div id="subnav">
+     <ul>
+     <li class=first><a href="/nomen/nomen.shtml" rel="ct1"><span>Phenotypes</span></a></li>
+     <li ><a href="http://gray.hmgc.mcw.edu/mailman/listinfo/rat-forum" rel="ct1"><span>Models</span></a></li>
+     <li ><a href="Strain" rel="ct2"><span>Strain Search</span></a></li>
+     </ul>
+</div>
+</div>
+
+
+
+</DIV>
+<!--end headwrapper -->
+</div>
+
+<script> 
+if (location.href.indexOf("http://rgd.mcw.edu") != 0 &&
+    location.href.indexOf("http://www.rgd.mcw.edu") != 0 &&
+    location.href.indexOf("http://preview.rgd.mcw.edu") != 0 &&
+    location.href.indexOf("http://horan") != 0 &&
+    location.href.indexOf("http://osler") != 0) {
+
+	document.getElementById("curation-top").style.visibility='visible';
+}
+
+
+ddtabmenu.definemenu("ddtabs4", getTabIndex()) //initialize Tab Menu
+</script>
+
+<table width=98%><tr><td align="right">
+<div id="crumbTrail" style="margin-top: 10px;">
+						
+		
+		
+<span class="crumbTrail">
+
+<a class="crumbTrail" 
+    href="/wg/home">Home</a>
+   
+
+</span>			
+			</div>
+</td></tr></table>
+	<div id="mainBody">
+		<div id="contentArea" class="content-area">
+			<div><a name="id68sKwDgf9cGH58-NZcU4lg" id="id68sKwDgf9cGH58-NZcU4lg"></a></div>
+
+
+
+
+
+
+
+<table cellpadding="5" border=0 align="center">
+<tr>
+	<td colspan="3" align="left" valign="top">
+		<!-- begin position 1 -->
+		<div class="layoutColumnPadding">
+		
+
+		
+			
+
+			<div class="content"><script>
+function utmx_section(){}function utmx(){}
+(function(){var k='1110218286',d=document,l=d.location,c=d.cookie;function f(n){
+if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.indexOf(';',i);return c.substring(i+n.
+length+1,j<0?c.length:j)}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;
+d.write('<sc'+'ript src="'+
+'http'+(l.protocol=='https:'?'s://ssl':'://www')+'.google-analytics.com'
++'/siteopt.js?v=1&utmxkey='+k+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='
++new Date().valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"></sc'+'ript>')})();
+</script></div>
+
+			
+		
+			
+
+			<div class="content">
+<a name="idVogB1H5UIP08fi8j0peLmQ" id="idVogB1H5UIP08fi8j0peLmQ"></a>
+
+
+
+
+
+
+
+
+
+
+	<div style="color: #1f4e7c; font-weight: 700" align="center">
+<b>The VCMap tool is all new!</b></div><div style="color: #1f4e7c; font-weight: 700" align="center"><b>In addition to rat, mouse and human, several agricultural species have now been incorporated, including cow (Bos taurus), pig (Sus scrofa) and chicken (Gallus gallus).&nbsp; Click <a href="http://bioneos.com/VCMap/" title="Virtual Comparative Map (VCMap)">here</a> for more information and to try it out.</b></div>
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+</div>
+
+			
+		
+			
+
+			<div class="content">				<table align="center" ><tr><td>
+					<div style="float: left;">
+					<div class="image_item" id="genes">
+						<div class="icon"><a href="/rgdweb/search/genes.html?100" title="RGD"><img src="/common/images/gene_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/rgdweb/search/genes.html?100" title="RGD">Genes</a></div>
+						<div class="description">
+							Map positions, functions and more
+						</div>
+					</div>
+
+					<div class="image_item" id="ontologies">
+						<div class="icon"><a href="/tools/ontology/ont_search.cgi?100" title="Rat Genome Database - Ontology Annotations"><img src="/common/images/function_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/tools/ontology/ont_search.cgi?100" title="Rat Genome Database - Ontology Annotations">Function</a></div>
+						<div class="description">
+							Gene Ontology, Phenotype, Pathway info
+						</div>
+					</div>
+
+					<div class="image_item" id="genome">
+						<div class="icon"><a href="/fgb2/gbrowse/rgd_904/?100" title="Rat Genome V3.4 at RGD"><img src="/common/images/genome_image2.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/fgb2/gbrowse/rgd_904/?100" title="Rat Genome V3.4 at RGD">Rat Genome</a></div>
+						<div class="description">
+							Browse the Rat Genome
+						</div>
+					</div>
+
+				</div>
+				</td><td>
+					<div style="float: right;">
+					<div class="image_item" id="strains">
+						<div class="icon"><a href="/rgdweb/search/strains.html?100" title="RGD Strains"><img src="/common/images/strain_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/rgdweb/search/strains.html?100" title="RGD Strains">Strains</a></div>
+						<div class="description">
+							Search Strains
+						</div>
+					</div>
+
+					<div class="image_item" id="diseases">
+						<div class="icon"><a href="/wg/portals?100" title="Rat Genome Database - RGD Disease Portals"><img src="/common/images/disease_image2.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/wg/portals?100" title="Rat Genome Database - RGD Disease Portals">Diseases</a></div>
+						<div class="description">
+							Genes, QTL & Strains related to Disease
+						</div>
+					</div>
+
+					<div class="image_item" id="tools">
+						<div class="icon"><a href="/wg/tool-menu?100" title="RGD"><img src="/common/images/snplotyper_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="mid-title"><a href="/wg/tool-menu?100" title="RGD">Genome Tools</a></div>
+						<div class="description">
+						Data mining, analysis and visualization
+						</div>
+					</div>
+
+				</div>
+				</td>
+				<td valign="top">
+<div style="float: right;">
+					
+					<div class="image_item" id="qtl">
+						<div class="icon"><a href="/rgdweb/search/qtls.html?100" title="QTLs Query Form"><img src="/common/images/qtl_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/rgdweb/search/qtls.html?100" title="QTLs Query Form">QTL</a></div>
+						<div class="description">
+							Phenotypes & Traits linked to the genome
+						</div>
+					</div>
+
+					<div class="image_item" id="physiology">
+						<div class="icon"><a href="/wg/physiology?100"><img src="/common/images/physiology_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="small-title"><a href="/wg/physiology?100">Phenotypes & Models</a></div>
+						<div class="description">
+						Phenotype data, Assays, Husbandry and more
+						</div>
+					</div>
+					<div class="image_item" id="pathway">
+						<div class="icon"><a href="/wg/pathway?100"><img src="/common/images/pathway_image.jpg" height="50" width="100" border="0"/></a></div>
+						<div class="title"><a href="/wg/pathway?100">Pathways</a></div>
+						<div class="description">
+						Pathway reports and diagrams
+						</div>
+					</div>
+				</div> 
+
+
+				</td></tr>
+				</table>	
+</div>
+
+			
+		
+
+		
+		</div>
+		<!-- end position 1 -->	
+	</td>
+</tr>
+<tr>
+	<td class="firstColumn" valign="top"  align="center" width="60%">
+		<!-- begin position 2 -->
+		<div class="layoutColumnPadding">
+		
+
+		
+			
+
+			<div class="content"><div class="strain-article">
+<a name="idiktJiPQiLnH03nTgk29qTA" id="idiktJiPQiLnH03nTgk29qTA"></a>
+
+
+
+
+	<div class="strain-article-title">Featured RGD Video Tutorials</div>
+
+
+
+
+
+
+
+	<table border="0" cellpadding="10" cellspacing="0"><tbody><tr><td valign="top" align="center"><p><a href="/wg/home/rgd_rat_community_videos/what-is-an-ontology" title="Tutorial Video:  What is an Ontology?"><img src="/common/images/DAG_icon.png" alt="What is an Ontology" width="105" border="1" height="70" /></a></p></td><td><h4><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+      </style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--> What is an Ontology?</h4><p>&nbsp;Click this icon for a beginner&rsquo;s look at <b>what an ontology is</b> and why ontologies are an important tool in the scientist&rsquo;s toolbox.</p></td></tr></tbody></table><table border="0" cellpadding="10" cellspacing="0"><tbody><tr valign="middle"><td> <a href="/wg/home/rgd_rat_community_videos/getting-started-with-gbrowse" title="Tutorial Video:  Getting Started with GBrowse"><img src="/common/images/IntroToGB1_wArrow_105x53.PNG" alt="Getting Started with GBrowse" width="105" border="1" height="53" /></a></td><td><div align="justify"><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+      </style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+
+</div><h4 align="left">Getting Started with GBrowse</h4><p align="left">You keep hearing people talk about "Genome Browsers" but you've never used one and you're not quite sure where to start.&nbsp; Click this icon for a quick look at how to get started with GBrowse, RGD&rsquo;s <b>Rat Genome Browser</b>.</p>
+
+</td></tr><tr valign="middle"><td colspan="2">Click <a href="/wg/home/rgd_rat_community_videos/" title="RGD's Rat Community Videos page">here</a> to access RGD's <b>Rat Community Videos</b> page.&nbsp; This page includes all of the tutorial videos that RGD has produced, plus other videos of interest to rat researchers. </td></tr></tbody></table>
+
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><span style="font-size: 12pt; font-family: Arial"></span>
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+</div>
+</div>
+
+			
+		
+			
+
+			<div class="content"><a name="idW2ED6uBIwfFmp2XZkc2zFQ" id="idW2ED6uBIwfFmp2XZkc2zFQ"></a>
+
+
+<div class="bordered-article">
+<div style="text-align:left;">
+<a name="idoVx3I9wu8rslibAo3fFCLg" id="idoVx3I9wu8rslibAo3fFCLg"></a>
+
+
+
+
+	<div class="bordered-article-title">&nbsp;Conference Watch</div>
+
+
+
+
+	
+	
+	
+
+
+
+
+	
+	
+		
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td valign="top"><img src="/common/images/squareBullet.gif" class="bullet" /></td><td><a href="http://www.grc.org/programs.aspx?year=2009&program=mechcell" 
+>Gordon Research Conferences:  Mechanisms of Cell Signaling, Oxford, UK - August 23-28, 2009</a></td></tr></table>
+
+	
+	
+		
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td valign="top"><img src="/common/images/squareBullet.gif" class="bullet" /></td><td><a href="http://www.wabi09.org/" 
+>Workshop on Algorithms in Bioinformatics, Philadelphia, PA, USA - September 12-13, 2009</a></td></tr></table>
+
+	
+	
+		
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td valign="top"><img src="/common/images/squareBullet.gif" class="bullet" /></td><td><a href="http://meetings.cshl.edu/meetings/person09.shtml" 
+>Personal Genomes, Cold Spring Harbor, NY, USA - September 14-17, 2009</a></td></tr></table>
+
+	
+	
+		
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td valign="top"><img src="/common/images/squareBullet.gif" class="bullet" /></td><td><a href="http://meetings.cshl.edu/meetings/info09.shtml" 
+>Genome Informatics, Cold Spring Harbor, NY, USA - October 27-30, 2009</a></td></tr></table>
+
+	
+	
+		
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td valign="top"><img src="/common/images/squareBullet.gif" class="bullet" /></td><td><a href="http://meetings.cshl.edu/meetings/rodent09.shtml" 
+>Rat Genomics & Models, Cold Spring Harbor, NY, USA - December 2-5, 2009</a></td></tr></table>
+
+
+
+
+
+</div>
+</div>
+
+
+</div>
+
+			
+		
+
+		
+		</div>
+		<!-- end position 2 -->	
+	</td>
+	<td class="secondColumn"  valign="top" width="40%">
+		<!-- begin position 3 -->
+		<div class="layoutColumnPadding">
+		
+
+		
+			
+
+			<div class="content"><script type="text/javascript" src="/common/js/tabber.js"></script>
+	<script type="text/javascript" src="/common/js/slideshow.js"></script>
+
+
+<div id="slideshow">
+<div class="controls" align="right">
+<a id="previous" style="display:none;" href="javascript:previous()">&laquo; previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a id="start" style="display:none;" href="javascript:start()">slideshow</a><a id="stop" style="display:none;" href="javascript:stop()">stop</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a id="next" style="display:none;" href="javascript:next()">next &raquo;</a>
+</center>
+</div>			
+		       <table  height=175 border=0 cellpadding=0 cellspacing=0>
+<tr><td valign="top">
+
+			<div class="items">
+
+<!--____________________________________________________________________________________________-->
+
+				<div class="item" id="hexosamine">
+					<div class="ad-box-item2">
+					<table>					
+					<tr>
+						<td valign="top">
+							<table><tr><td class="title">Hexosamine Biosynthetic Pathway</td></tr></table>
+							<p>Perturbations of the hexosamine biosynthetic pathway have been found to be associated with insulin resistance, glucose toxicity and other complications of diabetes.  Click here to explore this important metabolic and signaling pathway.</p>
+						</td>
+						<td>
+							<img src="/common/images/HexosamineBiosyntheticPathway_125x150.png" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+
+
+<!--____________________________________________________________________________________________-->
+
+
+
+				<div class="item" id="phenodb">
+					<div class="ad-box-item2">
+					<table>
+					<tr>
+						<td valign="top">
+							<table>
+<tr><td class="title">New Phenotype Mining Tool</td></tr></table>
+							<p>A prototype of the data mining tool for RGD's new Rat Phenotype Database is now available on the RGD Labs site.  Click here to try it out.</p>
+						</td>
+						<td>
+
+							<img src="/common/images/PhenoDB2_165x130.PNG"/>
+
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+<!--____________________________________________________________________________________________-->
+
+				<div class="item" id="AMPKSigPath">
+					<div class="ad-box-item2">
+					<table>					
+					<tr>
+						<td valign="top">
+							<table><tr><td class="title">AMPK Signaling Pathway</td></tr></table>
+							<p>The AMPK signaling pathway is a fuel sensor which regulates ATP production in various tissues.  Click here to explore this important pathway regarded as a possible therapeutic target for type 2 diabetes, obesity and metabolic syndrome.</p>
+						</td>
+						<td>
+							<img src="/common/images/AMPKsignalingPathway_114x150.png" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+
+
+<!--____________________________________________________________________________________________-->
+
+
+
+
+				<div class="item" id="synteny">
+					<div class="ad-box-item2">
+					<table>
+					<tr>					
+						<td valign="top">
+							<table>
+<tr><td class="title">Mouse and Human Synteny Tracks on GBrowse</td></tr></table>
+							<p>RGD is pleased to announce the addition of rat-mouse and rat-human synteny tracks to the Genome Browser tool.  Click here to try it out.</p>
+						</td>
+						<td>
+							<img src="/common/images/GBrowse_synteny_160x99.JPG" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+
+
+<!--____________________________________________________________________________________________-->
+
+
+				<div class="item" id="phenotypes">
+					<div class="ad-box-item2">
+					<table>					
+					<tr>
+						<td valign="top">
+							<table><tr><td class="title">Phenotypes & Models</td></tr></table>
+							<p>The strain section of RGD's Phenotypes and Models portal includes information on disease models, strain availability and animal husbandry.  Click here to explore this valuable resource.</p>
+						</td>
+						<td>
+							<img src="/common/images/PurpleGloves_133x150_ack.png" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+
+<!--____________________________________________________________________________________________-->
+
+				<div class="item" id="gbrowse">
+					<div class="ad-box-item2">
+					<table>					
+					<tr>
+						<td valign="top">
+							<table><tr><td class="title">Rat Genome Browser</td></tr></table>
+							<p>RGD's updated release of GBrowse includes addition of new tracks such as SNPs and CNVs, updates of existing tracks, and substantially increased functionality.  Click here to try it out.</p>
+						</td>
+						<td>
+							<img src="/common/images/GBrowse_11_08.JPG" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+
+
+<!--____________________________________________________________________________________________-->
+
+				<div class="item" id="vcmap">
+					<div class="ad-box-item2">
+					<table>
+					<tr>
+						<td>
+						<table>
+							<tr>
+								<td class="title" colspan=2>
+									New Virtual
+								</td>
+							</tr>
+							<tr>
+								<td class="title" valign="top">
+									Comparative Map
+								</td>
+								<td>
+									<img src="/common/images/NEW_gif_rot_sm.gif" />
+								</td>
+							</tr>
+						</table>
+							The VCMap tool allows users to directly compare syntenic regions, including genes and QTLs, between multiple species using a variety of genomic, genetic and radiation hybrid maps.  Click here to try it out.
+							
+						</td>
+						<td>
+							<img src="/common/images/vcmap_125x150.png" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+<!--____________________________________________________________________________________________-->
+
+
+
+
+
+
+
+				<div class="item" id="cancer">
+					<div class="ad-box-item2">
+					<table>					
+					<tr>
+						<td valign="top">
+							<table><tr><td class="title">Cancer Portal</td></tr></table>
+							<p>RGD has released a Disease Portal focusing on Cancer, specifically Breast and Urogenital Cancers.  Click here to view information on genes, QTLs and strains associated with these important diseases.</p>
+						</td>
+						<td>
+							<img src="/common/images/Cancer_pic_RB1.jpg" />
+						</td>
+					</tr>
+					</table>
+					</div>
+				</div>
+
+	
+   	    </div>
+
+					</td></tr>
+
+
+					</table>
+	</div>
+
+<script>
+var myFunc = new Function("location.href='/wg/pathway/hexosamine_biosynthetic_pathway';");
+document.getElementById("hexosamine").onclick=myFunc 
+
+myFunc = new Function("location.href='http://bioneos.com/VCMap/';");
+document.getElementById("vcmap").onclick=myFunc 
+
+myFunc = new Function("location.href='/wg/pathway/adenosine_monophosphate-activated_protein_kinase_ampk_signaling_pathway';");
+document.getElementById("AMPKSigPath").onclick=myFunc
+
+myFunc = new Function("location.href='/wg/physiology';");
+document.getElementById("phenotypes").onclick=myFunc 
+
+myFunc = new Function("location.href='/fgb2/gbrowse/rgd_904/';");
+document.getElementById("gbrowse").onclick=myFunc 
+
+myFunc = new Function("location.href='/fgb2/gbrowse/rgd_904/';");
+document.getElementById("synteny").onclick=myFunc 
+
+myFunc = new Function("location.href='/rgdCuration/?module=portal&func=show&name=cancer';");
+document.getElementById("cancer").onclick=myFunc 
+
+</script>
+
+</div>
+
+			
+		
+			
+
+			<div class="content"><div class="bordered-article">
+
+	<div class="bordered-article-title">&nbsp;Latest News</div>
+
+
+
+<span class="verticalMenu">
+<table>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/08/25---new-version-of-vcmap-released--tool-now-includes-cow-pig-and-chicken-genomes">08/25 - New Version of VCMap Released--tool now includes cow, pig and chicken genomes</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/08/05---rgd-releases-three-new-interactive-pathway-diagrams">08/05 - RGD releases three new interactive pathway diagrams</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/07/15--series-of-tutorials-on-biomedical-ontologies-initiated-with-release-of-first-video">07/15 -Series of tutorials on Biomedical Ontologies initiated with release of first video</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/07/01---rgd-releases-its-newest-interactive-pathway-diagram--the-insulin-secretion-pathway">07/01 - RGD releases its newest interactive pathway diagram--The Insulin Secretion Pathway</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/06/10---basic-introductory-video-to-the-rat-genome-browser-released">06/10 - Basic introductory video to the Rat Genome Browser released</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/synteny-tracks-added-to-rat-genome-browser">03/04 - Synteny Tracks Added to Rat Genome Browser</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/new-genome-viewer-released">01/15 - New Genome Viewer Released</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/new-genome-browser">11/24 - New Rat Genome Browser Released</a>
+	</td></tr>
+
+	<tr><td>&nbsp;&nbsp;&nbsp;</td><td>
+	<a  href="/wg/news2/article-the-rat-genome-database-2009-variation-ontologies-and-pathways">11/10 - Nucleic Acids Research Database issue manuscript available here</a>
+	</td></tr>
+
+</table>
+</span>
+</div></div>
+
+			
+		
+			
+
+			<div class="content"><script>
+if(typeof(urchinTracker)!='function')document.write('<sc'+'ript src="'+
+'http'+(document.location.protocol=='https:'?'s://ssl':'://www')+
+'.google-analytics.com/urchin.js'+'"></sc'+'ript>')
+</script>
+<script>
+_uacct = 'UA-2739107-3';
+urchinTracker("/1110218286/test");
+</script>
+
+<script>
+document.forms[0].term.focus();    
+</script></div>
+
+			
+		
+
+		
+		</div>
+		<!-- end position 3 -->	
+        &nbsp;
+	</td>	
+</tr>
+</table>
+
+
+
+
+		</div>
+		<br>
+ 		<div class="bottom-bar" >
+<table align=center class="headerTable"> <tr><td align="left" style="color:white;">
+		<a href="/contact/index.shtml">Contact Us</a>&nbsp;|&nbsp;
+		<a href="/wg/about-us">About Us</a>&nbsp;|&nbsp;
+		<a href="/wg/jobs">Jobs at RGD</a>
+</td></tr></table>
+		</div>
+	</div>
+</div>
+
+<!-- end page wrapper -->	 
+</div>
+</td></tr>
+</table>
+
+
+<div id="copyright">
+	<p>&copy; <a href="http://hmgc.mcw.edu/bp">Bioinformatics Program, HMGC</a> at the <a href="http://www.mcw.edu/">Medical 
+        College of Wisconsin</a></p>
+	<p align="center">RGD is funded by grant HL64541 from the National Heart, Lung, and Blood Institute on behalf of the NIH.<br><img src="/common/images/nhlbilogo.gif" alt="NHLBI Logo" title="National Heart Lung and Blood Institute logo">
+<br><br><div class="loginBox">
+
+	<form action="/wg/home" enctype="multipart/form-data" method="post" ><div class="formContents"><input type="hidden" name="op" value="auth"  />
+<input type="hidden" name="method" value="login"  />
+
+	<table border="0" cellpadding="1" cellspacing="0">
+	<tr>
+		<td><input id="username_formId" type="text" name="username" value="" size="8" maxlength="255" class="loginBoxField" /></td>
+		<td><input type="password" name="identifier" value="" size="8" id="identifier_formId" maxlength="35" class="loginBoxField" /></td>
+		<td><input type="submit" value="login" class="loginBoxButton" /></td>
+	</tr>
+	<tr>
+		<td><label for="username_formId">Username</label></td>
+		<td><label for="identifier_formId">Password</label></td>
+		<td></td>
+	</tr>
+	</table>             	
+                        <a href="/wg/home?op=auth;method=createAccount">Click here to register.</a>
+			</div></form>
+
+ 
+
+</div>
+
+
+</div>
+
+
+<script language="javascript" src="/common/js/killerZebraStripes.js" type="text/javascript"></script>
+<script>
+var arr = document.getElementsByTagName("table");
+for (i=0; i< arr.length; i++) {
+	if (arr[i].className == "striped-table") {
+		if (!arr[i].id) {
+			arr[i].id = "striped-table-" + i;
+		}
+		stripeTables(arr[i].id);
+      }
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

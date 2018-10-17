@@ -1,0 +1,40 @@
+
+<HTML>
+<HEAD>
+  <title><!--#echo var="title"--></title>
+  <meta name="title" content='<!--#echo var="title"-->'>
+  <meta name="keywords" content="Rat Genome Database, Rat Genome, rgd">
+  <meta name="description" content=" ">
+  <meta name="author" content="rgd">
+  <link rel=stylesheet type="text/css" href='<!--#echo var="webroot"-->/common/diseaseportal/dp_styles.css'>
+
+</HEAD>
+
+
+<BODY text="#333333" alink="#3399FF" vlink="#000099" Links="#0033FF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<!--#include virtual="${webroot}/common/diseaseportal/dp_header.shtml"-->
+
+<!--#include virtual="${webroot}/common/diseaseportal/dp_navi.shtml"-->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left" valign="top"> 
+	<td width="30"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="30" height="1"></td>
+	
+    <td width="100%"><p>&nbsp;<br>
+	  
+	  <!--#include virtual="${main}"-->
+	
+      <br>
+	</td>
+
+	<td width="15"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="15" height="1"></td>
+  </tr>
+</table>
+
+<!--#include virtual="${webroot}/common/diseaseportal/dp_footer.shtml"-->
+
+</BODY>
+</HTML>

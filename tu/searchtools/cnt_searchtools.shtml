@@ -1,0 +1,202 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; <b>Search Tools</b> </p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">Search Tools Help</font></strong></div></td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> 
+
+      <ul>
+        <li><a href="#definition">What are the Search Tools</a>?</li>
+        <li><a href="#finding">How do I find information using the Search Tools</a></li>
+        <li><a href="#related">How else can I search the database</a>?</li>
+        <li><a href="#report">What do the general search tool results look like?</a></li>
+<!--
+        <li>Let me use Search Tools: Use the Search RGD box in the top right of 
+          every page</li>
+-->
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2">
+
+      <p>&quot;<em>RGD provides a variety of search or query tools to allow users 
+        to find information within the database. These typically require a text 
+        query such as a gene or marker name that the user desired to find. The 
+        results returned depend on the tool being used but typically consist of 
+        a list of database records (hits) that match the query text.&quot;</em></p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Finding information using the Search 
+      Tools</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>There are two main methods for finding information in 
+        RGD: </p>
+      <p><strong>1. Using the General Search</strong></p>
+      <p> 
+        <!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a>
+      <p>The general RGD search available at the top of each page is a<strong> 
+        quick route to accessing data reports in RGD</strong>. The general search 
+        tools searches the following fields: 
+      <ul>
+        <li>Genes: Symbol, Name, aliases, functional annotations, notes</li>
+        <li>SSLPs: Symbol, Name, aliases</li>
+        <li>QTLs: Symbol, Name, aliases</li>
+        <li>Sequences: accession number, aliases</li>
+        <li>ESTs: accession number, aliases</li>
+        <li>Strains: Symbol, aliases and origin</li>
+        <li>References: <strong>Not covered</strong> by general search tool, use 
+          the <a href="/references/">Reference Search</a> instead </li>
+        <li>Maps: <strong>Not covered</strong> by general search tool, use the 
+          <a href="/maps/">Map selection page</a> instead. Information about individual 
+          markers (Genes, SSLPs, etc) is searchable.</li>
+      </ul>
+      <p>Wildcard characters are allowed in the search fields, the asterisk '*' 
+        is the accepted wildcard character. It can be used to retrieve records 
+        matching a general search query as shown in the following table:</p>
+      <table width="85%" border="1">
+        <tr bgcolor="#999999"> 
+          <td><strong>Search term</strong></td>
+          <td><strong>Returns</strong></td>
+        </tr>
+        <tr> 
+          <td>Atp1a1</td>
+          <td>Atp1a1</td>
+        </tr>
+        <tr> 
+          <td>Atp1a*</td>
+          <td>Atp1a1, Atp1a2, Atp1a3, Atp1a4, ATP1A1 (SSLP alias), Atp1a2 (SSLP 
+            alias) </td>
+        </tr>
+      </table>
+      <p>The results will be spread over mutiple pages if your search returns 
+        many hits.</p>
+      <p>&nbsp; </p>
+      <p><strong>2. Using the individual object search tools</strong></p>
+      <p>Each category of data within the database has an individual search tool 
+        that often provides more customizable search options, follow these links 
+        to read more about these individual tools:</p>
+      <ul>
+        <li><a href="/tu/genes/index.shtml#finding">Gene search</a></li>
+        <li><a href="/tu/qtls/index.shtml#finding">QTL search</a></li>
+        <li><a href="/tu/sslps/index.shtml#finding">SSLPs search</a></li>
+        <li><a href="/tu/sequence/index.shtml#finding">Sequence search</a></li>
+        <li><a href="/tu/ests/index.shtml#finding">EST search</a></li>
+        <li><a href="/tu/strains/index.shtml#finding">Strain search</a></li>
+        <li><a href="/tu/references/index.shtml#finding">References search</a></li>
+      </ul>
+      <p><font size="-1"></font> </p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>The search tools provide the main route into the RGD records, 
+        however, other databases link in to RGD and hence can also be used to 
+        find records within RGD by searching at these other sites. The following 
+        are some of the databases that link into RGD:</p>
+      <ul>
+        <li><a href="http://www.ncbi.nlm.nih.gov/LocusLink/">LocusLink</a> - NCBI 
+          database providing gene locus data for Rat, Mouse, Human and many other 
+          organisms. </li>
+        <li><a href="http://ratmap.gen.gu.se/">Ratmap</a> - Ratmap database in 
+          Sweden </li>
+        <li><a href="http://www.genome.ad.jp/kegg/">KEGG</a> - Kyoto encyclopedia 
+          of Genes and Genomes (Pathway database)</li>
+        <li><a href="www.geneontology.org">Gene Ontology</a> - Multi-organism 
+          database listing genes sharing common Molecular Processes, Cellular 
+          Components or Biological Pathways.</li>
+      </ul>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b>The Search Tools Report</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The general search tool returns results such as shown below, the term 
+        'atp1a2' was used in this example.</p>
+      <p align="center"><img src="/tu/images/search_results.gif" width="500" height="295" border="1"></p>
+      <p align="left">The keyword used in the search is shown along with a table 
+        of the matching results. The total number of results is shown at the top 
+        (in this example 'List 1-2 of 2' indicating this is showing hits 1 and 
+        2 of two total hits). The record identified by the search is shown in 
+        the light blue bar followed by basic information about that record, in 
+        this example it includes what piece of information was matched by the 
+        search term (gene symbol), mapping information and references associated 
+        with that record.</p>
+      <p align="left">In this example, following the hyperlinks to Atp1a2 will 
+        take you to the gene record (in #1) and to the SSLP D13Arb11 in #2 which 
+        has been identified as being a closely linked marker for Atp1a2 and hence 
+        has the gene symbol as an alias.</p>
+
+	  <font size="-1">&nbsp; </font> 
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+<p>&nbsp;</p>
+
+
+
+<p>&nbsp;</p>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

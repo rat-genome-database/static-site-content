@@ -1,0 +1,132 @@
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <b>VCMap</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td width="76%" bgcolor="#66CC66"> 
+      <div align="left"><strong><font size="+1">VCMap Help</font></strong></div></td>
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+  </tr>
+
+  <tr valign="top"> 
+    <td width="76%">
+	 <ul>
+        <li><a href="#definition">What is VCMap?</a></li>
+        <li><a href="#maps">What maps are used in the calculations?</a></li>
+        <li><a href="#finding">How do I find comparative mapping information about a gene or marker?</a></li>
+        <li><a href="#report">What information do you have on each marker?</a></li>
+        <li><a href="#related">What other information can I get to via VCMap?</a></li>
+        <li><a href="#detail">Detailed VCMap Help</a></li>
+        <li><a href='<!--#echo var="webroot"-->/VCMAP/'>Let me use VCMap...</a></li>
+      </ul>
+      <p>&nbsp;</p></td>
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>Virtual Comparative Map (VCMap) is a computational tool 
+        that facilitates <em><strong>in silico</strong></em><strong> prediction 
+        of syntenic regions</strong> between rat, mouse and human. It utilizes 
+        the available map information for markers and ESTs (Unigene) from all 
+        three species. The output of this comparison is a <strong>comparative 
+        map</strong> providing a visual representation of the chromosome of the 
+        <strong>primary (backbone) species plus syntenic regions from the two 
+        other species</strong>. The maps are clickable allowing you to view further 
+        information on the mapped markers and clusters plus bin reports showing 
+        the build data for a defined chromosomal region.</p>
+      <p><strong><a name="maps" id="maps"></a>Mapping data used in the current 
+        VCMap build</strong> (v5, July 2002)</p>
+      <ul>
+        <li><b>Rat</b>: RH map v2.1, Rat Genome Database, <a href="http://rgd.mcw.edu">http://rgd.mcw.edu</a></li>
+        <li><b>Mouse</b>: Mouse RH map Release 9, Whitehead Institute; <a href="http://www-genome.wi.mit.edu/mouse_rh/">http://www-genome.wi.mit.edu/mouse_rh/</a></li>
+        <li><b>Human</b>: GB4 RH maps (GeneMap99, <a href="http://www.ncbi.nlm.nih.gov/genemap99/">http://www.ncbi.nlm.nih.gov/genemap99/</a>)</li>
+      </ul>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><a name="finding"></a><b>Finding Gene and Marker information 
+      using VCMap</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>There are two ways to search the VCMap data:</p>
+      <ol>
+        <li>By querying the VCMap data for a particular marker (query by gene, 
+          unigene or accession number)</li>
+        <li>By displaying a particular region of the maps (query by species/location)</li>
+      </ol>
+      <p>To obtain more information, click on <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp4.shtml'>Search VCMap</a> from the Detailed Help and follow the instructions.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+	  
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> 
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>All the microsatellite markers on a VCMap prediction output 
+        are hyperlinked to their reports in RGD. All the Unigenes and known genes 
+        from different reports are hyperlinked to NCBI Unigene or GenBank respectively.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><a name="report"></a><b>The VCMap Reports</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>Apart from producing visual representation of the syntenic 
+        regions from the three species, VCMap also generates individual reports 
+        for markers, chromosomal regions, map data bin predictions and stream 
+        predictions. Descriptions of these reports can be obtained from the following detailed 
+        VCMap help pages [ <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp5.shtml'>More...</a> ].</p>
+
+	    <p><font size="-1"> 
+
+        <!--#include virtual="vcmap_report_help.html"-->
+
+        </font></p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+    <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><a name="detail"></a><b>Detailed VCMap Help</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2">
+	  <p>The detailed VCMap Help pages provide you more details about how to use VCMap quickly. Please follow the steps:</p>
+      <blockquote>
+	  <ol>
+	   <li> <a href="dthelp.shtml#introduction">Introduction</a></li>
+ 	   <li> <a href="dthelp.shtml#starter-guide">Starter's Guide</a></li>
+ 	   <li> <a href="dthelp3.shtml">View VCMap</a>
+ 	     <ul>
+  	      <li> 3.1. Display a static map</li>
+  	      <li> 3.2. Display Dynamic maps using MapView</li>
+  	    </ul>
+ 	   </li>
+ 	   <li> <a href="dthelp4.shtml">Search VCMap</a>
+  	   <ul>
+  	     <li> 4.1. Search Marker</li>
+   	     <li> 4.2. Query by Chromosome Region</li>
+   	   </ul>
+  	  </li>
+ 	  <li> <a href="dthelp5.shtml">Query Reports</a></li>
+  	  <li> <a href='<!--#echo var="webroot"-->/tu/glossary.shtml'>VCMap Glossary</a></li></ol>
+ 	  &nbsp;&nbsp; The whole VCMap Help document - <a href="dthelp_print.shtml">Printable Version</a>.
+	  
+	  </blockquote>
+	  <p>Go to view the <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp.shtml'>detailed VCMap Help</a> pages now.</p>
+      
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

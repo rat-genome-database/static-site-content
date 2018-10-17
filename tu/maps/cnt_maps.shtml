@@ -1,0 +1,177 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; <b>Maps</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#99CCFF">
+
+      <div align="left"><strong><font size="+1">Maps Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td width="76%">
+
+      <ul>
+
+        <li><a href="#definition">What is a Map</a>?</li>
+
+        <li><a href="#finding">How do I find information about a Map?</a></li>
+
+        <li><a href="#report">What information do you have on each Map?</a></li>
+
+        <li><a href="#related">What other information can I get to via a Map?</a></li>
+
+        <li><a href="/maps/">Let me view the maps...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>&quot;<em>Maps are published genetic and radiation hybrid maps that order 
+        various genetic markers across the genome. RGD stores a limited number 
+        of high density public maps for use as references. Individual cross maps 
+        are not currently available.</em>&quot;</p>
+      <p>Markers are placed on the maps with varying degrees of confidence, 
+        measured by the <a href="/tu/glossary.shtml#lod">LOD score</a>. <strong>Framework 
+        markers</strong> are the highest confidence markers and all other markers 
+        are 'placed' relative to these framework markers and are known as <strong>Placement 
+        markers</strong>. Placement markers are listed with the <a href="/tu/glossary.shtml#lod">LOD 
+        score</a> of their placement, LODs higher than 3 are indicative of 
+        high confidence positions.</p>
+
+		
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>Finding Map information</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p><strong>1. Using the General Search</strong></p>
+
+      <p>The general RGD search available at the top of each page is a<strong> 
+        quick route to finding markers and their map locations</strong>. This 
+        will search gene, marker symbols, names and aliases and 
+        results of any mapping information available on the marker. (See 
+        General RGD Search help for more information). 
+      <p><!--#include virtual="${webroot}/tu/general_search.shtml"-->
+        <a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><strong>2. Browsing the individual maps</strong></p>
+
+      <p><em><strong><font color="#CC0000">Quick Guide</font></strong></em></p>
+
+      <ol>
+        <li>The user can view any of the available maps</li>
+        <li>Each map is listed along with the number of mapped markers</li>
+        <li>Selecting an individual map will bring up a list of chromosomes</li>
+        <li>Selecting a chromosome will bring up the graphical map of the chromosome</li>
+        <li>Click the chromosome to select a region to display in detail.</li>
+      </ol>
+
+      <p>All RGD mapping data can be downloaded from RGD ftp site (<a href="http://rgd.mcw.edu/pub/data_release/MAP_DATA">http://rgd.mcw.edu/pub/data_release/MAP_DATA</a>).</p>
+
+      <p><a href="/maps/"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p>&nbsp;</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+      <p>&nbsp;</p>
+
+      </td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The maps show the mapped markers and each marker is hyperlinked to the 
+        individual marker report. This will provide additional information on 
+        the gene, EST, SSLP, etc.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a><b>The Map Report</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> <p>Below is a description of the fields and graphics present 
+        on the Map report:</p>
+
+      <p><font size="-1"> 
+
+        <!--#include virtual="map_report_help.html"-->
+
+        </font></p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+

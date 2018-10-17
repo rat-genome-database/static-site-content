@@ -1,0 +1,67 @@
+ <h2>RGD Registration</h2>
+<p>RGD can store your data in RGD database...</p>
+
+ 
+<table width="90%" border="0" cellpadding="2" cellspacing="2" bgcolor="#FFFFFF">
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> 
+      <p>&nbsp; <a href='/wg/home/phenominer-data-upload/'><img src="common/images/icon_phenominerSubmission.gif" width="38" height="25" border="0" align="absmiddle"></a>&nbsp; 
+        <a href='/wg/home/phenominer-data-upload/' title="Strain Registration"><strong>PhenoMiner Data Submission</strong></a></p></td>
+  </tr>
+  <tr align="left" valign="top" bgcolor="#F6F6F6"> 
+    <td> <p>provides a description of steps and a form to let you submit phenotype data to PhenoMiner....</p></td>
+  </tr>
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> 
+      <p>&nbsp; <a href='/rgdweb/models/strainSubmissionForm.html?new=true' title="Strain Registration"><img src="common/images/logo-strain.gif" width="38" height="25" border="0" align="absmiddle"></a>&nbsp; 
+        <a href='<!--#echo var="toolroot"-->/strains/strainRegistrationIndex.cgi' title="Strain Registration"><strong>Strain Registration</strong></a></p></td>
+  </tr>
+  <tr align="left" valign="top" bgcolor="#F6F6F6"> 
+    <td> <p>provides a form to let you register your strain....</p></td>
+  </tr>
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> 
+      <p>&nbsp; <a href='<!--#echo var="toolroot"-->/genes/geneRegistrationIndex.cgi' title="Gene Registration"><img src="common/images/logo-gene.gif" width="38" height="25" border="0" align="absmiddle"></a> 
+        &nbsp;<a href='<!--#echo var="toolroot"-->/genes/geneRegistrationIndex.cgi' title="Gene Registration"><strong>Gene 
+        Registration</strong></a></p></td>
+  </tr>
+  <tr align="left" valign="top" bgcolor="#F6F6F6"> 
+    <td> 
+      <p>provides a form to let you register your gene....</p></td>
+  </tr>
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> <p>&nbsp; <a href='<!--#echo var="toolroot"-->/qtls/qtlRegistrationIndex.cgi' title="QTL Registration"><img src="common/images/logo-qtl.gif" width="38" height="25" border="0" align="absmiddle"></a>&nbsp; 
+        <a href='<!--#echo var="toolroot"-->/qtls/qtlRegistrationIndex.cgi' title="QTL Registration"><strong>QTL 
+        Registration</strong></a></p></td>
+  </tr>
+  <tr align="left" valign="top" bgcolor="#F6F6F6"> 
+    <td> <p>provides a form to let you register your QTL....</p></td>
+  </tr>
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> <p>&nbsp;</p></td>
+  </tr>
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> <p>&nbsp;<strong><a href='<!--#echo var="webroot"-->/nomen_rules.html'>Approved Loci Nomenclature Rules</a></strong></p></td>
+  </tr>
+  <tr align="left" valign="top" bgcolor="#F6F6F6"> 
+    <td> <p>The Rat Genome Nomenclature Committee (RGNC) has approved loci nomenclature rules.</p></td>
+  </tr>
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> <p>&nbsp;</p></td>
+  </tr>
+
+  <tr align="left" bgcolor="#FFFFFF"> 
+    <td> <p>&nbsp;<strong>Bulk dataset for RGD</strong></a></p></td>
+  </tr>
+  <tr align="left" valign="top" bgcolor="#F6F6F6"> 
+    <td> <p>Direct submission of new data, or additions and revisions to existing data in RGD are welcome.
+<p>Please contact &nbsp; <b>Jennifer Smith, RGD Outreach Coordinator</b> &nbsp; at: <a href='mailto:jrsmith@mcw.edu'>jrsmith@mcw.edu</a>
+
+
+
+
+</p></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>

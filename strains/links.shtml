@@ -1,0 +1,52 @@
+
+
+<p>&nbsp;</p>
+<div class=links> 
+  <p><b>General Information</b><br>
+    &nbsp;<a href='<!--#echo var="webroot"-->/nomen/nomen.shtml#StrainNomenclature'>Strain&nbsp;Nomenclature</a>&nbsp;<br>
+    &nbsp;<a href='<!--#echo var="webroot"-->/tu/strains/#StrainRegistration'>Strain&nbsp;Registration</a><br>
+    &nbsp;<a href='<!--#echo var="webroot"-->/tu/strains/#StrainSubmission'>Strain&nbsp;Submission</a></p>
+  <p><b>Related Sites</b>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr align="left" valign="top"> 
+      <td width="2%">*</td>
+      <td width="98%"><p><a href="http://dvrnet.ors.od.nih.gov/ratcenter/index.html">NIH: Animal Genetic Resource</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://pga.mcw.edu/">PGA: Programs for Genomic Applications</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://www.informatics.jax.org/external/festing/search_form.cgi">MGD Mouse Strains</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://dels.nas.edu/ilar_n/ilarhome/search_lc.php">ILAR Lab Codes</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://dels.nas.edu/ilar_n/ilarhome/search_amsst.shtml">ILAR Rat Strains</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://www.anex.med.tokushima-u.ac.jp/rat/index-e.html">Tokushima Strain data</a> </p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://www.nrrrc.missouri.edu">RRRC: Rat Resource and Research Center</a></p></td>
+    </tr>
+	<tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://www.anim.med.kyoto-u.ac.jp/nbr/home.htm">NBRP Japan</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://embryology.med.unsw.edu.au/OtherEmb/Rat.htm">USNW Rat Developmental Stages</a></p></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>*</td>
+      <td><p><a href="http://www.knockoutrat.org">Rat Knockout Consortium</a></p></td>
+    </tr>
+  </table>
+  <p> </div>                                                

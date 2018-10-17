@@ -1,0 +1,735 @@
+
+
+<SCRIPT LANGUAGE="Javascript1.1">
+
+<!-- HTML Comment to hide the script from non-JS browsers
+
+////////////////////////////////////////////////////////////////////////////
+// Primer Utilities - A collection of Javascript functions to perform
+// a number of common DNA analyses.
+// (c) Simon Twigger, 1998. All rights reserved.
+//
+// Contact: Simon Twigger - simont@mcw.edu
+////////////////////////////////////////////////////////////////////////////
+
+
+//
+//	Set up physical constant variables
+//
+
+// list of bases and their complements
+var bases = new Object();
+		
+		bases["A"] = "T";
+		bases["G"] = "C";
+		bases["C"] = "G";
+		bases["T"] = "A";
+		bases["U"] = "A";
+		
+// base molecular weights 
+
+		var mwt = new Object();
+		
+		mwt["A"] = 312.2;
+		mwt["G"] = 328.2;
+		mwt["C"] = 288.2;
+		mwt["T"] = 287.2;
+		mwt["U"] = 289.2;	
+		
+
+// dNMP Emax extinction coefficients
+		var abs = new Object();
+		
+		abs["A"] = 15400;
+		abs["G"] = 13700;
+		abs["C"] = 9100;
+		abs["T"] = 9600;
+		abs["U"] = 10000;	
+
+			
+function checkInput(s) {
+
+	// check they entered a sequence
+	if( s.length == 0) {
+	
+		alert(	"------------------------------\n\n"+
+				"    You must enter a coding   \n"+
+				"      sequence (5' to 3')     \n"+
+				"\n------------------------------\n\n");
+	
+		return false;
+	
+	}
+	else {
+		
+		var allowedBases = "AGCTU";	// list of bases allowed in sequence
+		var illegalBases = false;	// flag for unknown characters found in sequence
+		var illegalBaseStr = "";
+		
+		var checkedStr = "";		// holds the checked sequence with illegal chars removed
+		
+		for (i = 0; i < s.length; i++) {
+			
+			var base = s.charAt(i);
+			
+			// check the base is one of the allowed bases
+			if (allowedBases.indexOf(base) != -1) {
+				// add to the checked sequence
+				checkedStr += base;
+			}
+			else {
+				illegalBases = true; // otherwise set flag to indicate illegal characters found
+				illegalBaseStr += base;	// add to illegal sequence
+			}
+		
+		}
+		
+		
+		// warning that illegal characters were detected.
+		if (illegalBases == true) {
+		
+			alert(	"Only the bases A, C, G, T and U are\n"+
+					"currently handled by this script.\n"+
+					"The following characters will be removed:\n"+
+					illegalBaseStr+"\n");	
+			
+		}
+		
+		// return the checked string to the functions
+		return checkedStr;
+		
+	}
+}
+
+
+function compute()	{
+
+	var f = document.dna;		// the form
+
+	var s = "";
+	
+	s = checkInput(f.seq.value.toUpperCase());
+	f.seq.value = s;	// replace displayed string with checked version
+	
+	
+		f.len.value = s.length;
+		
+		var revCom = "";
+		var comp = "";
+		var Tm = 0;
+		var illegalBases = false;
+		var gc_count = 0;
+		
+		var seqMwt = 0;
+		var absorbance = 0;
+		
+		
+		for (i = 0; i < s.length; i++) {
+			
+			var base = s.charAt(i);
+			
+				if(base == 'G' || base == 'C') {
+					gc_count++;
+				}
+				
+				comp += bases[base];
+				revCom = bases[base]+revCom;
+				seqMwt += mwt[base];
+				absorbance += abs[base];
+		}
+
+	
+		f.comp.value = comp;
+		f.revcomp.value = revCom;
+		if (s.length >= 10) {
+			f.tm.value = Math.ceil(81.5 + (16.6*(Math.LOG10E*Math.log(0.1))) + ((41*gc_count)/s.length) - (500/s.length) ) ;
+		}
+		else {
+			f.tm.value = "-na-";
+		}
+		f.mwt.value = Math.ceil(seqMwt);
+		//f.abs.value = absorbance;
+}
+
+function enzymeSearch(s) {
+	
+		s = s.toUpperCase();	// convert to upper case!
+	
+		var enzymes 	= new Array (	"Acc I   ","GTCGAC",2,
+										"Acc I   ","GTATAC",2,
+										"Acc65 I ","GGTACC",1,
+										"Acl I   ","AACGTT",2,
+										"Afl II  ","CTTAAG",1,
+										"Afl III ","ACATGT",1,
+										"Age I   ","ACCGGT",1,
+										"ApaL I  ","CTGCAC",1,
+										"Asc I   ","GGCGCGCC",2,
+										"Ava I   ","CCCGGG",1,
+										"BamH I  ","GGATCC",1,
+										"Bcl I   ","TGATCA",1,
+										"Bgl II  ","AGATCT",1,
+										"BspH I  ","TCATGA",1,
+										"BssH II ","GCGCGC",1,
+										"BstE II ","GGTAACC",1,
+										"BstE II ","GGTTACC",1,
+										"BstX I  ","CCAATGCATTGG",8,
+										"Cla I   ","ATCGAT",2,
+										"Dra I   ","TTTAAA",3,
+										"Eag I   ","CGGCCG",1,
+										"EcoR I  ","GAATTC",1,
+										"EcoR V  ","GATATC",3,
+										"Fse I   ","GGCCGGCC",6,
+										"Hae III ","GGCC",2,
+										"Hind III","AAGCTT",1,
+										"Kpn I   ","GGTACC",5,
+										"Mfe I   ","CAATTG",1,
+										"Mlu I   ","ACGCGT",1,
+										"Nco I   ","CCATGG",1,
+										"Nde I   ","CATATG",2,
+										"Nhe I   ","GCTAGC",1,
+										"Not I   ","GCGGCCGC",2,
+										"Nru I   ","TCGCGA",3,
+										"Nsi I   ","ATGCAT",5,
+										"Pac I   ","TTAATTAA",5,
+										"Pme I   ","GTTTAAAC",4,
+										"Pml I   ","CACGTG",3,
+										"Pst I   ","CTGCAG",5,
+										"Pvu I   ","CGATCG",4,
+										"Pvu II  ","CAGCTC",3,
+										"Sac I   ","GAGCTC",1,
+										"Sac II  ","CCGCGG",4,
+										"Sal I   ","GTCGAC",1,
+										"Sca I   ","AGTACT",3,
+										"Sma I   ","CCCGGG",3,
+										"Spe I   ","ACTAGT",1,
+										"Sph I   ","GCATGC",5,
+										"Stu I   ","AGGCCT",3,
+										"Xba I   ","TCTAGA",1,
+										"Xho I   ","CTCGAG",1,
+										"Xma I   ","CCCGGG",1
+										
+										
+										);
+										
+		var report = "";
+		var not_found = "";
+		
+		// create indication of RE sites over sequence using bars over the sequence
+		// first create a blank string, the same length as the seqence using a for
+		// loop -  is there an easier way to do this?
+		
+		var bars = new Object();
+		var names = new Object();
+		
+		var log = "";
+		var maxRows = 1;
+		
+		for (i = 0; i < enzymes.length; i += 3) {
+			
+			temp = s;	// temporary copy of sequence;
+			
+			// if the enzyme isnt in the string at all, add to the list
+			// of enzymes not_found.
+			
+			var restrictSeq = "";	// holds sequence with site of cleavage indicated
+				
+			restrictSeq = 	enzymes[i+1].substring(0,enzymes[i+2])+"/"+
+							enzymes[i+1].substring((enzymes[i+2]), enzymes[i+1].length)
+			
+			if (s.indexOf(enzymes[i+1]) == -1) {
+				not_found += enzymes[i] + " ("+restrictSeq+")<BR>";
+				continue;	// exit this iteration of the for() loop, try next enzyme
+			}
+			
+			var tempStart = 0;
+			
+			while ( temp.indexOf(enzymes[i+1]) != -1) {
+			
+				start = temp.indexOf(enzymes[i+1]);
+				var ename = enzymes[i];
+				
+				// have to use start+1 as its an array index, starting at 0, not 1
+				report += 	ename+" ("+restrictSeq+") "+(start+1+tempStart)+
+							" to "+(start+tempStart+enzymes[i+1].length)+"<BR>";
+			
+			rowCount = 1;
+			
+			counter = start+tempStart+(enzymes[i+2]-2)+"r"+rowCount;
+			
+			// loop round to check that there isnt already something written
+			// in the names[] array already. If so, increase the row count and 
+			// put the new restriction name in there.
+			while (	(names[start+tempStart+(enzymes[i+2]-2)+"r"+rowCount] != null) ||
+					(names[start+tempStart+(enzymes[i+2]-1)+"r"+rowCount] != null) ||
+					(names[start+tempStart+(enzymes[i+2]-0)+"r"+rowCount] != null) ) {
+					
+				rowCount++;
+			}
+			
+			if ( maxRows < rowCount) {
+				maxRows = rowCount;
+			}
+			
+				names[start+tempStart+(enzymes[i+2]-2)+"r"+rowCount] = ename.charAt(0);
+				names[start+tempStart+(enzymes[i+2]-1)+"r"+rowCount] = ename.charAt(1);
+				names[start+tempStart+(enzymes[i+2])+"r"+rowCount] = ename.charAt(2);
+				bars[start+tempStart+(enzymes[i+2]-1)] = "|";
+				
+				
+				// remove the chunk of sequence already searched+1 base and
+				// look again to see if this RE site is in the remaining sequence
+				// to ensure that repeated sites are caught.
+				
+				
+				log += "#"+i+": "+temp+" Start: "+(start+1)+" Fin: "+(temp.length-1)+"<BR>";
+				
+				temp = temp.substring(start+1, (temp.length-1));
+				
+				tempStart += start+1;
+			}
+		
+		}
+	
+		bars.string = "";
+		
+		names["R1"] = names["R2"] = names["R3"] = names["R4"] = names["R5"] = "";
+		
+		for (len = 0; len <s.length; len++) {
+			
+			if(bars[len] != null) {
+				bars.string += bars[len];
+			}
+			else {
+				bars.string += " ";
+			}
+			
+			for (row = 1; row <= maxRows; row++) {
+				if(names[len+"r"+row] != null) {
+					names["R"+row] += names[len+"r"+row];
+				}
+				else {
+					names["R"+row] += " ";
+				}
+			}
+		
+		}
+	
+	
+		// create a dna 'ruler' for the sequence.
+		var ruler = "";	
+		for (bp = 1; bp <= s.length; bp ++) {
+				
+			// if bp is a multiple of 10, bp mod 10 == 0
+			if(bp % 10 == 0) {
+				ruler += "+";
+			}
+			else {
+				ruler += "-";		
+			}		
+		
+		}
+	
+		if (report == "") { report = "None found\n"; }
+	
+		// open a new window
+		var win = window.open("","Restriction_Map","scrollbars,resizable,menubar,width=420,height=500");
+								
+		var d = win.document;	// handle to the page
+		
+		d.write('<BODY BGCOLOR="#CCCC99">');
+		d.write('<H2 ALIGN=CENTER>Restriction Map & Sites</H2>');
+		d.write('<pre>');
+		d.write('<HR>');
+		d.write('<STRONG>Sequence & Restriction Map:</STRONG><BR>');
+		d.write('<HR>');
+		
+			var lineLength = 50;
+			var spaces = new Object();
+		
+			spaces[1] = " ";
+			spaces[2] = "  ";
+			spaces[3] = "   ";
+			spaces[4] = "    ";
+			spaces[5] = "     ";
+			
+		
+			for (lines = 0; lines < (Math.ceil(s.length/lineLength)); lines++) {
+			
+				lineStart = (lineLength * lines)+1;
+				lineStart = lineStart.toString();	// convert it to a string so we can get the length
+					
+				lineFinish = (lineLength * lines)+lineLength;
+			
+				if (lineFinish > s.length) {
+					lineFinish = s.length;
+				}
+			
+				lineStart = spaces[6-lineStart.length]+lineStart;
+			
+				for (row = maxRows; row >= 1 ; row--) {
+			
+					d.write('        '+names["R"+row].substring( (lines*50), (lines*50)+50)+"<BR>");
+					d.write('<BR>');
+				}
+				d.write('        '+bars.string.substring( (lines*50), (lines*50)+50)+"<BR>");
+				d.write(lineStart+"  "+s.substring( (lines*50), (lines*50)+50)+"  "+lineFinish+"<BR>");
+				d.write('        '+ruler.substring( (lines*50), (lines*50)+50)+"<BR>");
+				d.write('<BR>&nbsp;<BR>');
+			
+			
+			}
+		
+		d.write('Sites are shown by three letters centered over a vertical<BR>');
+		d.write("bar which is above the 3' end resulting from digestion with<BR>");
+		d.write('the indicated restriction enzyme.<BR>');
+		d.write('<BR>&nbsp;<BR>');
+		d.write('<HR>');
+		d.write('<STRONG>Enzymes which cut:</STRONG><BR>');
+		d.write('<HR>');
+		d.write(report);
+		d.write('&nbsp;<BR>');
+		d.write('<HR>');
+		d.write('<STRONG>Enzymes which do not cut:</STRONG><BR>');
+		d.write('<HR>');
+		d.write(not_found);
+		d.write('</pre>');
+		
+		d.write('<hr>');
+		
+		d.close();
+	
+}
+
+function translate(s) {
+
+	var f = document.dna;		// the form
+	
+	s = checkInput(f.seq.value.toUpperCase());
+	f.seq.value = s;	// replace displayed string with checked version
+	
+	
+	// Create the code object and then assign properties to it
+	// thereby creating an associative array which has a far faster
+	// lookup speed than circling through all the elements of a 
+	// normal array.
+	
+	
+	// code format:
+	// "codon sequence", "[space]single letter abbreviation[space]"
+	
+	var code = new Object();
+	
+			code["TTT"]=" F ";
+			code["TTC"]=" F ";
+			code["TTA"]=" L ";
+			code["TTG"]=" L ";
+			code["TCT"]=" S ";
+			code["TCC"]=" S ";
+			code["TCA"]=" S ";
+			code["TCG"]=" S ";
+			code["TAT"]=" Y ";
+			code["TAC"]=" Y ";
+			code["TAA"]=" . ";
+			code["TAG"]=" . ";
+			code["TGT"]=" C ";
+			code["TGC"]=" C ";
+			code["TGA"]=" . ";
+			code["TGG"]=" W ";
+			code["CTT"]=" L ";
+			code["CTC"]=" L ";
+			code["CTA"]=" L ";
+			code["CTG"]=" L ";
+			code["CCT"]=" P ";
+			code["CCC"]=" P ";
+			code["CCA"]=" P ";
+			code["CCG"]=" P ";
+			code["CAT"]=" H ";
+			code["CAC"]=" H ";
+			code["CAA"]=" Q ";
+			code["CAG"]=" Q ";
+			code["CGT"]=" R ";
+			code["CGC"]=" R ";
+			code["CGA"]=" R ";
+			code["CGG"]=" R ";
+			code["ATT"]=" I ";
+			code["ATC"]=" I ";
+			code["ATA"]=" I ";
+			code["ATG"]=" M ";
+			code["ACT"]=" T ";
+			code["ACC"]=" T ";
+			code["ACA"]=" T ";
+			code["ACG"]=" T ";
+			code["AAT"]=" N ";
+			code["AAC"]=" N ";
+			code["AAA"]=" K ";
+			code["AAG"]=" K ";
+			code["AGT"]=" S ";
+			code["AGC"]=" S ";
+			code["AGA"]=" R ";
+			code["AGG"]=" R ";
+			code["GTT"]=" V ";
+			code["GTC"]=" V ";
+			code["GTA"]=" V ";
+			code["GTG"]=" V ";
+			code["GCT"]=" A ";
+			code["GCC"]=" A ";
+			code["GCA"]=" A ";
+			code["GCG"]=" A ";
+			code["GAT"]=" D ";
+			code["GAC"]=" D ";
+			code["GAA"]=" E ";
+			code["GAG"]=" E ";
+			code["GGT"]=" G ";
+			code["GGC"]=" G ";
+			code["GGA"]=" G ";
+			code["GGG"]=" G ";
+								
+	
+	var translation = new Array("","","");	// initialise 3 reading frames
+		
+	// go round for each of the 3 reading frames
+	for(rf = 0; rf < 3; rf++) {
+		
+		//translation[rf] += (rf+1)+": ";
+		
+		for( l = 0; l < rf; l++) {
+			translation[rf] += " ";		// add extra space to alignment
+		}
+		
+		for(i = rf; i < s.length-2; i += 3) {
+		
+			//the next three bases
+			codon = s.substring(i, i+3);
+			
+			translation[rf] += 	code[codon];
+					
+		}
+
+	}
+	
+	var ruler = "";	
+		for (bp = 1; bp <= s.length; bp ++) {
+				
+			// if bp is a multiple of 10, bp mod 10 == 0
+			if(bp % 10 == 0) {
+				ruler += "+";
+			}
+			else {
+				ruler += "-";		
+			}		
+		
+		}
+	
+	// open a new window
+	var win = window.open(	"",
+							"Translation",
+							"status,resizable,menubar,width=420,height=400");
+							
+	var d = win.document;	// handle to the page
+	
+	d.write('<BODY BGCOLOR="#CCCC99">');
+	d.write('<H2 ALIGN=CENTER>Translation of primer in 3 frames</H2>');
+	
+	d.write('<hr>');
+	
+	d.write('<pre>');
+	
+	var spaces = new Object();
+	spaces[1] = " ";
+	spaces[2] = "  ";
+	spaces[3] = "   ";
+	spaces[4] = "    ";
+	spaces[5] = "     ";
+	
+		
+	var lineLength = 50;
+	
+
+	for (lines = 0; lines < (Math.ceil(s.length/lineLength)); lines++) {
+	
+		lineStart = (lineLength * lines)+1;
+		lineStart = lineStart.toString();	// convert it to a string so we can get the length
+			
+		lineFinish = (lineLength * lines)+lineLength;
+		
+		if (lineFinish > s.length) {
+			lineFinish = s.length;
+		}
+	
+	
+		lineStart = spaces[6-lineStart.length]+lineStart;
+	
+		d.write(lineStart+"  "+s.substring( (lines*50), (lines*50)+50)+"  "+lineFinish+"<BR>");
+		
+		d.write('        '+ruler.substring( (lines*50), (lines*50)+50)+"<BR>");
+		
+		d.write('        '+translation[0].substring( (lines*50), (lines*50)+50)+"<BR>");
+		d.write('        '+translation[1].substring( (lines*50), (lines*50)+50)+"<BR>");
+		d.write('        '+translation[2].substring( (lines*50), (lines*50)+50)+"<BR>");
+		d.write('<BR>&nbsp;<BR>');
+			
+			
+	}
+	
+	d.write('</pre>');
+	
+	d.write('<hr>');
+	
+	d.close();
+	
+}
+
+ // -->
+</SCRIPT>
+
+
+<BODY onLoad="document.dna.reset();">
+
+
+<TABLE>
+<TR ALIGN=LEFT VALIGN=TOP>
+
+	<TD>
+	<H1>DNA Primer Utilities</H1>
+	<H3>Javascript implementation of basic DNA sequence analyses.<BR>
+</H3>
+	</TD>
+</TR>
+
+</TABLE>
+
+<FORM NAME="dna">
+
+<TABLE CELLPADDING="2">
+<TR>
+	<TD ALIGN=LEFT>
+	<STRONG>Basic Instructions:</STRONG><BR>
+
+<P><FONT SIZE=-1>Paste in your sequence and select the analysis you wish to do. Results appear below and/or in separate windows. Further information and instructions are available <A HREF="#instructions">below</A> along with known limitations.</FONT></P>
+<BR>
+	</TD>
+</TR>
+
+<TR>
+	<TD>
+<STRONG>Paste DNA Sequence here (5' - 3' Coding Strand)</STRONG> Max length: 255bp
+	</TD>
+</TR>
+<TR>
+	<TD>
+<textarea NAME="seq" ROWS="4" COLS="50" WRAP="virtual"></textarea>
+	</TD>
+</TR>
+<TR>
+	<TD>
+	
+<INPUT TYPE="button" VALUE="Display complement, reverse complement, Tm, length and MWt." onClick="compute();">
+	
+	</TD>
+	
+</TR>
+<TR>
+	<TD>
+	<INPUT TYPE="button" VALUE="Show restriction sites"
+	onClick='enzymeSearch(document.dna.seq.value);'>
+	
+	<INPUT TYPE="button" VALUE="Translate"
+	onClick='translate(document.dna.seq.value);'>
+	</TD>
+	
+</TR>
+<TR>
+	<TD>
+<HR>
+<h2>RESULTS:</h2>
+<b>Complement (3' - 5' Non-coding)</B>
+	</TD>
+</TR>
+<TR>
+	<TD> <textarea NAME="comp" ROWS="4" COLS="50" 
+WRAP="virtual"></textarea>
+<!--
+<INPUT TYPE="text" NAME="comp" SIZE="40">
+-->
+	</TD>
+</TR>
+<TR>
+	<TD>
+<b>Reverse Complement (5' - 3' Non-coding strand)</b>
+	</TD>
+</TR>
+<TR>
+	<TD> <textarea NAME="revcomp" ROWS="4" COLS="50"
+WRAP="virtual"></textarea>
+<!-- <INPUT TYPE="text" NAME="revcomp"
+SIZE="40"> -->
+	</TD>
+</TR>
+
+
+<TR>
+	<TD>
+<!-- Start of inner table -->
+<TABLE><TR><TD>
+<b>Tm (&deg;C)</b>
+	</TD>
+	<TD>
+<INPUT TYPE="text" NAME="tm" SIZE="6">
+	</TD>
+<TR>
+</TR>
+	<TD>
+<b>Length (bp)</b>
+	</TD>
+	<TD>
+<INPUT TYPE="text" NAME="len" SIZE="6"><BR>
+	</TD>
+<TR>
+</TR>
+	<TD>
+<b>Molecular Weight (Da)</b>
+	</TD>
+	<TD>
+<INPUT TYPE="text" NAME="mwt" SIZE="6"><BR>
+	</TD>
+</TR>
+</TABLE>
+
+<!-- End of inner table -->
+</TD></TR>
+
+<TR>
+	<TD>
+	<INPUT TYPE="reset" VALUE="Reset Sequences">
+	</TD>
+
+</TR>
+<TR>
+	<TD>
+<HR>
+	<STRONG><A NAME="instructions"></A>Instructions:</STRONG>
+	<OL>
+		<LI>Enter your primer sequence (5'- 3') into the 'DNA Coding Sequence' box 
+		<LI>Press the <STRONG>Display...</STRONG> button to view the complement, reverse complement, size and  melting temperature
+		<LI><STRONG>Show Restriction sites</STRONG> opens a
+fresh window displaying known restriction sites and their positions
+		<LI><STRONG>Translate</STRONG> opens a fresh window with a 3 frame translation of the DNA sequence.
+	</OL>
+</TR>
+<TR>
+	<TD>
+	<STRONG><A NAME="todo"></A>Notes:</STRONG>
+	<UL>
+		<LI>Tm (&deg;C) = 81.5 + 16.6 x log([Na+]) + 41(#G + #C)/length - 500/length<BR>
+		The [Na+] is taken as 0.1M
+		<LI>Only copes with 4 DNA bases plus U: A,C,G,T,U.
+		<LI>To Do: Cater for different primer orientations (5'-3'/3'-5', coding/non-coding)
+	</UL>
+	</TD>
+</TR>
+
+</TABLE>
+
+
+</FORM>
+

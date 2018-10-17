@@ -1,0 +1,37 @@
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" bgcolor="#222222"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  
+  <tr align="left" bgcolor="#40515F">
+    <td>
+	  <table width="800" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+		  <td width="30"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="30" height="1"></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='/' class="atitle">RGD&nbsp;Home</a>&nbsp;</p></td>
+          <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td><p>&nbsp;<a href='index.shtml' class="atitle">Diseases</a>&nbsp;</p></td>
+          <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td><p>&nbsp;<a href='phenotype.shtml' class="atitle">Phenotypes</a>&nbsp;</p></td>
+          <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td><p>&nbsp;<a href='biological_processes.shtml' class="atitle">Biological&nbsp;Processes</a></p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='pathways.shtml' class="atitle">Pathways</a>&nbsp;</p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='tools.shtml' class="atitle">Tools</a>&nbsp;&nbsp;</p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='relatedlink.shtml' class="atitle">Related&nbsp;Links</a>&nbsp;</p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td width="100"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="60" height="1"></td>
+        </tr>
+      </table>
+	</td>
+    <td width="100%">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" bgcolor="#000000"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>

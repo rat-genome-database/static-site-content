@@ -1,0 +1,44 @@
+
+<SCRIPT LANGUAGE="JavaScript" type="text/JavaScript">
+<!-- hide from old browsers
+function verify(f)
+{
+    if(f.searchKeyword.value == null ||f.searchKeyword.value == "" || f.searchKeyword.value == " * for wildcard"){
+        alert("The form was not submitted because you have to enter a keyword to search on;");
+        return false;
+    }else{
+        return true;
+    }
+}
+// end script hiding -->
+</SCRIPT>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><td colspan="4" bgcolor="#5B777D"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="1" height="6"></td></tr>
+  <tr><td colspan="4" bgcolor="#425C62"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="1" height="1"></td></tr>
+  <tr><td colspan="4" bgcolor="#F0F0F0"><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="1" height="1"></td></tr>
+  
+  <tr align="left" valign="top"> 
+    <td width="440" background='<!--#echo var="webroot"-->/common/diseaseportal/images/dp_header-bkgd.gif' nowrap><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/dp-logo.gif' border="0"></td>
+
+	<td width="100%" background='<!--#echo var="webroot"-->/common/diseaseportal/images/dp_header-bkgd.gif' nowrap><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="20" height="1"></td>
+	
+    <td width="240" background='<!--#echo var="webroot"-->/common/diseaseportal/images/dp_header-bkgd.gif' nowrap>
+      <table border="0" cellpadding="2" cellspacing="1" width="240">
+        <form method="post" action='<!--#echo var="RGDwebroot"-->/generalSearch/RgdSearch.jsp' onSubmit="return verify(this);">     
+          <tr> 
+            <td align="left" valign="middle"><p>&nbsp;<br>
+                <strong>Search&nbsp;RGD</strong>                
+                <input type=text name=searchKeyword size=12 value=" *disease" onFocus="JavaScript:document.forms[0].searchKeyword.value=''">
+                <input type="hidden" name="quickSearch" value=1>
+                <input type=submit value="Go "></p>
+            </td>
+          </tr>
+        </form>
+    </table></td>
+	  
+    <td width="5" background='<!--#echo var="webroot"-->/common/diseaseportal/images/dp_header-bkgd.gif' nowrap><img src='<!--#echo var="webroot"-->/common/diseaseportal/images/shim.gif' width="5" height="1"></td>
+  </tr>
+</table>
+

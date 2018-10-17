@@ -1,0 +1,62 @@
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="3" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="2"></td>
+  </tr>
+  
+  <tr align="left"> 
+    <td width="6"  background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="6" height="1"></td>
+    <td background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'> 
+      <table width="780" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+          <td align="center"><p>&nbsp;<a href='<!--#echo var="webroot"-->/' class="atitle">Home</a>&nbsp;</p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+          <td align="center"><p>&nbsp;<a href='<!--#echo var="webroot"-->/data-entry.shtml' class="atitle">Data</a>&nbsp;</p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+          <td align="center"><p>&nbsp;<a href='<!--#echo var="webroot"-->/tool-entry.shtml' class="atitle">Tools</a>&nbsp;</p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  
+		  <td align="center"><p><a href='<!--#echo var="webroot"-->/dportal/' class="atitle">Portals</a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/community-entry.shtml' class="atitle">Rat Community</a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+          <td align="center"><p><a href='ftp://ftp.rgd.mcw.edu/pub/' class="atitle">Download</a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+		  <td align="center"><p><a href='<!--#echo var="webroot"-->/registration-entry.shtml' class="atitle">Submit Data</a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/contact/index.shtml' class="atitle"><FONT COLOR="red">Contact</FONT></a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  
+		  <td align="center"><p><a href='<!--#echo var="webroot"-->/about.shtml' class="atitle">About RGD</a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+		  		  
+          <td align="center"><p><a href='<!--#echo var="webroot"-->/tu/' class="atitle">Help</a></p></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+        </tr>
+      </table>
+
+
+	
+	</td>
+    <td width="100%" background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'>&nbsp;<a class="asubtitle" href='/gbreport/gbrowser_error_conflicts.shtml' title="Genome Error Report"><strong><font color="#FF0000">Genome&nbsp;Conflicts</font></strong></a></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#EEEEEE"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>

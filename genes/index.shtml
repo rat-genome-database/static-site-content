@@ -1,0 +1,12 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Classic Gene Search - Rat Genome Database"-->
+<!--#set var="category" value="data"-->
+<!--#set var="links" value="${webroot}/genes/links.shtml"-->
+<!--#set var="main"  value="${webroot}/genes/simple.shtml"-->
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+

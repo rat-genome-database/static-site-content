@@ -1,0 +1,224 @@
+
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <strong>Ontology</strong>  &gt; <a href="#GViewer">GViewer tool installation</a></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#66CC66"> <div align="left"><strong><font size="+1">Ontology 
+        Help</font></strong></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> 
+      <!--
+	  <ul>
+        <li><a href="#definition">What is an ontology?</a></li>
+        <li><a href="#browser">How do I use the ontology browser?</a></li>
+        <li><a href="#access">How do I access the ontology browser?</a></li>
+        <li><a href="#report">What data is available in the ontology report?</a></li>
+        <li><a href='<!--#echo var="webroot"-->
+      <!--/Ontology/'>Let me use Ontology...</a></li>
+      </ul>
+-->
+      <p>The Rat Genome Database is a rich and growing repository of biomedical 
+        research data using <em>rattus</em> as the model organism. To extend the 
+        usability of RGD, new approaches as to how the information in the database 
+        is regrouped, cataloged and presented are being developed. One of the 
+        newest approaches to creating another method of knowledge representation 
+        is the implementation of ontologies that classify related concepts within 
+        hierarchies. We decided to use the ontologies as a means to present and 
+        view data in the RGD website.<br>
+        &nbsp; </p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#BFFFBF"><a name="definition"></a><b>What is an ontology</b></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>Ontologies, as used in biomedical context, are controlled 
+        vocabularies in which a set of related concepts and ideas that are relevant 
+        to a field are organized in a hierarchical fashion, similar to an outline. 
+        The more general concepts are placed in the higher levels and more specific 
+        concepts are assigned to lower levels. In a simple ontology of concepts 
+        relating to proteins, we might find the following terms: <em>protein</em>, 
+        <em>enzyme</em>, <em>structural proteins</em>, <em>kinase</em>, <em>polymerase</em>, 
+        <em>binding protein</em>, <em>polymerase</em>, <em>isomerase</em>, <em>collagen</em>, 
+        <em>transferase</em>, <em>keratin</em>, <em>DNA-binding protein</em>, 
+        <em>RNA-binding protein</em>, <em>protease</em>. In the ontology, they 
+        might be organized as follows: <em>Protein</em> would be at the top of 
+        the hierarchy being the most general concept. Directly under that would 
+        be <em>enzyme</em>, <em>structural protein</em>, and <em>binding protein</em>. 
+        Under <em>enzyme</em> then would be the concepts <em>kinase</em>, <em>polymerase</em>, 
+        <em>isomerase</em>, <em>transferase</em>, <em>protease</em>. Similarly, 
+        <em>collagen</em> and <em>keratin</em> would fall under <em>structural 
+        protein</em>, etc.</p>
+		
+      <p align="center"><img src="images/figure-1.gif" border="1"><br>
+        Figure 1</p>
+      <p>The above organization illustrates an important feature of ontologies: 
+        concepts have relationships between them. In the above case enzyme is 
+        a parent concept and kinase is one of its children. Kinase is a more specific 
+        type of enzyme and the type of relationship they have is called an <em>is_a</em> 
+        relationship. Other relationship types can be defined for ontologies, 
+        but the other more common type is called the <em>part_of</em> relationship. 
+        One illustration of the latter would be the stomach is <em>part_of</em> 
+        the digestive system in an ontology of anatomical terms.</p>
+      <p>Because of the complexity of biomedical data, the simple outline-like 
+        hierarchy used in the example is usually insufficient to capture biological 
+        knowledge, so the rules in ontology creation allow for concepts to have 
+        <em>multiple parents</em> along with multiple children (see below figure). 
+        To expand the original illustration, protein, can have a parent <em>biomolecule</em>. 
+        <em>Biomolecule</em> in turn can have a child <em>catalytic biomolecule</em>. 
+        <em>Catalytic biomolecule</em> in turn can be a parent of <em>enzyme</em> 
+        along with <em>protein</em>. This is allowable <em>as long as the concepts 
+        increase in specificity as they go lower in the hierarchy and that no 
+        concept is the parent of its own ancestor</em>. That constraint confines 
+        these ontologies to what is called a directed acyclic graph (DAG) structure.</p>
+      <p align="center"><img src="images/figure-2.gif" border="1"><br>
+        Figure 2: multiple parents along with multiple children</p>
+      <p>As a hierarchy of related concepts, ontologies provide an ideal framework 
+        onto which data and information can be organized. Typically, specific 
+        examples, or <em>instances</em>, are linked, or <em>annotated</em>, to 
+        the concepts. An ontology with annotations is called a knowledge base.</p>
+      <p>RGD uses ontologies to provide new avenues by which the user can find, 
+        and focus on, its objects&#8217; information. Currently the gene ontology 
+        is implemented to give another contextual framework for its gene objects 
+        as well as keywords for RGD&#8217;s general search.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#BFFFBF"><a name="browser"></a><b>How do I use the ontology browser</b></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>The ontology browser is a representation of ontologies 
+        in html format. Each page provides the context in which a term is located 
+        vis-&agrave;-vis its ancestors, <em>or paths</em>, its siblings (other 
+        children for a given parent) and its children (Figure 3). The table has 
+        four columns. From left to right, the columns contain: the term, the terms 
+        accession number, the number annotations to the term and the number of 
+        annotations to the terms plus annotation to its descendants. The term 
+        listing is also a link to its ontology report while the accession number 
+        is a link to the terms browser page. To navigate to the ontology browser, 
+        click on the accession number to the corresponding term&#8217;s browser 
+        page. To obtain details on the term, click on term itself to get to its 
+        report. In the ontology browser page, the specific term is bolded. The 
+        terms indented to the same extent its siblings while the terms indented 
+        one step further to the right below it are its children. The terms with 
+        less indentation above it are its ancestors <em>in that path</em>, each 
+        level of indentation represents a generation.</p>
+      <p align="center"><img src="images/figure-3.gif"><br>Figure 3</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#BFFFBF"> <div align="left"><a name="access"></a><b>How do I access the ontology browser</b></div></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>The ontology browser can be accessed via several routes. 
+        From the home page, clicking on the ontology link gets the user the ontology 
+        search page (Figure 4).</p>
+      <p align="center"><img src="images/figure-4.gif" border="1"><br>
+         Figure 4</p>
+      <p>Typing in a term, a portion of a term or an accession number and selecting 
+        the appropriate ontology and clicking the GO button returns a table listing 
+        terms containing the entered string or a term associated with the submitted 
+        accession number. The columns in the table are organized in the same manner 
+        as those in the ontology browser pages (Figure 5). Clicking the accession 
+        number (second column) sends the user to its term&#8217;s browser page 
+        while clicking on the term accesses the term&#8217;s ontology term report.</p>
+      <p align="center"><img src="images/figure-5.gif" width="600" height="556" border="1"><br>
+         Figure 5</p>
+	  <p>The general search also provides a route to the browser through the user 
+        typing in the exact term on accession number into the general search box. 
+        If the term has annotations, the objects annotated to the term will be 
+        listed and will provide links (accession number) on the search report 
+        to the term&#8217;s browser page, or to the term&#8217;s ontology report</p>
+      <p>Lastly, in the object reports, links to the appropriate browser pages 
+        and ontology reports are available in the ontology portion. Currently, 
+        links from the gene report allow the user to access the gene ontology 
+        data in the ontology browser.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#BFFFBF"><a name="report"></a><b>What data is available in the ontology report</b></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>The ontology report contains information about the term 
+        and links to objects annotated to the term. The topmost section summarizes 
+        information about the term itself. This is followed by a table that lists 
+        objects annotated to the term. A link accesses a version of the page that 
+        lists objects annotated to the term as well as its descendants. Lastly, 
+        the paths to the terms are listed at the bottom of the page.</p>
+      <p><a name="GViewer"></a>Watch ontology report page via <strong>Genome Viewer</strong> tool: </p>
+      <blockquote>
+        <table width="96%"  border="0" cellspacing="1" cellpadding="2">
+          <tr>
+            <td width="99%" bgcolor="#DDFFDD"> <p>What is <strong>Genome Viewer</strong> Tool?</p></td>
+            <td width="1%"><p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td colspan="2"> <p>Genome Viewer Tool generates SVG graphics to show
+                chromosome locations of data objects such as genes and QTLs, related
+            to the query term.</p>
+              <p>&nbsp; </p></td>
+          </tr>
+          <tr>
+            <td bgcolor="#DDFFDD"><p> Requirements for installation</p></td>
+            <td><p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p> You have to install <strong>SVG viewer 3.0</strong> from <a href="http://www.adobe.com/svg/viewer/install/main.html">Adobe</a>.
+                If you are unable to find the SVG Viewer matching your operating
+            system, you will not be able to see the graphics.</p>
+              <blockquote>
+                <p><strong>Special installation steps for Netscape 6 steps for Netscape 6</strong></p>
+                <p> Netscape&nbsp;6 supports the SVG&nbsp;Viewer plug-in, but
+                    the SVG&nbsp;Viewer installation program does not copy the
+                    necessary files correctly, so this must be done manually.<br>
+                    Thus for Netscape&nbsp;6 proceed as follows: </p>
+              <ul>
+                <li> Download and run the SVG&nbsp;Viewer installation program
+                  from <a href="http://www.adobe.com/svg/viewer/install/main.html">Adobe</a>. </li>
+                <li> After that you should find an &quot;Adobe&quot; folder on
+                  your system (on Windows usually C:\Program&nbsp;Files\Common&nbsp;Files\Adobe).
+                  The necessary files (namely &quot;NPSVG3.dll&quot; and &quot;NPSVG3.zip&quot;)
+                  are contained in &quot;SVG Viewer 3.0\Plugins&quot;. <br>
+                  <strong>or</strong><br>
+Search for the files &quot;NPSVG3.dll&quot; and &quot;NPSVG3.zip&quot; on your
+system.                </li>
+                <li> Copy the files 
+
+
+                  <strong>NPSVG3.dll</strong>, <strong>NPSVG3.zip</strong> to
+
+
+the &quot;Plugins&quot; folder in your Netscape&nbsp;6 directory. </li>
+                </ul>
+              <p> Now you should be able to see the SVG graphics using Netscape.
+                It may be necessary to restart the computer (or at least the
+                browser) for the plug-in to work.</p>
+              </blockquote>
+              <p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td bgcolor="#DDFFDD"><p> What does Genome Viewer Tool results look
+            like in ontology report page? </p></td>
+            <td><p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td><p>  Genome Viewer Tool results in ontology report page:</p>
+              <p><img src="images/gviewer-1.gif" width="500" height="390" border="1"></p>
+              <p> If you click chromosome 14, you&rsquo;ll get the page below. </p>
+            <p><img src="images/gviewer-2.gif" width="500" height="432" border="1"></p>
+            <p>&nbsp; </p></td>
+            <td><p>&nbsp;</p></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+      </blockquote>      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

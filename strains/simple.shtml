@@ -1,0 +1,134 @@
+
+<script language='JavaScript'>
+function start_help(anchor) {
+   top.rgdhelp=open("/tu/strains/strain_form_help.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400,height=300");
+   top.rgdhelp.focus();
+}
+</script>
+
+
+<body bgcolor="#FFFFFF">
+<h2><a href="#instructions"><b><font color="#FFFFFF"><a name="help"></a></font></b></a>Strain 
+  Query Form <a href="#instructions"><b></b>
+<img src='<!--#echo var="webroot"-->/common/images/help.gif' width="20" height="20" border="0" alt="Help"></a></h2>
+There are two options to view the RGD strain records: <b>Option 1.</b> Search 
+by keyword or<b> Option 2</b>. By direct selection from a list of strains in RGD: 
+<HR>
+<table border="0" cellspacing="0" cellpadding="2" align="center" width="95%">
+  <tr bgcolor="#999999"> 
+    <td colspan="2"><b><font color="#FFFFFF"><a name="keyword_search"></a>Option 
+      1. Search strain records by Keyword</font></b></td>
+  </tr>
+  <form method="post" action='<!--#echo var="toolroot"-->/strains/keyword_search.cgi' name="keywords">
+    <tr valign="top"> 
+      <td class=links><a href="javascript:start_help('keyword')">Enter Keyword</a></td>
+      <td> 
+        <input type="text" name="keyword" size="40">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td class=links><a href="javascript:start_help('search')">Search Fields</a></td>
+      <td> 
+        <select name="fields" size="5" multiple>
+          <option value="all" selected>All Fields</option>
+          <option value="strain_symbol_lc">Symbol</option>
+          <option value="origin">Origin</option>
+          <option value="anatomy">Anatomy</option>
+          <option value="drgs_chems">Drugs &amp; Chemicals</option>
+          <option value="immunology">Immunology</option>
+          <option value="infection">Infection</option>
+          <option value="life_disease">Lifespan &amp; Spontaneous Disease</option>
+          <option value="phys_biochem">Physiology &amp; Biochemistry</option>
+          <option value="reproduction">Reproduction</option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td> 
+        <input type="submit" name="Submit" value="Search Strains">
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </form>
+  <tr> 
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999"> 
+    <td colspan="2"><b><font color="#FFFFFF"><a name="strain_list"></a>Option 
+      2. View specific strain record</font></b></td>
+  </tr>
+  <tr> 
+    <td colspan="2"><!--#include virtual="${toolroot}/strains/strain_form.cgi"--> 
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"><b><font size="-1">Note</font></b><font size="-1">: Selecting 
+      a 'primary' strain such as BN (no substrain designation) will show the data 
+      for BN and all associated substrains of BN in RGD (BN/Cub-lx, BN/SsNHsd, 
+      etc). Selecting a strain with a specific substrain designation will show 
+      you the data for that strain alone. This is to facilitate comparison of 
+      strains and substrain information. </font></td>
+  </tr>
+</table>
+<h3><a href="instructions"></a></h3>
+<hr>
+<h3><b><font color="#FFFFFF"><a name="instructions"></a></font></b>
+<a href="#help"><img src='<!--#echo var="webroot"-->/common/images/help_grey.gif' width="20" height="20" border="0"></a> 
+  Strain Search Instructions</h3>
+<p>The RGD Strain records may be accessed in two different ways: </p>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif">Search by Keyword - Search the 
+    strain records for strain entries containing a particular keyword, for example 
+    to find strains documented as being associated with hypertension. The search 
+    returns a list of hits with a short sample of text around the keyword to indicate 
+    the context in which is was used.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">View specific strain record - 
+    Select a known strain from the list of RGD Strain records to view the strain 
+    record directly.</font></li>
+</ol>
+<p> 
+<p>The rat strain data presented here is based on the 
+<a href="strain_intro.shtml">Rat Strain List collected by Dr. M. Festing</a> plus new strain data collected as 
+  part of the RGD curation effort. At the present time not all of the original 
+  Rat Strain List entries are loaded, work is underway to curate these remaining 
+  records during the summer of 2001.</p>
+<hr>
+<h3><a name="het_table"></a>
+<a href="hetscores1.shtml">ACP Strain Heterozygote Table</a></h3>
+	
+<p>This is a table showing the number of heterozygotic allele sizes detected when 
+  48 strains were screened with 4000+ SSLPs. A completely inbred strain would 
+  be expected to have very few (ideally zero) heterozygotic markers, higher numbers 
+  of heterozygotic markers would suggest a less inbred strain. <BR>
+  <BR>
+ 
+<h3><a name="poly_table"></a>ACP Strain Polymorphism Percentage Table</h3>
+<p>Based on the ACP data, this table indicates the percentage of polymorphic markers 
+  detected between two given strains. Two tables are presented, calculated using 
+  different criteria to define when two allele sizes are polymorphic between two 
+  strains. At its simplest, a marker is polymorphic between strain A and strain 
+  B if its allele size in Strain A is different to that in Strain B. These percentages 
+  are give in <a href="poly_table0bp.shtml">Table 1</a>. However, this does not 
+  take into account the potential inaccuracies brought about by polyacrylamide 
+  gel electrophoresis, both at the gel running and gel reading stages. To account 
+  for this, we have recalculated the polymorphism percentages based upon saying 
+  that a marker is polymorphic between Strain A and Strain B if the difference 
+  in marker size between the two strains is greater than 2bp (<a href="poly_table2bp.shtml">Table 
+  2</a>). This results in a lower polymorphism rate between the strains but is 
+  perhaps a more accurate value. 
+<ul>
+  <li><a href="poly_table0bp.shtml">Table 1</a> - Basic Strain Polymorphism Percentage 
+    table, markers were considered polymorphic if they were not identical in size.</li>
+  <li><a href="poly_table2bp.shtml">Table 2</a> - Recalculated percentages based 
+    on polymorphism being a size difference greater than 2 base pairs.</li>
+</ul>
+<p>&nbsp;
+<p><B>NB</B> These are both large HTML tables. <BR>
+  <BR>
+  <BR>
+<p> <a href='<!--#echo var="webroot"-->/'>Back to RGD Home </a>

@@ -1,0 +1,166 @@
+ 
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> &gt; 
+
+  RCF</p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top">
+    <td bgcolor="#66CC66"> <div align="left"><strong><font size="+1">Rat Community 
+        Forum Help</font></strong></div></td>
+    <td width="24%" rowspan="2"> <!--#include virtual="${webroot}/common/help/navigator.shtml"--> </td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td width="76%"> <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#whatsrcf">What is RCF</a>?</li>
+        <li> <a href="#registering">Registering as a user of RCF</a></li>
+        <li> <a href="#posting">Posting to RCF</a> </li>
+        <li><a href="#viewing">Viewing Posts</a> </li>
+        <li><a href="#replying">Replying to Posts</a> </li>
+        <li><a href="#morehelp">Need More Help?</a> </li>
+        <li><a href="#related">Related Information/Links</a></li>
+    </ul>
+    <p>&nbsp;</p></td>
+  </tr>
+  
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><a name="definition"></a><b>Definition of Rat Community Forum</b></td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td colspan="2"> <p><i>&quot;The Rat Community Forum (RCF) is an online bulletin board which is intended to be used by any member of the rat community to ask and answer rat-related questions.&quot;</i></p>
+      <p> The Rat Community Forum is also known as &ldquo;RCF&rdquo;.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+  </tr>
+  
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><a name="whatsrcf"></a><a name="finding"></a><b>What is RCF?</b></td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td colspan="2"> <p> The Rat Community Forum (RCF) is hosted by <a href="http://rgd.mcw.edu/">The Rat Genome Database</a>. Users can access RCF at <a href="http://rgd.mcw.edu/rcf">http://rgd.mcw.edu/rcf</a> or by visiting RGD&rsquo;s homepage and clicking on &ldquo;Rat Forum&rdquo;, under the &ldquo;Community&rdquo; header.</p>
+      <p align="center"><img src="../images/rcf_help1.gif" alt="RCF Forums screenshot" width="491" height="159" border="1"></p>
+      <p>RCF is a moderated forum, where all posts are reviewed for content before posting. RCF has five forums, each of which is intended for a particular type of question or announcement:</p>
+      <ul>
+        <li>General Questions and Help</li>
+        <li>Nomenclature</li>
+        <li>News</li>
+        <li>Meetings and Workshops</li>
+        <li>Employment and Opportunities</li>
+      </ul>
+      <p>Users must <a href="http://rgd.mcw.edu/dcforum/dcboard.cgi?az=user_register">register</a> with RCF in order to be able to post to the forum. However, you need not be a registered user to view posts at : http://rgd.mcw.edu/RCF/</p>
+      <p>Within each forum, you are able to view posts regarding the specific topic and post to that forum. The forum makes it easy to view and reply to postings by other users, the postings are also searchable making it a growing resource of rat-related questions and answers</p>
+      RCF was amalgamated with the MGI Rat List in 2002; the <a href="http://rgd.mcw.edu/dcforum/dcboard.cgi?forum=DCForumID5&az=list&archive=yes">archives</a> of the old RCF and Rat List postings are available.
+
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p>
+    </td>
+  </tr>
+  
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> 
+      <div align="left"><a name="registering"></a><b>Registering as a User of RCF</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>To register as a user of The Rat Community Forum, please follow these steps.</p>
+      <ul>
+        <li>Open web browser to: <a href="http://rgd.mcw.edu/RCF/">http://rgd.mcw.edu/RCF/</a></li>
+        <li>Double click &ldquo;Login&rdquo;</li>
+        <li>Double click: &ldquo;Click here to register and create an account&rdquo;</li>
+        <li>Fill out the registration form and submit</li>
+        <li>A temporary password will then be sent to your registered email address.</li>
+        <li>Obtain password from email.</li>
+        <li>Return to: <a href="http://rgd.mcw.edu/RCF/">http://rgd.mcw.edu/RCF/</a></li>
+        <li>Double Click &ldquo;Login&rdquo;</li>
+        <li>Enter your username and password and click &ldquo;Login&rdquo;</li>
+        <li>Double Click &ldquo;User&rdquo;</li>
+        <li>Choose &ldquo;Change Password&rdquo;</li>
+        <li>Type in temporary (old) password</li>
+        <li>Type in a new password that you will remember and submit.</li>
+      </ul>
+      Now you are a registered user of The Rat Community Forum with a username and password created by you.</p>
+    <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+   <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> 
+      <div align="left"><a name="posting"></a><b>Posting to RCF</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p> In order to post to RCF, you must be a registered user. For details on registering, please see RCF help topic, &ldquo;Registering as a user of RCF&rdquo;. </p>
+      <p> Registered users can properly post messages in the following manner: </p>
+      <p> 1. Open the link the RCF site: http://rgd.mcw.edu/RCF/ </p>
+      <p> 2. Login </p>
+      <p> 3. Click on the forum upon which you would like to submit a message (i.e. &quot;Meetings and Workshops&quot;) </p>
+      <p> 4. Click on &quot;Post&quot; within the chosen forum </p>
+      <p> 5. Post you Title and Message within the given area. </p>
+      <p> 6. You can then preview your message and post to the RCF site. </p>
+      <p>Internally your message is received at RGD, but your message will not post automatically. It is reviewed for content and proper formatting manually and then will be released to the RCF site.</p>
+    <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr> 
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> 
+      <div align="left"><a name="viewing"></a><a name="report"></a><b>Viewing Posts</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>If you are a registered user of RCF you will get automatically receive and email when a new message is posted to the forum. Or you may view all messages posted to RCF in a given forum by visiting: <a href="http://rgd.mcw.edu/RCF/">http://rgd.mcw.edu/RCF/</a>. You need not be a member of RCF to view postings via the RCF website.</p>
+      <p>The forum makes it easy to view postings and related replies by aligning original posts and their related messages together.</p>
+      <p>Below is a screenshot of a sample RCF posting showing a question and the list of replies.</p>
+      <p align="center"><img src="../images/rcf_help2.gif" alt="RCF Forums screenshot" width="596" height="401" border="1"></p>
+    <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+  
+    <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> 
+      <div align="left"><a name="replying"></a><b>Replying to Post</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>You may reply to RCF posts in two different ways. You can reply to an RCF message you received via email or reply via the RCF website. Please note replies sent to either a RCF post via email or website, is sent through the RCF system , messages are not personal replies to the send only.</p>
+      <p>Replying via email message:</p>
+      <ol>
+        <li>Click &ldquo;Reply&rdquo; to the RCF posting that was sent to you via email.</li>
+        <li>This response message will then be sent to the RCF system for review and posting.</li>
+      </ol>      <p>Replying via RCF website:</p>
+      <ol>
+        <li>Open: <a href="http://rgd.mcw.edu/rcf">http://rgd.mcw.edu/rcf</a></li>
+        <li>Login using your user name and password</li>
+        <li>Open the forum where the original post is located</li>
+        <li>Open the original message</li>
+        <li>Click the reply (see example below)</li>
+		
+		      <div align="center"><img src="../images/rcf_help3.gif" alt="RCF Forums screenshot" width="571" height="448" vspace="8" border="1"></div>
+		
+        <li> Post your response in the message box. </li>
+        <li> Click &ldquo;Preview&rdquo; to ensure your message displays correctly. </li>
+        <li> Once your message appears correctly, click &ldquo;Post&rdquo; </li>
+      </ol>
+    <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"><strong><a name="morehelp" id="report"></a>Need more help?</strong></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="2"><p> RCF has its own <a href="http://rgd.mcw.edu/dcforum/dcboard.cgi?az=help">Help</a> section to describe how to use the forum itself located at: <a href="http://rgd.mcw.edu/dcforum/dcboard.cgi?az=help">http://rgd.mcw.edu/dcforum/dcboard.cgi?az=help</a>.</p>
+     <p><font size="-1">[ <a href="#">back to top</a> ]</font></p>
+	</td>
+  </tr> 
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> 
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>RCF is run using a modified version of <a href="http://www.dcscripts.com/">DCScript's</a> 
+        DCForum software.</p>
+      <p><font size="-1">[ <a href="#">back to top</a> ]</font></p></td>
+  </tr>
+</table>
+
+
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

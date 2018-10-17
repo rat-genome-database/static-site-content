@@ -1,0 +1,130 @@
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="../">Help</a> &gt; <a href="./">How 
+  Do I..</a>.&gt; Genomics</p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#FFFF99"> <div align="left"><strong><font size="+1">How Do I use RGD to support genomic studies?<br>
+        </font></strong></div></td>
+    <td bgcolor="#FFFFCC"><strong>Covers:</strong></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="76%"><ul>
+        <li><a href="#genomic_location">How do I find the physical location of a gene in the rat genome?</a></li>
+        <li><a href="#comparative_mapping">How do I determine the location of my rat gene in human, mouse?</a></li>
+        <li><a href="#rgsp">How can I find out the status of the Rat sequencing project?</a></li>
+        <li><a href="#other_info">How can I get other information about a gene?</a></li>
+        <li><a href="#bacs">How do I find a BAC clone or contig which contains my gene?</a></li>
+        <li><a href="#snps">How can I discover what SNPs have been found in a region?</a></li>
+      </ul></td>
+    <td width="24%"><ul>
+        <li><font size="-1">Genes</font><font size="-1">, Sequences, Maps</font></li>
+        <li><font size="-1">VCMap</font></li>
+        <li><font size="-1">Blast, Blat</font></li>
+      </ul></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>&nbsp;</p>
+      <p><strong>For more background information:</strong></p>
+      <ol>
+        <li>Genome Analysis, A laboratory manual, Vols 1-4: Mapping Genomes. Birren, 
+          et al. CSHL Press.<br>
+          <font size="-1">Excellent lab manual describing genomic analysis, cloning 
+          and mapping techniques in humans and model organisms</font>.</li>
+        <li>Modern Genetic Analysis, Griffiths, et al [<a href="http://www.ncbi.nih.gov:80/books/bv.fcgi?call=bv.View..ShowSection&rid=mga">online 
+          at NCBI</a>]<br>
+          <font size="-1">Textbook describing many fundamental analysis techniques.</font></li>
+      </ol>
+      <p><font size="-1">other online resources:</font></p>
+      <ul>
+        <li><font size="-1"><a href="http://www.ncbi.nlm.nih.gov/genome/guide/R_norvegicus.html">NCBI 
+          Rat Genome Resources</a></font></li>
+        <li><font size="-1"><a href="http://www.hgsc.bcm.tmc.edu/projects/rat/">Baylor 
+          College of Medicine Genome Sequencing Center</a></font></li>
+      </ul>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="2" bgcolor="#FFFFCC"><font size="+1"><a name="genomic_location" id="genomic_location"></a>How do I find the physical location of a gene in the rat genome?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p> With the completion of the genome sequence for the rat, finding the physical location of a segment of DNA or protein has become a more straightforward project. Although the sequence is currently in a draft form, with assemblies still being released on a regular basis, portions of the sequence are considered &ldquo;final&rdquo;. As new assembly builds become available, RGD will include this information in our database.</p>
+      <p> There are two principal ways of finding the physical location of a gene or gene segment using its nucleotide or amino acid sequence:</p>
+      <ol>
+        <li> <strong><a href="/sequenceresources/blat.shtml"> BLAT</a> at RGD:</strong> The physical location of a DNA segment in the rat genome can be found using the BLAT alignment tool. Using <a href="/sequenceresources/blat.shtml">RGD's BLAT tool</a>, one or more submitted nucleotide sequences can be aligned to the rat genome. The chromosomal location(s) of the best hits will be returned including the chromosome number and nucleotide position. Results include links to both RGD&rsquo;s and UCSC&rsquo;s genome browsers to give a visual representation of the intron/exon structure of the sequence alignment.</li>
+		<p> More complete results can be obtained using <a href="http://genome.brc.mcw.edu/cgi-bin/hgBlat?command=start&org=Rat&db=rn3&hgsid=134756">UCSC&rsquo;s BLAT tool</a>. The tool at UCSC allows alignment of either DNA or protein sequences to the genomes of a variety of species, including rat, mouse and human.</p>
+        <li> <strong><a href="http://www.ncbi.nlm.nih.gov/genome/seq/RnBlast.html"> BLAST</a> rat genome at NCBI:</strong> The physical location of a DNA sequence can also be ascertained using <a href="http://www.ncbi.nlm.nih.gov/genome/seq/RnBlast.html">NCBI&rsquo;s Genome BLAST</a> tool. The BLAST tool returns one or more genomic contigs with areas of high sequence similarity to the submitted sequence. A link is given to the MapViewer tool which shows the chromosomal location of the BLAST hit. Using BLAST is particularly useful for searches with short sequences (&lt;40 bases) which the BLAT tool is less able to align.</li>
+      </ol>
+      <p> Since the rat genome sequence is still a draft sequence, there are areas where the true sequence is unclear. Occasionally, a situation will occur where BLAT results do not give any good hits that span a large portion of the input sequence. In these cases it may be possible to estimate where a gene might be located by looking at the synteny between rat, mouse and human. If a BLAT or BLAST search of the sequence against mouse and/or human shows that the homologous gene(s) lie in a region with established synteny between species, the genomic location of the rat gene can be generally estimated by the placement of genes in the syntenic region(s). Use of the RGD <a href="/VCMAP/">VCMap tool</a> is very helpful for this kind of inquiry (see below). </p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"> <div align="left"><font size="+1"><a name="comparative_mapping" id="comparative_mapping"></a>How do I determine the syntenic region in human or mouse, or any other organism?</font></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p> RGD provides comprehensive, searchable, <strong>comparative maps</strong> produced by the <a href="/tu/vcmap/"> VC Map</a> algorithm. The software automatically constructs the syntenic maps of rat, mouse and human by first aligning sequence data between the organisms and then recombining the aligned sequences with the radiation hybrid maps of each organism to visualize the syntenic regions. VCMap is one of a number of approaches to locating a sequence in the genome of another organism:</p>
+      <ul>
+        <li> Use <a href="/VCMAP/">VCMap</a> to directly locate your gene in Human and/or Mouse and view its predicted location in Rat </li>
+        <li> Compare the rat sequence to the Human/Mouse genomes using NCBI genome Blast </li>
+        <ul>
+          <li><a href="http://www.ncbi.nlm.nih.gov/genome/seq/HsBlast.html">Human Genome BLAST</a></li>
+          <li><a href="http://www.ncbi.nlm.nih.gov/genome/seq/MmBlast.html">Mouse Genome BLAST</a></li>
+        </ul>
+        <li> Use <a href="http://genome.ucsc.edu/cgi-bin/hgBlat?command=start">UCSC Blat</a> tool with a rat query sequence to search for homologs in the Human or Mouse genome </li>
+      </ul>
+      <p> If you are trying to locate the syntenic region in an organism other than Human or Mouse, please check <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=genomeprj">NCBI's Entrez Genome Project Database</a>, which is a searchable database of complete and incomplete large-scale sequencing, assembly, annotation and mapping projects for cellular organisms.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"><font size="+1"><a name="rgsp" id="rgsp"></a>How do I find the status of the Rat Genome Sequencing Project?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>RGD provides an update on the progress of the Rat Genome Sequencing project as well as links to sequencing resources. <a href="/sequences/rgp_info.shtml#rgp">See RGD Update.</a></p>
+      Baylor College of Medicine also provides updates on the status of the assembled rat genomic sequence. <a href="http://www.hgsc.bcm.tmc.edu/projects/rat/">See Baylor Update</a>.      
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"><strong><a name="other_info" id="other_info"></a></strong><font size="+1">How 
+      do I get other information about a gene?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p> The RGD <a href="http://ringo.brc.mcw.edu/tu/genes/"> Gene report</a> (and the reports for other <a href="/tu/glossary.shtml#object"> objects</a> such as QTLs and SSLPs) lists the information present in RGD and also includes a set of links to other online resources, listed in the &ldquo;External Database Links&rdquo; section of the report [example report for <a href="/tools/query/query.cgi?id=2167"> Atp1a1</a>]. These provide access to additional information held in other databases and include: </p>
+      <ul>
+        <li> NCBI <a href="http://www.ncbi.nih.gov:80/entrez/query.fcgi?db=Nucleotide"> Nucleic Acid</a> and <a href="http://www.ncbi.nih.gov:80/entrez/query.fcgi?db=Protein"> Protein</a> sequences </li>
+        <li> NCBI<a href="http://www.ncbi.nih.gov/entrez/query.fcgi?db=gene"> Entrez Gene</a> report </li>
+        <li> NCBI <a href="http://www.ncbi.nih.gov:80/entrez/query.fcgi?db=PubMed"> PubMed</a> citations for both RGD-curated and non-curated references associated with the gene </li>
+        <li> NCBI <a href="http://www.ncbi.nlm.nih.gov/UniGene/"> UniGene</a> report </li>
+        <li><a href="http://ratmap.gen.gu.se/"> RatMap</a> gene report </li>
+        <li><a href="http://www.tigr.org/"> TIGR</a> - TIGR Rat Gene Index (RGI) report </li>
+        <li><a href="http://us.expasy.org/sprot/"> SwissProt</a> &ndash; Swiss-Prot/TrEMBL protein reports </li>
+        <li><a href="http://www.genome.ad.jp/kegg/">KEGG</a> - Kyoto Encyclopedia of Genes and Genomes pathway report</li>
+        <li><a href="http://germonline.unibas.ch/index.php">GermOnline</a> &ndash; gene report from the GermOnline knowledgebase of microarray data relevant to the mitotic and meiotic cell cycle </li>
+      </ul>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"><strong><a name="bacs" id="bacs"></a></strong><font size="+1"> How do I find a BAC clone or contig which contains my gene?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p> Whole genome sequencing has made it possible to find and analyze upstream and downstream segments of sequence surrounding a known mRNA without the necessity of cloning the specific flanking regions. There are three primary resources for finding the BAC clone(s) and/or contig(s) which contain the sequence of interest:</p>
+      <ul>
+        <li><a href="http://www.ncbi.nlm.nih.gov/genome/seq/RnBlast.html">Rat BLAST</a> at NCBI compares the input sequence with the rat genome and returns one or more contigs which contain regions with a high degree of homology to the input sequence. </li>
+        <li><a href="http://www.ncbi.nlm.nih.gov/BLAST/">Nucleotide-nucleotide BLAST</a> at NCBI compares the input sequence with the GenBank nucleotide sequence databases (see <a href="http://www.ncbi.nlm.nih.gov/BLAST/producttable.shtml">BLAST Program Selection Guide</a>, &ldquo;BLAST Database Content&rdquo; for more details). Nucleotide BLAST returns a list of individual nucleotide sequences, including mRNA and BAC clone sequences. The search can be limited to a particular organism. </li>
+        <li><a href="http://www.hgsc.bcm.tmc.edu/blast/blast.cgi?organism=Rnorvegicus">BLAST at BCM</a> compares the input sequence to the rat whole genome shotgun sequence, including BAC clones and assemblies.</li>
+      </ul>
+	  <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"><strong><a name="snps" id="snps"></a></strong><font size="+1">How do I discover what SNPs have been found in a region?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p> RGD does not currently display Single Nucleotide Polymorphism (SNP) report pages. The rat data from NCBI&rsquo;s dbSNP is, however, available as a display track on the RGD <a href="/sequenceresources/gbrowse.shtml">GBrowse</a> genome browser reports. New SNP data and SNP report pages are currently being incorporated into RGD. Until these advances are made available, more information on SNPs, what they are and how they can be used, can be found on the Human Genome Project&rsquo;s <a href="http://www.ornl.gov/sci/techresources/Human_Genome/faq/snps.shtml">SNP Fact Sheet</a>. For information on specific SNPs, see <a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a> at NCBI.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+[<a href="#top">back to top</a>]

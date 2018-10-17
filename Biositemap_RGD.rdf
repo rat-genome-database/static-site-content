@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:activity="http://bioontology.org/ontologies/Activity.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1270048179.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:area="http://bioontology.org/ontologies/ResearchArea.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:p1="http://bioontology.org/ontologies/BiomedicalResources.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:BRO="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#"
+    xmlns:desc="http://bioontology.org/ontologies/biositemap.owl#"
+  xml:base="http://bioontology.org/ontologies/biositemap_6274.rdf">
+  <owl:Ontology rdf:about="http://bioontology.org/ontologies/6274">
+    <owl:imports rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl"/>
+  </owl:Ontology>
+  <desc:Resource_Description rdf:about="http://www.owl-ontologies.com/Ontology1270048179.owl#Rat_Genome_Database">
+    <desc:related_activities>
+      <activity:Training/>
+    </desc:related_activities>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://rgd.mcw.edu</desc:URL>
+    <desc:resource_type>
+      <BRO:Portal/>
+    </desc:resource_type>
+    <desc:contact_person_phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >414-456-8871</desc:contact_person_phone>
+    <desc:resource_sharable rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Yes</desc:resource_sharable>
+    <desc:biositemap_author rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Jennifer R Smith</desc:biositemap_author>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rat, gene, genome, QTL, strain, ontology, pathway, comparative genomics, physiology, phenotype, disease, model organism</desc:keywords>
+    <desc:related_areas_of_research>
+      <area:Proteomics/>
+    </desc:related_areas_of_research>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Rat Genome Database is the premiere location for rat data including genomics, genetics, physiology and functional data.  RGD is responsible for attaching biological information to the rat genome via ontology annotations assigned to genes and quantitative trait loci (QTL), and for consolidating rat strain data and making it available to the research community.  RGD is working with groups such as the Programs for Genomic Applications at MCW and the National BioResource Project for the Rat in Japan to collect and make available comprehensive physiologic data for a wide variety of rat strains.  RGD is also developing a suite of tools for mining and analyzing genomic, physiologic and functional data for the rat, and comparative data for rat, mouse and human.</desc:description>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Jennifer R Smith</desc:contact_person>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human and Molicular Genetics Center</desc:center>
+    <desc:technical_support rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Available</desc:technical_support>
+    <desc:documentation_available rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Yes</desc:documentation_available>
+    <desc:related_areas_of_research>
+      <area:Physiology/>
+    </desc:related_areas_of_research>
+    <desc:related_activities>
+      <activity:Community_Engagement/>
+    </desc:related_activities>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Rat Genome Database</desc:resource_name>
+    <desc:version_information>
+      <desc:Version_Information/>
+    </desc:version_information>
+    <desc:contact_person_email rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >jrsmith@mcw.edu</desc:contact_person_email>
+    <desc:related_areas_of_research>
+      <area:Genomics/>
+    </desc:related_areas_of_research>
+    <desc:related_activities>
+      <activity:Software_Development/>
+    </desc:related_activities>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medical College of Wisconsin</desc:organization>
+    <desc:platforms rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OS Independent</desc:platforms>
+    <desc:resource_type>
+      <BRO:Relational_Database/>
+    </desc:resource_type>
+    <desc:related_areas_of_research>
+      <area:Bioinformatics/>
+    </desc:related_areas_of_research>
+  </desc:Resource_Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 536)  http://protege.stanford.edu -->

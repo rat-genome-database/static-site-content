@@ -1,0 +1,37 @@
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" bgcolor="#222222"><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  
+  <tr align="left" bgcolor="#40515F">
+    <td>
+	  <table width="800" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+		  <td width="30"><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/shim.gif' width="30" height="1"></td>
+		  <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='/' class="atitle">RGD&nbsp;Home</a>&nbsp;</p></td>
+          <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td><p>&nbsp;<a href='../dportal/index.shtml' class="atitle">Disease Models </a>&nbsp;</p></td>
+          <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td><p>&nbsp;<a href='../dportal/phenotype.shtml' class="atitle">Phenotypes</a>&nbsp;</p></td>
+          <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td><p>&nbsp;<a href='../dportal/biological_processes.shtml' class="atitle">Submission</a></p></td>
+		  <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='../dportal/pathways.shtml' class="atitle">Availability</a></p></td>
+		  <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='../dportal/tools.shtml' class="atitle">Tools</a>&nbsp;&nbsp;</p></td>
+		  <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+          <td><p>&nbsp;<a href='../dportal/relatedlink.shtml' class="atitle">Related&nbsp;Links</a>&nbsp;</p></td>
+		  <td><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/sep-line.gif' width="1" height="16"></td>
+		  <td width="100"><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/shim.gif' width="60" height="1"></td>
+        </tr>
+      </table>
+	</td>
+    <td width="100%">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" bgcolor="#000000"><img src='../dportal/&lt;!--#echo var=&quot;webroot&quot;--&gt;/common/diseaseportal/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>

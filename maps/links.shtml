@@ -1,0 +1,38 @@
+
+<p>&nbsp;</p>
+<div class="links">
+<p><b>Jump to a Map:</b></p>
+<FORM method=post action='<!--#echo var="toolroot"-->/maps/maps_view.cgi'>
+<select name=id>
+<option selected value="">Map Name
+<option value=1000> FHH x ACI
+<option value=1001> SHRSP x BN
+<option value=1002> RH map
+<option value=1006> RH x Genetic
+</select>
+<select name=chr><option selected value="">CHROM
+<OPTION value=1>CHR. 1
+<OPTION value=2>CHR. 2
+<OPTION value=3>CHR. 3
+<OPTION value=4>CHR. 4
+<OPTION value=5>CHR. 5
+<OPTION value=6>CHR. 6
+<OPTION value=7>CHR. 7
+<OPTION value=8>CHR. 8
+<OPTION value=9>CHR. 9
+<OPTION value=10>CHR. 10
+<OPTION value=11>CHR. 11
+<OPTION value=12>CHR. 12
+<OPTION value=13>CHR. 13
+<OPTION value=14>CHR. 14
+<OPTION value=15>CHR. 15
+<OPTION value=16>CHR. 16
+<OPTION value=17>CHR. 17
+<OPTION value=18>CHR. 18
+<OPTION value=19>CHR. 19
+<OPTION value=20>CHR. 20
+<OPTION value=21>CHR. X
+</select>
+<input type="submit" value="Find">
+</FORM>
+</div>

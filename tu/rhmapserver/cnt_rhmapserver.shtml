@@ -1,0 +1,195 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; RH Map Server </p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">RH Map Server Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> 
+
+      <ul>
+        <li><a href="#definition">What is RH Map Server</a>?</li>
+        <li><a href="#finding">How do I use RH Map Server?</a></li>
+        <li><a href="#related">What other information can I get to via RH Map 
+          Server</a>?</li>
+        <li><a href="#report">What do the RH Map Server results look like?</a></li>
+        <li><a href="/RHMAPSERVER/">Let me use RH Map Server...</a></li>
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p><i>RH Map Sever is an interactive program for placing 
+        markers on the current MCW Radiation Hybrid framework map. Users can submit 
+        RH vectors from their own mapping experiments and the tool will attempt 
+        to place them on the MCW map. RH Map Server is based on <a href="http://www-genome.wi.mit.edu/ftp/pub/software/rhmapper/">rhmapper 
+        by Lincoln Stein</a> and uses a hidden Markov model for maximum likelihood 
+        calculations on multipoint maps.</i></p>
+      <p>Reference information:</p>
+      <ul>
+        <li>MCW RH Map - Steen RG, Kwitek-Black AE, et al., <a href="http://www.genome.org/cgi/content/abstract/9/6/AP1">Genome 
+          Research, 1999, 6:1-8</a></li>
+        <li>RHMapper - L. Stein, L. Kruglyak, D. Slonim and E. Lander. (1995) 
+          <a href="http://www-genome.wi.mit.edu/ftp/pub/software/rhmapper/">RHMAPPER</a>, 
+          unpublished software, Whitehead Institute/MIT Center for Genome Research</li>
+      </ul>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Placing RH vectors using RH Map Server</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"><p>&nbsp;</p>
+      <ol>
+        <li>Either upload your RH Vector data from a file or paste the RH Vector 
+          data into the indicated text field<br>
+          <br>
+          Vectors should be in the following format:<br>
+          <br>
+          <font size="-2" face="Courier New, Courier, mono">aldoa 0000000210000000000000001000000000010020000010000000001010100110001012100010000021011101000100222222<br>
+          atp1a3 0010000010000000000001100010000000000000000010000001001001000200100001010000000011010011000101222222<br>
+          atp4a 0001000100000000000001120010200000000000000000000001001000000110100010010000000011010001000201222222<br>
+          cgrat10 2011101010000001110201100000000000210210000010101121001100120000001000110001201100000020020000010001<br>
+          </font><br>
+          The first column is the marker name which is limited to 11 characters, 
+          the second is the rhvector string, any remaining columns will be discarded, 
+          Each column is delimited by a tab, space or comma.<br>
+        </li>
+        <li>Click <strong>Submit Vectors</strong></li>
+        <li>A summary of your vectors is returned and you have three additional 
+          fields to check:<br>
+          <br>
+          <img src="/tu/images/rh_mapp_form2.gif" alt="mapserver submission options" width="381" height="152" border="1"> 
+          <br>
+          <ol type="i">
+            <li><strong>Enter your email address</strong> so the results can be 
+              emailed to you when they are complete.</li>
+            <li><strong>Review your submitted vectors</strong>, you can deselect 
+              any which you do not wish to place (you may decided there are too 
+              many '2's (unknown scores) or too many '1's to get a decent placement)</li>
+            <li><strong>Enter a LOD cutoff value for the placement</strong>. This 
+              is the threshold the application uses to place your marker(s). Markers 
+              are placed at that cutoff value and results returned if the confidence 
+              in the marker's position (measured by a LOD score) is at or above 
+              the cutoff value. If markers fail to place at a given LOD cutoff, 
+              lowering the value will increase the chance of placement but also 
+              reduce the confidence in the position returned.<br>
+              <br>
+            </li>
+          </ol>
+        </li>
+        <li>Click <strong>Run RH Placement</strong> to submit the vectors to the 
+          map server.</li>
+      </ol>
+      <p>You will be notified by email when the placement is complete and you 
+        can then return to check the results.</p>
+      <p><strong>Data Management Policy</strong></p>
+      <ul>
+        <li>No copies are kept of either your submitted vectors or your placement 
+          results</li>
+        <li>Your results will only be available online for a total of THREE days. 
+          Please check your results as soon as you receive your email notification 
+          to ensure that you can take advantage of your submissions.</li>
+        <li>You may also delete your data yourself through our online service.</li>
+      </ul>
+      <hr width="50%">
+      <p>You can give the RH Mapserver a try by pasting in the sample RH vectors 
+        shown above for Aldoa, atp1a3, etc. into the form.</p>
+      <p><a href="/RHMAPSERVER/"><img src="../images/try_it.gif" border="0"></a></p>
+      <p>&nbsp; </p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The current MCW RH map is available in the <a href="/maps/">Maps</a> 
+        section of RGD.</p>
+      <p>The dataset listing all the mapped markers, their placement LOD and the 
+        primer and clone sequences is available <a href="http://rgd.mcw.edu/pub/data_release/MAP_DATA">MAPS_DATA</a> 
+        file on the <a href="http://rgd.mcw.edu/pub/">FTP</a> site.</p>
+      <p>The <a href="http://www-genome.wi.mit.edu/ftp/pub/software/rhmapper/">RHMapper 
+        software</a> is available from the Whitehead Institute</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b>The RH Map Server Reports</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>You will be notified by email when the results are available. The email 
+        contains a summary of the results plus a link to the complete online result 
+        page. The online results will list the following options:</p>
+      <p align="center"><img src="/tu/images/rh_mapper_results.gif" alt="Mapserver results" width="400" height="193" border="1"></p>
+      <p align="left">Graphical images are available in the Maps (gif) section, 
+        a section of a map is shown below. Click to view the entire map.</p>
+      <p align="center"><a href="/tu/images/rh_chr1_placement.gif"><img src="/tu/images/rh_chr1_placement_slice.gif" alt="rhmap image" width="300" height="95" border="1"></a></p>
+      <p align="left">Data is automatically removed from the server after three 
+        days and no copies are retained, however, you can manually delete you 
+        datasets using the DELETE option on the results page.</p>
+
+
+
+	    <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

@@ -1,0 +1,90 @@
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="../">Help</a> &gt; <a href="./">How 
+  Do I..</a>.&gt; Sequences</p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#FFFF99"> <div align="left"><strong><font size="+1">How Do I 
+        use RGD to support sequence analysis?<br>
+        </font></strong></div></td>
+    <td bgcolor="#FFFFCC"><strong>Covers:</strong></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="76%"><ul>
+        <li><a href="#genomic_location">How do I do a rat-specific BLAST analysis?</a></li>
+        <li><a href="#primers">How can I do DNA primer analysis?</a></li>
+        <li><a href="#metagene">How can I do gene prediction with genomic sequence?</a></li>
+      </ul></td>
+    <td width="24%"><ul>
+        <li><font size="-1">Sequences, Maps</font></li>
+        <li><font size="-1">Metagene, Primer Analysis, Primer3</font></li>
+        <li><font size="-1">Blast</font></li>
+      </ul></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>&nbsp;</p>
+      <p><strong>For more background information:</strong></p>
+      <ol>
+        <li>Genome Analysis, A laboratory manual, Vols 1-4: Mapping Genomes. Birren, 
+          etal. CSHL Press.<br>
+          <font size="-1">Excellent lab manual describing genomic analysis, cloning 
+          and mapping techniques in humans and model organisms</font>.</li>
+        <li>Modern Genetic Analysis, Griffiths, etal [<a href="http://www.ncbi.nih.gov:80/books/bv.fcgi?call=bv.View..ShowSection&rid=mga">online 
+          at NCBI</a>]<br>
+          <font size="-1">Textbook describing many fundamental analysis techniques</font></li>
+      </ol>
+      <p><font size="-1">other online resources:</font></p>
+      <ul>
+        <li><font size="-1"><a href="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/information3.html">NCBI 
+          BLAST tutorial</a>, <a href="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/glossary2.html">BLAST 
+          glossary</a></font></li>
+      </ul>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"><font size="+1"><a name="rat_blast" id="rat_blast"></a>How 
+      do I do a rat-specific sequence BLAST?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>RGD has a <strong><a href="../../sequenceresources/blast.shtml">BLAST</a></strong> tool available for public use. Several other sites also have tools for rat/rodent specific BLAST analysis.</p>
+      <ul>
+        <li><a href="../../sequenceresources/blast.shtml">RGD BLAST</a>- BLAST uses a heuristic algorithm to detect relationships among sequences which share regions of similarity.</li>
+        <li><a href="http://www.ncbi.nlm.nih.gov/genome/seq/RnBlast.html"> Rat Genome BLAST at NCBI</a> - Blasts against a variety of rat genomic nucleotide and protein sequences </li>
+        <li><a href="http://www.ncbi.nih.gov/BLAST/"> BLAST at NCBI</a> - Blasts against a wide variety of nucleotide and protein sequences, can be limited to sequences from a particular organism </li>
+        <li><a href="http://mouseblast.informatics.jax.org/"> Rodent BLAST at MGD</a> - Blast against Mouse/Rat sequences contained within NCBI or SwissProt </li>
+      </ul>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"> <div align="left"><font size="+1"><a name="primers" id="primers"></a>How 
+        do I do DNA primer analysis?</font></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>RGD has a basic <a href="/sequences/utils.shtml">PCR primer 
+        analysis utilities tool</a> which does <strong>quick analysis tasks</strong> 
+        such as melting temperature calculation, translation, restricition analysis, 
+        etc.</p>
+      <p>For a more <strong>comprehensive primer analysis</strong> package, <a href="http://www-genome.wi.mit.edu/cgi-bin/primer/primer3_www.cgi">Primer3</a> 
+        at the <a href="http://www-genome.wi.mit.edu/resources.html">Whitehead 
+        Institute</a> is one of the leaders in primer design packages for genetic 
+        and genomic studies.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#FFFFCC"><font size="+1"><a name="metagene" id="metagene"></a>How 
+      can I do gene prediction with genomic sequence?</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p>RGD provides a <strong>gene prediction tool</strong>, <a href="../metagene/">Metagene</a>, 
+        which addresses this exact problem. The approach is novel in that the 
+        genomic sequence is submitted to a<strong> variety of sequence prediction 
+        engines</strong> and the results are <strong>combined by the analysis</strong> 
+        using a neural network algorithm to achieve the most <strong>accurate 
+        results</strong>.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+

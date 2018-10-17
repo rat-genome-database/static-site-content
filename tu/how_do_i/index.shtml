@@ -1,0 +1,17 @@
+<!--#include virtual="/root.shtml"-->
+
+
+
+<!--#set var="title" value="RGD: How Do I?"-->
+
+<!--#set var="category" value="help"-->
+<!--#set var="links" value="${webroot}/common/navigation/sidebar.shtml"-->
+
+<!--#set var="main" value="${webroot}/tu/how_do_i/cnt_index.shtml"-->
+
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+

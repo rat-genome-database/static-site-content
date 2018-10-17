@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)file://R:\PBazeley\project2\qtls\qtlRegistrationInput.html -->
+<HTML><HEAD><TITLE>QTL Registration Form</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Henry Fan, Pete Bazeley" name=Author>
+<META content=11/12/03 name=Date>
+<META 
+content="this page will display some form fields for user input and then submit the form" 
+name=Description>
+<META content="MSHTML 6.00.2800.1276" name=GENERATOR></HEAD>
+<BODY>
+<TABLE width="80%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD width="15%"></TD>
+          <TD><B><FONT color=black size=6>QTL Registration 
+        Form</FONT></B></TD></TR>
+        <TR>
+          <TD colSpan=2><B><FONT color=#b00e size=4>&nbsp;</FONT></B></TD></TR>
+        <TR>
+          <TD width="15%"></TD>
+          <TD><FONT size=2>If the corresponding author's contact details are 
+            already in RGD, you only need to enter the name and e-mail 
+            address.</FONT></TD></TR></TBODY></TABLE>
+      <FORM name="" onsubmit="return verify(this)" 
+      action=qtlRegistrationConfirmation.cgi method=post>
+      <TABLE width=924 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD width=916 colSpan=2><FONT color=black size=3>Contact 
+            Information</FONT><FONT size=2>&nbsp;&nbsp;(The fields with <FONT 
+            color=red>*</FONT> cannot be empty)</FONT></TD></TR>
+        <TR>
+          <TD width=916 colSpan=2><B><FONT color=red>
+            <HR align=left width="100%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorLName')">Last name of the PI</A><FONT 
+            color=red>*</FONT></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorLName></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorFName')">First name of the PI</A><FONT 
+            color=red>*</FONT></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorFName></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorMName')">Middle Initial of the 
+PI</A></TD>
+          <TD width=237><INPUT maxLength=3 size=3 name=authorMName></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorMail')">E-mail address of the 
+            PI</A><FONT color=red>*</FONT></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorEmail></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorOrg')">Institute/Organization </A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 
+          name=authorOrganization></TD></TR>
+        <TR>
+          <TD width=916 colSpan=2><B><FONT color=red>
+            <HR align=left width="50%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorAddress')">Address</A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorAddress></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorAddress')">City </A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorCity></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorAddress')">State/Province </A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorState></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorAddress')">Postal code or Zip 
+          code</A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 
+        name=authorPostalCode></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorAddress')">Country </A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorCountry></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('authorPhone')">Telephone number </A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorPhone></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A href="javascript:help('authorFax')">Fax 
+            number </A></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=authorFax></TD></TR>
+        <TR>
+          <TD width=916 colSpan=2><B><FONT color=red>
+            <HR align=left width="50%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A href="javascript:help('userLName')">Last 
+            name of the submitter</A><FONT color=red>*</FONT></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=userLname></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('userFName')">First name of the 
+            submitter</A><FONT color=red>*</FONT></TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=userFname></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('userMName')">Middle Initial of the submitter 
+            </A></TD>
+          <TD width=237><INPUT maxLength=3 size=3 name=userMname></TD></TR>
+        <TR>
+          <TD vAlign=top width=673><A 
+            href="javascript:help('userMail')">E-mail address of the 
+            submitter</A><FONT color=red>*</FONT> </TD>
+          <TD width=237><INPUT maxLength=200 size=30 name=userEmail></TD></TR>
+        <TR>
+          <TD width=916 colSpan=2>&nbsp;</TD></TR></TBODY></TABLE>
+      <TABLE height=616 width=926 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD width=892 colSpan=3 height=21><FONT color=black size=3>QTL 
+            Information</FONT><FONT size=2>&nbsp;&nbsp;(The fields with <FONT 
+            color=red>*</FONT> cannot be empty)</FONT></TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=21><B><FONT color=red>
+            <CENTER>
+            <HR align=left width="100%">
+            </CENTER></FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('qtl_symbol')">QTL Symbol</A><FONT 
+            color=#ff0000>*</FONT> (<A 
+            href="/nomen/quick_guide_qtl_nomenclature.html" 
+            target=_blank>Quick Symbol Nomenclature Guidelines</A>)</TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=qtl_symbol></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('qtl_name')">QTL Name</A><FONT 
+            color=#ff0000>*</FONT> (<A 
+            href="/nomen/quick_guide_qtl_nomenclature.html" 
+            target=_blank>Quick Symbol Nomenclature Guidelines</A>)</TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=qtl_name></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('trait')">Trait</A><FONT 
+            color=#ff0000>*</FONT> (<A 
+            href="/nomen/rgd_traits.html" 
+            target=_blank>Trait Table</A>)</TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=trait></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('subtrait')">Subtrait</A> (<A 
+            href="/nomen/rgd_traits.html" 
+            target=_blank>Trait Table</A>)</TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=subtrait></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=100><A 
+            href="javascript:help('trait_description')">Trait Description</A> 
+            (how measurements were made)</TD>
+          <TD width=220 colSpan=2 height=100><TEXTAREA name=trait_description rows=4 cols=25></TEXTAREA></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('stains_crossed')">Strains Crossed</A> (if a 
+            strain is not listed, please register the strain using the online <A 
+            href="/tools/strains/strainRegistrationIndex.cgi">strain 
+            registration</A> form)</TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=strains_crossed_1></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25></TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=strains_crossed_2></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('chromosome')">Chromosome</A></TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=chromosome></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('lod_score')">LOD Score</A></TD>
+          <TD width=220 colSpan=2 height=25><INPUT maxLength=200 size=30 
+            name=lod_score></TD></TR>
+        <TR>
+          <TD vAlign=top width=673 height=25><A 
+            href="javascript:help('peak_marker')">Peak Marker</A>&nbsp;</TD>
+          <TD width=110 height=25><INPUT maxLength=200 size=18 
+            name=peak_marker> </TD>
+          <TD width=110 height=25><SELECT size=1 name=peak_marker_type> <OPTION 
+              selected>SSLP</OPTION> <OPTION>GENE</OPTION> <OPTION>EST</OPTION> 
+              <OPTION>SEQUENCE</OPTION></SELECT> </TD></TR>
+        <TR>
+          <TD vAlign=top width=677 height=25><A 
+            href="javascript:help('flank_marker')">Flanking Marker 1</A></TD>
+          <TD width=110 height=25><INPUT maxLength=200 size=18 
+            name=flank_1> </TD>
+          <TD width=110 height=25><SELECT size=1 name=flank_1_type> <OPTION 
+              selected>SSLP</OPTION> <OPTION>GENE</OPTION> <OPTION>EST</OPTION> 
+              <OPTION>SEQUENCE</OPTION></SELECT> </TD></TR>
+        <TR>
+          <TD vAlign=top width=677 height=25><A 
+            href="javascript:help('flank_marker')">Flanking Marker 2</A></TD>
+          <TD width=110 height=25><INPUT maxLength=200 size=18 
+            name=flank_2> </TD>
+          <TD width=110 height=25><SELECT size=1 name=flank_2_type> <OPTION 
+              selected>SSLP</OPTION> <OPTION>GENE</OPTION> <OPTION>EST</OPTION> 
+              <OPTION>SEQUENCE</OPTION></SELECT> </TD></TR>
+        <TR>
+          <TD vAlign=top width=677 height=32><A 
+            href="javascript:help('candidate_gene')">Candidate Gene</A></TD>
+          <TD width=220 colSpan=2 height=32><INPUT maxLength=200 size=30 
+            name=candidate_gene></TD>
+        <TR>
+          <TD vAlign=top width=677 height=32><A 
+            href="javascript:help('reference')">Reference PubMed ID</A> (if 
+            published) or title, authors if not published</TD>
+          <TD width=220 colSpan=2 height=32><INPUT maxLength=200 size=30 
+            name=reference></TD></TR>
+        <TR>
+          <TD vAlign=top width=677 height=100><A 
+            href="javascript:help('comments')">Comments</A>&nbsp;</TD>
+          <TD width=220 colSpan=2 height=100><TEXTAREA name=comments rows=4 cols=25></TEXTAREA></TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=40></TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=40><FONT color=black size=3>Please 
+            let us know if you want this QTL to be displayed on the RGD website. 
+            If not, check Non Public (we can hold a QTL until instructed by you 
+            to release it).</FONT></TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=21><B><FONT color=red>
+            <HR align=left width="100%">
+            </FONT></B></TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=21>
+            <P>Public&nbsp;<INPUT type=radio CHECKED value=Public 
+            name=public>Non Public&nbsp;<INPUT type=radio value=nonPublic 
+            name=public></P></TD>
+        <TR>
+          <TD width=892 colSpan=3 height=21>&nbsp;</TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 
+height=27><INPUT type=submit value=Send>&nbsp;<INPUT type=reset value=Reset></TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=21>&nbsp;</TD></TR>
+        <TR>
+          <TD width=892 colSpan=3 height=32><FONT size=2>Once you submit this 
+            completed form, the RGD_ID <BR>for this QTL will be e-mailed to you. 
+            Thank you!</FONT></TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>
+	function verify(field){
+		var message;
+		var msg1;
+		var msg2;
+		var need_field="";
+		var error_field1="";
+		var error_field2="";
+		var display_name;
+
+		for(var i=0; i<field.length; i++){
+		
+			var e=field.elements[i];
+			if(e.name=="authorLName"){
+				display_name="Last name of the author";
+			}
+			if(e.name=="authorFname"){
+				display_name="First name of the author";
+			}
+			if(e.name=="authorEmail"){
+				display_name="E-mail address of the author";
+			}
+			if(e.name=="userLname"){
+				display_name="Last name of the submitter";
+			}
+			if(e.name=="userFname"){
+				display_name="First name of the submitter";
+			}
+			if(e.name=="userEmail"){
+				display_name="E-mail address of the submitter";
+			}
+			if(e.name=="qtl_symbol"){
+				display_name="QTL Symbol";
+			}
+			if(e.name=="qtl_name"){
+				display_name="QTL Name";
+			}
+			if(e.name=="trait"){
+				display_name="Trait";
+			}
+
+			if((e.name=="authorLName")||(e.name=="authorFName")||(e.name=="authorEmail")||(e.name=="userLname")||(e.name=="userFname")||(e.name=="userEmail")||(e.name=="qtl_symbol")||(e.name=="qtl_name")||(e.name=="trait")){
+				if((e.value==null)||(e.value=="")||isblank(e.value)){
+					need_field += "\n          " + display_name;
+				}
+			} 
+
+			if(e.name=="userEmail"){
+				error_field1=checkFormat1(e.value);
+			}
+
+			if(e.name=="authorEmail"){
+				error_field2=checkFormat2(e.value);	
+			}
+		}
+	  
+		if(need_field){
+			message="The form can not be submitted because the following fields must be filled in:\n\n"	+ need_field+"\n";
+			alert(message);
+			return false;
+		}
+		if(error_field1){
+			msg1="-" + error_field1;
+			alert(msg1);
+			return false;
+		}
+		if(error_field2){
+			msg2="-" + error_field2;
+			alert(msg2);
+			return false;
+		}	
+	}
+
+	function isblank(s){
+		for(var i=0; i<s.length; i++){
+			var c=s.charAt(i);
+			if((c !=' ')&&(c !='\n')&&(c !='\t')) return false;
+		}
+		
+		return false;	
+	}
+
+	function checkFormat1(value){
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(miss @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function checkFormat2(value){
+		//alert("value="+value);
+		if((value!=null)||(value!="")||!isblank(value)){
+			var error="";
+			var invalidChars = " /:,;";
+			for (i=0; i<invalidChars.length;i++){
+				var badChar = invalidChars.charAt(i);
+				if (value.indexOf(badChar,0) > -1){
+					error="You have not entered a valid email address. Please do so and re-submit";
+				}
+			}
+			
+			atPos = value.indexOf("@",1);
+			if (atPos== -1){
+				error="You have not entered a valid email(missing @). Please do so and re-submit.";
+			}			
+			if (atPos+1 == value.length){
+				error="You have not entered a domain name. Please do so and re-submit.";
+			}
+
+			return error;
+		}
+	}
+
+	function help(anchor) {
+
+		top.qtlhelp=open("/qtls/qtlRegistrationHelp.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400, height=200");
+   
+		top.qtlhelp.focus();
+	}
+</SCRIPT>
+</BODY></HTML>

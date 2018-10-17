@@ -1,0 +1,8 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title"   value="Rat Genome Database:Celera Example"-->
+<!--#set var="category"   value="data"-->
+<!--#set var="links"   value="null"-->
+<!--#set var="main"    value="${webroot}/gbreport/cnt_celera_example.html"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->

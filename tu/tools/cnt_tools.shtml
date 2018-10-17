@@ -1,0 +1,172 @@
+
+
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> &gt; 
+  RGD Tools</p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#66CC66"><strong><font size="+1">RGD Tools</font></strong><strong><font size="+1"><br>
+      </font></strong></td>
+  </tr>
+  <tr valign="top"> 
+    <td> <p>In addition to the collection and storage of data, RGD provides a 
+        variety of information tools to search and analyze both the data within 
+        RGD and data generated from rat research in the lab. The list below identifies 
+        the major tools provided at RGD, the second list is of <a href="#external">external 
+        tools of high relevance</a> to RGD users.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#99FF99"><a name="rgd_tools" id="rgd_tools"></a><b>RGD Tools</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td><p>&nbsp;</p>
+      <table width="95%" border="0" align="center" cellpadding="2">
+        <tr valign="top" bgcolor="#66CC99"> 
+          <td><strong>Tool Name</strong></td>
+          <td width="75%" bgcolor="#66CC99"><strong> Brief description of functionality</strong></td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong> <a href="/tu/acphaplotyper/"><strong>ACP Haplotyper</strong></a> </strong></td>
+          <td> Creates a visual haplotype that can be used to identify conserved and non-conserved chromosomal regions between any of the 48 rat strains characterized as part of the ACP project </td>
+        </tr>
+		<tr valign="top" bgcolor="#E0E0E0"> 
+          <!--<td><strong> <a href="http://rgd.mcw.edu/sequenceresources/blast.shtml"><strong>BLAST</strong></a> </strong></td>-->
+          <td><strong> <a href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi"><strong>BLAST</strong></a> </strong></td>
+          <td> Uses a heuristic algorithm to detect relationships among sequences which share regions of similarity </td>
+        </tr>
+		<tr valign="top"> 
+          <!--<td><strong> <strong><a href="http://rgd.mcw.edu/sequenceresources/blat.shtml">BLAT</a></strong> </strong></td>-->
+          <td><strong> <strong><a href="http://genome.ucsc.edu/cgi-bin/hgBlat?command=start">BLAT</a></strong> </strong></td>
+          <td> An alignment tool to map submitted sequence to the genome, and annotate this region in visualization tools </td>
+        </tr>
+	<!--	<tr valign="top"> 
+          <td bgcolor="#E0E0E0"><strong> <a href="http://rgd.mcw.edu/sequenceresources/genome-annotation.shtml"><strong>Genome Annotation</strong></a> </strong></td>
+          <td bgcolor="#E0E0E0"> Users can enter a genome region to get all the types of data in this region with their genome map locations and annotaions, or submit a set of Genbank Names/Accession numbers to get their genome map locations and annotations </td>
+        </tr>-->
+        
+        <tr valign="top" bgcolor="#E0E0E0"> 
+          <td><strong><a href="/tu/genomescanner/">Genome Scanner</a><br>
+            </strong></td>
+          <td> Assists in selecting polymorphic markers for a genome scan of a cross between two strains. It uses the Allele Characterization Project dataset in combination with various genetic and Radiation Hybrid maps</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong> <a href="http://rgd.mcw.edu/gviewer/Gviewer.jsp"><strong>Genome Viewer</strong></a> </strong></td>
+          <td> Provides users with complete genome view of gene and QTL annotated to a function, biological process, cellular component, phenotype, disease, or pathway. The tool will search for matching terms from the Gene Ontology, Mammalian Phenotype Ontology, Disease Ontology or Pathway Ontology</td>
+        </tr>
+	<!--	<tr valign="top" bgcolor="#E0E0E0"> 
+          <td bgcolor="#FFFFFF"><strong> <a href="http://rgd.mcw.edu/sequenceresources/h-gbrowse.shtml"><strong>Human Genome Browser</strong></a> </strong></td>
+          <td bgcolor="#FFFFFF">Using a sequence name, gene name, locus, oligonucleotide (15 bp minimum) or other landmark you can search for its location on the human genome</td>
+        </tr>-->
+        <tr valign="top"> 
+          <td bgcolor="#E0E0E0"><strong><a href="/tu/metagene/">Metagene</a><br>
+            </strong></td>
+          <td bgcolor="#E0E0E0">Provides analysis of predicted gene features in sequence. It allows the researcher to submit sequences to seven gene prediction engines simultaneously to obtain a comprehensive report on sequence features</td>
+        </tr>
+		<tr valign="top" bgcolor="#E0E0E0"> 
+          <!--<td bgcolor="#FFFFFF"><strong> <a href="http://rgd.mcw.edu/sequenceresources/gbrowse.shtml"><strong>Rat Genome Browser</strong></a> </strong></td>-->
+          <td bgcolor="#FFFFFF"><strong> <a href="http://rgd.mcw.edu/gb/gbrowse/rgd_904/"><strong>Rat Genome Browser</strong></a> </strong></td>
+          <td bgcolor="#FFFFFF"> Using a sequence name, gene name, locus, oligonucleotide (15 bp minimum) or other landmark you can search for its location on the rat genome</td>
+        </tr>
+		<tr valign="top"> 
+          <!--<td bgcolor="#E0E0E0"><strong> <a href="http://rgd.mcw.edu/sequenceresources/reptmasker.shtml"><strong>Repeat Masker</strong></a> </strong></td>-->
+          <td bgcolor="#E0E0E0"><strong> <a href="http://www.repeatmasker.org/"><strong>Repeat Masker</strong></a> </strong></td>
+          <td bgcolor="#E0E0E0"> Provides a detailed annotation of the repeats that are present in the query sequence as well as a modified version of the query sequence in which all the annotated repeats have been masked </td>
+        </tr>
+		<tr valign="top" bgcolor="#E0E0E0"> 
+          <td bgcolor="#FFFFFF"><strong><a href="/tu/rhmapserver/">RH MapServer</a><br>
+            </strong></td>
+          <td bgcolor="#FFFFFF"> Allows users to place their own radiation hybrid vectors against the MCW RH framework map </td>
+        </tr>
+        <tr valign="top"> 
+          <td bgcolor="#E0E0E0"><strong><a href="/tu/searchtools/">Search Tools</a><br>
+            </strong></td>
+          <td bgcolor="#E0E0E0">Provide text/keyword search access to RGD</td>
+        </tr>
+		<tr valign="top" bgcolor="#E0E0E0"> 
+          <td bgcolor="#FFFFFF"><strong><a href="/tu/vcmap/">VCMap</a></strong></td>
+          <td bgcolor="#FFFFFF"> Comparative mapping tool, allows the prediction of syntenic regions between the rat, mouse and human genomes </td>
+        </tr>
+      </table>
+      
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#99FF99"><b><a name="external"></a>External Tools</b></td>
+  </tr>
+  <tr valign="top">
+    <td><p>The following tools are available at other sites and provide complementary 
+        functionality to those available at RGD. If there are other tools we have 
+        omitted, please <a href="/contact/">contact us</a> so we may include them.</p>
+      <table width="95%" border="0" align="center" cellpadding="2">
+        <tr valign="top" bgcolor="#66FF99"> 
+          <td colspan="2" bgcolor="#66CC99"><strong>BLAST tools and other sequence 
+            comparison methods </strong></td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="http://www.ncbi.nlm.nih.gov/BLAST/">NCBI 
+            BLAST</a></strong></td>
+          <td width="75%"><strong> </strong>(all sequences)</td>
+        </tr>
+        <tr valign="top" bgcolor="#E0E0E0"> 
+          <td><strong><a href="http://www.ncbi.nlm.nih.gov/genome/seq/BlastGen/BlastGen.cgi?taxid=10116">NCBI 
+            Rat Blast</a></strong></td>
+          <td><strong><a href="http://www.ncbi.nlm.nih.gov/genome/seq/BlastGen/BlastGen.cgi?taxid=10116"></a> 
+            </strong>(Rat genomic sequence)</td>
+        </tr>
+        <tr valign="top"> 
+          <td><strong><a href="http://www.hgsc.bcm.tmc.edu/blast/blast.cgi?organism=Rnorvegicus">Baylor 
+            Rat Blast</a> </strong></td>
+          <td>(Blast against the Genome Sequencing consortiums dataset of BACs 
+            and whole genome shotgun data)</td>
+        </tr>
+        <tr valign="top" bgcolor="#E0E0E0"> 
+          <td><strong><a href="http://mouseblast.informatics.jax.org">MGI Rodent 
+            Blast</a></strong></td>
+          <td>(Blast against mouse and rat sequences)</td>
+        </tr>
+        <tr valign="top"> 
+          <td><a href="http://genome.ucsc.edu/cgi-bin/hgBlat?command=start&db=hg12"><strong>UCSC 
+            Blat</strong></a> </td>
+          <td>(use to align rat sequences against human and mouse genomic sequences) 
+          </td>
+        </tr>
+
+        <tr valign="top" bgcolor="#E0E0E0"> 
+          <td><strong><a href="http://bio.cse.psu.edu/cgi-bin/pipmaker?basic">Pipmaker</a></strong></td>
+          <td> (use to provide a graphical alignment of two genomic sequences)</td>
+        </tr>
+        <tr valign="top" bgcolor="#66FF99"> 
+          <td colspan="2" bgcolor="#66CC99"><strong>Mapping tools</strong></td>
+        </tr>
+        <tr valign="top"> 
+          <td colspan="2"><a href="http://ratmap.ims.u-tokyo.ac.jp/cgi-bin/RH/rhNgv.pl"><strong>Rat 
+            RH Mapping server</strong></a> @ U. Tokyo</td>
+        </tr>
+        <tr valign="top"> 
+          <td colspan="2"><a href="http://ratmap.gen.gu.se/GAPP2/mouse/index.html"><strong>Ratmap Gene 
+            And Position Predictor (GAPP)</strong></a></td>
+        </tr>
+        <tr valign="top"> 
+          <td colspan="2">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+<p class="menu2">&nbsp;</p>
+
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+
+
+
+
+
+

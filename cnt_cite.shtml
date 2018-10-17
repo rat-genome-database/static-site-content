@@ -1,0 +1,41 @@
+<h3>HOW TO CITE RGD</h3>
+
+<p><b>To cite RGD publications retrieved from ftp site:</b>
+<blockquote>
+  <p>Steen, R.G., et al, 1999. A high density integrated genetic linkage and radiation hybrid map of the laboratory rat. 
+Research Genetics, Rat Genome Database, ftp://ftp.rgd.mcw.edu/pub/publications/1999/steen_genome_research/, (date of access)
+</blockquote>
+
+<p><b>To cite specific database projects, use a format similar to that shown in the following examples:</b>
+
+<blockquote>
+  <p>Project name, Rat Genome Database Web Site, Medical College of Wisconsin, Milwaukee, Wisconsin.  World Wide Web (URL: http://rgd.mcw.edu/). [
+Type in date (month, yr) when you retrieved data cited].
+
+  <p>Rat Genome Data, Rat Genome Database Web Site, Medical College of Wisconsin, Milwaukee, Wisconsin.  World Wide Web (URL: http://rgd.mcw.edu/)
+. [Type in date (month, yr) when you retrieved data cited].
+
+  <p>Rat Gene Index, Rat Genome Database Web Site, Medical College of Wisconsin, Milwaukee, Wisconsin.  World Wide Web (URL: http://rgd.mcw.edu/).
+ [Type in date (month, yr) when you retrieved data cited].
+
+  <p>Virtual Rat Map, Rat Genome Database Web Site, Medical College of Wisconsin, Milwaukee, Wisconsin.  World Wide Web (URL: http://rgd.mcw.edu/)
+. [Type in date (month, yr) when you retrieved data cited].
+</blockquote>
+
+<p><b>To cite RGD files associated with a publication and downloaded by ftp:</b>
+
+<blockquote>
+  <p>Steen, R.G., et al, 1999. RH Framework Map, Rat Genome Database, ftp://ftp.rgd.mcw.edu/pub/maps/rhframework/v.2/, (date of access).
+</blockquote>
+
+<p><b>To cite RGD content with authors and title obtained via the World Wide Web:</b>
+<blockquote>
+<p>Pasko, D., May 2000. Overview of Rat Research Today. http://rgd.mcw.edu/, (date of message or visit)
+</blockquote>
+
+<p><b>To cite a specific data area or display, use a format similar to that shown in following example:</b>
+<blockquote>
+  <p>Some homology data for this paper were retrieved from the Rat Genome Database (RGD), Rat Genome Database Web Site, 
+  Medical College of Wisconsin, Milwaukee, Wisconsin.  World Wide Web (URL: http://rgd.mcw.edu/). [Type in date (month, yr) when you retrieved data cited].
+</blockquote>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a>

@@ -1,0 +1,29 @@
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" align="right" bgcolor='#E6E6E6'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="119" height="1"></td>
+	<td width="1" align="right" bgcolor='#DDDDDD'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="18"></td>
+    <!-- width=176 -->
+	<td bgcolor='#EEEEEE'>
+
+
+      <table width="460" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+		  <td>&nbsp;&#8226;<font size="2"><a class="asubtitle" href="http://gray.hmgc.mcw.edu/mailman/listinfo/rcf"> Rat 
+            Community Forum</a></font></td>
+          <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/resources.shtml' title="Resource Links">Resource Links</a></td>
+          <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/newsletter/' title="The Pied Piper">The Pied Piper</a></td>
+          
+	      <td width="80" bgcolor='#EEEEEE'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="80" height="1"></td>
+        </tr>
+      </table>
+
+
+	</td>
+    <td width="100%" bgcolor='#EEEEEE'>&nbsp;</td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><td bgcolor="#E0E0E0"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td></tr>
+</table>

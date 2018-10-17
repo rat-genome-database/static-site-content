@@ -1,0 +1,111 @@
+
+<script language='JavaScript'>
+function start_help(anchor) {
+   top.rgdhelp=open("/tu/sequence/sequence_form_help.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400,height=300");
+   top.rgdhelp.focus();
+}
+</script>
+
+
+
+<table width="200" border="0" cellspacing="2" cellpadding="10" align="right">
+  <tr> 
+    <td><p>&nbsp;</p></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#CCCCCC"> 
+      <p align="center"><b>SHORT READS</b></p>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#CCCCCC"> 
+      <div class=tools> 
+        <p><b>RGP Information Section </b><a href='<!--#echo var="webroot"-->/sequences/rgp_info.shtml'><font color="#FF0000"> >>> </font></a></p>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#CCCCCC">
+      <div class=tools> 
+        <p><b>April 2004</b> - Rat draft sequence is published in <em>Nature</em>. <a href='<!--#echo var="webroot"-->/sequences/rgp_info.shtml#nature_2004'><font color="#FF0000"> >>> </font></a></p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<h2>Sequences</h2>
+
+<p>This page allows access to sequence data available
+ within RGD. Currently this is limited to SSLP clone sequence, 
+primer sequences and a certain amount of
+EST clone and primer sequences. The full scale sequencing of the Rat Genome
+will be underway in early 2001 aiming to have a 3-4x coverage by 2003. 
+Sequence data and annotation stemming from this project will be being 
+introduced in due course, for more information on the progress of the
+ Rat Genome Project (RGP) please try our 
+<a href='<!--#echo var="webroot"-->/sequences/rgp_info.shtml'>Rat Genome Project Information</a> section.
+<p>
+<hr>
+<h2>RGD Sequence Query Form</h2>
+<p>This tool allows you to retrieve sequence data in RGD using Genbank nucleotide accessions and RGD
+  IDs.  The Sequence Report includes available information on the sequence object including
+  the sequence itself plus external database IDs. 
+<form action='<!--#echo var="toolroot"-->/sequences/sequences_search.cgi' method="POST">
+<table width=500 border="0" cellspacing="0" cellpadding="2">
+    <tr> 
+      <td class=links><a href="javascript:start_help('sequence_ID')">Enter Sequence ID or 
+        keyword</a></td>
+      <td> 
+        <input type="text" name="keyword" size="25">
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td> 
+        <input type="submit" name="search" value="Search for Sequence">
+        &nbsp; 
+        <input type="reset" value="Reset" name="reset">
+      </td>
+    </tr>
+</table>
+  <br>
+  <!--
+      <INPUT type="checkbox" name="search_gene_name" value="yes"> Include Gene name field in search<BR>
+      <P>
+        <INPUT type="checkbox" name="hmlg_limit" value="yes"> Limit to genes with known homologs<BR>
+        <INPUT type="checkbox" name="chr_limit" value="yes"> Limit to genes mapped on chromosome: 
+      <SELECT name="chr">
+        <OPTION value="any">Any
+        <OPTION value="1">1
+        <OPTION value="2">2
+        <OPTION value="3">3
+        <OPTION value="4">4
+        <OPTION value="5">5
+        <OPTION value="6">6
+        <OPTION value="7">7
+        <OPTION value="8">8
+        <OPTION value="9">9
+        <OPTION value="10">10
+        <OPTION value="11">11
+        <OPTION value="12">12
+        <OPTION value="13">13
+        <OPTION value="14">14
+        <OPTION value="15">15
+        <OPTION value="16">16
+        <OPTION value="17">17
+        <OPTION value="18">18
+        <OPTION value="19">19
+        <OPTION value="20">20
+        <OPTION value="21">X
+      </SELECT>
+      <BR>
+      --> 
+</form>
+<p> Example search terms: <b>15853</b>, <b>AI137919</b>,  etc. 
+  Wildcard characters cannot be used in the search, see the <a href='<!--#echo var="toolroot"-->/query/query.cgi'>search 
+  instructions</a> for more information.
+<hr>
+<p> 
+<p><br>
+<p> 
+<p> <a href='<!--#echo var="webroot"-->/'>Back to RGD Home </a> 

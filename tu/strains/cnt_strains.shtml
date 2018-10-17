@@ -1,0 +1,117 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; <b>Strains</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#99CCFF">
+      <div align="left"><strong><font size="+1">Strains Help</font></strong></div>
+    </td>
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td width="76%">
+      <ul>
+        <li><a href="#definition">What is a Strain</a>?</li>
+        <li><a href="#finding">How do I find information about a Strain?</a></li>
+        <li><a href="#report">What information do you have on each Strain?</a></li>
+        <li><a href="#related">What other information can I get to via a Strain?</a></li>
+        <li><a href="/strains/">Let me start searching...</a></li>
+      </ul>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>RGD Definition</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2">
+      <p>&quot;<em>Rats that are used in a laboratory come from different sources; 
+        most of these are derived from Rattus norvegicus. An inbred strain is 
+        one whose background can be defined and is named by the nomenclature conventions.</em>&quot;</p>
+
+      <p>Normally the strains are named following the <a href='<!--#echo var="webroot"-->/nomen/rules-for-nomen.shtml'>nomenclature 
+        guidelines</a>. This is generally a unique, brief symbol made up of upper 
+        case, roman letters or a combination of letters and numbers beginning 
+        with a letter.</p>
+		
+	  <p><a name="StrainRegistration"></a><b>Rat Strain Registration:</b>
+	  <p>RGD is endeavouring to create a comprehensive list of Rat strains in use by the community so that information about strain characteristics and availability can be maintained and made available to the widest audience. We are looking for community support in this effort in the following ways:</p>
+      	  <ul>
+	    <li>If you maintain rat strains at your institution, please send us the information using our <a href="http://rgd.mcw.edu/tools/strains/strainRegistrationIndex.cgi">online registration form at RGD</a>
+		</li>
+		<li>If you are in the process of developing a new strain please inform <a href="mailto:RGD.Data@mcw.edu">RGD.Data@mcw.edu</a>. We can assist in naming your strain and can reserve that symbol for you.</li>
+	  </ul>
+
+      <p><a name="StrainSubmission"></a><b>Strain Submission:</b>
+
+      <p>Please contact <a href="mailto:RGD.Data@mcw.edu">RGD.Data@mcw.edu</a> to submit your strain data. We can send the strain template and the guidelines for completing the template.</p>
+
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>Finding Strain 
+      information</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"><p><strong>1. Using the General Search</strong></p>
+      <p>The general RGD search available at the top of each page is a<strong> 
+        quick route to finding strains</strong>. This will search Strain symbols 
+        and names only. (See General RGD Search help for more information). 
+      <p><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><strong>2. Using the Strain Search Form</strong> - Provides more customizable options</p>
+      <p><em><strong><font color="#CC0000">Quick Guide</font></strong></em></p>
+      <ol>
+        <li>The users have a choice to search the strains by entering any of the 
+          keywords that describe a strain or they can even highlight the search 
+          fields already available to them and then click search strains to get 
+          all the information regarding a strain of interest</li>
+        <li>Users also have a choice to view the list of strains available in 
+          RGD and highlight the strain of their interest to get a detailed report 
+          for this strain. <em>TIP: to facilitate scrolling down highlight the 
+          column and enter the first letter of the strain of interest</em></li>
+      </ol>
+      <p>Note: Selecting a 'primary' strain such as BN (no substrain designation) 
+        will show the data for BN and all associated substrains of BN in RGD (BN/Cub-lx, 
+        BN/SsNHsd, etc). Selecting a strain with a specific substrain designation 
+        will show you the data for that strain alone. This is to facilitate comparison 
+        of strains and substrain information.</p>
+      <p><a href="/strains/"><img src="../images/try_it.gif" border="0"></a></p>
+      <p>Below is a <strong>more detailed explanation</strong> of each element 
+        of the search form, which will allow you greater flexibility to refine 
+        your searches.</p>
+      <font size="-1">
+
+      <!--#include virtual="strain_form_help.html"-->
+
+      </font>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#E1E8FF"> 
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> 
+      <p>The strain report contains links to information and resources related 
+        to this strain, including QTLs mapped using this strain and references 
+        containing information about these strains.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a><b>The Strain Report</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>The following fields are present on the Strain report:</p>
+      <p><font size="-1"> 
+        <!--#include virtual="strain_report_help.html"-->
+        </font></p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>

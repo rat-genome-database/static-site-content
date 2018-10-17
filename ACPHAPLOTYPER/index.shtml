@@ -1,0 +1,12 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="ACP Haplotyper - Rat Genome Database"-->
+<!--#set var="desc" value="ACP Haplotyper creates a visual haplotype that can be used to identify conserved and non-conserved chromosomal regions between any of the 48 rat strains characterized as part of the ACP project. For the selected chromosome and between the selected strains, the tool compares the allele size data for microsatellite markers on the selected genetic or RH map."-->
+<!--#set var="links" value="${webroot}//ACPHAPLOTYPER/links.shtml"-->
+<!--#set var="search" value="${webcommon}/navigation/search.shtml"-->
+<!--#set var="main" value="${webroot}/ACPHAPLOTYPER/scannerform.shtml"-->
+<!--#set var="tools" value="${webroot}//ACPHAPLOTYPER/tools.shtml"-->
+<!--#set var="summary" value="${webroot}/ACPHAPLOTYPER/summary.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+

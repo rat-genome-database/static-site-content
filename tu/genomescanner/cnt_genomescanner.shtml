@@ -1,0 +1,178 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; Genome Scanner</p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">Genome Scanner Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> 
+
+      <ul>
+
+        <li><a href="#definition">What is Genome Scanner?</a></li>
+
+        <li><a href="#report">How do I use Genome Scanner?</a></li>
+
+        <li><a href="#related">What other information can I get to via Genome 
+
+          Scanner?</a>
+
+        </li>
+
+        <li><a href="#report">What do the Genome Scanner results look like?</a></li>
+
+        <li><a href="/GENOMESCANNER/">Let me use Genome Scanner...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p><i>&quot;This tool is to assist researchers in selecting polymorphic 
+
+        markers for a genome scan of a cross between two strains. It uses the 
+
+        <a href="http://brc.mcw.edu/LGR/research/lgr_acp.html" target="new">Allele 
+
+        Characterization Project</a> dataset in combination with various genetic 
+
+        and Radiation Hybrid maps (also see <a href="http://rgd.mcw.edu/RHMAPSERVER/">RH 
+
+        Map Server</a>).&quot;</i></p>
+
+      <p>The purpose of Genome Scanner tool is to facilitate selecting polymorphic 
+        markers by utilizing several datasets: the <a href="http://brc.mcw.edu/LGR/research/lgr_acp.html">Allele 
+        Characterization Project</a> dataset in combination with various genetic 
+        and Radiation Hybrid maps. Its primary purpose is to support genetic mapping 
+        projects where the selection of polymorphic markers between two strains 
+        is a major task. <a href="/tu/glossary.shtml#sslp">SSLPs</a> are the marker 
+        of choice for these experiments as they exhibit a wide variety of inter-strain 
+        variability.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Finding polymorphic markers using 
+      Genome Scanner</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>GenomeScanner allows you to select polymorphic markers 
+        between two strains either for the entire genome (for a whole genome scan 
+        for example) or for one or more chromosomes (for high density mapping 
+        studies).</p>
+      <p>The basic steps to use GenomeScanner are:</p>
+      <ol>
+        <li>Select the two strains to be crossed</li>
+        <li>Select a map upon which to base the analysis (allows markers to be 
+          ordered across the genome, the RH 2.2 map is the most dense map and 
+          is the recommended map selection)</li>
+        <li>Select the chromosome(s) to be analyzed</li>
+        <li>Leave the remaining options unaltered</li>
+        <li>Click the Submit button</li>
+      </ol>
+      <p>The tool will return a list of the SSLP markers that are polymorphic 
+        between the two strains for the chromosome(s) selected. The allele sizes 
+        in the two strains are listed along with the size difference between the 
+        two sizes. The results are described in greater detail <a href="#report">below</a>.</p>
+      <p><a href="/GENOMESCANNER/"><img src="../images/try_it.gif" border="0"></a></p>
+      <p>Below is a <strong>more detailed explanation</strong> of each element 
+        of the Genome Scanner form.</p>
+      <font size="-1"> 
+      <!--#include virtual="genomescanner_form_help.html"-->
+      </font> <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>Information related to polymorphic markers can also be found in the <a href="/tu/strains/">Strain</a> 
+        reports for various inbred strains. This can be very useful when selecting 
+        strains to use in a genetic mapping cross as one can view the strain's 
+        description and also see if there are SSLP markers genotyped in that strain.</p>
+      <p>The <a href="/tu/sslps/">SSLP</a> reports list the allele size data available 
+        for that SSLP in each of the strains for which data is available.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b>The Genome Scanner Results</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>&nbsp;</p>
+      <p><font size="-1"> 
+
+        <!--#include virtual="genomescanner_report_help.html"-->
+
+        </font></p>
+
+
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

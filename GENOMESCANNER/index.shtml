@@ -1,0 +1,12 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Genome Scanner - Rat Genome Database"-->
+<!--#set var="desc" value="This tool is designed to assist researchers in selecting polymorphic markers for a genome scan of a cross between two strains. It uses the Allele Characterization Project dataset in combination with various genetic and Radiation Hybrid maps."-->
+<!--#set var="links" value="${webroot}/GENOMESCANNER/links.shtml"-->
+<!--#set var="main" value="${webroot}/GENOMESCANNER/scannerform.shtml"-->
+<!--#set var="tools" value="${webroot}/GENOMESCANNER/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+

@@ -1,0 +1,146 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; <b>ESTs</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#99CCFF">
+
+      <div align="left"><strong><font size="+1">ESTs Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td width="76%">
+
+      <ul>
+
+        <li><a href="#definition">What is an EST</a>?</li>
+
+        <li><a href="#finding">How do I find information about an EST?</a></li>
+
+        <li><a href="#report">What information do you have on each EST?</a></li>
+
+        <li><a href="#related">What other information can I get to via an EST?</a></li>
+
+        <li><a href="/ests/">Let me start searching...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p>&quot;E<em>ST stands for Expressed Sequence Tags, a partial 
+        sequence of a randomly chosen cDNA, obtained from the results of a single 
+        DNA sequencing reaction. EST's are used both to identify transcribed regions 
+        in genomic sequence and to characterize patterns of gene expression in 
+        the tissue that was the source of the cDNA.</em>&quot;</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>Finding EST information</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p><strong>Using the General Search</strong></p>
+
+      <p>The general RGD search available at the top of each page is a 
+        <strong>quick route to finding ESTs</strong>. This will search for EST symbols 
+        (Accession numbers) and aliases. (See General RGD Search help for more 
+        information). 
+      <p><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p>&nbsp; </p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>ESTs have links to the sequences associated with them (Primer and clone 
+        sequences where available), mapping data with associated maps, and 
+        external links to GenBank allowing access to the NCBI resources. <a href="/tu/vcmap/">VCMap</a> 
+        is primarily based around EST data. Many of the ESTs are part of the 
+        VCMap dataset determining syntenic regions between rat and human and rat 
+        and mouse.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a><b>The EST Report</b></td>
+
+  </tr>
+
+
+
+  <tr valign="top"> 
+
+    <td colspan="2"> <p>The following fields are present on the EST report:</p>
+
+      <p><font size="-1">
+
+        <!--#include virtual="est_report_help.html"-->
+
+        </font></p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+

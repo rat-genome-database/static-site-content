@@ -1,0 +1,51 @@
+
+
+<script language="JavaScript1.2">mmLoadMenus();</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  
+  <tr align="left">
+    <td background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'>
+	  <table width="800" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+		  <td width="30"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="30" height="1"></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <td><p>&nbsp;<a href='<!--#echo var="webroot"-->/' class="atitle">RGD&nbsp;Home</a></p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <td><p>&nbsp;<a href='index.shtml' class="atitle" name="link3" id="link1" onMouseOver="MM_showMenu(window.mm_menu_0615115401_0,-9,21,null,'link3');" onMouseOut="MM_startTimeout();">Diseases</a>&nbsp;</p></td>
+          <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <td><p>&nbsp;<a href='phenotype.shtml' class="atitle">Phenotypes</a>&nbsp;</p></td>
+          <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <td><p>&nbsp;<a href='biological_processes.shtml' class="atitle">Biological&nbsp;Processes</a></p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <td><p>&nbsp;<a href='pathways.shtml' class="atitle">Pathways</a>&nbsp;</p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+
+		<!--#if expr = "$portalname = neurological" -->
+		  <td><p>&nbsp;<a href='rat-strain-models.shtml' class="atitle">Rat&nbsp;Strain&nbsp;Models</a></p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		<!--#endif -->
+
+		  <td><p>&nbsp;<a href='tools.shtml' class="atitle">Tools</a>&nbsp;&nbsp;</p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          <td><p>&nbsp;<a href='relatedlink.shtml' class="atitle">Related&nbsp;Links</a>&nbsp;</p></td>
+		  <td><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  <td width="1"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+
+		<!--#if expr = "$portalname != neurological" -->
+		  <td width="110"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="110" height="1"></td>
+		<!--#endif -->
+
+        </tr>
+      </table>
+	</td>
+    <td width="100%" background='<!--#echo var="webroot"-->/common/images/menu_bkgd.gif'>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>

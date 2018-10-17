@@ -1,0 +1,10 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Rat Genome Database: Maps"-->
+<!--#set var="category" value="data"-->
+<!--#set var="links" value="${webroot}/maps/links.shtml"-->
+<!--#set var="main" value="${webroot}/maps/simple.shtml"-->
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+

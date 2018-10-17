@@ -1,0 +1,108 @@
+
+
+<p class="menu2"><a href="/">RGD</a> &gt; <a href="../">Help</a> &gt; How Do I...?</p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td colspan="3" bgcolor="#FFFF99"> <div align="left"><strong><font size="+1">How 
+        Do I use RGD to address my scientific problem?<br>
+        </font></strong></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="3"><p>RGD is a collection of data, tools, and other web resources. 
+        This section shows you how they can be linked to answer common scientific 
+        problems. Links are provided to the more detailed help documents for individual 
+        tools and data.</p>
+      <p><strong>Areas currently covered: </strong><a href="#genetic_mapping">Genetic 
+        Mapping</a>, <a href="#genomics">Genomics</a>, <a href="#sequences">Sequences</a>, 
+        <a href="#ontology">Ontology</a> <sup><font color="#FF0000">new</font></sup></p>
+      <p><font size="-1">Related Help:</font></p>
+      <ul>
+        <li><strong><font size="-1">General question about the database</font></strong><font size="-1">, 
+          the RGD team, data, etc. can be found on the <a href="/tu/faq.shtml">Frequently 
+          Asked Questions</a> page.</font></li>
+        <li><font size="-1">Information on the <strong>types of data stored in 
+          RGD</strong> can be found on the <a href="/tu/objects/">What is in RGD</a> 
+          section.</font></li>
+        <li><font size="-1">The<strong> tools and searching functions</strong> 
+          of RGD are covered in the <a href="/tu/tools/">Tools section</a>.</font></li>
+        <li><font size="-1">A <a href="/tu/glossary.shtml">glossary of terms and 
+          definitions</a> is also available</font></li>
+      </ul></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="3" bgcolor="#FFFF99"> <div align="center"><strong><font size="+1">Scientific 
+        Areas </font></strong></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#FFFFDD"> <p><a name="genetic_mapping"></a><a href="./mapping.shtml"><strong><font size="+1">Genetic 
+        Mapping </font></strong></a></p></td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FFFFDD"> <p><strong><font size="+1"><a name="genomics"></a><a href="./genomics.shtml">Genomics</a></font></strong></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="40%" bgcolor="#FFFFF3"> <ul>
+        <li><a href="/tu/how_do_i/mapping.shtml#disease_genes">identifying disease 
+          genes</a></li>
+        <li><a href="./mapping.shtml#genetic_mapping">doing a genetic mapping 
+          study</a></li>
+        <li><a href="./mapping.shtml#strain_select">selecting a strain for a mapping 
+          cross</a></li>
+        <li><a href="./mapping.shtml#poly_markers">picking polymorphic markers 
+          for mapping</a></li>
+        <li><a href="./mapping.shtml#rhmapserver">mapping my gene without a mapping 
+          cross</a></li>
+      </ul></td>
+    <td width="5%">&nbsp;</td>
+    <td width="40%" bgcolor="#FFFFF3"> <ul>
+        <li><a href="./genomics.shtml#genomic_location">finding the genomic (physical) 
+          location of xxx</a></li>
+        <li><a href="./genomics.shtml#comparative_mapping">determining the syntenic 
+          region in human/mouse</a></li>
+        <li><a href="genomics.shtml#rgsp">finding the status of the rat sequencing 
+          project</a></li>
+        <li><a href="genomics.shtml#other_info">getting more information on a 
+          gene</a></li>
+        <li><a href="genomics.shtml#bacs">finding a BAC containing a sequence</a></li>
+        <li><a href="genomics.shtml#snps">discovering SNPs in a region</a><br>
+        </li>
+      </ul></td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#FFFFDD"> <p><strong><font size="+1"><a name="ontology"></a><a href="./ontology.shtml">Ontology</a></font></strong> 
+        <sup><font color="#FF0000">new</font></sup></p></td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FFFFDD"> <p><strong><font size="+1"><a name="sequences"></a><a href="./sequences.shtml">Sequences</a></font></strong></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="40%" bgcolor="#FFFFF3"> <ul>
+        <li><a href="ontology.shtml">using ontologies in RGD</a></li>
+      </ul></td>
+    <td width="5%">&nbsp;</td>
+    <td width="40%" bgcolor="#FFFFF3"> <ul>
+        <li><a href="sequences.shtml#rat_blast">doing a rat-specific BLAST</a></li>
+        <li><a href="./sequences.shtml#primers">PCR primer analysis</a></li>
+        <li><a href="./sequences.shtml#metagene">predicting genes in genomic sequence</a><br>
+        </li>
+      </ul></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="40%" bgcolor="#FFCCFF"> <p><strong><a href="../glossary.shtml">Glossary 
+        of Terms</a></strong><BR>
+      </p></td>
+    <td width="5%">&nbsp;</td>
+    <td width="40%" bgcolor="#FFCCFF"> <p><strong><a href="../faq.shtml">Frequently 
+        Asked Questions</a></strong></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="40%"> <p>&nbsp;</p></td>
+    <td width="5%">&nbsp;</td>
+    <td width="40%"><font size="-1">&nbsp;</font></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+

@@ -1,0 +1,170 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; ACP Haplotyper</p>
+
+
+
+<table border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">ACP Haplotyper Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> <ul>
+        <li><a href="#definition">What is ACP Haplotyper?</a></li>
+        <li><a href="#finding">How do I use ACP Haplotyper?</a></li>
+        <li><a href="#related">What other information can I get to via ACP Haplotyper?</a> 
+        </li>
+        <li><a href="#report">What do the ACP Haplotyper results look like?</a></li>
+        <li><a href="/ACPHAPLOTYPER/">Let me use ACP Haplotyper...</a></li>
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p><i>&quot;This tool allows visualization of chromosomal segments that 
+        are conserved between different inbred strains and also provides a measurement 
+        of relatedness between these inbred strains. Results are presented as 
+        PDF documents containing the interstrain identity matrices and a visual 
+        haplotype showing conserved microsatellite marker allele sizes across 
+        the selected chromosome. It uses the <a href="http://brc.mcw.edu/LGR/research/lgr_acp.html" target="new">Allele 
+        Characterization Project</a> dataset in combination with various genetic 
+        and Radiation Hybrid maps (also see <a href="http://rgd.mcw.edu/RHMAPSERVER/">RH 
+        Map Server</a>).&quot;</i></p>
+
+      <p>&nbsp;</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Visualizing interstrain conservation 
+      using ACP Haplotyper</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>ACP Haplotyper provides a way to visualize genomic regions 
+        that are conserved between various inbred strains. Two versions of the 
+        tool are provide, a Simple and Advanced version. The algorithms used are 
+        the same, however, the Advanced version provides more options for customizing 
+        the display and the ability to change certain parameters for the calculations.</p>
+      <p>Using the Simple form, follow these steps to use ACP Haplotyper:</p>
+      <ol>
+        <li>Select a map upon which to base the analysis. Typically the Radiation 
+          Hybrid map is the best option as it has the most markers mapped on it 
+          and will provide the most information unless specific markers of interest 
+          to you are not present on the RH.</li>
+        <li>Select the chromosome you wish to analyze.</li>
+        <li>Select the strains you wish to compare (from 1 to all 48)</li>
+        <li>Select a Primary Strain - this is the reference strain against which 
+          the other strains are compared for the purposes of the visualization. 
+          Select a color for this strain's data on the visual haplotype (only 
+          relevant if using the &quot;Normal&quot; color scheme option)<br>
+          [NB: the <strong>Common Alleles</strong> option represents an artificial 
+          strain created by using the most common allele size for each marker, 
+          it can be useful as an indication of the makeup of the 'average' strain}</li>
+        <li>[Optional] Select a secondary strain and color. This is useful if 
+          you are looking at a particular cross and wish to see how the two strains 
+          compare with respect to each other (and other strains).</li>
+        <li>Select a color scheme to use. The Normal color scheme is best for 
+          comparing two strains to each other (and to the rest of the selected 
+          strains), the Multicolor and Red/White/Blue color schems are two alternative 
+          ways of seeing a more global picture of allele conservation across the 
+          selected strains.</li>
+        <li>Enter your email address and click 'Display Haplotypes'</li>
+      </ol>
+      <p><a href="/ACPHAPLOTYPER/"><img src="../images/try_it.gif" border="0"></a></p>
+      <p>The results will be emailed to you within a few minutes, for more information 
+        on the results and to see sample output, see the<a href="#report"> ACP 
+        Haplotyper Results</a> section below.</p>
+      <p>Below is a <strong>more detailed explanation</strong> of each element 
+        of the Advanced ACP Haplotyper form.</p>
+      <font size="-1"> 
+      <!--#include virtual="advanced_help.html" -->
+      </font> <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>Detailed information on the microsatellite markers used by ACP Haplotyper 
+        can be found in the <a href="/tu/sslps/">SSLP</a> reports and are also 
+        refered to in the <a href="/tu/strains/">Strain</a> reports for the various 
+        inbred strains. The <a href="/tu/maps/">Map</a> reports provide a comprehensive 
+        list of all markers mapped on the various maps - SSLPs, ESTs, genes, etc.</p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b> ACP Haplotyper Results</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>&nbsp;</p>
+      <p><font size="-1"> 
+
+        <!--#include virtual="acphap_report_help.html"-->
+
+        </font></p>
+
+
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

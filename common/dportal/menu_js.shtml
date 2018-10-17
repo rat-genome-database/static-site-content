@@ -1,0 +1,35 @@
+
+<script language="JavaScript">
+<!--
+
+function doHidden() {
+	//drop_down_menu.style.visibility = "hidden";
+	//form1.style.z-index = -1; **doesn't work;
+}
+
+function doVisible() {
+	//drop_down_menu.style.visibility = "visible";
+	//form1.style.z-index = 1; **doesn't work;
+}
+
+
+function mmLoadMenus() {
+  if (window.mm_menu_0615115401_0) return;
+
+  window.mm_menu_0615115401_0 = new Menu("root",180,18,"Arial, Helvetica, sans-serif",11,"#000000","#FFFFE8","#DEDEDE","#006699","left","middle",3,0,1000,-5,7,true,true,true,2,false,true);
+
+  mm_menu_0615115401_0.addMenuItem("Neurological&nbsp;Disease","location='/dportal/neurological/'");
+  mm_menu_0615115401_0.addMenuItem("Cardiovascular&nbsp;Disease","location='/dportal/cardiovascular/'");
+
+   mm_menu_0615115401_0.hideOnMouseOut=true;
+   mm_menu_0615115401_0.bgColor='#FFFFFF';
+   mm_menu_0615115401_0.menuBorder=0;
+   mm_menu_0615115401_0.menuLiteBgColor='#666666';
+   mm_menu_0615115401_0.menuBorderBgColor='#FFFFFF';
+
+mm_menu_0615115401_0.writeMenus();
+} // mmLoadMenus()
+//-->
+</script>
+<script language="JavaScript" src="/common/dportal/mm_menu.js"></script>
+

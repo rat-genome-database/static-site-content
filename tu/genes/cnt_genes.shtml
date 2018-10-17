@@ -1,0 +1,187 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; <b>Genes</b></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#99CCFF"> <div align="left"><strong><font size="+1">Genes Help</font><font size="+1"><br>
+
+        </font></strong></div></td>
+
+    <td width="24%" rowspan="2"> 
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%">
+
+<ul>
+
+        <li><a href="#definition">What is a gene</a>?</li>
+
+        <li><a href="#finding">How do I find information about a gene?</a></li>
+
+        <li><a href="#report">What information do you have on each gene?</a></li>
+
+        <li><a href="#related">What other information can I get to via a gene?</a></li>
+
+        <li><a href="/genes/">Let me start searching...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p>&quot;<em>the DNA sequence necessary and sufficient to 
+
+        express the complete complement of functional products derived from a 
+
+        unit of transcription</em>&quot;</p>
+
+      <p><strong>Splice variants</strong> for each gene are also listed in the 
+
+        gene report and specific information about these can be found in the associated 
+
+        splice variant report.</p>
+
+      <p><b>Does not include</b>:</p>
+
+      <ul>
+
+        <li>variations such as <strong>mutations, pseudogenes</strong></li>
+
+        <li><strong>Protein products</strong> which are derived from the modification 
+
+          of precursor proteins (eg. Agt produces the product angiotensinogen 
+
+          which is cleaved by Ren (renin) to produce angiotensin. Both Agt and 
+
+          Ren are gene objects whereas Angiotensin, being a product of the cleavage 
+
+          and not have its own coding sequence, is not included.</li>
+
+      </ul>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="finding"></a><b>Finding Gene information</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p><strong>1. Using the General Search</strong></p>
+
+      <p>The general RGD search available at the top of each page is a<strong> 
+
+        quick route to finding genes</strong>. This will search gene symbols, 
+
+        names and aliases only. (See General RGD Search help for more information).</p>
+
+      <p><!--#include virtual="${webroot}/tu/general_search.shtml"--><a href="#"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p><strong>2. Using the Gene Search Form</strong></p>
+
+      <p><em><strong><font color="#CC0000">Quick Guide</font></strong></em></p>
+
+      <ol>
+
+        <li>Enter search term in the keyword box</li>
+
+        <li>Change the 'Equals' option to 'Contains' for the broadest search possible</li>
+
+        <li>Hit 'Find Gene' to run the search.</li>
+
+      </ol>
+
+      <p><a href="/genes/"><img src="../images/try_it.gif" border="0"></a></p>
+
+      <p>Below is a <strong>more detailed explanation</strong> of each element 
+
+        of the search form which will allow you greater flexibility to refine 
+
+        your searches.</p>
+
+      <font size="-1">
+
+      <!--#include virtual="gene_form_help.html"-->
+
+      </font>
+
+<p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> <p><font size="-1">&nbsp;</font> The report also contains 
+
+        information on objects related to this gene, including QTLs, SSLPs, homologs, 
+
+        mapping, GO annotation, and external database IDs. Links to these objects 
+
+        will provide additional information.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2" bgcolor="#E1E8FF"><a name="report"></a><b>The Gene Report</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2">
+
+	
+
+	<p>Below is a description of each of the information sections available on 
+
+        the gene report which is generated when viewing data available for a particular 
+
+        gene. Not all information will be available for every gene.</p>
+
+      <p> <font size="-1">
+
+        <!--#include virtual="gene_report_help.html"-->
+
+        </font> </p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+

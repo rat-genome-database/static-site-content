@@ -1,0 +1,179 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; Metagene</p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">Metagene Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> 
+
+      <ul>
+
+        <li><a href="#definition">What is Metagene?</a></li>
+
+        <li><a href="#report">What information do you have on Metagene?</a></li>
+
+        <li><a href="#related">What other information can I get to via Metagene?</a> 
+
+        </li>
+
+        <li><a href="/METAGENE/HELP/annot_help.shtml">Detailed Metagene help documents</a></li>
+
+        <li><a href="/METAGENE/">Let me use Metagene...</a></li>
+
+      </ul>
+
+      <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>RGD Definition</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p><i>&quot;MetaGene is a tool that allows the researcher to submit sequences 
+
+        to seven gene prediction engines simultaneously to obtain a comprehensive 
+
+        report on sequence features. It is effective in consolidating all predicted 
+
+        features in the sequence into a unifying framework thereby allowing further 
+
+        studies to be conducted such as the identification of apparent classification 
+
+        of gene features via cluster analysis applied to large collections of 
+
+        known genes.&quot;</i></p>
+
+      <p>MetaGene users have default choices for each of the nine search engines and 
+
+        for the types of annotation to be carried out. This predetermines the quality 
+
+        of the analysis output. Based on the optimization of all the results, 
+
+        MetaGene can give its own predicted values at optimal threshold, all as 
+
+        a graphical and animated annotation.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Using Metagene</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"><p>MetaGene allows the researcher to submit sequences to seven 
+        gene prediction engines simultaneously to obtain a comprehensive report 
+        on sequence features. Genomic sequence data should be submitted to MetaGene 
+        in one of a number of <a href="/METAGENE/format_info.shtml">accepted formats</a>.</p>
+      <p>The basic MetaGene interface is shown below:</p>
+      <p align="center"><img src="/tu/images/metagene_form.gif" width="450" height="314" border="1"></p>
+      <p align="left">Each gene prediction engine has its own options that can 
+        be set via the MetaGene interface prior to submission. The MetaGene server 
+        then submits the supplied sequence to each of the selected prediction 
+        tools in batch mode, emailing a reply to the user once the analysis is 
+        complete. For more information on the analyses and results, see <a href="#report">below</a>.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The output may have either known genes or predicted genes. For known 
+        genes, the <a href="/tu/searchtools/">general query</a> in RGD can be 
+        used to find RGD gene entries. <a href="/tu/vcmap/">VCMap</a> will help 
+        to locate the flanking genes and homologous regions in human and mouse.</p>
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+      </td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b>The Metagene Reports</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>Metagene outputs annotation and analysis of a given sequence query in 
+        the form of a window with defined menus. Based on the user-set limits, 
+        annotations can be visualized as a line diagram or on the displayed sequence. 
+        Visual comparison of the performance of search engines and gene predictions, 
+        evaluation of the predictions with known features if available in that 
+        region and the summary of statistics leading towards Metagene output can 
+        be obtained through different menu options.</p>
+      <p>The output of Metagene and its interpretation is described on the detailed 
+        <a href="/METAGENE/HELP/annot_help.shtml">MetaGene Help</a> page.</p>
+
+
+
+	    
+
+      <p><font size="-1"> 
+
+        <!--#include virtual="metagene_report_help.html"-->
+
+        </font></p>
+
+
+
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+
+  </tr>
+
+</table>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

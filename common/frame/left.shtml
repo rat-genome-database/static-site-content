@@ -1,0 +1,51 @@
+
+
+<!--#include virtual="/root.shtml"-->
+<html>
+<head>
+<title>Rat Genome Database: Navigation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=stylesheet type="text/css" href='<!--#echo var="webroot"-->/common/style/rgd_styles.css'>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr><td colspan="3"><p>&nbsp;</p>
+      <p>&nbsp;</p></td></tr>
+  <tr>
+    <td><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="5" height="1"></td>
+	<td width="114" align="left" valign="top">
+      
+	  <div class=tools>
+      <p><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="114" height="1"><br><b>Related Tools</b>
+          <br>
+          &nbsp;<a href='<!--#echo var="toolroot"-->/ontology/ont_search.cgi' target="_top">Ontology</a>
+          <br>
+          &nbsp;<a href='<!--#echo var="webroot"-->/METAGENE/' target="_top">MetaGene</a> <br>
+          &nbsp;<a href='<!--#echo var="webroot"-->/RHMAPSERVER/' target="_top">RH Map Server</a>
+          <br>
+          &nbsp;<a href='<!--#echo var="webroot"-->/GENOMESCANNER/' target="_top">Genome Scanner</a>
+      </div>
+	  
+      <div class="links"> 
+        <p><b>Related Sites</b><br>
+          &nbsp;<a href='http://www.ncbi.nlm.nih.gov/' target="_top">NCBI Home</a><br>
+          &nbsp;<a href='http://www.ors.od.nih.gov/dirs/vrp/ratcenter/index.html' target="_top">NIH 
+          Rat Center</a><br>
+          </p>
+
+       <p><b>Download Rat Data</b><br>
+          &nbsp;<a href='http://rgd.mcw.edu/pub/' target="_top">RGD FTP Site</a><br>
+          &nbsp;<a href='ftp://ftp.ncbi.nih.gov/genomes/R_norvegicus/' target="_top">NCBI FTP Site</a>
+
+      </div>
+	  
+      <p>&nbsp;</p>
+      </td>
+	  <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/commonimages/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>
+</body>
+</html>

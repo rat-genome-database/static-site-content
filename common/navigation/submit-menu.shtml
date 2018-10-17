@@ -1,0 +1,28 @@
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" align="right" bgcolor='#E6E6E6'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="119" height="1"></td>
+	<td width="1" align="right" bgcolor='#DDDDDD'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="18"></td>
+    <td bgcolor='#EEEEEE'>
+
+      <table width="756" border="0" cellspacing="0" cellpadding="1">
+        <tr> 
+          <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="toolroot"-->/strains/strainRegistrationIndex.cgi' title="Strain Registration">Strain Registration</a></td>
+          <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="toolroot"-->/genes/geneRegistrationIndex.cgi' title="Gene Registration">Gene Registration</a></td>
+		  <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="toolroot"-->/qtls/qtlRegistrationIndex.cgi' title="QTLs Registration">QTL Registration</a></td>
+		  <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/nomen/nomen.shtml' title="Rat Nomenclature">Nomenclature</a></td>
+		  <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/nomen/rgd_traits.html' title="Rat QTL Traits">Rat QTL Traits</a></td>
+		  <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/nomen/hu_traits.html' title="Human QTL Traits">Human QTL Traits</a></td>
+		  <td>&nbsp;</td>
+        </tr>
+      </table>
+
+
+	</td>
+    <td width="100%" bgcolor='#EEEEEE'>&nbsp;</td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><td bgcolor="#E0E0E0"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td></tr>
+</table>

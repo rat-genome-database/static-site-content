@@ -1,0 +1,108 @@
+
+<h2>Rat RH Map Server 
+<a href="#help"><img src="<!--#echo var="webroot"-->/common/images/help.gif" width="20" height="20" border="0" alt="Help"></a></h2>
+<p>This tool will run RHMAPPER <super><a href="#reference">[1]</a></super> and 
+  create a RH placement map of your submitted RH Vectors based on the 1999 RH 
+  Framework of the Rat 
+<a href="<!--#echo var="toolroot"-->/query/query.cgi?id=1016">[2]</a>.
+<hr>
+<form enctype="multipart/form-data" method="post" action="<!--#echo var="toolroot"-->/rhmapserver/rhmapserver.cgi">
+  <table border="0" cellspacing="0" cellpadding="2" align="center" width="95%">
+    <tr> 
+      <td colspan="2" bgcolor="#999999"><b><font color="#FFFFFF">Upload RH Vectors</font></b></td>
+    </tr>
+    <tr> 
+      <td><b>Either: </b>Load your local data file </td>
+      <td> 
+        <input type=file name=datafile size=40>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td>
+        <p><b>Or: </b>Copy and paste your data into the text form</p>
+        <p><font size="-1">(See data format notes <a href="#data_format">below</a>)</font></p>
+      </td>
+      <td> 
+        <textarea name=datatext rows=10 cols=40></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td>RH Map Version        
+        <select size=1 name=RHMAP_version>
+		<option value="2.0">2.0 
+		<option selected value="3.0">3.0
+	      </select>
+        <input type="submit"  value="Submit Vectors" name="submit">
+	  <input type="reset" name="reset" value="reset">
+        <input type=hidden name=action value=screen_data>
+        <input type=hidden name=user_id value="">
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp; 
+</form>
+<hr>
+<h3><a name="instructions"></a>
+<a name="help"></a><img src="<!--#echo var="webroot"-->/common/images/help_grey.gif" width="20" height="19" border="0" alt="Back">
+  RH Map Server submission instructions</h3>
+<ol>
+  <li>Either upload your RH Vector data from a file or paste the RH Vector data 
+    into the indicated text field. The vector data should be in the appropriate 
+    data format, described below. 
+  <li>The RH Mapserver will check your submitted vectors and then allow you to 
+    choose which should go forward for placement against the framework maps. 
+  <li>Submitted vectors will be placed against the framework maps in batch mode, 
+    when the results are available you will receive email notification indicating 
+    where your results can be obtained.
+	<p><a href='<!--#echo var="webroot"-->/tu/rhmapserver/'>Click here for more help</a>.</p>
+</ol>
+
+<h3>&nbsp;</h3>
+<h3>RH Vector Notes</h3>
+<ul>
+  <li>The Rat Radiation Hybrid Panel is a 106 hybrid panel. More information is 
+    available from <a href="http://www.resgen.com/">Research Genetics</a>. </li>
+  <li>The Rat RH framework was generated using hybrids 1 through 100. </li>
+  <li>The RH vectors should consist of 0's, 1', or 2's from hybrids # 1-106 in 
+    that order. If you have missed hybrids, please add 2's for those missing hybrids. 
+  </li>
+  <li>In the rhvectors, 0 represents negative, 1 positive and 2 ambiguous or missing 
+    data. </li>
+  <li>If you have vectors with length shorter than 106, the tool will add 2's 
+    at the end of your vector. </li>
+  <li><a name="data_format"></a><b>Data Format</b> - The data should be arranged 
+    in the following format:<br>
+    <br>
+    <font face="Courier New, Courier, mono" size="-2">
+	<PRE>
+aldoa   0000000210000000000000001000000000010020000010000000001010100110001012100010000021011101000100222222
+atp1a3  0010000010000000000001100010000000000000000010000001001001000200100001010000000011010011000101222222
+atp4a   0001000100000000000001120010200000000000000000000001001000000110100010010000000011010001000201222222
+cgrat10 2011101010000001110201100000000000210210000010101121001100120000001000110001201100000020020000010001
+    </pre>
+    </font> The first column is the marker name which is limited to 11 characters, 
+    the second is the rhvector string, any remaining columns will be discarded, 
+    Each column is delimited by a tab, space or comma. </li>
+</ul>
+<hr>
+<h3><a name="reference"></a>References</h3>
+<p>
+<dl>
+  <dd> 
+    <ol>
+      <li><font size="2"> L. Stein, L. Kruglyak, D. Slonim and E. Lander. (1995) 
+        <a href="http://www.genome.wi.mit.edu/ftp/pub/software/rhmapper/">RHMAPPER</a>, 
+        unpublished software,Whitehead Institute/MIT Center for Genome Research. 
+        </font>
+      <li><font size="2"> Robert G. Steen, Anne E. Kwitek-Black, Christopher Glenn, 
+        Jo Gullings-Handley, William Van Etten, O. Scott Atkinson, Diane Appel, 
+        Simon Twigger, Melanie Muir, Tim Mull, Mary Granados, Mushira Kissebah, 
+        Kerri Russo, Robbin Crane, Michael Popp, Marc Peden, Tara Matise, Donna 
+        M.Brown, Jian Lu, Stephen Kingsmore, Peter J. Tonellato, Steve Rozen, 
+        Donna Slonim, Peter Young, Margit Knoblauch, Abraham Provoost, Detlev 
+        Ganten, Steven D. Colman, Jonathan Rothberg, Eric S.Lander, and Howard 
+        J. Jacob, <b> A High Density Integrated Genetic and Radiation Hybrid Map 
+        of the Laboratory Rat</b>, Genome Research 1999, May. </font>
+    </ol>
+</dl>

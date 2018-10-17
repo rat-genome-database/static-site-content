@@ -1,0 +1,28 @@
+<h2>Map Report</h2>
+
+<table border=0 cellpadding=4 cellspacing=0>
+   <tr><td colspan=4>This tool allows you to retrieve data on several types of 
+genetic and RH maps.  The Map Report includes information on map length, number of framework and placement markers and links to individual chromosome maps.
+</td></tr>
+   <tr>
+       <td class=label>Map Name</td>
+       <td class=label>Version</td>
+       <td class=label>Unique Markers</td>
+   </tr>
+
+   <tr><td colspan=4><hr></td></tr>
+
+<tr><td align=left><a href='<!--#echo var="toolroot"-->/maps/maps_view.cgi?id=1000'>FHH_x_ACI</td><td valign=top>7</td><td valign=top>2083</td></tr>
+
+<tr><td colspan=4><hr></td></tr>
+<tr><td align=left><a href='<!--#echo var="toolroot"-->/maps/maps_view.cgi?id=1001'>SHRSP_x_BN</td><td valign=top>7</td><td valign=top>3824</td></tr>
+
+<tr><td colspan=4><hr></td></tr>
+<tr><td align=left><a href='<!--#echo var="toolroot"-->/maps/maps_view.cgi?id=1002'>RH_map</td><td valign=top>2.1</td><td valign=top>10305</td></tr>
+
+<tr><td colspan=4><hr></td></tr>
+<tr><td align=left><a href='<!--#echo var="toolroot"-->/maps/maps_view.cgi?id=1006'>RH_x_Genetic</td><td valign=top></td><td valign=top>13009</td></tr>
+<tr><td colspan=4><hr></td></tr>
+</table>
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home </a>

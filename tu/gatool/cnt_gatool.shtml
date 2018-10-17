@@ -1,0 +1,322 @@
+ <p class="menu2"><a name="top"></a><a href="/">RGD</a> &gt; <a href="/tu/index.shtml">Help</a> 
+  &gt; Gene Annotation Tool</p>
+
+
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+
+  <tr valign="top"> 
+
+    <td bgcolor="#66CC66"> 
+
+      <div align="left"><strong><font size="+1">Gene Annotation Tool Help</font></strong></div>
+
+    </td>
+
+    <td width="24%" rowspan="2">
+
+      <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+
+    </td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td width="76%"> 
+
+      <ul>
+
+        <li><a href="#definition">What is the Gene Annotation Tool?</a></li>
+        <li><a href="#input">What does the input of Gene Annotation Tool look like?</a></li> <!--H.Liu 09/01/04-->
+        <li><a href="#finding">How do I use the Gene Annotation Tool?</a></li>
+        <li><a href="#definition">What Databases does the tool mine?</a></li>
+        <li><a href="#related">Where can I find further descriptions of the Database's fields?</a></li>        
+        <li><a href="#report">What does the Gene Annotation Tool form look like?</a></li>
+        <li><a href="#sample">What does the Query Results output look like?</a></li>
+        <li><a href="#excel">How do I create an <strong>Excel</strong> compatible file from the results?</a></li>
+        <li><a href="/gatool/">Let me use the Gene Annotation Tool...</a></li>
+
+      </ul>
+
+    <p>&nbsp;</p></td>
+
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="definition"></a><b>What is the Gene Annotation
+        Tool?</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The purpose of the Gene Annotation Tool is to gather information about
+        genes. It gathers this information by parsing several databases available
+        online:</p>
+      
+        <table width="65%" border="0">
+          <!--DWLayoutTable-->
+          <tr>
+            <td width="25%" height="20" align="left"><ul>
+            <!-- LocusLink will be replaced by Entrez Gene, so certain 
+names and links related to 'LocusLink' are changed into 'Entrez Gene' 
+ones. 08/13/04, Hang Liu -->
+                <li>
+                  <a 
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">Entrez Gene</a>
+                </li>
+                </ul>
+            </td>
+            <td width="25%" align="left"><ul>
+                <li>
+                  <a href="http://www.ebi.ac.uk/swissprot/">Swiss-Prot</a>
+                </li>
+                </ul>
+            </td>
+            <td width="86" align="left" valign="top"><ul>
+                <li>
+                  <a href="http://www.kegg.com/">KEGG</a>
+                </li>
+                </ul>
+            </td>
+            <td width="125" align="left" valign="top"><ul>
+                <li>
+                  <a href="http://rgd.mcw.edu/">RGD</a>
+                </li>
+                </ul>
+            </td>
+          </tr>
+        </table>
+        <p><i>&quot;<strong>Entrez Gene</strong> provides a unified query environment for genes defined by sequence 
+and/or in NCBI's Map Viewer. You can query on names, symbols, accessions, publications, GO terms, chromosome numbers, 
+E.C. numbers, and many other attributes associated with genes and the products they encode. &quot;</i></p>
+      <p><i>&quot;<strong>Swiss-Prot</strong> is a curated protein sequence database which strives
+          to provide a high level of annotation (such as the description of the
+          function of a protein, its domains structure, post-translational modifications,
+          variants, etc.), a minimal level of redundancy and high level of integration
+      with other databases &quot;</i></p>
+      <p><i>&quot;<strong>KEGG</strong> is a suite of databases and associated software, integrating
+          our current knowledge on molecular interaction networks in biological
+          processes (PATHWAY database), the information about the universe of
+          genes and proteins (GENES/SSDB/KO databases), and the information about
+          the universe of chemical compounds and reactions (COMPOUND/REACTION
+      databases) &quot;</i></p>
+      <p><i>&quot;The <b> Rat Genome Database</b> is a collaborative effort between leading research institutions involved in rat genetic and genomic research. Its goal, as stated in RFA: HL-99-013 is the establishment of a Rat Genome Database, to collect, consolidate, and integrate data generated from ongoing rat genetic and genomic research efforts and make these data widely available to the scientific community. A secondary, but critical goal is to provide curation of mapped positions for quantitative trait loci, known mutations and other phenotypic data.&quot;</i></p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+
+  </tr>
+
+<!-- The following part describes the input format of GA. Added by Hang Liu, 09/01/04 -->
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="input_gene"></a><b>The format of input of 
+      the Gene Annotation Tool</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>The <strong>Gene Annotation Tool</strong> allows you to enter various types of gene identifiers
+        or chromosome location (now Rat only) as the query input.</p>
+      <ul><li><p>These gene identifiers could be:</p></li>
+      <ul>
+        <li>Gene Symbol</li>
+        <li>RGD ID</li>
+        <li>LocusLink ID (now Entrez Gene ID)</li>
+        <li>KEGG ID</li>
+        <li>SWISS PROT ID</li>
+        <li>GenBank ID</li>
+        <li>TIGR TC ID</li>
+        <li>Affy Probe Set ID</li>
+        <li>RGD QTL ID (Rat only)</li>
+      </ul>
+      <p>The format of your gene identifier input could be either: <i>(Gene Symbols are used as example)</i></p>
+      <ul>
+        <li>A text file with one and only one gene identifier on each line. It should look like:</li><br>
+          <i>......<br>agt<br>acly<br>cat<br>tnf<br>......<br>&nbsp</i>
+        <li>Or, you can copy and paste or type the gene identifiers into the text area as your input, 
+        just remember to separate each identifier by either (,)comma, (;)semi-colon, or one identifier per line. 
+        It should look like:</li><br>
+          <i>......<br>agt,acly<br>cat;tnf<br>casp3<br>a3m<br>......<br>&nbsp</i>
+      </ul>
+      <a name="input_loc"></a>
+      <li><p>The format of your chromosome location input should look like either: 
+          <i>(remember to separate each location by either (,)comma, (;)semi-colon, or one location per line.)</i>
+      </p></li>
+      <i>......<br>Chr1:1000000-10100000,Chr1:1020000-10300000<br>Chr2:1100000-12000000;Chr2:2110000-22000000<br>Chr3:23400000-23800000<br>......<br>&nbsp</i>
+      <p>or</p>
+      <i>......<br>D1Rat5-D1Rat10,D1Rat2-D1Rat4<br>D2Rat3-D2Rat7;D2Rat1-D2Rat7<br>D3Rat5-D3Rat7<br>......<br>&nbsp</i>
+      </ul>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+  </tr>
+
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="finding"></a><b>Finding information using 
+      the Gene Annotation Tool</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+    <td colspan="2"> <p>The
+        <strong>Gene Annotation Tool</strong> allows you to mine several databases for
+        information about a gene or set of genes. This allows you to develop
+        a
+      gene file with comprehensive descriptions and data about those genes</p>
+      <p>The basic steps  are:</p>
+      <ol>
+        <li>Enter in  the gene identifiers to be searched or enter the filename with
+          the list of gene identifiers in it.<em>(The file must have each gene on a separate
+          line).</em></li>
+        <li>Select the type of data being submitted <em>(Gene Symbol, RGD
+            ID etc).</em>
+            <ul>
+          		<li>For the QTL or Chromosomal Location input types, an output
+                  list will be created showing all known sequences between two
+                  points on a chromosome.&nbsp; The types of sequences that are
+                  outputted can be selected with the corresponding checkboxes
+                  below the QTL or Location radio buttons.</li>
+          		<li>Please note that the QTL and Location inputs will only work
+                  for rat.</li>
+        	</ul>
+
+          </li>
+        <li>Select the column headings you would like in the results:</li>
+        <ul>
+          <li>OMIM numbers will only give the headers that apply to the human
+              genome.</li>
+            <li> The &quot;Warning&quot; column gives the LocusLink
+                IDs of genes with the same symbol as the one given (which happens
+                occasionally
+              in LocusLink). </li>
+            <li>            If gene names are submitted, the parser chooses the
+                corresponding gene with the submitted name as an Offical Symbol not
+                an Alias
+                    - if at all possible. If neither are possible, it looks for genes
+                    with
+              different suffixes. </li>
+            <li>            The program also attempts to find genes such that
+              the human, rat, and mouse columns refer to genes with the same
+              Official
+                Symbol. </li>
+            <li> The &quot;sequence&quot; column gives the contig numbers.</li>
+            <li> RGD Data will only appear if rat is selected as the
+              organism.</li>
+        </ul>
+        <li>Select how you would like the results to be delimited either by tab,@,$
+          or comma. There are currently known issues with saving files using
+          the TAB option, in all versions of Netscape up to and including version
+          7, .</li>
+        <li>Click the Submit button.</li>
+      </ol>
+      <p>The tool will return a text list of the genes found from the parsing
+        of the files. This can then be saved to a file and imported into another
+        application (eg: Excel).</p>
+      <p><a href="/gatool/"><img src="../images/try_it.gif" border="0"></a><font size="-1"> 
+ 
+      </font> </p>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+    </td>
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"> 
+
+      <div align="left"><a name="related"></a><b>Related Information/Links</b></div></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>Further information
+          about the databases used and their fields, you can search these webpages:</p>
+      <ul>
+        <li><a href="http://www.ncbi.nlm.nih.gov/entrez/query/static/help/helpdoc.html">Entrez Gene
+          Help Pages</a> </li>
+        <li> <a href="http://www.ebi.ac.uk/swissprot/Documents/documents.html">Swiss-Prot
+          Document Pages</a></li>
+        <li>          <a href="http://www.kegg.com/kegg/kegg1.html">KEGG
+          Information Page</a></li>
+        <li><a href="http://rgd.mcw.edu/tu/">RGD Help Pages</a></li>
+      </ul>      
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+
+    </td>
+  </tr>
+
+  <tr valign="top" bgcolor="#99FF99"> 
+
+    <td colspan="2"><a name="report"></a><b>The Gene Annotation Tool input form</b></td>
+
+  </tr>
+
+  <tr valign="top"> 
+
+    <td colspan="2"> 
+
+      <p>The input form is divided into sections:</p>
+      <ul>
+        <li><em>What are the inputs</em></li>
+        <li><em>What data type is being submitted</em></li>
+        <li><em>What fields from the database to include in the output</em><br>
+        </li></ul> 
+        <br><img src="images/gascreen1.gif"><br>
+          <img src="images/gascreen2.gif"><br><br>
+   
+		<table width="100%" border="0">
+        <tr>
+          <td bgcolor="#33FF99">&nbsp;<a name="sample"></a> <strong>Query Results</strong></td>
+        </tr>
+      </table>
+      <p>When you have checked the boxes of the fields required
+          , click the submit button and you will receive
+          some output as follows:</font></p>
+      <blockquote>
+        <p><font size="-2" face="Geneva, Arial, Helvetica, sans-serif">LL_OFFICIAL_SYMBOL(r)$LL_LOCUSID(r)$LL_OFFICIAL_GENE_NAME(r)$KEGG_genename$KEGG_keggid$SP_AC$SP_DE$SP_ID$SP_MIM$<br>
+          Tnf$24835$tumor necrosis factor superfamily, member 2$Tnf$24835$P16599|Q9JI26$$TNFA_RAT$$<br>
+          Adam15$57025$a disintegrin and metalloproteinase domain (ADAM) 15 (metargidin)$Adam15$57025$Q9QYV0|$$AD15_RAT$$<br>
+          Adam17$57027$a disintegrin and metalloproteinase domain 17$Adam17$57027$Q9Z1K9|$$AD17_RAT$$ </font></p></blockquote>
+        <p>If you had selected HTML output then your output would be formatted
+          with hyperlinks to external databases:</p>
+
+        <p><img border="0" src="images/gascreen3.gif" width="993" height="70"></p>
+
+        <p><em><font size="2">(Note: Once the output is in HTML format you need
+              to go back and rerun the search in text format to be able to save
+              it and import
+            it into
+        a spreadsheet program (eg:EXCEL&#8482;)</font></em></p>
+        <table width="100%" border="0">
+        <tr>
+          <td bgcolor="#33FF99">&nbsp;<a name="excel"></a> <strong>How to save
+              the query results to be imported into EXCEL</strong></td>
+        </tr>
+      </table>  
+      <p>From here you need to:</p>      <ul>
+        <li>click on FILE then SAVE AS </font></li>
+        <li>Save the file as
+              a text (.TXT) file (Dont forget to change the file type to text
+            format NOT html.)</font></li>
+        <li>Startup EXCEL and click FILE then OPEN. Set the <strong>file type</strong> in
+ the dialog box to <strong>TEXT</strong> files and then open your saved file.You will be taken through the EXCEL wizard for importing the text file</font></li>
+        <li> You will need to specify the delimited character that you used in the input form.</font></li>
+      </ul>      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+
+</table>
+
+
+
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
+
+
+

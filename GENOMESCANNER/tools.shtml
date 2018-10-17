@@ -1,0 +1,8 @@
+    <div class=tools>
+      
+  <p><b>Tools</b>:
+  <p> <a href="<!--#echo var="webroot"-->/sslps/">Search SSLPs</a><BR>
+    <a href="<!--#echo var="webroot"-->/strains/">Search Strains</a><BR>
+    <a href="<!--#echo var="webroot"-->/maps/">View Maps</a><BR>
+  </div>
+    

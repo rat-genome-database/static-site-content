@@ -1,0 +1,86 @@
+
+<!--#include virtual="/root.shtml"-->
+<html>
+<head>
+<title>Rat Genome Database: Navigation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=stylesheet type="text/css" href='<!--#echo var="webroot"-->/common/style/rgd_styles.css'>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="130" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEEEEE">
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td bgcolor="#FFFFFF" colspan="2"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="45"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td><div class=sidebar><strong class="framemenu">Related Sites</strong></div></td>
+	<td bgcolor="#CCCCCC"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td colspan="2"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="2"></td>
+  </tr>
+  
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td colspan="2" align="right"><a href="/" target="_top"><img src="rgd.gif" alt="Rat Genome Database" width="115" height="35" border="0"></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td colspan="2"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"></td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td colspan="2" align="right"><a href="http://pga.mcw.edu" target="_top"><img src="pga.gif" alt="PhysGen: Physiogenomics of Stressors in Derived Consomic Rats & Knock-Out Rats for Physiological Genomics" width="115" height="31" border="0"></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"></td>
+	<td colspan="2"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="6"></td>
+  </tr>
+
+  <tr>
+    <td align="left" valign="top" bgcolor="#FFFFFF"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="10" height="1"></td>
+	<td width="119" align="left" valign="top">
+	  <div class="tools">
+		  <p><b class="framemenu">Related Tools</b>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="5"><br>
+		  &nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/gbrowse.shtml' target="_top"><img src="tool-gbrowser.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;GBrowser</a><br>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+		  
+		  &nbsp;<a href='<!--#echo var="webroot"-->/gviewer/Gviewer.jsp' target="_top"><img src="tool-gviewer.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;Gviewer</a><br>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+		  
+		  &nbsp;<a href='<!--#echo var="webroot"-->/VCMAP' target="_top"><img src="tool-vcmap.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;VCMap</a><br>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+		  
+		  &nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/blat.shtml' target="_top"><img src="tool-blat.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;BLAT</a><br>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+		  
+		  &nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/blast.shtml' target="_top"><img src="tool-blast.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;BLAST</a><br>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+		  
+		  &nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/reptmasker.shtml' target="_top"><img src="tool-rmasker.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;RepeatMasker</a><br>
+		  <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="3"><br>
+		  
+		  &nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/genome-annotation.shtml' target="_top"><img src="tool-annotation.gif" width="27" height="18" border="0" align="absmiddle">&nbsp;Annotation</a><br>
+
+      </div>
+	  
+      <div class="links">
+       <p><b class="framemenu">Download Rat Data</b>
+          &nbsp;<a href='http://rgd.mcw.edu/pub/' target="_top">RGD FTP Site</a><br>
+          &nbsp;<a href='ftp://ftp.ncbi.nih.gov/genomes/R_norvegicus/' target="_top">NCBI FTP Site</a>
+
+      </div>
+	  
+      <p>&nbsp;</p>
+    </td>
+	<td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>
+
+</body>
+</html>

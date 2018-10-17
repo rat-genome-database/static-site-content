@@ -1,0 +1,26 @@
+<div class="tools">
+<p><b>Related Tools:</b>
+<br>
+ &nbsp;<a href='<!--#echo var="webroot"-->/sequences/utils.shtml'>DNA Primer Utilities</a>
+<br>
+ &nbsp;<a href='http://www.ncbi.nlm.nih.gov/genome/seq/RnBlast.html'>NCBI Rat BLAST</a>
+<br>
+ &nbsp;<a href='http://www.hgsc.bcm.tmc.edu/blast/blast.cgi?organism=Rnorvegicus'>Baylor Rat BLAST</a>
+<br>
+ &nbsp;<a href='http://www.ncbi.nlm.nih.gov/BLAST/'>NCBI BLAST</a>
+<br>
+<p><b>RGSP Links:</b>
+<br>
+ &nbsp;<a href="http://www.nhgri.nih.gov/NEWS/nih_expands_programs.html" target="_blank">NHGRI</a>
+<br>
+ &nbsp;<a href='http://www.hgsc.bcm.tmc.edu/projects/rat/'>Baylor</a>
+<br>
+ &nbsp;<a href='http://www.bcgsc.bc.ca/projects/rat_mapping'>UBCGSC</a>
+<br>
+ &nbsp;<a href='http://www.applera.com/press/prccorp022801.html'>Celera</a>
+<br>
+ &nbsp;<a href='http://www.tigr.org/new/press_release_feb01.shtml'>TIGR</a>
+<br>
+ &nbsp;<a href='http://www.genomecorp.com'>GTC</a>
+<br>
+</div>

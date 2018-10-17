@@ -1,0 +1,9 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Gene Ontology Project (GO) - Rat Genome Database"-->
+
+<!--#set var="links" value="${webroot}/links.shtml"-->
+<!--#set var="main" value="${webroot}/GO/cnt_go.shtml"-->
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->

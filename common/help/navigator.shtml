@@ -1,0 +1,19 @@
+
+<table width="120" cellspacing="2" cellpadding="4" align="right" vspace="15" hspace="10">
+  <tr> 
+    <td> 
+      <table width="120" border="1" cellspacing="2" cellpadding="4" align="right">
+        <tr bgcolor="#CCCCCC"> 
+          <td bgcolor="#DDDDDD"><b>Help Index</b></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"><a href="#definition">Definition</a><br>
+            <a href="#finding">Finding info</a><br>
+            <a href="#related">Related&nbsp;info/link</a><br>
+            <a href="#report">Report</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+

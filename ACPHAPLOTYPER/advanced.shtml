@@ -1,0 +1,11 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Rat Genome Database: ACP Haplotyper"-->
+<!--#set var="links" value="${webroot}//ACPHAPLOTYPER/links.shtml"-->
+<!--#set var="search" value="${webcommon}/navigation/search.shtml"-->
+<!--#set var="main" value="${webroot}/ACPHAPLOTYPER/scannerform_adv.shtml"-->
+<!--#set var="tools" value="${webroot}/ACPHAPLOTYPER/tools.shtml"-->
+<!--#set var="summary" value="${webroot}/ACPHAPLOTYPER/summary.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+

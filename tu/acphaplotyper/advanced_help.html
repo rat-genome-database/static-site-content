@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>RGD: ACP Haplotyper Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=stylesheet type="text/css" href="/common/style/rgd_styles.css"> 
+</head>
+
+<body>
+<h1>Advanced ACP Haplotyper Help</h1>
+<hr>
+<h3><a name="map_to_be_used" id="map_to_be_used"></a>Map to be used</h3>
+<p>Chose one of the available genetic or radiation hybrid maps. This map is then 
+  used to provide the map order of the microsatellite markers used to create the 
+  ACP haplotype image.</p>
+<h3><a name="chromosome" id="chromosome"></a>Chromosome</h3>
+<p>Select the chromosome that you would like to view the ACP haplotype for.</p>
+<p>&nbsp;</p>
+<h3><a name="flank1" id="flank1"></a>Flanking marker or Distance #1</h3>
+<p>Can be used to limit the region of the chromosome that is analyzed. Enter the 
+  first flanking marker or map location (cM or cR as appopriate) that defines 
+  the start of the region to be displayed. Normally one would also enter a second 
+  flanking marker or distance, however, if the second value is left empty the 
+  tool will analyze the region from the first marker to the end of the chromosome.</p>
+<p>&nbsp;</p>
+<h3><a name="flank2" id="flank2"></a>Flanking marker or Distance #2</h3>
+<p>Can be used to limit the region of the chromosome that is analyzed. Enter the 
+  second flanking marker or map location (cM or cR as appopriate) that defines 
+  the end of the region to be displayed. Normally one would also enter a starting 
+  flanking marker or distance, however, if the start value is left empty the tool 
+  will analyze the region from the start of the chromosome to the second marker.</p>
+<p>&nbsp;</p>
+<h3><a name="strains_to_display" id="strains_to_display"></a>Strains to Display</h3>
+<p>Select one or more individual rat strains to be included in the analysis. Chose 
+  'All 48 Strains' to include all possible strains.</p>
+<p>&nbsp;</p>
+<h3><a name="primary_strain_and_color_scheme" id="primary_strain_and_color_scheme"></a>Primary 
+  Strain and Color Scheme</h3>
+<p>Select one primary strain against which all other selected strains are compared. 
+  This choice affects the output in different ways depending on the <a href="#color_schemes">color 
+  scheme</a> selected.</p>
+<p>&nbsp;</p>
+<h3><a name="secondary_strain_and_color_scheme"></a>Secondary Strain and Color 
+  Scheme</h3>
+<p>This is an optional selection - select one secondary strain against which all 
+  other selected strains are compared to . This choice affects the output in different 
+  ways depending on the <a href="#color_schemes">color scheme</a> selected:</p>
+<p>&nbsp;</p>
+<h3><a name="color_schemes"></a>Color Schemes</h3>
+<p>The color schemes affect how the visual haplotypes are colored and are best 
+  suited to different types of analysis:</p>
+<table width="90%" border="1" align="center">
+  <tr valign="top" bgcolor="#CCCCCC"> 
+    <td width="19%"><strong>Color Scheme</strong></td>
+    <td width="21%"><strong>Best Used for</strong></td>
+    <td width="60%"><strong>Description</strong></td>
+  </tr>
+  <tr valign="top"> 
+    <td>Normal</td>
+    <td>Comparing two strains against each other</td>
+    <td>For each marker, if the allele size in Strain A matches that of the primary 
+      strain, the marker block is colored according to the primary strain color. 
+      If the Strain A size is different from the primary strain but the same size 
+      as that found in the secondary strain (if selected) then the block has the 
+      secondary color. If the size matches neither primary or secondary strains 
+      it is colored black. If there is no allele size data for a marker in a particular 
+      strain this is indicated by a 'X'.</td>
+  </tr>
+  <tr valign="top"> 
+    <td>Multicolor Scheme</td>
+    <td>Comparing many strains to see discontinuous haplotypes spread across the 
+      chromosome. </td>
+    <td>Blocks for each marker are colored according to the size difference between 
+      the allele size in the particular strain and the size of the Primary Strain. 
+      Blocks are colored according to a discontinuous color scheme depending on 
+      the base pair size of the marker allele in a given strain as compared to 
+      that marker's allele size in the primary strain.</td>
+  </tr>
+  <tr valign="top"> 
+    <td>Red, White and Blue</td>
+    <td>Comparing many strains to see overall patterns of conservation</td>
+    <td>Blocks for each marker are colored according to the size difference between 
+      the allele size in the particular strain and the size of the Primary Strain. 
+      Blocks are colored white if they are the same size as the primary strain 
+      and get increasingly red or blue as the base pair size is smaller or larger, 
+      respectively, than that of the primary strain</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2>Advanced Options</h2>
+<p>These options provide additional control over the analysis and its output.</p>
+<h3><a name="lod_threshold" id="lod_threshold"></a>Placement LOD threshold<font size=-1> 
+  </font> </h3>
+<p>Setting LOD threshold to a value greater than zero excludes markers from the 
+  analysis that have been placed on the map at a LOD score lower than the threshold 
+  value. This allows markers of lower confidence to be excluded from the analysis. 
+  <strong>NB</strong> - Not all maps have LOD score data available.</p>
+<p>&nbsp;</p>
+<h3><a name="bp_range" id="bp_range"></a>Basepair Range<font size=-1> </font> 
+</h3>
+<p>This value controls how similar two allele sizes have to be in order to be 
+  considered the same size. The default is zero, ie. the two allele sizes have 
+  to be identical in order to be considered the same size. Setting the Basepair 
+  Range to a value greater than zero allows some flexibility in this calculation 
+  to allow for the potential that the reported allele sizes might not be accurate 
+  to the individual base pair. For example, setting the range to 2 means that 
+  if Allele size B is within +/- 2bp of Allele size A then it will be considered 
+  identical for the purposes of coloring the haplotype and calculating interstrain 
+  similarities.</p>
+<p>&nbsp;</p>
+<h3><a name="size_data" id="size_data"></a>Hide Size Data</h3>
+<p>Unchecking this option will show the individual allele sizes (in bp) for each 
+  marker in each strain on the visual haplotype report, this can be useful when 
+  one wants to know the precise values contained within the database as opposed 
+  to the size relative to another strain.</p>
+<p>&nbsp;</p>
+<h3><a name="contents" id="contents"></a>Document Contents<font size=-1> </font> 
+</h3>
+<p>This allows control over the content of the returned PDF document:</p>
+<table width="85%" border="0" cellpadding="3">
+  <tr bgcolor="#CCCCCC"> 
+    <td width="25%"><strong>Option</strong></td>
+    <td width="75%"><strong>Output</strong></td>
+  </tr>
+  <tr> 
+    <td>Tables &amp; Haplotype</td>
+    <td>PDF contains both the interstrain identity matrices and the visual haplotype</td>
+  </tr>
+  <tr> 
+    <td>Only Visual Haplotype</td>
+    <td>PDF contains only the visual haplotype</td>
+  </tr>
+  <tr> 
+    <td>Only Strain Tables</td>
+    <td>PDF contains only the interstrain identify matrices</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h3><a name="order_strains" id="order_strains"></a>Order Strains</h3>
+<p>This option controls the order of the strains (from left to right) on the interstrain 
+  relatedness matrix and the visual haplotype.</p>
+<table width="85%" border="0" cellpadding="3">
+  <tr bgcolor="#CCCCCC"> 
+    <td width="25%"><strong>Option</strong></td>
+    <td width="75%"><strong>Effect</strong></td>
+  </tr>
+  <tr valign="top"> 
+    <td>by % Identity</td>
+    <td>Strains listed with Primary strain on the left, then others listed from 
+      left to right in order of decreasing percentage Identity</td>
+  </tr>
+  <tr valign="top"> 
+    <td>by % homology</td>
+    <td>Strains listed with Primary strain on the left, then others listed from 
+      left to right in order of decreasing percentage homology</td>
+  </tr>
+  <tr valign="top"> 
+    <td>by Strain Name</td>
+    <td>Strains listed in alphabetical order regardless of strain identity/homology. 
+      This option is useful when extracting data from multiple chromosomes as 
+      it keeps the strain order the same for each chromosome (assuming the same 
+      strains are selected).</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+  
+<h2>Interstrain Distance Calculations</h2>
+<p>These options provide additional control over the sliding window used to calculate 
+  the interstrain relatedness.</p>
+<h3><a name="calc_distance" id="calc_distance"></a>Calculate distance with sliding 
+  window </h3>
+<p>Check box to chave the script calculate interstrain relatedness using a sliding 
+  window algorithm in addition to the basic identify calculation automatically 
+  performed. The sliding window algorithm attempts to add extra weight to conserved 
+  stretches of identical allele sizes as compared to the basic identity calculation 
+  which simply measures the overall percentage of alleles with identical sizes 
+  between two strains, regardless of location.</p>
+<p>&nbsp;</p>
+<h3><a name="window_size" id="window_size"></a>Window Size</h3>
+<p>The size of the window in cM or cR, as appropriate for the map selected.</p>
+<p>&nbsp;</p>
+<h3><a name="slide_increment" id="slide_increment"></a>Slide increment</h3>
+<p>The slide increment in cM or cR, as appropriate for the map selected. Determines 
+  how far up the chromosome the window is moved for each iteration of the analysis. 
+  Smaller values should give better resolution</p>
+<p>&nbsp;</p>
+<h2>Output Options</h2>
+<p>These allow selection of the overall data output format and the email account 
+  to which the output is sent.</p>
+<h3><a name="output_format" id="output_format"></a>Output Format<font size=-1> 
+  </font> </h3>
+<p>The PDF (Portable Document Format) is the defaul and recommend option. The 
+  file is generated offline following the submission of the request and the PDF 
+  file emailed to the supplied email address as an attachment. The XML option 
+  is somewhat experimental and currently only returns the allele size data for 
+  each marker in an XML format similar to that shown below:</p>
+<pre><font size="-2" face="Courier New, Courier, mono">&lt;?xml version=&quot;1.0&quot;    encoding=&quot;UTF-16&quot; ?&gt;
+   &lt;rgd_map_raw_data chromosome=&quot;19&quot;&gt;
+   &lt;marker&gt;
+  	 &lt;name&gt;D19Rat2&lt;/name&gt;
+  	 &lt;abs_distance&gt;43.8598&lt;/abs_distance&gt;
+  	 &lt;f_or_p&gt;P&lt;/f_or_p&gt;
+  	 &lt;lod&gt;.2&lt;/lod&gt;
+  	 &lt;allele_size strain=&quot;AVN/Orl&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BB/DP&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BB/DR&quot;&gt;160&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BC/Cpbu&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BDIX/Han&quot;&gt;154&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BDVII/Cub&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BN/Cub-lx&quot;&gt;154&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BN/SsNHsd&quot;&gt;154&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BP/Cub&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;BUF/Pit&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;COP/OlaHsd&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;DA/Pit&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;DONRYU/Melb&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;F344/Pit&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;FHH/Eur&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;GH/Omr&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;GK&quot;&gt;154&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;IS/Kyo&quot;&gt;158&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;LE/Mol&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;LEW/Pit&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;LH/Mav&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;LOU/CHan&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;M520/N&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;MHS/Gib&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;MNR/N&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;MNRA/N&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;MNS/Gib&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;MR/Pit&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;NEDH/K&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;NP9&quot;&gt;156&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;ODU/N&quot;&gt;158&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;OKA/Wsl&quot;&gt;166&lt;/allele_size&gt;
+  	 &lt;allele_size strain=&quot;OM/Han&quot;&gt;156&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;P5C&quot;&gt;156&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;PVG/Pit&quot;&gt;166&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;RGD_NAME&quot;&gt;D19Rat2&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;SD/Rij&quot;&gt;166&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;SHR/OlaHsd&quot;&gt;158&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;SHRSP/Riv&quot;&gt;164&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;SR/Jr&quot;&gt;166&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;SS/Jr&quot;&gt;166&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;SSLP_RGD_ID&quot;&gt;35028&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;WAG/RijKyo&quot;&gt;156&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;WF/Pit&quot;&gt;166&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;WIST/Nhg&quot;&gt;156&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;WKY/OlaHsd&quot;&gt;164&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;WN/N&quot;&gt;156&lt;/allele_size&gt;
+   	&lt;allele_size strain=&quot;WTC/Kyo&quot;&gt;164&lt;/allele_size&gt;
+   	&lt;common_allele_data size=&quot;166&quot; frequency=&quot;19&quot; total_allele_num=&quot;48&quot;
+   	num_unique_alleles=&quot;8&quot;/&gt;&lt;allele_size strain=&quot;common&quot;&gt;166&lt;/allele_size&gt;&lt;/marker&gt;
+   &lt;marker&gt;
+   	&lt;name&gt;D19Rat102&lt;/name&gt;
+   	&lt;abs_distance&gt;48.1398&lt;/abs_distance&gt;
+   	&lt;f_or_p&gt;P&lt;/f_or_p&gt;
+   	&lt;lod&gt;.8&lt;/lod&gt;
+   	&lt;no_acp_data/&gt;
+   &lt;/marker&gt;
+   &lt;parameters&gt;</font></pre>
+<pre><font size="-2" face="Courier New, Courier, mono">		&lt;map type=&quot;genetic&quot; name=&quot;FHH x ACI, v7&quot;/&gt;
+		&lt;chromosome number=&quot;19&quot;/&gt;
+		&lt;flank1 distance=&quot;30&quot;/&gt;
+		&lt;primary_strain name=&quot;SHR/OlaHsd&quot;/&gt;
+		&lt;lod_threshold value=&quot;0&quot;/&gt;
+		&lt;bp_range value=&quot;0&quot;/&gt;
+		&lt;display table=&quot;table_haplotype&quot; image_yn=&quot;no&quot;
+			font_size=&quot;twelve&quot; homology_yn=&quot;1&quot; order=&quot;by_percentage&quot;
+			color_scheme=&quot;normal&quot;/&gt;
+		&lt;homology window_size=&quot;10&quot; slide_inc=&quot;5&quot;/&gt;
+	&lt;/parameters&gt;
+&lt;/rgd_map_raw_data&gt;</font>
+</pre>
+<pre>&nbsp;
+</pre>
+<h3><a name="your_email_address"></a>Your Email Address <font size=-1> </font> 
+</h3>
+<p>The email address that the PDF document created by the application should be 
+  sent to.</p>
+<div align="center"></div>
+<p align="center">&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,363 @@
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMap 
+  Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp.shtml'>Detailed Help</a> &gt; <strong>VCMap 
+  Reports</strong></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#CCFFCC"> <b>5. VCMap Query Reports</b></td>
+  </tr>
+
+
+
+  <tr valign="top"> 
+    <td> <table width="180" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td> 
+            <!--#include virtual="${webroot}/tu/vcmap/navi.shtml"-->
+          </td>
+        </tr>
+      </table>
+      <p><br>
+        <strong><a name="result"></a>5.1. What type of reports can be obtained 
+        as a result of myVCMap query?</strong></p>
+      <blockquote> 
+        <p>The VCMap Query Result provides 3 types of marker reports and predictions.<br>
+          <br>
+          <strong>Individual Marker (Gene, UniGene, and EST) Report:</strong></p>
+        <blockquote> 
+          <p>Example: Query Result for Rn.14443 [ <a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=Rn.14443&RelPos1=&RelPos2=&QMarker=Display+Marker+Report&Species=rat&Chr=01&FirstPos=&SecondPos=' target="new">View 
+            this VCMap Report</a> ]</p>
+          <p>This report displays the underlying VCMap build data for a particular 
+            marker including the ESTs and UniGenes that were involved in creating 
+            the relationship and the best blast result scores between sequences 
+            from the Backbone and Reference (non-backbone) UniGene clusters.</p>
+          <table width="85%" border="0" cellpadding="1" cellspacing="1" bgcolor="#333333">
+            <tr align="center" valign="top" bgcolor="#CCCCCC"> 
+              <td width="21%"> <p><strong>Column</strong></p></td>
+              <td width="17%"> <p><strong>Example</strong></p></td>
+              <td width="62%"> <p><strong>Explanation</strong></p></td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>UniGene</strong></p></td>
+              <td>Rn.14443</td>
+              <td>The UniGene cluster assigned to the gene marker</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>Gene symbol</strong></p></td>
+              <td>&nbsp;</td>
+              <td>The gene symbol associated with a particular gene if available</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>Aligned UniGenes</strong></p></td>
+              <td>Hs.107528,<br>
+                Mm.45755</td>
+              <td>The UniGenes that contain the highest scored EST from a BLAST 
+                comparison</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>Mapped ESTs</strong></p></td>
+              <td>AA924112, etc</td>
+              <td>The number of mapped ESTs associated with UniGene. This is followed 
+                by the chromosomal location and the name of the EST</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>Unmapped EST</strong></p></td>
+              <td>AI011442, etc</td>
+              <td>The Ids of ESTs and CDNAs in the original UniGene cluster that 
+                were unmapped</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>Alignments</strong></p></td>
+              <td>&nbsp;</td>
+              <td>This is determined by comparing all ESTs from the backbone species 
+                with all ESTs from each non-backbone species. Only the best score 
+                of the BLAST results for each non-backbone species is shown. In 
+                the table, the first record on the left is the aligned EST in 
+                the backbone species, followed by the names of ESTs from non-backbone 
+                species, percent homology, length (bp) of the comparison, and 
+                the BLAST scores. The right hand column contains the associated 
+                UniGenes in the non-backbone species.</td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+        </blockquote>
+        <p><strong>Map Data Report:</strong> </p>
+        <blockquote> 
+          <p>Clicking on any of the SSLP markers on the VCMap or in any of the 
+            reports will display a Map Data report such as this one shown for 
+            D10Rat71. The report lists the locus name, position in CentiRays, 
+            LOD score of placement (or F for framework marker) and a list of aliases 
+            - alternative names for this marker in RGD and other databases. Genetic 
+            map data is also shown for Human markers.</p>
+          <table width="400" cellpadding="1" cellspacing="1" bgcolor="#333333">
+            <tr align="center" valign="top" bgcolor="#FFFFFF"> 
+              <td colspan="4"> <p><strong>Rat RH Map V2.1</strong></p></td>
+            </tr>
+            <tr align="center" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p><strong>Locus</strong></p></td>
+              <td> <p><strong>Position (cR)</strong></p></td>
+              <td> <p><strong>LOD</strong></p></td>
+              <td> <p><strong>Alias</strong></p></td>
+            </tr>
+            <tr align="center" valign="top" bgcolor="#FFFFFF"> 
+              <td> <p>D10Rat71</p></td>
+              <td> <p>328.2</p></td>
+              <td> <p>P</p></td>
+              <td> <p>R0083-C09</p></td>
+            </tr>
+          </table>
+          <p>Map data for Rat, Mouse and Human were obtained from the following 
+            sources:</p>
+          <ul>
+            <li>Rat: Rat Genome Database, <a href="http://rgd.mcw.edu/">http://rgd.mcw.edu/</a> 
+            </li>
+            <li> Mouse: Whitehead Institute: <a href="http://www-genome.wi.mit.edu/mouse_rh/">http://www-genome.wi.mit.edu/mouse_rh/</a> 
+            </li>
+            <li>Human: GB4 RH maps (<a href="http://www.ncbi.nlm.nih.gov/genemap99/">NCBI 
+              GeneMap99</a>, raw data: EBI http://corba.ebi.ac.uk/RHdb/species/HUMAN/gm99.html)</li>
+          </ul>
+        </blockquote>
+        <p><strong>Chromosomal Region Report:</strong></p>
+        <blockquote> 
+          <p>Example: Genes and UniGenes (markers) between 0.0 cR (Centi-Ray) 
+            and 51.4 cR in Rat Chr.01. [ <a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=0&SecondPos=54&QRegion=Display+Bin+Report' target="new">View 
+            this VCMap Report</a>]</p>
+          <p>The chromosomal region report is a combination of UniGene and RH 
+            map data. Results from the RH map show the placement lod score (e.g. 
+            P&gt;3.0 indicates a placement at greater than LOD 3.0). The letter 
+            &#8216;F&#8217; denotes framework markers. Whenever available, the 
+            UniGenes will also follow by gene symbols. Clicking on any of the 
+            UniGene IDs will take you to the individual marker report.</p>
+        </blockquote>
+        <p><strong>VCMap Predictions:</strong> </p>
+        <blockquote> 
+          <p>When the gene or EST of interest has not been mapped, a prediction 
+            can be made if the position of the homologous gene or EST in the reference 
+            (non-backbone) species is known. The gene (UniGene) prediction is 
+            based upon the BLAST result and the known syntenic region of chromosome 
+            between the different species. The borders of chromosomal conservation 
+            are also known as the chromosomal breakpoints. They are referred to 
+            as anchors in VCMap.</p>
+          <p>Two kinds of predictions are available for VC Map, Bin and Stream 
+            predictions:</p>
+        </blockquote>
+        <ul>
+          <li>'Bin' - Prediction within two anchored markers. (defining the limits 
+            of the bin).</li>
+          <li>'Stream' - Prediction outside a bin, only one anchor. (prediction 
+            is up or down stream of the anchor).</li>
+        </ul>
+        <p><strong>Bin Predictions</strong></p>
+        <blockquote> 
+          <p>A 'bin' prediction is made by predicting the location of the homologous 
+            UniGenes of the backbone species, based upon the mapped borders (breakpoints) 
+            of the homologous region of the reference (non-backbone) species. 
+            The position of the predicted UniGene is defined by the first flanking 
+            UniGene anchor (Anchor1 UniGene) and its position (Anchor1 Position), 
+            and the second flanking UniGene anchor (Anchor2 UniGene) and its position 
+            (Anchor2 Position). This is shown diagrammatically in the example 
+            below:</p>
+          <p><img src="images/7-1.gif" border="1"></p>
+          <p>The top of a bin report for the Rat Chr01, 0-54cR region is shown 
+            below: [ <a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=0&SecondPos=54&QRegion=Display+Bin+Report' target="new">View 
+            this VCMap Report</a>]. An explanation of each column heading is provided 
+            in the table below.</p>
+          <table width="85%" border="0" cellpadding="1" cellspacing="1" bgcolor="#333333">
+            <tr align="center" valign="top" bgcolor="#CCCCCC"> 
+              <td width="21%"> <p><strong>Column</strong></p></td>
+              <td width="17%"> <p><strong>Example</strong></p></td>
+              <td width="62%"> <p><strong>Explanation</strong></p></td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Predicted Unigene</p></td>
+              <td align="center" valign="middle">Rn.3</td>
+              <td>The UniGene in the backbone species predicted by the location 
+                of the homologous UniGene</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Chr</p></td>
+              <td align="center" valign="middle">1</td>
+              <td>The chromosome in the backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Anchor1 position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the first flanking anchor (breakpoint) of the 
+                backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Anchor1 UniGene</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The first flanking UniGene anchor of the backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Anchor2 Position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the second flanking UniGene anchor (breakpoint) 
+                of the backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Anchor2 UniGene</p></td>
+              <td align="center" valign="middle">Rn.2</td>
+              <td>The second flanking anchor (breakpoint) of the backbone species.</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>From Species</p></td>
+              <td align="center" valign="middle">Human</td>
+              <td>The species of the UniGene used to assign the location of the 
+                predicted UniGene</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Chr</p></td>
+              <td align="center" valign="middle">3</td>
+              <td>The chromosomal location of the homologous UniGene in the reference 
+                species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Homolog position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the homologous UniGene of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Homolog UniGene</p></td>
+              <td align="center" valign="middle">Hs.103</td>
+              <td>The homologous UniGene of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor1 position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the first flanking anchor (breakpoint) of the 
+                non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor1 UniGene</p></td>
+              <td align="center" valign="middle">Hs.101</td>
+              <td>The first flanking UniGene anchor of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor2 position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the second flanking UniGene anchor (breakpoint) 
+                of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor2 UniGene</p></td>
+              <td align="center" valign="middle">Hs.102</td>
+              <td>The second flanking anchor (breakpoint) of the non- backbone 
+                species</td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+        </blockquote>
+        <p><strong>Stream Predictions</strong></p>
+        <blockquote>
+          <p>A 'stream' prediction, either upstream or downstream of the gene, 
+            is based upon the position of the homologous UniGene in the reference 
+            (non-backbone) species. A diagram illustrating this is shown below. 
+            In this example the location of Rn.34 has been predicted to be between 
+            Rn.12 and Rn13 on Rat Chr 4 based on the sequence-based homology between 
+            Rn.34 and Hs.26. Rn.34 could lie anywhere between Rn.12 and Rn.13 
+            as there are no other anchors between the two species to limit the 
+            syntenic region. This would be a downstream prediction as Hs.26 lies 
+            downstream of the nearest syntenic anchor, Hs.25.</p>
+			<p> <img src="images/7-3.gif" border="1"></p>
+           <p>Below is shown the Stream predictions for Rat Chr01, 0-54cR region [ <a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?Align=1&Ver=5.0_HS&Marker=&RelPos1=&RelPos2=&Species=rat&Chr=01&FirstPos=0&SecondPos=54&QRegion=Display+Bin+Report' target="new">View 
+    this VCMap Report</a>]. An explanation of each column heading is provided 
+    in the table below.</p>
+	      <table width="85%" border="0" cellpadding="1" cellspacing="1" bgcolor="#333333">
+            <tr align="center" valign="top" bgcolor="#CCCCCC"> 
+              <td width="21%"> <p><strong>Column</strong></p></td>
+              <td width="17%"> <p><strong>Example</strong></p></td>
+              <td width="62%"> <p><strong>Explanation</strong></p></td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Predicted Unigene</p></td>
+              <td align="center" valign="middle">Rn.34</td>
+              <td>The UniGene in the backbone species predicted by the location 
+                of the homologous UniGene</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Chr</p></td>
+              <td align="center" valign="middle">4</td>
+              <td>The chromosome in the backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Anchor position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the nearest anchor (breakpoint) in the syntenic 
+                region (the backbone species) for the gene of interest</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>From Species</p></td>
+              <td align="center" valign="middle">Human</td>
+              <td>The species of the UniGene used to assign the location of the 
+                predicted UniGene</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Chr</p></td>
+              <td align="center" valign="middle">5</td>
+              <td>The chromosomal location of the homologous UniGene in the reference 
+                species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Homolog position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The position of the homologous UniGene of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Homolog UniGene</p></td>
+              <td align="center" valign="middle">Hs.26</td>
+              <td>The homologous UniGene of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The nearby syntenic anchor (breakpoint) location in the non-backbone 
+                species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor UniGene</p></td>
+              <td align="center" valign="middle">Hs.101</td>
+              <td>The first flanking UniGene anchor of the non-backbone species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Syn Anchor2 position</p></td>
+              <td align="center" valign="middle">&nbsp;</td>
+              <td>The nearby syntenic anchor (breakpoint) UniGene in the non-backbone 
+                species</td>
+            </tr>
+            <tr align="left" valign="top" bgcolor="#FFFFFF"> 
+              <td align="center" valign="middle"> <p>Up/down</p></td>
+              <td align="center" valign="middle">down</td>
+              <td>Indicates the stream predicted UniGene is upstream or downstream 
+                of the syntenic marker in the non-backbone species</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>&nbsp;</p>
+      </blockquote>
+      <p><strong>5.2 How do I save the query results?</strong></p>
+      <blockquote> 
+        <p>From the static or dynamic maps can be saved in pdf format. Query Reports 
+          can be saved as a HTML page or imported to a Word or Excel file. For 
+          results in a different format, please contact the RGD staff.</p>
+      </blockquote>
+      <p>&nbsp;</p></td>
+  </tr>
+
+  <tr valign="top" bgcolor="#EEFFEE"> 
+    <td> 
+      <p>You are visiting: <a href="dthelp4.shtml">Search VCMap</a> << <strong>VCMap 
+        Reports</strong> >> <a href='<!--#echo var="webroot"-->/tu/glossary.shtml'>Glossary</a></p>
+	</td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td>
+	 <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

@@ -1,0 +1,106 @@
+
+
+<table width="130" border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+
+    <td height="8"></td>
+
+  </tr>
+
+</table>
+
+  
+
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="#9BC6EE">
+  <tr> 
+    <td height="3" bgcolor="#0066AA"></td>
+  </tr>
+  <tr> 
+    <td class="links"> <p>&nbsp;<img src="/DORR/common/images/bullet.gif"><b>Tools</b></p></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#0066AA"></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#F6FCFF"> <table width="130" border="0" cellspacing="0" cellpadding="1">
+        <tr align="left" valign="middle"> 
+          <td width="10">&nbsp;</td>
+          <td class="links" width="120"> <p><a href="<!--#echo var="webroot"-->/GENOMESCANNER/">Genome 
+              Scanner</a></p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#F6FCFF"> <table width="130" border="0" cellspacing="0" cellpadding="1">
+        <tr align="left" valign="middle"> 
+          <td width="10">&nbsp;</td>
+          <td class="links" width="120"> <p><a href="<!--#echo var="webroot"-->/sslps/">Search 
+              SSLPs</a></p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#F6FCFF"> <table width="130" border="0" cellspacing="0" cellpadding="1">
+        <tr align="left" valign="middle"> 
+          <td width="10">&nbsp;</td>
+          <td class="links" width="120"> <p><a href="<!--#echo var="webroot"-->/strains/">Search 
+              Strains</a></p></td>
+        </tr>
+      </table></td>
+  </tr>
+
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td height="9" bgcolor="#FFFFFF"></td>
+  </tr>
+</table>
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="#9BC6EE">
+  <tr> 
+    <td height="3" bgcolor="#0066AA"></td>
+  </tr>
+  <tr> 
+    <td class="links"> <p>&nbsp;<img src="<!--#echo var="webroot"-->/DORR/common/images/bullet.gif"><b>Related 
+        Sites </b></p></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#F6FCFF"> <table width="130" border="0" cellspacing="0" cellpadding="1">
+        <tr align="left" valign="middle"> 
+          <td width="10">&nbsp;</td>
+          <td class="links" width="120"> <p><a href="http://lgr.mcw.edu/research/lgr_acp.html">ACP 
+              Project</a></p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#F6FCFF"> <table width="130" border="0" cellspacing="0" cellpadding="1">
+        <tr align="left" valign="middle"> 
+          <td width="10">&nbsp;</td>
+          <td class="links" width="120"> <p><a href="http://orion.ifrc.mcw.edu/~simont/pub/ps.html">PostScript::Basic.pm</a></p></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="1" bgcolor="#AACCEE"></td>
+  </tr>
+  <tr> 
+    <td height="9" bgcolor="#FFFFFF"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>

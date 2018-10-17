@@ -1,0 +1,262 @@
+<HTML>
+<HEAD>
+ 
+  <title><!--#echo var="title"--></title>
+  
+  <meta name="title" content='<!--#echo var="title"-->'>
+  <meta name="keywords" content="rat genome database,rat genome,rgd">
+  <meta name="description" content="the rat genome database contains rat genomic data such as genes,sslps,ests,qtls,strains,rhmap,sequences and tools such as vcmap,genome scanner, rhmap server,metagene,and hosts rat comunity forum.">
+  <meta name="author" content="rgd">
+  
+  <link rel=stylesheet type="text/css" href='<!--#echo var="webroot"-->/common/style/rgd_styles.css'> 
+
+
+<SCRIPT LANGUAGE="JavaScript" type="text/JavaScript">
+<!-- hide from old browsers
+function verify(f)
+{
+    if(f.searchKeyword.value == null ||f.searchKeyword.value == "" || f.searchKeyword.value == " * for wildcard"){
+        alert("The form was not submitted because you have to enter a keyword to search on;");
+        return false;
+    }else{
+        return true;
+    }
+}
+// end script hiding -->
+
+</SCRIPT>
+</HEAD>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2739107-2";
+urchinTracker();
+</script>
+<BODY text="#333333" alink="#3399FF" vlink="#000099" Links="#0033FF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left" valign="top"> 
+    <td width="40%" background='<!--#echo var="webroot"-->/common/images/header-bkgd-rgd.gif'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="10" height="1"></td>
+    <td background='<!--#echo var="webroot"-->/common/images/header-bkgd-rgd.gif'><img src='<!--#echo var="webroot"-->/common/images/rgd-logo.gif' width="220" height="89"><img src='<!--#echo var="webroot"-->/common/images/header-rgd.gif' width="280" height="89"></td>
+    <td align="right" valign="bottom" background='<!--#echo var="webroot"-->/common/images/header-bkgd-rgd.gif'> 
+      <table border=0 cellpadding=2 cellspacing=1 width="220">
+        <form method="post" action='<!--#echo var="webroot"-->/generalSearch/RgdSearch.jsp' onSubmit="return verify(this);">     
+          <tr> 
+            <td align="left"><p class="atitle">&nbsp;<br>
+                Search <input type=text name=searchKeyword size=12 value=" * for wildcard" onFocus="JavaScript:document.forms[0].searchKeyword.value=''">
+                <input type="hidden" name="quickSearch" value=1>
+                <input type=submit value="GO">
+              </p></td>
+          </tr>
+          <tr> 
+            <td align="left"> <p><a href='<!--#echo var="webroot"-->/generalSearch/advSearch.jsp' class="atitle">Advanced Search</a> 
+                &nbsp; </p></td>
+          </tr>
+        </form>
+      </table></td>
+    <td width="60%" background='<!--#echo var="webroot"-->/common/images/header-bkgd-rgd.gif'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="20" height="1"></td>
+  </tr>
+  <tr align="left" bgcolor="#E9F1FA"> 
+    <td></td>
+	<td>
+	
+	<p class="alink"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="108" height="1">&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td colspan="4" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="2"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#EEEEEE"></td>
+    <td colspan="2" bgcolor="#EEEEEE">
+	
+	 <table width="820" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          
+		  <td width="130" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p>&nbsp;&nbsp;<a href='<!--#echo var="webroot"-->/data-entry.shtml' class="atitle">Data</a><br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="130" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          
+		  <td width="210" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p>&nbsp;&nbsp;<a href='<!--#echo var="webroot"-->/tool-entry.shtml' class="atitle">Tools</a><br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="210" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          
+		  <td width="80" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p class="atitle">&nbsp;<a href='<!--#echo var="webroot"-->/dportal/' class="atitle">Portals</a>&nbsp;<br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="80" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          
+		  <td width="100" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/community-entry.shtml' class="atitle">Community</a><br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="100" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          
+		  <td width="120" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/registration-entry.shtml' class="atitle">Submit Data</a><br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="120" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+          
+		  
+		  
+		  <td width="95" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/about.shtml' class="atitle">About RGD</a><br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="95" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+		  
+		  <td width="84" background='<!--#echo var="webroot"-->/common/images/menuh_bkgd.gif'><p>&nbsp;<a href='<!--#echo var="webroot"-->/tu/' class="atitle">Help</a><br>
+              <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="84" height="1"></p></td>
+          <td width="1"><img src='<!--#echo var="webroot"-->/common/images/dotline1.gif' width="1" height="20"></td>
+        </tr>
+        <tr valign="top" bgcolor="#F3F3F3"> 
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+          <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="4" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p class="alink">&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/genes/' class="alink">Genes</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/objectSearch/qtlQuery.jsp' class="alink">QTLs</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/objectSearch/sslpQuery.jsp' class="alink">SSLPs</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/ests/' class="alink">ESTs</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/maps/' class="alink">Maps</a></p></td>
+                <td> <p class="alink"> &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/strains/' class="alink">Strains</a><br>
+				    &#8226;&nbsp;<a href='<!--#echo var="toolroot"-->/ontology/ont_search.cgi' class="alink">Ontologies</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequences/' class="alink">Sequences</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/references/' class="alink">References</a><br>
+                </p></td>
+              </tr>
+			  <tr><td colspan="2">&#8226;<a a href='ftp://ftp.rgd.mcw.edu/pub/' class="atitle"><strong><font color="#990000">Data Download</font></strong></a></td></tr>
+            </table></td>
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+          <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="2" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p class="alink">&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/VCMAP/' class="alink">VCMap</a><br>
+					<!--
+					&#8226;&nbsp;<a href='!--#echo var="webroot"--/gatool' class="alink">Gene Annotation</a><br>
+					-->
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/reptmasker.shtml' class="alink">Repeat Masker</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/RHMAPSERVER/' class="alink">RH Map Server</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/GENOMESCANNER/' class="alink">Genome Scanner</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/genome-annotation.shtml' class="alink">Genome Annotation</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/ACPHAPLOTYPER/' class="alink">ACP Haplotyper</a></p></td>
+				<td><p class="alink">&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/gbrowse.shtml' class="alink">Rat GBrowse</a><br>
+		            &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/h-gbrowse.shtml' class="alink">Human&nbsp;GBrowse</a><br>
+					&#8226;&nbsp;<a href='/gviewer/Gviewer.jsp' class="alink">Rat Gviewer</a><br>
+					<!--
+					&#8226;&nbsp;<a href='http://hpd.mcw.edu/gviewerHs/Gviewer.jsp' class="alink" target="new">Human Gviewer</a><br>
+					-->
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/blat.shtml' class="alink">BLAT</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/sequenceresources/blast.shtml' class="alink">BLAST</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/METAGENE/' class="alink">MetaGene</a><br>
+                    &#8226;&nbsp;<a href='http://biomart.mcw.edu' target="new" class="alink">Biomart</a><sup><font color="#FF0000">new</font></sup></p></td>
+              </tr>
+            </table></td>
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+          <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p class="alink">
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/dportal/' class="alink">Diseases</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/portal/microarray.shtml' class="alink">Microarray</a><br>
+					&#8226;&nbsp;<a href='/dportal/neurological/' class="alink">Neurological<br>&nbsp;&nbsp;&nbsp;Disease</a><br>
+					&#8226;&nbsp;<a href='/dportal/cardiovascular/' class="alink">Cardiovascular<br>&nbsp;&nbsp;&nbsp;Disease</a> <sup><font color="#FF0000">new</font></sup><br>
+					
+					<!-- 
+					&#8226;&nbsp;<a href='/portal/pathway.shtml' class="alink">Pathway</a>
+					--></p></td>
+              </tr>
+            </table></td>
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+          <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p>&#8226;&nbsp;<a class="alink" href="http://gray.hmgc.mcw.edu/mailman/listinfo/rat-forum">Rat 
+                    Forum</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/newsletter/' class="alink">The 
+                    Pied Piper</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/resources.shtml' class="alink">Resource 
+                    Links</a></p></td>
+              </tr>
+            </table>
+			<br>
+			<table width="100" border="0" cellspacing="1" cellpadding="0">
+			  <tr>
+			    <td bgcolor="#DDDDDD"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+			  </tr>
+			  <tr>
+			    <td align="center"><a href="http://pga.mcw.edu"><img src='<!--#echo var="webroot"-->/common/images/physGen_logo.gif' alt='PhysGen website' border='0'></a></td>
+			  </tr>
+			  <tr>
+			    <td bgcolor="#DDDDDD"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+			  </tr>
+			</table>
+
+		
+			</td>
+          
+		  <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+          
+		  <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p class="alink">
+                    &#8226;&nbsp;<a href='<!--#echo var="toolroot"-->/strains/strainRegistrationIndex.cgi' class="alink">Strain&nbsp;Registration</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="toolroot"-->/genes/geneRegistrationIndex.cgi' class="alink">Gene&nbsp;Registration</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="toolroot"-->/qtls/qtlRegistrationIndex.cgi' class="alink">QTL&nbsp;Registration</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/nomen/nomen.shtml' class="alink">Nomenclature</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/nomen/rgd_traits.html' class="alink">Rat QTL Traits</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/nomen/hu_traits.html' class="alink">Human QTL Traits</a><br>
+					&#8226;&nbsp;<a a href='/gbreport/gbrowser_error_conflicts.shtml' class="alink"><strong><font color="#CC0000">Genome Conflicts </font></strong></a></p></td>
+              </tr>
+            </table></td>
+		  
+		  
+			
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+          <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p class="alink">&#8226;<a a href='<!--#echo var="webroot"-->/wg/citing-rgd' class="alink"><strong><font color="#CC0000">Citing RGD</font></strong></a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/whatsnew.shtml' class="alink">RGD News</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/rgd_staff.shtml' class="alink">Our Staff</a><br>
+					&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/news/jobs.shtml' class="alink"><font color="#990000">Open Jobs</font></a><br>
+                    <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="5"><br>
+                &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/about.shtml' class="alink">and more</a> ...</p></td>
+              </tr>
+            </table></td>
+          
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+		  <td class="backgOne" onMouseOver="this.className='backgTwo'" onMouseOut="this.className='backgOne'"> 
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td> <p class="alink">&#8226;&nbsp;<a href='<!--#echo var="webroot"-->/tu/how_do_i' class="alink">How&nbsp;Do&nbsp;I</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/tu/glossary.shtml' class="alink">Glossary</a><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/tu/faq.shtml' class="alink">FAQs</a><br>
+                    <img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="5"><br>
+                    &#8226;&nbsp;<a href='<!--#echo var="webroot"-->/contact/index.shtml' class="alink"><font color="#990000">Contact Us</font></a></p></td>
+              </tr>
+            </table></td>
+          <td background='<!--#echo var="webroot"-->/common/images/dotline2.gif'><img src='<!--#echo var="webroot"-->/common/images/dotline2.gif' width="1" height="100"></td>
+		</tr>
+      </table></td>
+    <td bgcolor="#EEEEEE"></td>
+  </tr>
+  
+  <tr> 
+    <td colspan="4" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+  
+  <tr> 
+    <td bgcolor="#FAFAF9"></td>
+    <td colspan="2" bgcolor="#FAFAF9"> 
+      <!--#include virtual="${main}"-->
+    </td>
+    <td bgcolor="#FAFAF9"></td>
+  </tr>
+  <tr> 
+    <td colspan="4" bgcolor="#194B74"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td>
+  </tr>
+</table>
+
+<!--#include virtual="${webroot}/common/footer/standard.shtml"-->
+</BODY>
+</HTML>
+

@@ -1,0 +1,16 @@
+<div class="links"> 
+<p><b>General Information</b></p>  
+<p><a href='<!--#echo var="webroot"-->/about.shtml'>About RGD</a> <br>
+<a href='<!--#echo var="webroot"-->/contact/index.shtml'>Contact Us</a> <br>
+<a href='<!--#echo var="webroot"-->/data_sub.shtml'>Data Submission</a> <br>
+<a href='<!--#echo var="webroot"-->/help/nomen.shtml'>Nomenclature</a> <br>
+<a href='<!--#echo var="webroot"-->/visiting.shtml'>Visiting Scientist Program</a> <br>
+<a href='<!--#echo var="webroot"-->/wg/citing-rgd'>Citing RGD</a> <br>
+<a href='<!--#echo var="webroot"-->/linking.shtml'>Linking</a> <br>
+<a href='<!--#echo var="webroot"-->/disclaimer.shtml'>Disclaimer</a></p> 
+<p><b>Related Sites</b></p>  
+  <p><a href='/rcf/config.pl?'>Rat Community Forum</a> <br>
+<a href='http://www.informatics.jax.org/rat/'>MGD Rat Data</a> <br>
+<a href='http://www.ncbi.nlm.nih.gov/UniGene/Rn.Home.html'>NCBI UNIGENE</a> <br>
+<a href='http://www.ncbi.nlm.nih.gov/LocusLink/'>NCBI LocusLink</a></p> 
+</div>

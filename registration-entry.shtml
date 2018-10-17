@@ -1,0 +1,11 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title"   value="Rat Genome Database: Registration"-->
+<!--#set var="category"   value="submitdata"-->
+<!--#set var="links"   value="null"-->
+<!--#set var="main"    value="${webroot}/cnt_registration-entry.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+

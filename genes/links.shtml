@@ -1,0 +1,13 @@
+
+<p>&nbsp;</p>
+<div class=links> 
+  <p><b>Related Pages:</b><br>
+    &nbsp;<a href='<!--#echo var="webroot"-->/GO/'>Gene Ontology</a> </p>
+  <p><b>Related Sites:</b><br>
+    &nbsp;<a href='http://www.informatics.jax.org/'>MGI</a><br>
+    &nbsp;<a href='http://www.ncbi.nlm.nih.gov/'>NCBI</a><br>
+    &nbsp;<a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=unigene'>UniGene</a><br>
+    &nbsp;<a href='http://www.ncbi.nlm.nih.gov/HomoloGene/'>HomoloGene</a><br>
+    &nbsp;<a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene'>Entrez Gene </a><br>
+    &nbsp;<a href='http://compbio.dfci.harvard.edu/tgi/'>Gene Index Project </a><br>
+</div>

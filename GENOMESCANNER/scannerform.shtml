@@ -1,0 +1,417 @@
+<script language="JavaScript1.2">
+
+<!--
+      function verify(f) {
+      var msg;
+      var err;
+      
+      var s1_index = f.strain1_1.selectedIndex;
+      var s2_index = f.strain1_2.selectedIndex;
+      
+      var bp_low = parseInt(f.bp_lo.value);
+      var bp_high = parseInt(f.bp_hi.value);
+
+
+      var msg  =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " The Genome Scanner form was not submitted because    \n";
+      msg += " of the following error(s). Please check these and    \n";
+      msg += " and resubmit the form.                               \n";
+      msg += "______________________________________________________\n\n";
+
+
+      // Check for range being the wrong way around
+      if(bp_low > bp_high) {
+      err = "The lower limit of the allele size range must be less\n";
+      err += "than or equal to the upper limit\n";
+      err += "Lower Limit: " + bp_low + ", Higher Limit: " + bp_high + "\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return false;
+      
+      }
+
+      // Check for negative numbers
+      if( (bp_low < 0) || (bp_high < 0) ) {
+      err = "The allele size range limits do need to be positive numbers!\n";
+      msg += err;
+      alert(msg);
+
+      return false;
+      }
+
+
+      // Check for bp_hi being zero
+      if( bp_high == 0)  {
+
+      var new_high = bp_low+15;
+
+      err  = "This application only shows Polymorphic markers, so the upper limit\n";
+      err += "can not be zero and should be greater than the lower limit "+bp_low+". \n\n";
+      err += "Continue with the upper limit set to "+new_high+" (15bp above the lower limit)?\n";
+      
+      msg += err;
+      
+      if(confirm(msg)) {
+         f.bp_hi.value = new_high; // Reset the value
+         verify(f); //recheck things
+      }
+      else {
+         return false;
+      }
+      
+      }
+
+
+      // Check for negative numbers
+      if( bp_low == 0)  {
+      err = "This application only shows Polymorphic markers, so the lower limit\n";
+      err += "can only be as low as 1bp. \n\n";
+      err += "Continue with the lower limit set to 1? \n";
+      
+      msg += err;
+      
+      if(confirm(msg)) {
+         f.bp_lo.value = 1; // Reset the value
+         verify(f); //recheck things
+        
+      }
+      else {
+         return false;
+      }
+      
+      }
+
+
+
+
+      
+
+
+
+
+      // Check for two different strains
+      if(s1_index == s2_index) {
+      err = "You must choose two different strains for your cross";
+      
+      msg =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " The Genome Scanner form was not submitted because    \n";
+      msg += " of the following error(s). Please check these and    \n";
+      msg += " and resubmit the form.                               \n";
+      msg += "______________________________________________________\n\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return false;
+      }
+
+
+      
+
+      }
+
+      
+      // -->
+      
+      
+</script>
+
+
+
+<script language='JavaScript'>
+function start_help(anchor) {
+   top.rgdhelp=open("/tu/genomescanner/genomescanner_form_help.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400,height=300");
+   top.rgdhelp.focus();
+}
+</script>
+
+
+
+<body bgcolor="#FFFFFF">
+<h2><a name="help"></a>Genome Scanner <a href="#instructions"><img src="<!--#echo var="webroot"-->/common/images/help.gif"border="0"></a></h2>
+<p> This tool is designed to assist researchers in selecting polymorphic markers 
+  for a genome scan of a cross between two strains. It uses the <!-- <a href="http://brc.mcw.edu/LGR/research/lgr_acp.html">Allele 
+  Characterization Project</a> --> Allele Characterization Project dataset in combination with various genetic and 
+  Radiation Hybrid maps.</P>
+
+<form action="<!--#echo var="toolroot"-->/genomescanner/genome_scanner.cgi" method="POST" name="gs" onsubmit="return verify(this);">
+      <input type="hidden" name="display" value="results">
+      
+  <table cellpadding="3" align="center" width="95%">
+    <tr valign="top"> 
+      <td colspan="2" bgcolor="#999999"><b><font color="#FFFFFF">Select Cross, 
+        map, desired bin size and chromosome</font></b> </td>
+    </tr>
+    <tr valign="top"> 
+      <td><a href="javascript:start_help('cross')">Cross</a></td>
+      <td> 
+        <select name="strain1_1" size="1">
+          <OPTION value=1>ACI 
+          <OPTION value=2>AVN/Orl 
+          <OPTION value=3>BB/DP 
+          <OPTION value=4>BB/DR 
+          <OPTION value=5>BC/Cpbu 
+          <OPTION value=6>BDIX/Han 
+          <OPTION value=7>BDVII/Cub 
+          <OPTION value=8>BN/Cub-lx 
+          <OPTION value=9>BN/SsNHsd 
+          <OPTION value=10>BP/Cub 
+          <OPTION value=11>BUF/Pit 
+          <OPTION value=12>COP/OlaHsd 
+          <OPTION value=13>DA/Pit 
+          <OPTION value=14>DONRYU/Melb 
+          <OPTION value=15>F344/Pit 
+          <OPTION value=16>FHH/Eur 
+          <OPTION value=17>GH/Omr 
+          <OPTION value=18>GK 
+          <OPTION value=19>IS/Kyo 
+          <OPTION value=20>LE/Mol 
+          <OPTION value=21>LEW/Pit 
+          <OPTION value=22>LH/Mav 
+          <OPTION value=23>LN/Mav 
+          <OPTION value=24>LOU/CHan 
+          <OPTION value=25>M520/N 
+          <OPTION value=26>MHS/Gib 
+          <OPTION value=27>MNR/N 
+          <OPTION value=28>MNRA/N 
+          <OPTION value=29>MNS/Gib 
+          <OPTION value=30>MR/Pit 
+          <OPTION value=31>NEDH/K 
+          <OPTION value=32>NP9 
+          <OPTION value=33>ODU/N 
+          <OPTION value=34>OKA/Wsl 
+          <OPTION value=35>OM/Han 
+          <OPTION value=36>P5C 
+          <OPTION value=37>PVG/Pit 
+          <OPTION value=38>SD/Rij 
+          <OPTION value=39>SHR/OlaHsd 
+          <OPTION value=40>SHRSP/Riv 
+          <OPTION value=41>SR/Jr 
+          <OPTION value=42>SS/Jr 
+          <OPTION value=43>WAG/RijKyo 
+          <OPTION value=44>WF/Pit 
+          <OPTION value=45>WIST/Nhg 
+          <OPTION value=46>WN/N 
+          <OPTION value=47>WKY/OlsHsd 
+          <OPTION value=48>WTC/Kyo 
+        </select>
+        <strong>X</strong> 
+        <select name="strain1_2" size="1">
+          <OPTION value=1>ACI 
+          <OPTION value=2>AVN/Orl 
+          <OPTION value=3>BB/DP 
+          <OPTION value=4>BB/DR 
+          <OPTION value=5>BC/Cpbu 
+          <OPTION value=6>BDIX/Han 
+          <OPTION value=7>BDVII/Cub 
+          <OPTION value=8>BN/Cub-lx 
+          <OPTION value=9>BN/SsNHsd 
+          <OPTION value=10>BP/Cub 
+          <OPTION value=11>BUF/Pit 
+          <OPTION value=12>COP/OlaHsd 
+          <OPTION value=13>DA/Pit 
+          <OPTION value=14>DONRYU/Melb 
+          <OPTION value=15>F344/Pit 
+          <OPTION value=16>FHH/Eur 
+          <OPTION value=17>GH/Omr 
+          <OPTION value=18>GK 
+          <OPTION value=19>IS/Kyo 
+          <OPTION value=20>LE/Mol 
+          <OPTION value=21>LEW/Pit 
+          <OPTION value=22>LH/Mav 
+          <OPTION value=23>LN/Mav 
+          <OPTION value=24>LOU/CHan 
+          <OPTION value=25>M520/N 
+          <OPTION value=26>MHS/Gib 
+          <OPTION value=27>MNR/N 
+          <OPTION value=28>MNRA/N 
+          <OPTION value=29>MNS/Gib 
+          <OPTION value=30>MR/Pit 
+          <OPTION value=31>NEDH/K 
+          <OPTION value=32>NP9 
+          <OPTION value=33>ODU/N 
+          <OPTION value=34>OKA/Wsl 
+          <OPTION value=35>OM/Han 
+          <OPTION value=36>P5C 
+          <OPTION value=37>PVG/Pit 
+          <OPTION value=38>SD/Rij 
+          <OPTION value=39>SHR/OlaHsd 
+          <OPTION value=40>SHRSP/Riv 
+          <OPTION value=41>SR/Jr 
+          <OPTION value=42>SS/Jr 
+          <OPTION value=43>WAG/RijKyo 
+          <OPTION value=44>WF/Pit 
+          <OPTION value=45>WIST/Nhg 
+          <OPTION value=46>WN/N 
+          <OPTION value=47>WKY/OlsHsd 
+          <OPTION value=48>WTC/Kyo 
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td><a href="javascript:start_help('available_map')">Available Maps at RGD</a></td>
+      <td valign="top"> 
+        <select name="map" size="1">
+          <option value="1">FHH x ACI genetic map (v 7) 
+          <option value="2">SHRSP x BN genetic map (v 7) 
+          <option value="3" selected>Radiation Hybrid Map (v 2.1) 
+        </select>
+      </td>
+    </tr>
+    <!--
+    <tr valign="top">
+      <td><strong>Or upload your own map file</strong></td>
+      <td valign="top"><input TYPE="file" NAME="file"></td>
+    </tr>
+--> 
+    <tr valign="top"> 
+      <td><a href="javascript:start_help('bin_size')">Bin Size</a></td>
+      <td valign="top"> 
+        <select name="bin_size" size="1">
+          <option value="10">10 
+          <option value="20">20 
+          <option value="50" selected>50 
+          <option value="100">100 
+          <option value="150">150 
+          <option value="200">200 
+        </select>
+        (cM for Genetic maps, cR for RH maps)</td>
+    </tr>
+    <tr valign="top"> 
+      <td valign="top"><a href="javascript:start_help('chromosome')">Chromosome</a> 
+      </td>
+      <td> 
+        <select name="chromosome" size="5" multiple>
+          <option value="all" selected>All 
+          <option value="1">1 
+          <option value="2">2 
+          <option value="3">3 
+          <option value="4">4 
+          <option value="5">5 
+          <option value="6">6 
+          <option value="7">7 
+          <option value="8">8 
+          <option value="9">9 
+          <option value="10">10 
+          <option value="11">11 
+          <option value="12">12 
+          <option value="13">13 
+          <option value="14">14 
+          <option value="15">15 
+          <option value="16">16 
+          <option value="17">17 
+          <option value="18">18 
+          <option value="19">19 
+          <option value="20">20 
+          <option value="21">X 
+        </select>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td valign="top" colspan="2">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td valign="top" colspan="2" bgcolor="#CCCCCC"><b>Output options</b></td>
+    </tr>
+    <tr valign="top"> 
+      <td valign="top"><a href="javascript:start_help('allele_size')">Highlight allele size differences between</a></td>
+      <td> 
+        <input name="bp_lo" size="3" value="4">
+        bp and 
+        <input name="bp_hi" size="3" value="20">
+        bp </td>
+    </tr>
+    <tr valign="top"> 
+      <td valign="top"><strong> </strong></td>
+      <td> 
+        <input type="checkbox" name="auto_select" value="1">
+        Autoselect one polymorphic marker in each bin within this range </td>
+    </tr>
+<!-- comment by JL, 11/20/01 bug needs to be fixed
+    <tr valign="top"> 
+      <td valign="top"><strong> </strong></td>
+      <td> 
+        <input type="checkbox" name="only_show_range" value="1">
+        Only show markers in this range </td>
+    </tr>
+-->
+    <tr> 
+      <td><a href="javascript:start_help('output_content')">Output Content</a></td>
+      <td> 
+        <select name="content" size="1">
+          <option value="stats_table" selected>Chr. Stats and Table of Polymorphic 
+          Markers 
+          <option value="stats">Chromsome Statistics only 
+          <option value="table">Table of Polymorphic Markers only 
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td><a href="javascript:start_help('output_format')">Output Format</a></td>
+      <td> 
+        <select name="output" size="1">
+          <option value="html" selected>Web Page (HTML)</option>
+          <option value="csv">CSV (text)</option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td> 
+        <input type="submit" name="output" value="Generate Genome Scanner Output">
+      </td>
+    </tr>
+  </table>
+	
+    </form>
+    
+    <hr>
+<h3><A name="instructions"></A><a href="#help"><img src="<!--#echo var="webroot"-->/common/images/help_grey.gif" width="20" height="20" border="0"></a> 
+  Genome Scanner Instructions</h3>
+<p><font face="Arial, Helvetica, sans-serif">Based on the selected Genetic or 
+  RH map, markers that are polymorphic are organized into bins based on the desired 
+  scan resolution. For example, to pick polymorphic markers for a 10cM genome 
+  scan you would select a 10cM bin size and you could then pick one marker from 
+  each 10cM bin and thereby get coverage of the desired chromosome(s) at the desired 
+  resolution.</font></p>
+<h4><font face="Arial, Helvetica, sans-serif"><a name="basic"></a>Basic Steps:</font></h4>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif">Select the two strains to be crossed</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Select a map to base the genome 
+    scan bin interval upon</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Select the desired bin size (genome 
+    scan resolution). 10cM works well for scans based on genetic maps, 50cR is 
+    best for scans based on RH maps.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Pick one or more chromosomes to 
+    scan</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Leave all other options, click 
+    Generate Genome Scanner Output buton</font></li>
+</ol>
+<h4><font face="Arial, Helvetica, sans-serif">Explanation of the Output Options</font></h4>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">Highlight allele size differences 
+    graphically indicates polymorphic markers with size differences within the 
+    selected size range. This facilitates the selection of markers with suitably 
+    spaced alleles for your specific detection system (gel, capillary, etc.)</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Autoselect - turning this feature 
+    on will cause the program to automatically select the first polymorphic marker 
+    in each bin with an allele size difference within the size range.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Only Show Markers in this range 
+    causes the polymorphic markers outside of the size range to be hidden from 
+    view.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Output Content - A Chromosome 
+    Statistics table has been added to show various statistics including the number 
+    of polymorphic markers and the corresponding polymorphism percentage for the 
+    chromosome. This table and the genome scan results can be displayed together 
+    or separately.<BR>
+    <strong>NB</strong> These statistics are unaffected by any settings in the 
+    marker size difference range </font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Output Format - Output can be 
+    in HTML or CSV (Comma separated values, suitable for import into MS Excel, 
+    etc.)<BR>
+    </font></li>
+</ul>

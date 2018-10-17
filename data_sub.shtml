@@ -1,0 +1,9 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="RGD: Data Submission"-->
+<!--#set var="category" value="aboutRGD"-->
+<!--#set var="links" value="${webroot}/common/navigation/sidebar.shtml"-->
+<!--#set var="main" value="${webroot}/cnt_data_sub.shtml"-->
+<!--#set var="tools" value="${webroot}/none.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->

@@ -1,0 +1,35 @@
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" align="right" bgcolor='#E6E6E6'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="119" height="1"></td>
+	<td width="1" align="right" bgcolor='#DDDDDD'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="18"></td>
+	<!-- width=66 -->
+    <td bgcolor='#EEEEEE'>
+
+      <table width="900" border="0" cellspacing="0" cellpadding="1">
+        <tr> 
+		  <td>&nbsp;&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/genes' title="Search RGD gene records">Genes</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/objectSearch/qtlQuery.jsp' title="Search Quantititative Trait Loci data">QTLs</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/strains' title="Search and view rat strain information">Strains</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="toolroot"-->/ontology/ont_search.cgi' title="Ontology Search">Ontologies</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/objectSearch/sslpQuery.jsp' title="Search SSLP (aka Microsatellite) data">SSLPs</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/ests' title="Search Expressed Sequence Tag data">ESTs</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/sequences' title="Sequence data, links to Rat Genome Sequencing">Sequences</a></td>
+		  <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/maps' title="View RH and Genetic maps">Maps</a></td>
+	      <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/references' title="Search curated references">References</a></td>
+		  <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/nomen/rgd_traits.html' title="Rat QTL Traits">Rat QTL Traits</a></td>
+		  <td>&#8226; <a class="asubtitle" href='<!--#echo var="webroot"-->/nomen/hu_traits.html' title="Human QTL Traits">Human QTL Traits</a></td>
+		  <td width="2" bgcolor='#EEEEEE'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="2" height="1"></td>
+		</tr>
+      </table>
+
+
+	</td>
+    <td width="100%" bgcolor='#EEEEEE'>&nbsp;</td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><td bgcolor="#E0E0E0"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td></tr>
+</table>

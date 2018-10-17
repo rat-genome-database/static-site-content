@@ -1,0 +1,25 @@
+
+
+<table width="150" cellspacing="2" cellpadding="4" align="right" hspace="10">
+  <tr> 
+    <td> 
+      <table width="150" border="1" cellspacing="2" cellpadding="4" align="right">
+        <tr> 
+          <td bgcolor="#99FF99"><b>Detailed Help</b></td>
+        </tr>
+        <tr> 
+          <td><font size="-1">1. <a href="dthelp.shtml#introduction">Introduction</a><br>
+            2. <a href="dthelp.shtml#starter-guide">Starter's Guide</a><br>
+            3. <a href="dthelp3.shtml">View VCMap</a><br>
+            4. <a href="dthelp4.shtml">Search VCMap</a><br>
+            5. <a href="dthelp5.shtml">Query Reports</a><br>
+			6. <a href='<!--#echo var="webroot"-->/tu/glossary.shtml'>Glossary</a><br>
+            <br>
+            &nbsp;&nbsp; <a href="dthelp_print.shtml">Printable Version</a>
+			<br><br></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+

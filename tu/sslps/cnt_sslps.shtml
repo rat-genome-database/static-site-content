@@ -1,0 +1,201 @@
+
+	
+      <P class=menu2><A name=top></A><A href='<!--#echo var="webroot"-->/'>RGD</A> &gt; <A href='<!--#echo var="webroot"-->/tu/index.shtml'>Help</A> &gt; <B>SSLPs</B></P>
+	  
+	  
+      <TABLE class="menu1" cellPadding="2" width="90%" align="center" border="0">
+        <TBODY>
+        <TR vAlign="top">
+          <TD bgColor="#99CCFF">
+            <DIV align=left><STRONG><FONT size=+1>SSLPs Help</FONT></STRONG></DIV></TD>
+          <TD width="24%" rowSpan=2>
+		  
+            <!--#include virtual="${webroot}/common/help/navigator.shtml"-->
+			
+		  </TD>
+		</TR>
+        <TR vAlign=top>
+          <TD width="76%">
+            <UL>
+              <LI><A href="#definition">What is a SSLP</A>? 
+              <LI><A href="#finding">How do I find information about an SSLP?</A> 
+              <LI><A href="#report">What information do you have on each SSLP?</A> 
+              <LI><A href="#related">What other information can I get to via an SSLP?</A> 
+              <LI><A href="#ftp">Can I download all your SSLP data?</A> 
+              <LI><A href='<!--#echo var="webroot"-->/objectSearch/sslpQuery.jsp'>Let me start searching...</A> </LI></UL>
+            <P>&nbsp;</P></TD></TR>
+        
+		<TR vAlign=top>
+          <TD bgColor="#E1E8FF" colspan="2"><A name=definition></A><B>RGD Definition</B></TD></TR>
+        
+		<TR vAlign=top>
+          <TD colSpan=2>
+            <P>"<EM>SSLP stands for <B>S</B>imple <B>S</B>equence <B>L</B>ength 
+            <B>P</B>olymorphisms, also known as microsatellite DNA. SSLPs are 
+            1-6 simple nucleotide repeat sequences, highly polymorphic in length 
+            of repeat among strains and are often used as genetic markers for 
+            genotyping.</EM>"</P>
+            <P>Most of the SSLP markers available in RGD have been generated for 
+            use in genetic mapping experiments and many of these are placed on 
+            the various <A href='<!--#echo var="webroot"-->/tu/maps/'>maps</A> stored 
+            within RGD.</P>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P></TD></TR>
+        
+		<TR vAlign=top>
+          <TD bgColor=#e1e8ff colSpan=2><A name=finding></A><B>Finding SSLP information</B></TD></TR>
+        
+		<TR vAlign=top>
+          <TD colSpan=2>
+            <P><STRONG>1. Using the General Search</STRONG></P>
+            <P>The general RGD search available at the top of each page is 
+            a<STRONG> quick route to finding SSLPs</STRONG>. This will search 
+            SSLP symbols and aliases only. (See General RGD Search help for more 
+            information). 
+            <P><!--#include virtual="${webroot}/tu/general_search.shtml"-->
+			 <A href="#"><img src="../images/try_it.gif" border="0"></A></P>
+            
+			<P><STRONG>2. Using the SSLP Search Form</STRONG></P>
+            <P><img src="sslp_query1.gif" border="1"></P>
+            <P><EM><STRONG><FONT color="#CC0000">Quick Guide</FONT></STRONG></EM></P>
+			
+          <blockquote>
+          <p>1. To find a particular SSLP(s), enter the SSLP symbol or alias symbol (wildcard searches can be performed using the contains option)
+          <p>2. Searches can be limited to any of several criteria
+          <ul>
+            <li><font size="2">find SSLPs at a particular chromosome, map, and map positions</font></li>
+            <li><font size="2">find SSLPs associated or not associated with a particular gene</font></li>
+            <li><font size="2">find SSLPs having allele data related to a specific rat strain</font></li>
+          </ul>
+          <p>3. The output format section allows the user to customize the reporting 
+                of the search results to sort alphabetically based on symbol, 
+                to sort in ascending order based on chromosome, and to sort based 
+                on position. The sorting based on position requires selecting 
+                a map and chromosome in the limits section.
+          </blockquote>
+		    
+            <P><A href='<!--#echo var="webroot"-->/objectSearch/sslpQuery.jsp'><img src="../images/try_it.gif" border="0"></A></P>
+            <P>Below is a <STRONG>more detailed explanation</STRONG> of each 
+            element of the search form which will allow the user greater flexibility 
+            to refine your searches.</P>
+			
+			<!--#include virtual="sslp_form_help.html"-->
+          
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P>
+          </TD>
+		</TR>
+        <tr>
+          <TD bgColor=#e1e8ff colSpan=2>
+            <DIV align=left><A name=related></A><b>SSLP Result reports</b></DIV></TD>
+        </tr>
+        <tr>
+          <TD colSpan=2>
+            <P>The SSLP Result report has several sub-report pages and also has
+            batch download capability.</P>
+            <P><img border="1" src="sslp_results.gif"></P>
+            <p>There are several functions provided on the results page that
+            allow the user to easily navigate through detailed information about
+            the records that match the search criteria.</p>
+            <ul>
+              <li>Select/unselect all results on current page by clicking on the
+                check box on the header line
+              <li>Select the wanted items by checking the checkbox at the
+                beginning of each record
+              <li>Navigate records by clicking on a page number at the top or the bottom
+                of the results page
+              <li>View all checked items in one page only by clicking on the
+                &quot;View Selected&quot; button at the bottom of the results
+                page
+              <li>View all checked items in excel format by clicking on the
+                &quot;Download Selected&quot; button at the bottom of the
+                results page
+              <li>View all items in excel format by clicking on the
+                &quot;Download All&quot; button at the bottom of the results
+                page
+              <li>View all map data for selected SSLPs by clicking on the
+                &quot;View Selected Map Data&quot; button</li>
+              <li>View all map data for all SSLPs in the results by clicking on
+                the &quot;Download All Map Data&quot; button</li>
+              <li>Go back to result summary page by clicking on &quot;Go
+                Back&quot; button at the bottom of the results page</li>
+            </ul>
+            <P>The Maps to mutiple chromosomes pop-up box looks like the following example.</P>
+            <P><img src="multimaps_popup.gif" border="0"></P>
+            <P>&nbsp;</P>
+            <P>The Selected Items Report looks like the following example.</P>
+            <P><img src="select_report.gif" border="1"></P>
+            <P>&nbsp;</P>
+            <p>The Download Report looks like the following report. The file can
+            be saved as an Excel file by clicking on the File button in the
+            upper left corner of the web browser window and saved by selecting
+            Save as type: Microsoft Excel Workbook.</p>
+            <P><img src="selected_download.gif" border="1"></P>
+            <P>The Selected Map Data Report looks like the following
+            report.&nbsp; The report shows all map data in RGD for the selected
+            SSLPs. The map data includes the genomic map data including
+            chromosome and start-end base positions on the Rat Genome Sequencing Consortium's 
+            (RGSC)assembly, other maps have their name and position units displayed in the header.</P>
+            <P><img src="selected_map_data.gif" border="1"></P>
+            <P>The View Selected Download Map Report and the Download All Map
+            Data Report look like the following. The file can be saved as an
+            Excel file by clicking on the File button in the upper left corner
+            of the web browser window and saved by selecting Save as type:
+            Microsoft Excel Workbook.</P>
+            <P><img src="view_selected_map_data_down.gif" border="1"></P>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P>
+          </TD>
+        </tr>
+        <TR vAlign=top>
+          <TD bgColor=#e1e8ff colSpan=2>
+            <DIV align=left><A name=related></A><B>Related 
+            Information/Links</B></DIV></TD></TR>
+        <TR vAlign=top>
+          <TD colSpan=2>
+            <P>The SSLP report also contains information on objects related to 
+            this SSLP within RGD. This includes links to 
+            <A href='<!--#echo var="webroot"-->/tu/strains/'>Strain</A>, 
+            <A href='<!--#echo var="webroot"-->/tu/qtls/'>QTL</A>, 
+            <A href='<!--#echo var="webroot"-->/tu/maps/'>Map</A> and 
+            <A href='<!--#echo var="webroot"-->/tu/genes/'>Gene</A> reports. 
+            There are also a variety of tools available that contain SSLP data:</P>
+            <UL>
+              <LI><A href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMAP</A> - comparative 
+              map tool based on rat radiation hybrid map which contains many 
+              SSLPs 
+              <LI><A href='<!--#echo var="webroot"-->/tu/genomescanner/'>Genome 
+              Scanner</A> - enables the selection of polymorphic markers between 
+              two sets of strains </LI></UL>
+            <P><A id="ftp" name="ftp"></A>The <STRONG>FTP site</STRONG> contains two 
+            files related to the SSLP data contained within the database:</P>
+            <OL>
+              <LI><A href="http://rgd.mcw.edu/pub/data_release/SSLPS">SSLPS</A> 
+              file - All fundamental SSLP data contained in RGD 
+              <LI><A href="http://rgd.mcw.edu/pub/data_release/SSLPS_ALLELES">SSLPS_ALLELES</A> 
+              - Allele sizes for over 4500 SSLPs in 48 rat strains </LI></OL>
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ]</FONT></P></TD></TR>
+			
+        <TR vAlign=top>
+          <TD bgColor="#e1e8ff" colspan=2><A name="report"></A><B>The SSLP Report</B></TD></TR>
+        <TR vAlign=top>
+          <TD colSpan=2>
+            <P>Below is a description of each of the information sections 
+            available on the SSLP report. Not all information will be 
+            available for every SSLP.</P>
+            <P><img src="sslp_report.gif" border="1"></P>
+            <p>The report is divided into several sections each containing
+            different categories of data.</p>
+            <p>The report also has summary icons at the top of the report. The
+            icons are displayed, if data is available in the icon's section of
+            the report. The icons hyperlink to their sections on the report allowing easier navigation on large
+            reports.</p>
+            <P><img src="summary_icon_links.gif" border="1"></P>
+            
+			
+			<!--#include virtual="sslp_report_help.html"-->
+			
+			
+			
+            <P><FONT size=-1>[ <A href="#top">back to top</A> ] </FONT></P>
+          </TD>
+		</TR>
+		</TBODY>
+	</TABLE>

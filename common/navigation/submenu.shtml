@@ -1,0 +1,16 @@
+
+<!--#if expr="$category = data" -->
+<!--#include virtual="${webroot}/common/navigation/data-menu.shtml"-->
+<!--#endif -->
+
+<!--#if expr="$category = tools" -->
+<!--#include virtual="${webroot}/common/navigation/tools-menu.shtml"-->
+<!--#endif -->
+
+<!--#if expr="$category = forum" -->
+<!--#include virtual="${webroot}/common/navigation/forum-menu.shtml"-->
+<!--#endif -->
+
+<!--#if expr="$category = submitdata" -->
+<!--#include virtual="${webroot}/common/navigation/submit-menu.shtml"-->
+<!--#endif -->

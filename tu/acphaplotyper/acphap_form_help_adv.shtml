@@ -1,0 +1,592 @@
+<script language="JavaScript1.2">
+
+<!--
+
+      function verify(f) {
+      var msg;
+      var err;
+      
+      var s1_index = f.strain1_1.selectedIndex;
+      var s2_index = f.strain1_2.selectedIndex;
+      
+      var bp_low = parseInt(f.bp_lo.value);
+      var bp_high = parseInt(f.bp_hi.value);
+
+
+msg =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " Please be aware that ACP Haplotyper can take some    \n";
+      msg += " time to generate the PDF output, processing times    \n";
+      msg += " of 30secs to 1min are normal, please be patient!     \n";
+      msg += "______________________________________________________\n\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return true;
+
+/*
+      var msg  =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " The ACP Haplotyper form was not submitted because    \n";
+      msg += " of the following error(s). Please check these and    \n";
+      msg += " and resubmit the form.                               \n";
+      msg += "______________________________________________________\n\n";
+
+
+      // Check for range being the wrong way around
+      if(bp_low > bp_high) {
+      err = "The lower limit of the allele size range must be less\n";
+      err += "than or equal to the upper limit\n";
+      err += "Lower Limit: " + bp_low + ", Higher Limit: " + bp_high + "\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return false;
+      
+      }
+
+      // Check for negative numbers
+      if( (bp_low < 0) || (bp_high < 0) ) {
+      err = "The allele size range limits do need to be positive numbers!\n";
+      msg += err;
+      alert(msg);
+
+      return false;
+      }
+
+
+      // Check for bp_hi being zero
+      if( bp_high == 0)  {
+
+      var new_high = bp_low+15;
+
+      err  = "This application only shows Polymorphic markers, so the upper limit\n";
+      err += "can not be zero and should be greater than the lower limit "+bp_low+". \n\n";
+      err += "Continue with the upper limit set to "+new_high+" (15bp above the lower limit)?\n";
+      
+      msg += err;
+      
+      if(confirm(msg)) {
+         f.bp_hi.value = new_high; // Reset the value
+         verify(f); //recheck things
+      }
+      else {
+         return false;
+      }
+      
+      }
+
+
+      // Check for negative numbers
+      if( bp_low == 0)  {
+      err = "This application only shows Polymorphic markers, so the lower limit\n";
+      err += "can only be as low as 1bp. \n\n";
+      err += "Continue with the lower limit set to 1? \n";
+      
+      msg += err;
+      
+      if(confirm(msg)) {
+         f.bp_lo.value = 1; // Reset the value
+         verify(f); //recheck things
+        
+      }
+      else {
+         return false;
+      }
+      
+      }
+
+      // Check for two different strains
+      if(s1_index == s2_index) {
+      err = "You must choose two different strains for your cross";
+      
+      msg =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " The Genome Scanner form was not submitted because    \n";
+      msg += " of the following error(s). Please check these and    \n";
+      msg += " and resubmit the form.                               \n";
+      msg += "______________________________________________________\n\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return false;
+      }
+
+      msg =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " Please be aware that ACP Haplotyper can take some    \n";
+      msg += " time to generate the PDF output, processing times    \n";
+      msg += " of 30secs to 1min are normal, please be patient!     \n";
+      msg += "______________________________________________________\n\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return true;
+      */
+
+      }
+
+      
+      // -->
+    
+function start_help(anchor) {
+   top.rgdhelp=open("./advanced_help.html#"+anchor,"helpwindow","scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizable=yes,width=400,height=300");
+}
+
+      
+</script>
+<table width="600">
+  <tr>
+    <!-- the main page goes in this cell --> 
+    <td valign="top"> 
+      <h2><a name="top"></a>ACP Haplotyper - Advanced <a href="#instructions"><img src="/common/images/help.gif" width="20" height="20" border="0"></a></h2>
+  
+      <p>ACP Haplotyper creates a visual haplotype that can be used to identify 
+        conserved and non-conserved chromosomal regions between any of the 48 
+        rat strains characterized as part of the <a href="http://lgr.mcw.edu/research/lgr_acp.html">ACP</a> 
+        project. For the selected chromosome and between the selected strains, 
+        the tool compares the allele size data for microsatellite markers on the 
+        selected genetic or RH map. 
+      <p><a href="http://www.adobe.com/prodindex/acrobat/readstep.html" target="_blank"><img src="../../ACPHAPLOTYPER/getacro.gif" width="88" height="31" border="0" align="right"></a>The 
+        output of this tool is an Adobe Acrobat PDF file which will be emailed 
+        to you so the Acrobat Reader software will be required to view the results. 
+      <hr>
+      <form name="input_form" action="/tools/acphaplotyper/acp_haplotyper2002.cgi" method="post">
+        <input type="hidden" name="debug" value="0">
+        <table>
+          <tr> 
+            <td colspan = "2"> 
+              <div align="right"><a href="/ACPHAPLOTYPER/" title="Standard version with only key options"><font size="-1">Standard 
+                version</font></a></div>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan = "2" bgcolor="#999999"><b><font color="#FFFFFF">Select 
+              map and chromosome</font></b> 
+              <div align="right"></div>
+            </td>
+          </tr>
+          <tr> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('map_to_be_used')">Map 
+              to be used</a></strong><font color="red">*</font><br>
+              Only v7 genetic maps have LOD data</font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="rgd_map_id" size="1">
+                <option value="2" selected>SHR x BN (v7) 
+                <option value="1">FHH x ACI (v7) 
+                <option value="3">RH (v2.1)
+				<option value="5">MCW RH v3.2 Chr 13,18</option>
+              </select>
+              <input type="hidden" name="map_type" value="genetic">
+              <input type="hidden" name="map_name" value="SHR X BN">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="212"> <font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('chromosome')">Chromosome</a></strong><font color="red">*</font></font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="chromosome_num" size="1">
+                <option>1 
+                <option>2 
+                <option>3 
+                <option>4 
+                <option>5 
+                <option>6 
+                <option>7 
+                <option>8 
+                <option>9 
+                <option>10 
+                <option>11 
+                <option>12 
+                <option>13 
+                <option>14 
+                <option>15 
+                <option>16 
+                <option>17 
+                <option>18 
+                <option selected>19 
+                <option>20 
+                <option value="21">X 
+              </select>
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td id="optional" width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('flank1')">Flanking 
+              Marker or Distance #1</a></strong><br>
+              Enter name/distance to specify<br>
+              the top of the map region</font> </td>
+            <td width="361"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="flank1">
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td id="optional" width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('flank2')">Flanking 
+              Marker or Distance #2</a></strong><br>
+              Enter name/distance to specify <br>
+              the bottom of the map region</font> </td>
+            <td width="361"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="flank2">
+              </font></td>
+          </tr>
+          <tr> 
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td colspan="2" bgcolor="#999999"><font color="#FFFFFF"><b>Select 
+              Strains and Color Scheme</b></font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('strains_to_display')">Strains 
+              to Display</a></strong><font color="red">*</font><br>
+              Multiple selections allowed,<br>
+              select 1 or more strains you wish to view </font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="strains" size="5" multiple>
+                <option value="all" selected>All 48 Strains 
+                <!--
+                <option value="hypertension">Hypertensive Groups 
+                <option value="diabetes">Diabetic Groups 
+                -->
+                <option value="ACI">ACI 
+                <option value="AVN">AVN 
+                <option value="BB(DR)">BB(DR) 
+                <option value="BB(DP)">BB(DP) 
+                <option value="BC/CPBU">BC/CPBU 
+                <option value="BDIX">BDIX 
+                <option value="BDVII">BDVII 
+                <option value="BN/CUBLX">BN/CUBLX 
+                <option value="BN/SSN">BN/SSN 
+                <option value="BP">BP 
+                <option value="BUF">BUF 
+                <option value="COP">COP 
+                <option value="DA">DA 
+                <option value="FHH">FHH 
+                <option value="F344">F344 
+                <option value="GH">GH 
+                <option value="GK">GK 
+                <option value="DRY">DRY 
+                <option value="M520">M520 
+                <option value="IS/KYO">IS/KYO 
+                <option value="WN">WN 
+                <option value="LH">LH 
+                <option value="LE">LE 
+                <option value="LEW">LEW 
+                <option value="LOU/C">LOU/C 
+                <option value="LN">LN 
+                <option value="MHS">MHS 
+                <option value="MNR">MNR 
+                <option value="MNRA">MNRA 
+                <option value="MNS">MNS 
+                <option value="MR">MR 
+                <option value="NEDH">NEDH 
+                <option value="NP">NP 
+                <option value="ODU">ODU 
+                <option value="OKA">OKA 
+                <option value="OM">OM 
+                <option value="P">P 
+                <option value="PVG">PVG 
+                <option value="SD">SD 
+                <option value="SHR">SHR 
+                <option value="SR/JR">SR/JR 
+                <option value="SHRSP">SHRSP 
+                <option value="SS/JR">SS/JR 
+                <option value="WAG">WAG 
+                <option value="WF">WF 
+                <option value="WIST">WIST 
+                <option value="WKY">WKY 
+                <option value="WN">WN 
+                <option value="WTC">WTC 
+              </select>
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('primary_strain_and_color_scheme')">Primary 
+              Strain & color scheme</a></strong> </font><font color="red">*</font></td>
+            <td width="361"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="primary_strain" size="1">
+                <option value="common" selected>Common Alleles 
+                <option value="ACI">ACI 
+                <option value="AVN">AVN 
+                <option value="BB(DR)">BB(DR) 
+                <option value="BB(DP)">BB(DP) 
+                <option value="BC/CPBU">BC/CPBU 
+                <option value="BDIX">BDIX 
+                <option value="BDVII">BDVII 
+                <option value="BN/CUBLX">BN/CUBLX 
+                <option value="BN/SSN">BN/SSN 
+                <option value="BP">BP 
+                <option value="BUF">BUF 
+                <option value="COP">COP 
+                <option value="DA">DA 
+                <option value="FHH">FHH 
+                <option value="F344">F344 
+                <option value="GH">GH 
+                <option value="GK">GK 
+                <option value="DRY">DRY 
+                <option value="M520">M520 
+                <option value="IS/KYO">IS/KYO 
+                <option value="WN">WN 
+                <option value="LH">LH 
+                <option value="LE">LE 
+                <option value="LEW">LEW 
+                <option value="LOU/C">LOU/C 
+                <option value="LN">LN 
+                <option value="MHS">MHS 
+                <option value="MNR">MNR 
+                <option value="MNRA">MNRA 
+                <option value="MNS">MNS 
+                <option value="MR">MR 
+                <option value="NEDH">NEDH 
+                <option value="NP">NP 
+                <option value="ODU">ODU 
+                <option value="OKA">OKA 
+                <option value="OM">OM 
+                <option value="P">P 
+                <option value="PVG">PVG 
+                <option value="SD">SD 
+                <option value="SHR">SHR 
+                <option value="SR/JR">SR/JR 
+                <option value="SHRSP">SHRSP 
+                <option value="SS/JR">SS/JR 
+                <option value="WAG">WAG 
+                <option value="WF">WF 
+                <option value="WIST">WIST 
+                <option value="WKY">WKY 
+                <option value="WN">WN 
+                <option value="WTC">WTC 
+              </select>
+              <select name="primary_color">
+                <option value="blue" selected>Blue 
+                <option value="red">Red 
+                <option value="green">Green 
+                <option value="purple">Purple 
+              </select>
+              </font></td>
+            <td width="3"><font size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font> 
+            </td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('secondary_strain_and_color_scheme')">Secondary 
+              Strain & color scheme</a></strong> </font></td>
+            <td width="361"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="secondary_strain" size="1">
+                <option value="off" selected>No Secondary</option>
+                <option value="common">Common Alleles </option>
+                <option value="ACI">ACI </option>
+                <option value="AVN">AVN </option>
+                <option value="BB(DR)">BB(DR) </option>
+                <option value="BB(DP)">BB(DP) </option>
+                <option value="BC/CPBU">BC/CPBU </option>
+                <option value="BDIX">BDIX </option>
+                <option value="BDVII">BDVII </option>
+                <option value="BN/CUBLX">BN/CUBLX </option>
+                <option value="BN/SSN">BN/SSN </option>
+                <option value="BP">BP </option>
+                <option value="BUF">BUF </option>
+                <option value="COP">COP </option>
+                <option value="DA">DA </option>
+                <option value="FHH">FHH </option>
+                <option value="F344">F344 </option>
+                <option value="GH">GH </option>
+                <option value="GK">GK </option>
+                <option value="DRY">DRY </option>
+                <option value="M520">M520 </option>
+                <option value="IS/KYO">IS/KYO </option>
+                <option value="WN">WN </option>
+                <option value="LH">LH </option>
+                <option value="LE">LE </option>
+                <option value="LEW">LEW </option>
+                <option value="LOU/C">LOU/C </option>
+                <option value="LN">LN </option>
+                <option value="MHS">MHS </option>
+                <option value="MNR">MNR </option>
+                <option value="MNRA">MNRA </option>
+                <option value="MNS">MNS </option>
+                <option value="MR">MR </option>
+                <option value="NEDH">NEDH </option>
+                <option value="NP">NP </option>
+                <option value="ODU">ODU </option>
+                <option value="OKA">OKA </option>
+                <option value="OM">OM </option>
+                <option value="P">P </option>
+                <option value="PVG">PVG </option>
+                <option value="SD">SD </option>
+                <option value="SHR">SHR </option>
+                <option value="SR/JR">SR/JR </option>
+                <option value="SHRSP">SHRSP </option>
+                <option value="SS/JR">SS/JR </option>
+                <option value="WAG">WAG </option>
+                <option value="WF">WF </option>
+                <option value="WIST">WIST </option>
+                <option value="WKY">WKY </option>
+                <option value="WN">WN </option>
+                <option value="WTC">WTC </option>
+              </select>
+              <select name="secondary_color">
+                <option value="blue">Blue </option>
+                <option value="red">Red </option>
+                <option value="green">Green </option>
+                <option value="purple">Purple </option>
+                <option value="off" selected>No Secondary </option>
+              </select>
+              </font></td>
+            <td width="3"><font size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font> 
+            </td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font face="Arial, Helvetica, sans-serif" size="-1"> 
+              <b><a href="javascript:start_help('color_schemes')">Color Schemes</a></b></font> 
+              <font color="red">*</font> </td>
+            <td width="361"> 
+              <p> <font face="Arial, Helvetica, sans-serif" size="-1"> 
+                <input type="radio" name="color_scheme" value="normal" checked>
+                Normal (Primary and option secondary strains colored)<br>
+                <input type="radio" name="color_scheme" value="phys_prof">
+                bp difference from Primary size (multicolor scheme)<br>
+                <input type="radio" name="color_scheme" value="red_blue">
+                bp difference from Primary size (red, white &amp; blue scheme)</font></p>
+            </td>
+            <td width="3"><font face="Arial, Helvetica, sans-serif" size="-1">&nbsp;</font></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><font size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font> 
+            </td>
+          </tr>
+          <tr valign="top"> 
+            <td valign="top" colspan="3">&nbsp;</td>
+          </tr>
+          <!-- Advanced Options -->
+          <tr valign="top"> 
+            <td valign="top" colspan="3" bgcolor="#CCCCCC"><b>Advanced options</b></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('lod_threshold')">Placement 
+              LOD Threshold</a></strong><br>
+              Use to exclude markers placed at a LOD lower than the threshold 
+              value</font> </td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input name="lod_threshold" size="5" value="0">
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('bp_range')">Basepair 
+              Range</a></strong><br>
+              Two Allele sizes are considered equal when their values are within 
+              the entered basepair range value.</font> </td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input name="bp_range" size="5" value="0">
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('size_data')">Hide 
+              Size Data</a></strong><br>
+              Hides allele size data, showing the visual haplotype without all 
+              allele sizes shown.</font> </td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="checkbox" name="image_only" value="no" checked>
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('contents')">Document 
+              Contents</a> </strong><br>
+              Only displays the analysis statistics, not the visual haplotype 
+              data.</font> </td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="no_table">
+                <option value="table">Only Interstrain Tables 
+                <option value="haplotype">Only Visual Haplotype 
+                <option value="table_haplotype" selected>Tables and Haplotype 
+              </select>
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('order_strains')">Order 
+              Strains by ..</a>.</strong><br>
+              Orders strains according to % allele size identity or homology, 
+              or alphabetically by strain name</font> </td>
+            <td colspan="2"><font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="radio" name="sort_by_similarity" value="by_percentage" checked>
+              % Identity<br>
+              <input type="radio" name="sort_by_similarity" value="by_homology">
+              % Homology <br>
+              <input type="radio" name="sort_by_similarity" value="by_strain" selected>
+              Strain Name (alphabetically)</font></td>
+          </tr>
+          <tr valign="top"> 
+            <td valign="top" colspan="3">&nbsp;</td>
+          </tr>
+          <!-- Interstrain calculation Options -->
+          <tr valign="top"> 
+            <td valign="top" colspan="3" bgcolor="#CCCCCC"><b>Interstrain distance 
+              calculations</b></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('calc_distance')">Calculate 
+              distance with sliding window</a></strong> </font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="checkbox" name="homology_yn" value="1" checked>
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('window_size')">Window 
+              Size</a></strong> </font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="window_size" size="5" value="10">
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('slide_increment')">Slide 
+              Increment</a></strong> </font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="slide_inc" size="5" value="5">
+              </font></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><font size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font> 
+            </td>
+          </tr>
+          <td valign="top" colspan="3">&nbsp;</td>
+          </tr>
+          <!-- Output Options -->
+          <tr valign="top"> 
+            <td valign="top" colspan="3" bgcolor="#CCCCCC"><b>Output Options</b></td>
+          </tr>
+          <tr> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('output_format')">Output 
+              Format</a></strong></font></td>
+            <td width="361"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <select name="output_format" size="1">
+                <option value="xml">XML</option>
+                <option value="pdf" selected>PDF</option>
+              </select>
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif"><strong><a href="javascript:start_help('your_email_address')">Email 
+              Address</a></strong></font><font color="red">*</font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="email" >
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="212"><font size="-1" face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+            <td colspan="2"> <font size="-1" face="Arial, Helvetica, sans-serif"> 
+              <input type="submit" name="submit" value="Display Haplotypes">
+              </font></td>
+          </tr>
+          <tr valign="top"> 
+            <td valign="top" colspan="3">&nbsp;</td>
+          </tr>
+          <tr valign="top"> 
+            <td valign="top" colspan="3"><font color="red">*</FONT> <font size="-2">indicates 
+              required fields</font></td>
+          </tr>
+        </table>
+      </form>
+    <HR></td>
+  </tr>
+</table>
+<BR>

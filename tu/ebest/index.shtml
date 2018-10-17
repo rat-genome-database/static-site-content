@@ -1,0 +1,17 @@
+<!--#include virtual="/root.shtml"-->
+
+
+<!--#set var="title" value="RGD: Help - EbEST"-->
+
+
+<!--#set var="category" value="help"-->
+<!--#set var="links" value="${webroot}/common/navigation/sidebar.shtml"-->
+
+<!--#set var="main" value="${webroot}/tu/ebest/cnt_ebest.shtml"-->
+
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+

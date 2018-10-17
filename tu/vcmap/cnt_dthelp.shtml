@@ -1,0 +1,167 @@
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMap 
+  Help</a> &gt; <strong>Detailed Help:</strong> Introduction and Starter's Guide</p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top" bgcolor="#99FF99"> 
+    <td colspan="2"> <div align="left"><strong><font size="+1">Detailed VCMap 
+        Help</font></strong></div></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="70%"> <ol>
+        <li> <a href="#introduction">Introduction</a></li>
+        <li> <a href="#starter-guide">Starter's Guide</a></li>
+        <li> <a href="dthelp3.shtml">View VCMap</a> 
+          <ul>
+            <li> 3.1. Display a static map</li>
+            <li> 3.2. Display dynamic maps using Mapview</li>
+          </ul>
+        </li>
+        <li> <a href="dthelp4.shtml">Search VCMap</a> 
+          <ul>
+            <li> 4.1. Search marker</li>
+            <li> 4.2. Query by chromosome region</li>
+          </ul>
+        </li>
+        <li> <a href="dthelp5.shtml">Query Reports</a></li>
+		<li> <a href='<!--#echo var="webroot"-->/tu/glossary.shtml'>VCMap Glossary</a></li>
+      </ol>
+      <p>&nbsp;&nbsp;&nbsp; The whole VCMap Help document - <a href="dthelp_print.shtml">Printable 
+        Version</a>.</p>
+		<p>&nbsp;</p></td>
+    <td width="30%"> 
+      <!--#include virtual="${webroot}/tu/vcmap/navi.shtml"-->
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#CCFFCC"><a name="introduction"></a><b>1. Introduction</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p>VCMap is a tool that determines syntenic relationships between Rat, Mouse and Human and allows searching and visualization of these chromosomal regions in a variety of ways.</p>
+      <p>New to VCMap?-- Try the <a href="#starter-guide">starter's guide</a>, 
+        which which contains definitions and background information.</p>
+      <p><strong>FAQ for VCMap Help</strong></p>
+      <ul>
+        <li>What type of analysis can be done with VCMap?</li>
+        <li><a href="dthelp.shtml#limitation">What are the limitations of VCMap</a>?</li>
+        <li>What are the options available to use VCMap?</li>
+        <li><a href="dthelp3.shtml#static">How to display static maps</a>?</li>
+        <li><a href="dthelp3.shtml#dynamic">How to use Mapview (display dynamic 
+          maps)</a>?</li>
+        <li><a href="dthelp4.shtml#search">How do I search for markers in VCMap</a>?</li>
+        <li><a href="dthelp4.shtml#query">How do I query by chromosomal regions</a>?</li>
+        <li><a href="dthelp5.shtml#result">What is Query Result Page</a>?</li>
+      </ul>
+      <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" bgcolor="#CCFFCC"><a name="starter-guide"></a><b>2. Starter's 
+      Guide</b></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p><strong><br>
+        <a name="toknow"></a>2.1 Definitions</strong></p>
+      <blockquote> 
+        <p> <strong>Comparative Maping:</strong> Comparative mapping is a strategy 
+          for mapping sequence-related information from one species to another. 
+          It is based on the fact that the regions of sequence have been conserved 
+          among species during evolution (syntenic regions).</p>
+        <p><strong>VCMap build:</strong> The core homology and mapping data that 
+          has been used to construct VCMap database. These include publicly available 
+          sequence data of genes, ESTs, their UniGene relationships, RH map marker 
+          information etc. from human, mouse and rat.<br>
+          <br>
+          <strong>Static maps:</strong> Static maps are fixed image maps that 
+          are pregenerated from the VCMap database. They provide an overview of 
+          the entire chromosome but are not interactive. The static maps can be 
+          reached using the Static Maps link available on the top left hand side 
+          of most VCMap pages.<br>
+          <br>
+          <strong>Dynamic maps:</strong> Dynamic maps are displayed using an interactive 
+          Java display. These can be fully customized by the user from <a href='<!--#echo var="webroot"-->/VCMAP/mapview.shtml'>Mapview</a> 
+          page.<br>
+          <br>
+          <strong>Framework markers:</strong> In genetic and radiation hybrid 
+          maps, these are markers used as reference markers for interspecies comparisons.<br>
+          <br>
+          <strong>Backbone species:</strong> The species against which the other 
+          two species are aligned (For example, selecting rat as the backbone 
+          species, Chr1 as the chromosome and human/mouse as the non-backbone 
+          species would show the entire rat Chr1 with syntenic regions from the 
+          other species aligned to the rat.)<br>
+          <br>
+          <strong>Bin predicition:</strong> A 'bin' prediction is made by predicting 
+          the location of the homologous UniGenes of the backbone species, based 
+          upon the mapped borders (breakpoints) of the homologous region of the 
+          reference (non-backbone) species.<br>
+          <br>
+          <strong>Stream prediction:</strong> A 'stream' prediction, either upstream 
+          or downstream of the gene, is based upon the position of the homologous 
+          UniGene in the non-backbone species.<br>
+        </p>
+      </blockquote>
+      <p><strong><a name="do"></a>2.2 What can you do with VCMap?</strong></p>
+      <blockquote> 
+        <p>Using VCMap, the user can generate: </p>
+        <ol>
+          <li> Visual representation of synteny between human, mouse and rats.</li>
+          <li> Compare different maps available for the same species and compare 
+            them individually with types of maps for other two species.</li>
+          <li> Obtain homologous marker information across these three species.</li>
+          <li> Obtain a visual display of mapped markers (SSLPs, UniGenes and 
+            genes) in terms of both RHMaps and genetic maps of the three species; 
+            also, tabulated list of makers and related data can be obtained for 
+            any marker listed in the maps.</li>
+          <li> Obtain detailed reports of individual markers on any chromosome 
+            from organism, including location, sequence, ESTs, genes, aliases, 
+            LOD scores of SSLP markers, corresponding homologous markers in the 
+            other two species compared to and corresponding links to external 
+            databases like GenBank, RGD etc.</li>
+          <li> RHMap locations of the markers and genetic map location whenever 
+            available.</li>
+        </ol>
+      </blockquote>
+      <p><strong><a name="limitation"></a>2.3 What are the limitations of VCMap?</strong> 
+      </p>
+      <blockquote> 
+        <ol>
+          <li>VCMap is constructed based on homologous UniGenes and other markers 
+            with known mapping information. So the map information is restricted 
+            to markers, which are sequenced and stored in various databases like 
+            RGD, GenBank, and UniGene etc. The physical map (from the genomic 
+            sequence) has not yet been integrated into the tool; however, work 
+            is in progress to do this.</li>
+          <li>VCMap does not currently use the genomic sequence for generating 
+            virtual syntenic maps. Consequently the user cannot directly obtain 
+            information about the genomic sequence between the markers. Ensembl, 
+            NCBI and other databases provide sequence information of specific 
+            genomic regions.</li>
+        </ol>
+      </blockquote>
+      <p><strong><a name="ways"></a></strong></p>
+	  <p>By choosing the type of map, organism and chromosome, the user can 
+          view <a href='<!--#echo var="webroot"-->/VCMAP/static.shtml'>static comparative maps</a> or <a href='<!--#echo var="webroot"-->/VCMAP/mapview.shtml'>dynamic 
+          maps</a>. The User can define the <a href='<!--#echo var="webroot"-->/VCMAP/query.shtml'>search</a> 
+          parameters to find the required data from the VCMap .</p>
+      <blockquote> 
+        <ol>
+          <li><a href='<!--#echo var="webroot"-->/VCMAP/static.shtml'>View the static map display</a></li>
+          <li><a href='<!--#echo var="webroot"-->/VCMAP/mapview.shtml'>View the dynamic map display</a> using MapView </li>
+          <li><a href='<!--#echo var="webroot"-->/VCMAP/query.shtml'>Search the VCMap</a> build to obtain specific comparative 
+            data</li>
+        </ol>
+              </blockquote>
+      <p>All these options result in clickable markers hyperlinked to comprehensive 
+          <a href='<!--#echo var="webroot"-->/VCMAP/query.shtml'>Query Results</a>.</p>
+       <p>&nbsp;</p></td>
+  </tr>
+  <tr valign="top" bgcolor="#EEFFEE"> 
+    <td colspan="2"> <p>You are visiting: <strong>Introduction, Starter's Guide</strong> 
+        >> <a href="dthelp3.shtml">View VCMap</a> </p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2"> <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

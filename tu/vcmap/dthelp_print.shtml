@@ -1,0 +1,16 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="RGD: Help - VCMap - Detailed Help"-->
+
+<!--#set var="category" value="help"-->
+<!--#set var="links" value="${webroot}/common/navigation/sidebar.shtml"-->
+
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+
+
+<!--#include virtual="${webroot}/tu/vcmap/cnt_dthelp.shtml"-->
+<!--#include virtual="${webroot}/tu/vcmap/cnt_dthelp3.shtml"-->
+<!--#include virtual="${webroot}/tu/vcmap/cnt_dthelp4.shtml"-->
+<!--#include virtual="${webroot}/tu/vcmap/cnt_dthelp5.shtml"-->
+

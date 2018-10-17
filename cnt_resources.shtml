@@ -1,0 +1,80 @@
+<h2><a name='top'></a>Resource Links</h2>
+<p>This page is a listing of genomic and bioinformatics resources 
+that we are aware of that may be of interest to the users of RGD. 
+If you would like to add your web site link to this page, or update
+your link on this page, 
+please <a href="/contact/index.shtml">contact us</a>.</p>
+<ul>
+  <li> <a class="atitle" href="#rat_resources"><u>Rat Resources</u></a></li>
+  <li> <a class="atitle" href="#genomics"><u>Genomic Resources</u></a></li>
+  <li> <a class="atitle" href="#mouse_resources"><u>Mouse Resources</u></a></li>
+  <li> <a class="atitle" href="#human_resources"><u>Human Resources</u></a></li>
+  <li> <a class="atitle" href="#yeast_resources"><u>Yeast Resources</u></a></li>
+  <li> <a class="atitle" href="#bioinformatics"><u>Bioinformatics Resources</u></a><br>
+    &nbsp; </li>
+</ul>
+<hr width="80%" align="left">
+<h3><a name='rat_resources'></a>Rat Resources</h3>
+<li><a href="http://www.hpc.mcw.edu/">Genome Tool Suite</a></li>
+<li><a href="http://pga.mcw.edu/">PGA: The Programs for Genomic Applications</a></li>
+<li><a href="http://www.hgsc.bcm.tmc.edu/projects/rat/">Baylor College of Medicine Rat Resources</a></li>
+<li><a href="ftp://ftp.hgsc.bcm.tmc.edu/pub/data/Rnorvegicus/">Rat Genome Sequencing Consortium (RGSC) chromosomal assemblies</a></li>
+<li><a href="http://ratEST.uiowa.edu/">Rat EST Project at the University of Iowa</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/genome/guide/rat/index.html">NCBI: Rat Genome Resources</a></li>
+<li><a href="http://www.nih.gov/niams/scientific/ratgbase/index.htm">NIAMS: ARB Rat Genetic Database</a></li>
+<li><a href="http://www.well.ox.ac.uk/rat_mapping_resources/rat_YAC_catalogue.html">Wellcome Trust Centre: YAC-STS framework for the rat genome</a></li>
+<li><a href="http://flipper.molgen.mpg.de:10085/hp/index.html">MDC: Max Delbruck Center </a></li>
+<li><a href="http://www.loni.ucla.edu/Atlases/Atlas_Detail.jsp?atlas_id=1">LONI Rat Atlas Image Database</a></li>
+<li><a href="http://embryology.med.unsw.edu.au/OtherEmb/Rat.htm">UNSW Embryology Rat Development</a></li>
+<li><a href="http://www.nrrrc.missouri.edu">RRRC: Rat Resource and Research Center</a></li>
+<li><a href="http://www.anim.med.kyoto-u.ac.jp/nbr/">National Bio Resource Project Japan</a><br>
+&nbsp;</li>
+
+<hr width="80%" align="left">
+<h3><a name='genomics'></a>Genomic Resources</h3>
+     <li><a href='<!--#echo var="webroot"-->/VCMAP'>VCMAP Browser</a></li>
+     <li><a href='/sequenceresources/gbrowse.shtml'>RGD Genome Browser</a></li>
+     <li><a href='http://genome.brc.mcw.edu/cgi-bin/hgGateway?org=Rat&db=0&hgsid=26326731'>UCSC Browser</a></li>
+     <li><a href='http://www.ensembl.org/Rattus_norvegicus/'>Ensembl Browser</a></li>
+     <li><a href='http://www.ensembl.org/Ensmart/'>Ensmart - Data Mining Tool</a></li>
+     <li><a href='http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?org=rat'>NCBI Browser</a></li>
+     <li><a href='http://ecrbrowser.dcode.org/index.php?db=rn3'>ECR Comparative Genome Browser</a></li>
+     <li><a href='http://rvista.dcode.org'>rVISTA - Regulatory Sequence Comparative Sequence Alignment Browser</a></li>
+     <li><a href='http://www-gsd.lbl.gov/vista/'>VISTA - Comparative Sequence Alignment Viewer</a></li>
+     <li><a href='http://www.softberry.com/berry.phtml?topic=ge-hg15'>Softberry Genome Explorer</a></li>
+     <li><a href='http://bio.cse.psu.edu/pipmaker'>PipMaker - Comparative "Percent Identity Plot" Tool</a></li>
+     <li><a href='http://hanuman.math.berkeley.edu/cgi-bin/kbrowser'>KBrowser</a>&nbsp;<br> 
+&nbsp;</li>        
+<hr width="80%" align="left">
+<h3><a name='mouse_resources'></a>Mouse Resources</h3>
+<li><a href="http://www.informatics.jax.org">Mouse Genome Informatics</a></li>
+<li><a href="http://www.gsc.riken.go.jp/e/FANTOM/">RIKEN: FANTOM Functional Annotation 
+  of Mouse</a><br>
+  &nbsp;</li>
+<hr width="80%" align="left">
+<h3><a name='human_resources'></a>Human Resources</h3>
+<li><a href="http://www.hgsc.bcm.tmc.edu">Human Genome Sequencing Center</a></li>
+<li><a href="http://www.nhlbi.nih.gov">NHLBI: National Heart, Lung, and Blood Institute </a></li>
+<li><a href="http://www.science.doe.gov/ober/hug_top.html">DOE Human Genome Program</a></li>
+<li><a href="http://www.ornl.gov/hgmis">HGPI: Human Genome Project Information</a><br>
+  &nbsp;</li>
+<hr width="80%" align="left">
+<h3><a name='yeast_resources'></a>Yeast Resources</h3>
+<li><a href="http://genome-www.stanford.edu/Saccharomyces">Saccharomyces Genome 
+  Database</a><br>
+  &nbsp;</li>
+<hr width="80%" align="left">
+<h3><a name='bioinformatics'></a>Bioinformatics Resources</h3>
+<li><a href="http://www.ebi.ac.uk/index.html">EBI: European Bioinformatics Institute</a></li>
+<li><a href="http://www.tigr.org">TIGR: The Institute for Genomic Research</a></li>
+<li><a href="http://www.imgs.org">IMGS: International Mammalian Genome Society</a></li>
+<li><a href="http://wi.mit.edu">MIT Genome Research Center</a></li>
+<li><a href="http://www.ars-grin.gov">NGRP: National Genetic Resources Program</a></li>
+<li><a href="http://www.sanger.ac.uk">The Sanger Centre</a></li>
+<li><a href="http://www.ddbj.nig.ac.jp">DDBJ: DNA Data Bank of Japan</a></li>
+<li><a href="http://rover.nhlbi.nih.gov/resources/pga/">NHLBI: Programs for Genomic Applications</a></li>
+<li><a href="http://www.the-aps.org">The American Physiological Society</a></li>
+<li><a href="http://www.physoc.org">The Physiological Society</a></li>
+<li><a href="http://www.wiley.co.uk/genomics">The Genomics Website at Wiley</a><br>
+  &nbsp;</li>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

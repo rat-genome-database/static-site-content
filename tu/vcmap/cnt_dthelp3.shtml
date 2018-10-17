@@ -1,0 +1,203 @@
+
+<p class="menu2"><a href='<!--#echo var="webroot"-->/'>RGD</a> &gt; <a href='<!--#echo var="webroot"-->/tu/'>Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/'>VCMap 
+  Help</a> &gt; <a href='<!--#echo var="webroot"-->/tu/vcmap/dthelp.shtml'>Detailed Help</a> &gt; <strong>View 
+  VCMap</strong></p>
+
+<table width="90%" border="0" align="center" cellpadding="2" class="menu1">
+  <tr valign="top"> 
+    <td bgcolor="#CCFFCC"> 
+      <b>3. View VCMap</b></td>
+  </tr>
+
+  <tr valign="top"> 
+    <td> <table width="180" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td> 
+            <!--#include virtual="${webroot}/tu/vcmap/navi.shtml"-->
+          </td>
+        </tr>
+      </table>
+      <p><br>
+        <strong><a name="static"></a>3.1 Display a pregenerated, static map</strong></p>
+      <blockquote> 
+        <p>Static maps are pre-generated, non-interactive maps, which provide 
+          an overview of the syntenic relationships. Extensive datasets of virtual 
+          comparisons for each chromosome from rat, mouse and human exist as integral 
+          parts of VCMap build. In response to a search request (comprising of 
+          one backbone species and one of its chromosomes), the user can obtain 
+          1 .a VCMap display of syntenic chromosomal segments from other two non-backbone 
+          species in almost a fixed (static) format and 2. mapped markers overlaid 
+          on these chromosomal segments. Being a static map, only a proportion 
+          of mapped markers can be displayed for any chromosomal interval.</p>
+        <p> To go to Static maps page, click on the link <a href='<!--#echo var="webroot"-->/VCMAP/static.shtml'>Static 
+          Maps</a> on the left column of the <a href='<!--#echo var="webroot"-->/VCMAP/'>VCMap 
+          Start page</a>.</p>
+        <p> The &#8220;<em><strong>backbone</strong></em>&#8221; species is chosen 
+          from human, mouse or rat for which syntenic regions from other two species 
+          are queried. Upon clicking on one of its chromosomes, the VCMap generates 
+          a visual display of virtual comparative map with syntenic chromosomal 
+          segments and mapped markers.</p>
+        <p><strong>Question:</strong> How do I interpret the static comparative 
+          maps?<br>
+          <br>
+          <img src="images/3-1.gif" border="1"> </p>
+        <p>Color code of the display consists of <font color="#990000"><strong>backbone 
+          species</strong></font>, <strong>non-backbone species</strong>, RH framework 
+          <strong> <font color="#FF0000">markers</font></strong> on the backbone, 
+          other <strong>mapped markers</strong>, and <strong><font color="#0000FF">chromosome 
+          number</font></strong> above each syntenic chromosomal segment.</p>
+        <p>The result page has brief instructions, an option for viewing an expanded 
+          list of markers and the comparative map itself. By looking at the comparative 
+          map generated, the user can find out the possible syntenic chromosomal 
+          regions in non-backbone species compared to a whole chromosome from 
+          the backbone species. There are three ways to obtain marker details. 
+          They are:</p>
+        <blockquote> 
+          <p>a. Generate individual marker reports: The markers are hyperlinked 
+            to individual marker reports. Click on any marker to get a Query Result 
+            for that marker.</p>
+          <p>b. Generate chromosomal region reports: The chromosomal segments 
+            of the backbone species with definite breakpoints are differentially 
+            colored. By clicking on each segment, Chromosomal Region Report with 
+            expanded list of markers can be generated.</p>
+          <p>c. Search a specific chromosomal region: A table of expanded list 
+            of markers and VCMap predictions with in a specific chromosomal region 
+            can be generated. For this, enter the two flanking cR units from the 
+            generated map in the search fields and click GO.</p>
+        </blockquote>
+        <p>For example, the VCMap result for such a query between 0.0 cR to 60.0cR 
+          for rat chromosome 1 backbone will look like: <br>
+          <a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?MapName=Rat+VirtualMap+5.0_HS&Chr=01&FirstPos=0&SecondPos=60'><img src="images/cr.gif" alt="Click to see result" hspace="2" vspace="8" border="0"></a> 
+          <br>
+          <a href='<!--#echo var="webroot"-->/tools/vcmap/vcmap.cgi?MapName=Rat+VirtualMap+5.0_HS&Chr=01&FirstPos=0&SecondPos=60'>Click 
+          to see result</a>.</p>
+        <p>The marker reports have a clickable option to obtain MapView reports. 
+          The backbone species can be shuffled on a static map display by clicking 
+          on the hyperlinked <font color="#0000FF"><strong>blue</strong></font> 
+          chromosome numbers in the non-backbone species column.</p>
+      </blockquote>
+      <p><strong><a name="dynamic"></a>3.2 Display dynamic maps using <a href='<!--#echo var="webroot"-->/VCMAP/mapview.shtml'>MapView</a>?</strong></p>
+      <blockquote> 
+        <p>Dynamic maps are highly interactive maps generated using MapView from 
+          the VCMap database in response to a specific user query. MapView can 
+          display multiple maps in a single window. The user can determine the 
+          types of maps to be compared and the features of the generated comparison 
+          to be displayed. The generated map has zoom option for the user to display 
+          the backbone markers in a specific region of comparison. The images 
+          are clickable to obtain the comparative data in the form of <a href='<!--#echo var="webroot"-->/VCMAP/query.shtml'>Query 
+          Pages</a>.</p>
+        <p>To go to Dynamic Maps Page, click on <a href='<!--#echo var="webroot"-->/VCMAP/mapview.shtml'>MapView 
+          (Dynamic)</a> link from the left side of the VCMap <a href='<!--#echo var="webroot"-->/VCMAP/'>start 
+          page</a> link. This will take the user to the MapView query page. Options 
+          for generating dynamic maps include: </p>
+        <p>a. Map data: Three kinds of Map data are available and the user can 
+          arrange these in any combination. Any combination of maps can be displayed 
+          for comparison.<br>
+          <em>Virtual syntenic maps</em> The user can choose from rat, mouse and 
+          human. The version of VCMap build is 5.0_HS.<br>
+          <em>RH map</em> options are varied for each species. For rat three versions 
+          are available while human and mouse have one standard version each.<br>
+          <em>Genetic maps</em> from different sources are available for rat, 
+          mouse and human. Choose the appropriate build and version of the maps 
+          of choice.</p>
+        <p>b. VCMap predictions: If the user wants bin and stream predictions 
+          or framework markers, appropriate boxes are to be checked BEFORE the 
+          choices are submitted.</p>
+        <ol>
+          <ol>
+            <li>Querying virtual, genetic and RH maps: The Query interface for 
+              MapView is user friendly. The user is expected to choose<br>
+              - Single map or a map combination<br>
+              - A<em> back bone species</em> and 1 or 2 <em>non-backbone species</em> 
+              for each map option chosen a chromosome of the backbone species 
+              for the comparative analysis for each map option</li>
+            <li>Choosing prediction options<br>
+              User has an option to see the following VCMap predictions in different 
+              combinations directly on the map:<br>
+              Framework markers, Bin predictions and Stream predictions. The options 
+              are listed as:<br>
+              <img src="images/prediction.gif" vspace="8" border="1"><br>
+              The options have to be chosen BEFORE the search parameters are submitted.</li>
+          </ol>
+        </ol>
+        <p>On submitting the search parameters, MapView loads the Java applet 
+          and the data first and opens a new browser window, which should be left 
+          open. The java display window will then appear with the maps specified 
+          by the user. The display window has multiple menu options on the top. 
+          These options can be used to fine-tune the map display.</p>
+      </blockquote>
+ 
+          
+      <blockquote> 
+        <ol>
+          <li>How can I locate a marker on the generated map?<br>
+            To locate a marker on the map, go to <strong>Edit</strong> and choose 
+            <strong>Find</strong>. Enter the marker name in the query field. The 
+            user can arrive at this <strong>Find</strong> query from the map itself 
+            by clicking on the <strong>Find</strong> at the top right corner above 
+            the map.<br>
+          </li>
+          <li>How can I directly obtain the details of an alignment or a marker?<br>
+            By double-clicking an isolated marker or one in an alignment, Query 
+            Result can be obtained.<br>
+          </li>
+          <li>How can I display the details of the markers and VCMap predictions 
+            on the dynamic map?<br>
+            All the markers listed on the maps are clickable to generate &#8216;Individual 
+            Marker report&#8217; or &#8216;Map report&#8217;.<br>
+          </li>
+          <li>How can be the VCMap predictions chosen by me displayed on the map?<br>
+            Once the map is generated, click on the <strong>Markers</strong> button 
+            at the top left of the page and make your choice from the list. <br>
+          </li>
+          <li> When <em>Bin</em> and <em>Stream predictions</em> are requested, 
+            the user has to click on <strong>Repack</strong> every time the scale 
+            is changed. This is because, by increasing or decreasing the resolution 
+            of the map, display of bin and stream predictions are also modified. 
+            <strong>Repack</strong> matches the display of the predictions to 
+            the scale of the displayed map.<br>
+          </li>
+          <li>6. How can I modify the displayed maps in MapView?<br>
+            <strong>Zoom in</strong> and <strong>Zoom out</strong>: By sliding 
+            on the scale above the map the user can increase or decrease the resolution 
+            of the map. This is useful when the markers hidden in the static maps 
+            have to be visualized. By zooming out to the maximum, the resolution 
+            of the displayed map is increased to include all the available markers 
+            from the VCMap build. <br>
+          </li>
+          <li>What are the options for the marker display in a MapView map?<br>
+            By choosing different options available under View in the menu, characteristics 
+            of the displayed markers can be varied:<br>
+            <br>
+            <strong>Markers:</strong> under View by choosing Markers, the user 
+            has an option to choose:<br>
+            <blockquote> D-number : to obtain associated EST # if any<br>
+              Submitted: to obtain associated gene symbol<br>
+              Primary: to obtain Unigene/ UniSTS associated with that marker</p> 
+            </blockquote>
+            <strong>Marker Colors:</strong> under View by choosing Marker Colors, 
+            the user can provide different colors to the different marker types. 
+            A sliding scale is provided to expand the options of the colors.<br>
+            <br>
+            <strong>Show Markers:</strong> under View, by choosing Show Markers, 
+            the user can determine the type of markers and the priority for display. 
+          </li>
+        </ol>
+          </blockquote>
+ 
+      <p>&nbsp;</p></td>
+  </tr>
+
+  <tr valign="top" bgcolor="#EEFFEE"> 
+    <td> 
+      <p>You are visiting: <a href="dthelp.shtml">Introduction, Starter's Guide</a> 
+        << <strong>View VCMap</strong> >> <a href="dthelp4.shtml">Search VCMap</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td>
+	 <p><font size="-1">[ <a href="#top">back to top</a> ]</font></p>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>

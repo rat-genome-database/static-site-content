@@ -1,0 +1,158 @@
+<script language="JavaScript1.2">
+
+<!--
+      function verify(f) {
+      var msg;
+      var err;
+      
+      var s1_index = f.strain1_1.selectedIndex;
+      var s2_index = f.strain1_2.selectedIndex;
+      
+      var bp_low = parseInt(f.bp_lo.value);
+      var bp_high = parseInt(f.bp_hi.value);
+
+
+      var msg  =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " The Genome Scanner form was not submitted because    \n";
+      msg += " of the following error(s). Please check these and    \n";
+      msg += " and resubmit the form.                               \n";
+      msg += "______________________________________________________\n\n";
+
+
+      // Check for range being the wrong way around
+      if(bp_low > bp_high) {
+      err = "The lower limit of the allele size range must be less\n";
+      err += "than or equal to the upper limit\n";
+      err += "Lower Limit: " + bp_low + ", Higher Limit: " + bp_high + "\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return false;
+      
+      }
+
+      // Check for negative numbers
+      if( (bp_low < 0) || (bp_high < 0) ) {
+      err = "The allele size range limits do need to be positive numbers!\n";
+      msg += err;
+      alert(msg);
+
+      return false;
+      }
+
+
+      // Check for bp_hi being zero
+      if( bp_high == 0)  {
+
+      var new_high = bp_low+15;
+
+      err  = "This application only shows Polymorphic markers, so the upper limit\n";
+      err += "can not be zero and should be greater than the lower limit "+bp_low+". \n\n";
+      err += "Continue with the upper limit set to "+new_high+" (15bp above the lower limit)?\n";
+      
+      msg += err;
+      
+      if(confirm(msg)) {
+         f.bp_hi.value = new_high; // Reset the value
+         verify(f); //recheck things
+      }
+      else {
+         return false;
+      }
+      
+      }
+
+
+      // Check for negative numbers
+      if( bp_low == 0)  {
+      err = "This application only shows Polymorphic markers, so the lower limit\n";
+      err += "can only be as low as 1bp. \n\n";
+      err += "Continue with the lower limit set to 1? \n";
+      
+      msg += err;
+      
+      if(confirm(msg)) {
+         f.bp_lo.value = 1; // Reset the value
+         verify(f); //recheck things
+        
+      }
+      else {
+         return false;
+      }
+      
+      }
+
+
+
+
+      
+
+
+
+
+      // Check for two different strains
+      if(s1_index == s2_index) {
+      err = "You must choose two different strains for your cross";
+      
+      msg =  "______________________________________________________\n";
+      msg += "\n";
+      msg += " The Genome Scanner form was not submitted because    \n";
+      msg += " of the following error(s). Please check these and    \n";
+      msg += " and resubmit the form.                               \n";
+      msg += "______________________________________________________\n\n";
+      
+      msg += err;
+      
+      alert(msg);
+      return false;
+      }
+
+
+      
+
+      }
+
+      
+      // -->
+      
+      
+</script>
+<table width="600">
+  <tr> <!-- the left hand side margin --> <!--
+	<td BGCOLOR="993333" >
+	  <IMG SRC="../RF1/images/1x1_spacer.gif" WIDTH="100" HEIGHT="1"
+	</td>
+--> <!-- the main page goes in this cell --> 
+    <td> 
+      <h1>ACP Haplotyper</h1>
+      <i>(c) 1999 Simon Twigger, Laboratory for Genetic Research.</i><br>
+      <font face="arial,helvetica" size="-1"> 
+      <p>This tool will compare the ACP allele size data for markers on the selected 
+        genetic/RH map between two or more strains for a selected chromosome. 
+      <p>The allele sizes are colored relative to the Primary strain selected. 
+        For each marker, all allele sizes that match the allele size of the primary 
+        strain are colored the selected primary strain color. If a secondary strain 
+        and color are selected, if the allele size differs from the Primary strain 
+        but matches that of the secondary strain, it will be colored according 
+        to the secondary strain color scheme. If the allele size fails to match 
+        either of these values, it will be colored black. If there is no allele 
+        data for that strain, the cell is white.</p>
+      <p>A histogram showing the percentatge of strains which share the primary 
+        allele size is shown for each marker allowing you to quickly identify 
+        conserved and variable regions of the chromosome. The number of different 
+        alleles for each marker is also shown color coded to indicate the variability 
+        across the strains.</p>
+      <p>Selecting the <strong>Hide Size Data</strong> option removes the allele 
+        size values from the displayed table presenting a more comprehensible 
+        visual haplotype display.</p>
+      <p>Parameters <strong><span id="optional"><font color="#999999">colored 
+        in Grey</font></span></strong> are optional and can and should be left 
+        blank if you arent using them.</p>
+      </font> 
+      <hr>
+    </td>
+  </tr>
+</table>
+<BR>

@@ -1,0 +1,11 @@
+<!--#include virtual="/root.shtml"-->
+
+<!--#set var="title" value="Rat Genome Database: Strain References"-->
+<!--#set var="links" value="${webroot}/strains/links.shtml"-->
+<!--#set var="main" value="${webroot}/strains/refs.shtml"-->
+<!--#set var="tools" value="${webroot}/tools.shtml"-->
+
+<!--#include virtual="${webroot}/common/template/caip.shtml"-->
+
+
+
