@@ -1,435 +1,707 @@
+
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>	
-  <meta name="keywords" content="rat genome database,rat genome,rgd">
+<head>
+    <meta name="keywords" content="Rat Genome Database">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE, NO-STORE, MUST-REVALIDATE">
+    <meta name="author" content="RGD">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate, max-age=0, private" />
+    <meta http-equiv="Expires" content="0" />
+    
     <meta name="description" content="<!--#echo var="desc"-->" />
-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-<meta name="author" content="RGD">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="generator" content="WebGUI 7.9.16" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><script type="text/javascript">function getWebguiProperty (propName) {var props = new Array();props["extrasURL"] = "/extras/";props["pageURL"] = "/wg/template";props["firstDayOfWeek"] = "0";return props[propName];}</script><link href="/wg/layout.css" rel="stylesheet" type="text/css" /><!--page layout--><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Cache-Control" content="no-cache, must-revalidate, max-age=0, private" /><meta http-equiv="Expires" content="0" />
+    
 
-<title><!--#echo var="title"--></title>
+    
+    <title><!--#echo var="title"--></title>
 
-<link rel="SHORTCUT ICON" href="/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="/common/modalDialog/subModal.css" />
-<link rel="stylesheet" type="text/css" href="/common/modalDialog/style.css" />
-<link href="/common/style/rgd_styles-3.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/rgdweb/css/jquery/jquery-ui-1.8.18.custom.css">
+    <link rel="SHORTCUT ICON" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/rgdweb/common/modalDialog/subModal.css" />
+    <link rel="stylesheet" type="text/css" href="/rgdweb/common/modalDialog/style.css" />
+    <link href="/rgdweb/common/rgd_styles-3.css" rel="stylesheet" type="text/css" />
 
-<!-- CSS for Tab Menu #4 -->
-<link rel="stylesheet" type="text/css" href="/common/style/ddcolortabs.css" />
-
-<script type="text/javascript" src="/common/modalDialog/common.js"></script>
-<script type="text/javascript" src="/common/modalDialog/subModal.js"></script>
-<script type="text/javascript" src="/common/js/poll.js"></script>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-2739107-2";
-urchinTracker();
-</script>
+    <!-- adding link for OntoSolr (Pushkala) -->
+    <link rel="stylesheet" href="/OntoSolr/files/jquery.autocomplete.css" type="text/css" />
 
 
-<script type="text/javascript" src="/common/js/ddtabmenu.js">
+    <script type="text/javascript" src="/rgdweb/common/modalDialog/common.js"></script>
+    <script type="text/javascript" src="/rgdweb/common/modalDialog/subModal.js"></script>
+    <script src="/rgdweb/js/jquery/jquery-1.7.1.min.js"></script>
+    <script src="/rgdweb/js/jquery/jquery-ui-1.8.18.custom.min.js"></script>
+    <script src="/rgdweb/js/jquery/jquery_combo_box.js"></script>
 
-/***********************************************
-* DD Tab Menu script- � Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
+    <script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-2739107-2";
+        urchinTracker();
+    </script>
 
-</script>
+    <script type="text/javascript" src="/rgdweb/js/rgdHomeFunctions-3.js"></script>
 
-<script type="text/javascript" src="/common/js/rgdHomeFunctions-3.js">
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<link href="/rgdweb/css/elasticsearch/elasticsearch.css" rel=stylesheet type="text/css">
-	<link rel="stylesheet" type="text/css" href="/rgdweb/common/jquery-ui/jquery-ui.css">
-	<script src="/rgdweb/common/jquery-ui/jquery-ui.js"></script>
-	<script type="text/javascript" src="/rgdweb/js/elasticsearch/elasticsearch.js"></script>
-	<script type="text/javascript" src="/rgdweb/js/elasticsearch/elasticsearchcommon.js"></script>
+    
+
+    <script>
+        function getLoadedObject() {
+            return "";
+        }
+        function getGeneWatchAttributes() {
+            //return ["Nomenclature Changes","New GO Annotation","New Disease Annotation","New Phenotype Annotation","New Pathway Annotation","New PubMed Reference","Altered Strains","New NCBI Transcript/Protein","New Protein Interaction","RefSeq Status Has Changed"];
+            return ["Nomenclature Changes","RefSeq Status Has Changed","New GO Annotation","New Disease Annotation","New Phenotype Annotation","New Pathway Annotation","New Strain Annotation","New PubMed Reference","New NCBI Transcript/Protein","New Protein Interaction","New External Database Link"]
+        }
+        function getTermWatchAttributes() {
+            return ["Nomenclature Changes","RefSeq Status Has Changed","New GO Annotation","New Disease Annotation","New Phenotype Annotation","New Pathway Annotation","New Strain Annotation","New PubMed Reference","New NCBI Transcript/Protein","New Protein Interaction","New External Database Link"]
+        }
+
+
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/rgdweb/css/elasticsearch/elasticsearch.css">
+   <!-- <link rel="stylesheet" href="/rgdweb/common/bootstrap/css/bootstrap.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="/rgdweb/common/bootstrap/js/bootstrap.js"></script>-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="/rgdweb/common/angular/1.4.8/angular.js"></script>
+    <script type="text/javascript" src="/rgdweb/common/angular/1.4.8/angular-sanitize.js"></script>
+    <script type="text/javascript" src="/rgdweb/my/my.js?5"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/rgdweb/common/jquery-ui/jquery-ui.css">
+    <script src="/rgdweb/common/jquery-ui/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="/rgdweb/js/elasticsearch/elasticsearchcommon.js"></script>
 </head>
 
-<body>
-
-<table class="wrapperTable" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td>
-<div class="wrapper">
-
-<div id="main">
-
-<div id="headWrapper">
-	<div class="top-bar">
-
-<table width="100% border="0" class="headerTable"> <tr><td align="left" style="color:white;">&nbsp;&nbsp;&nbsp;
-</td><td align="right" style="color:white;"><a href="/tu">Help</a>&nbsp;|&nbsp;
-	        <a href="/wg/home/rat-genome-database-publications">Publications</a>&nbsp;|&nbsp;
-	        <a href="/wg/com-menu/poster_archive/">Poster Archive</a>&nbsp;|&nbsp;
-		<a href="ftp://ftp.rgd.mcw.edu/pub">FTP Download</a>&nbsp;|&nbsp;
-		<a href="/wg/citing-rgd">Citing RGD</a>&nbsp;|&nbsp;
-	        <a href="/contact/index.shtml">Contact Us</a>&nbsp;&nbsp;&nbsp;
-</td></tr></table>
+<body  ng-cloak ng-app="rgdPage">
 
 
-	</div>
+<div ng-controller="RGDPageController as rgd" id="RGDPageController">
 
-<table width="100%" border=0>
- <tr><td colspan="8">
-        <div id="app">
-            <div id="test" style="width:100%;height:10px">
 
+<div class="container-fluid">
+    <!-- Modal -->
+    <div class="modal fade" id="my-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+           <div class="modal-content" id="rgd-modal" >
+
+                <!-- twitter boot strap model -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <table align="center">
+                        <tr>
+                            <td style="padding:20px;"><img src="/rgdweb/common/images/rgd_LOGO_blue_rgd.gif" border="0"/></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="modal-body">
+
+                    <div style="padding-bottom:20px;">
+                    <div style="float:left; margin-right:10px; min-width: 600px;">Welcome <span style="font-weight:700; font-size:16px;">{{ username}}</span></div>
+                    <input  value="Update Account" type="button"  style="margin-right:10px;border:0px solid black; background-color:#4584ED; color:white; font-weight:700;padding:8px;" onClick="location.href='/rgdweb/my/account.html'"/>
+                    <input  value="Sign Out" type="button"  ng-click="rgd.logout()"  data-dismiss="modal" style="margin-right:10px;border:0px solid black; background-color:#4584ED; color:white; font-weight:700;padding:8px;"/>
+                    </div>
+
+                    <div style="text-decoration:underline;font-weight:700; background-color:#e0e2e1;min-width:690px;">Message Center</div>
+                    <div style="display:table-row;">
+                    <div style="display: table-cell; float:left; margin-right:10px; min-width: 600px;font-size:13px;padding-bottom: 10px;">{{ messageCount }} Messages</div>
+                    <div style="display: table-cell; float:left; margin-right:10px;min-width: 90px"><a href="/rgdweb/my/account.html">Go to Message Center</a></div>
+                    </div>
+
+                    <div style="text-decoration:underline;font-weight:700; background-color:#e0e2e1;">Watched Genes</div>
+                    <div ng-repeat="watchedObject in watchedObjects" style="display:table-row;">
+
+                        <div style="display: table-cell; float:left; margin-right:10px; min-width: 600px;">{{$index + 1}}. <span style="font-weight:700;">{{ watchedObject.symbol }} (RGD ID:{{watchedObject.rgdId}})</span></div>
+                        <div style="display: table-cell; float:left;  margin-right:10px; min-width: 40px;"><a href="javascript:return false;" ng-click="rgd.addWatch(watchedObject.rgdId)">Update Watcher</a></div>
+                        <div style="display: table-cell; float:left;  margin-right:10px; min-width: 50px;" ><a href="javascript:return false;" ng-click="rgd.removeWatch(watchedObject.rgdId)">Remove Watcher</a></div>
+                    </div>
+                    <div style="margin-top:20px;text-decoration:underline;font-weight:700;background-color:#e0e2e1;">Watched Ontology Terms</div>
+                    <div ng-repeat="watchedTerm in watchedTerms" style="display:table-row;">
+
+                        <div style="display: table-cell; float:left; margin-right:10px; min-width: 600px;">{{$index + 1}}. <span style="font-weight:700;">{{ watchedTerm.term }} ({{watchedTerm.accId}})</span></div>
+                        <div style="display: table-cell; float:left;  margin-right:10px; min-width: 40px;"><a href="javascript:return false;" ng-click="rgd.addWatch(watchedTerm.accId)">Update Watcher</a></div>
+                        <div style="display: table-cell; float:left;  margin-right:10px; min-width: 50px;" ><a href="javascript:return false;" ng-click="rgd.removeWatch(watchedTerm.accId)">Remove Watcher</a></div>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
+                </div>
+
+
+               
+
+                <div ng-repeat="gene in geneList" style="padding-left:10px;">
+                    <span style="font-weight:700; ">{{gene.symbol}}:</span> {{ gene.description }}
+                </div>
             </div>
-          
-            <div class="container-fluid" id="container" style="height:36px;background-color:#d6e5ff;">
-            
-                <div class="row" style=";margin-top:2px;margin-left:35%;width:100%">
-                    <form name="elasticSearchForm" class="form-inline" action="/rgdweb/elasticResults.html" id="elasticSearchForm" role="search" method="post">
-						<input type="hidden" name="category" id="category" value="General"/>
-                        <input type="hidden" name="log" value="true"/>
-                        <table>
-<tr>
-                                <!--td style="color:#24609c">Select Database:</td>
-	<td>
-                                    <select id="category" class="searchgroup category" name="category" >
-                                    <option >Gene</option>
-                                    <option>QTL</option>
-                                    <option>Strain</option>
-                                    <option>SSLP</option>
-                                    <option>Reference</option>
-                                    <option>Ontology</option>
-                                    <option selected>General</option>
-                                </select>
+        </div>
+    </div>
+</div>
 
-                                </td-->
-                                <td>
-                               
-                                    <input type=text class="searchgroup" id="term" name=term size="50" placeholder="Enter Search Term...">
-                                </td>
-                                <td>
-                                  
-                                    <input type="image" src="https://rgd.mcw.edu/common/images/searchGlass.gif" class="searchButtonSmall"/>
-                                </td>
-								
-								 <td colspan="2"  align="center"><br><a href="/rgdweb/generator/list.html" >Advanced Search (OLGA)</a></td>
+
+    <!-- twitter bootstrap modal Save List to RGD-->
+
+    <div class="container-fluid" >
+
+        <!-- Modal -->
+        <div class="modal fade" id="name-desc-modal" role="dialog">
+            <div class="modal-dialog modal-small">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Save List to My RGD</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center">
+                            <tr>
+                                <td>Create Name:&nbsp;&nbsp;</td>
+                                <td><input id="myRgdListName" size="40" type="text" value="{{listName}}" ng-model="listName"/></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Description:&nbsp;&nbsp;</td>
+                                <td><input id="myRgdListDesc" size="40" type="text" value="{{listDescription}}" ng-model="listDescription"/></td>
                             </tr>
                         </table>
-                        
-                     
-                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" ng-click="rgd.saveList($event)" class="btn btn-default" data-dismiss="modal">Save List</button>
+                    </div>
                 </div>
-               <!--div style="margin-left:32%;">
-                            <small id="termHelp" class="form-text text-muted" >
-                        Example:<a href="javascript:document.searchForm.term.value='A2m';document.searchForm.submit();" >A2m</a>, <a href="javascript:document.searchForm.term.value='Hypertension';document.searchForm.submit();" >Hypertension</a>, <a href="javascript:document.searchForm.term.value='BN/Crl';document.searchForm.submit();" >BN/Crl</a>, <a href="javascript:document.searchForm.term.value='SHR.BN-(D13Arb5-Ren)/Ipcv';document.searchForm.submit();" >SHR.BN-(D13Arb5-Ren)/Ipcv</a>, <a href="javascript:document.searchForm.term.value='DOID:10763';document.searchForm.submit();" >DOID:10763</a>
-                            </small>
-                        </div-->
+            </div>
+        </div>
+    </div>
+
+
+
+<!--  Login box -------------->
+    <div class="ontainer-fluid" >
+
+        <!-- Modal -->
+        <div class="modal fade" id="login-modal" role="dialog">
+            <div class="modal-dialog modal-small">
+                <div class="modal-content" >
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <table align="center">
+            <tr>
+                <td style="padding:20px;"><img src="/rgdweb/common/images/rgd_LOGO_blue_rgd.gif" border="0"/></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="modal-body">
+
+        <table align="center" style="padding-bottom:20px;">
+            <tr>
+                <td align="center" style="font-size:30px;color:#55556D;">Save what matters to you</td>
+            </tr>
+            <tr>
+                <td style="color:red;font-weight:700; font-size:18px;">{{ loginError }}</td>
+            </tr>
+        </table>
+
+
+
+        <table align="center">
+            <tr>
+                <td style="font-size:20px;">Sign in with your RGD account</td>
+            </tr>
+        </table>
+
+
+        <form>
+            <table align="center" border=0 style="border:2px outset lightgrey;background-color:#F7F7F7;padding:40px;">
+                <tr>
+                    <td>Email Address:</td>
+                    <td><input type='text' size='30' id="j_username" name='j_username' value="" value=''</td></tr>
+                <tr><td>Password:</td><td><input  size='30' type='password' id="j_password" name='j_password' value=""></td></tr>
+
+                <tr>
+                    <td align="center" colspan="2">
+                        <table cellpadding="5">
+                            <tr>
+                                <td><input name="submit"  data-dismiss="modal" type="button" value="Cancel" style="font-size:16px; margin-top:20px;"></td>
+                                <td><input name="submit" type="submit" value="Log In" style="font-size:16px; margin-top:20px;" ng-click="rgd.login()"  nClick="doLogin()" ></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+
+        </form>
+
+
+        <table align="center" border="0">
+            <tr>
+                <td>
+                    <a href="/rgdweb/my/account.html?submit=Create" style="font-size:16px; margin-right:10px;">Create New Account</a>
+                </td>
+                <td>
+                    <a href="/rgdweb/my/lookup.html" style="font-size:16px;">Recover Password</a>
+                </td>
+            </tr>
+        </table>
+
+
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- watch object select window-->
+
+<div class="container-fluid" >
+
+    <!-- Modal -->
+    <div class="modal fade" id="watch-modal" role="dialog">
+        <div class="modal-dialog modal-small">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">{{ watchLinkText }}</h4>
                 </div>
-              
+                <div class="modal-body">
+
+                    <div style="padding-bottom:10px;">Select categories you would like to watch.  Updates to this gene will be send to {{ username }}</div>
+
+                     <label ng-repeat="geneWatchAttr in geneWatchAttributes">
+                        <input
+                                type="checkbox"
+                                name="geneWatchSelection[]"
+                                value="{{geneWatchAttr}}"
+                                ng-checked="geneWatchSelection.indexOf(geneWatchAttr) > -1"
+                                ng-click="toggleGeneWatchSelection(geneWatchAttr)"
+                        > {{geneWatchAttr}}
+                        <br>
+                    </label>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+                    <span ng-if="watchLinkText == 'Update Watcher'">
+                        <button type="button" ng-click="rgd.removeWatch(activeObject)" class="btn btn-default" data-dismiss="modal">Stop Watching</button>
+                    </span>
+                    <button type="button" ng-click="rgd.saveWatch(activeObject)" class="btn btn-default" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  tool navigation -->
+        <!-- twitter bootstrap modal Save List to RGD-->
+
+        <div class="container-fluid" >
+
+            <!-- Modal -->
+            <div class="modal fade" id="tools-modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 style="font-size:16px;" class="modal-title">Analyze <span ng-if="oKey==1">Gene</span><span ng-if="oKey==5">Strain</span><span ng-if="oKey==6">QTL</span>  List</h4>
+
+                        </div>
+                        <div class="modal-body">
+
+                            <table width="90%" align="center" border="0">
+                                <tr>
+                                    <td align="center"><div ng-if="oKey==1"><img src="/rgdweb/common/images/functionalAnnotation.png" border="0"  style="cursor:pointer;padding:5px; margin-right:0px;margin-bottom:5px; border:1px solid black;" ng-click="rgd.toolSubmit('ga')"/></div><div ng-if="oKey!=1">Functional Annotation<br>unavailable</div></td>
+                                    <td align="center"><div ng-if="oKey==1"> <img src="/rgdweb/common/images/gaTool.png" border="0" style="cursor:pointer;padding:5px; margin-bottom:5px; border:1px solid black;" ng-click="rgd.toolSubmit('distribution')"/></div><div ng-if="oKey!=1">Annotation Distribution<br>unavailable</div></td>
+                                    <td align="center"><div ng-if="oKey==1"><div ng-if="speciesTypeKey==1 || speciesTypeKey==3" ><img src="/rgdweb/common/images/variantVisualizer.png" border="0"  style="cursor:pointer;padding:5px; margin-right:0px;margin-bottom:5px; border:1px solid black;"  ng-click="rgd.toolSubmit('vv')"/></div><div ng-if="speciesTypeKey!=1 && speciesTypeKey!=3">Genomic Variants<br> unavailble for Mouse</div></div><div ng-if="oKey!=1">Genomic Variants<br>unavailable</div></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"  style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('ga')"><div ng-if="oKey==1">Functional Annotation</div></td>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('distribution')"><div ng-if="oKey==1">Annotation Distribution</div></td>
+
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('vv')"><div ng-if="speciesTypeKey==1 || speciesTypeKey==3" ><div ng-if="oKey==1">Genomic Variants</div></div></td>
+
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
+                                    <td align="center"><div ng-if="oKey==1"><img src="/rgdweb/common/images/interviewer.png" border="0" style="cursor:pointer;padding:5px; margin-right:0px; border:1px solid black;" ng-click="rgd.toolSubmit('interviewer')"/></div><div ng-if="oKey!=1">Protein-Protein Interactions<br>unavailable</div></td>
+                                    <td align="center"><div ng-if="speciesTypeKey==1 || speciesTypeKey==3 || speciesTypeKey==2" ><div ng-if="oKey==1"> <img src="/rgdweb/common/images/gviewer.png" border="0" style="cursor:pointer;padding:5px; margin-bottom:5px; border:1px solid black;" ng-click="rgd.toolSubmit('gviewer')"/></div></div><div ng-if="oKey!=1 || speciesTypeKey > 3">Genome Viewer<br>unavailable</div></td>
+                                    <td align="center"><div ng-if="oKey==1"><div ng-if="speciesTypeKey==1 || speciesTypeKey==3" > <img src="/rgdweb/common/images/damaging.png" border="0" style="cursor:pointer;padding:5px; margin-right:0px; border:1px solid black;" ng-click="rgd.toolSubmit('damage')"/></div><div ng-if="speciesTypeKey!=1 && speciesTypeKey!=3">Damaging Variants unavailble for Mouse</div></div><div ng-if="oKey!=1">Damaging Variants<br>unavailable</div></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('interviewer')"><div ng-if="oKey==1">Protein-Protein Interactions</div></td>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('gviewer')"><div ng-if="speciesTypeKey==1 || speciesTypeKey==3 || speciesTypeKey==2" ><div ng-if="oKey==1">Genome Viewer</div></div></td>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('excel')"><div ng-if="speciesTypeKey==1 || speciesTypeKey==3" ><div ng-if="oKey==1">Damaging Variants</div></div></td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
+                                    <td align="center"><div ng-if="oKey==1"> <img src="/rgdweb/common/images/annotCompare.png" border="0" style="cursor:pointer;padding:5px; margin-right:0px; border:1px solid black;" ng-click="rgd.toolSubmit('annotCompare')"/></div><div ng-if="oKey!=1">Annotation Comparison<br>unavailable</div></td>
+                                    <td align="center"><div ng-if="oKey==1"> <img src="/rgdweb/common/images/olga.png" border="0" style="cursor:pointer;padding:5px; margin-bottom:5px; border:1px solid black;" ng-click="rgd.toolSubmit('olga')"/></div><div ng-if="oKey!=1">OLGA<br>unavailable</div></td>
+                                    <td align="center"> <img src="/rgdweb/common/images/excel.png" border="0" style="cursor:pointer;padding:5px; margin-right:0px; border:1px solid black;" ng-click="rgd.toolSubmit('excel')"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('annotCompare')"><div ng-if="oKey==1">Annotation Comparison</div></td>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('olga')"><div ng-if="oKey==1">OLGA</div></td>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('excel')">Excel (Download)</td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
+                                   <td align="center"><div ng-if="oKey==1"> <img src="/rgdweb/common/images/gaTool.png" border="0" style="cursor:pointer;padding:5px; margin-bottom:5px; border:1px solid black;" ng-click="rgd.toolSubmit('enrichment')"/></div><div ng-if="oKey!=1">Gene Enrichment<br>unavailable</div></td>
+                                    </tr>
+                                <tr>
+                                    <td align="center" style="cursor:pointer;font-size:16px;font-weight:400;" ng-click="rgd.toolSubmit('enrichment')"><div ng-if="oKey==1">Gene Enrichment</div></td>
+
+
+                                </tr>
+                            </table>
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- end tool navigation -->
+
+
+
+
+
+
+
+
+
+        <!--
+                            <div style="font-weight:700;text-decoration: underline;">Saved Lists</div>
+
+                                            <div ng-repeat="list in myLists" style="display:table-row;">
+
+                                             <div style="display: table-cell; float:left; margin-right:10px; min-width: 50px; font-weight:700;">{{ list.name }}:</div> <div style="width:100%;"> {{ list.desc }}</div>
+                                             <div style="display: table-cell; float:left; margin-right:10px; min-width: 50px;"><a href="javascript:void(0)" ng-click="rgd.loadGeneList(list.id)">Preview</a></div>
+                                             <div style="display: table-cell; float:left;  margin-right:10px; min-width: 40px;"><a href="{{ list.link }}&lid={{list.id}}">Edit</a></div>
+                                             <div style="display: table-cell; float:left;  margin-right:10px; min-width: 50px;" ><a href="javascript:void(0)" ng-click="rgd.removeList(list.id)">Remove</a></div>
+                                             <div style="display: table-cell; float:left;  margin-right:10px; min-width: 50px; padding-bottom:10px;" ><input type="button" value="Import" ng-click="rgd.import(list.id)" data-dismiss="modal"/></div>
+
+
+
+                                            </div>
+                            </div>
+                            -->
+
+
+
+
+<table class="wrapperTable" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+
+            <div id="headWrapper">
+
+
+
+
+
+                <div class="top-bar">
+                    <table width="100%" border="0" class="headerTable" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" style="color:white;" rowspan="3" width="10">
+
+                                <div ><a class="homeLink" href="/wg/home"><img style="border:3px solid #2865A3;" border="0" src="/rgdweb//common/images/rgd_logo.jpg"></a></div>
+
+                            </td>
+
+                            <td align="right" style="color:white;" valign="center" colspan="3">
+
+                            <a href="/tu">Help</a>&nbsp;|&nbsp;
+                            <a href="/wg/home/rgd_rat_community_videos/">Video Tutorials</a>&nbsp;|&nbsp;
+                            <a href="/wg/com-menu/poster_archive/">News</a>&nbsp;|&nbsp;
+                            <a href="/wg/home/rat-genome-database-publications">Publications</a>&nbsp;|&nbsp;
+
+                            <a href="ftp://ftp.rgd.mcw.edu/pub">FTP Download</a>&nbsp;|&nbsp;
+                            <a href="https://rest.rgd.mcw.edu/rgdws/swagger-ui.html">REST API</a>&nbsp;|&nbsp;
+                            <a href="/wg/citing-rgd">Citing RGD</a>&nbsp;|&nbsp;
+                            <a href="/contact/index.shtml">Contact</a>&nbsp;&nbsp;&nbsp;
+
+                            <input type="button" class="btn btn-info btn-sm"  value="{{username}}" ng-click="rgd.loadMyRgd($event)" style="background-color:#2B84C8;padding:1px 10px;font-size:12px;line-height:1.5;border-radius:3px"/>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+
+
+
+                            <div class="rgd-navbar">
+                                <div class="rgd-dropdown">
+                                    <button class="rgd-dropbtn" style="cursor:pointer" onclick="javascript:location.href='/wg'">Home
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="rgd-dropdown-content">
+                                        <a href="/wg/general-search/">Search RGD</a>
+                                        <a href="/wg/grants/">Grant Resources</a>
+                                        <a href="/wg/citing-rgd/">Citing RGD</a>
+                                        <a href="/wg/about-us/">About Us</a>
+                                        <a href="/contact/index.shtml">Contact Us</a>
+                                    </div>
+                                </div>
+                                <div class="rgd-dropdown">
+                                    <button class="rgd-dropbtn" style="cursor:pointer" onclick="javascript:location.href='/wg/data-menu/'">Data
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="rgd-dropdown-content">
+                                        <a href="/rgdweb/search/genes.html?100">Genes</a>
+                                        <a href="/rgdweb/search/qtls.html?100">QTLs</a>
+                                        <a href="/rgdweb/search/strains.html?100">Strains</a>
+                                        <a href="/rgdweb/search/markers.html?100">Markers</a>
+                                        <a href="/rgdweb/report/genomeInformation/genomeInformation.html">Genome Information</a>
+                                        <a href="/rgdweb/ontology/search.html">Ontologies</a>
+                                        <a href="/rgdweb/search/cellLines.html">Cell Lines</a>
+                                        <a href="/rgdweb/search/references.html?100">References</a>
+                                        <a href="ftp://ftp.rgd.mcw.edu/pub/">FTP Download</a>
+                                        <a href="/registration-entry.shtml">Submit Data</a>
+                                    </div>
+                                </div>
+                                <div class="rgd-dropdown">
+                                    <button class="rgd-dropbtn" style="cursor:pointer" onclick="javascript:location.href='/wg/tool-menu/'">Analysis & Visualization
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="rgd-dropdown-content">
+                                        <a href="/jbrowse/">JBrowse (Genome Browser)</a>
+                                        <a href="/rgdweb/front/config.html">Variant Visualizer</a>
+                                        <a href="/rgdweb/cytoscape/query.html">InterViewer (Protein-Protein Interactions)</a>
+                                        <a href="/rgdweb/phenominer/home.jsp">PhenoMiner (Quatitative Phenotypes)</a>
+                                        <a href="/rgdweb/ga/start.jsp">Gene Annotator</a>
+                                        <a href="/rgdweb/generator/list.html">OLGA (Gene List Generator)</a>
+                                        <a href="http://ratmine.mcw.edu/ratmine/begin.do">RatMine</a>
+                                        <a href="/rgdweb/gTool/Gviewer.jsp">GViewer (Genome Viewer)</a>
+                                        <a href="/rgdweb/overgo/find.html">Overgo Probe Designer</a>
+                                        <a href="/ACPHAPLOTYPER/">ACP Haplotyper</a>
+                                        <a href="/GENOMESCANNER/">Genome Scanner</a>
+                                    </div>
+                                </div>
+                                <div class="rgd-dropdown">
+                                    <button class="rgd-dropbtn" style="cursor:pointer" onclick="javascript:location.href='/wg/portals/'">Diseases
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="rgd-dropdown-content">
+                                        <a href="/rgdCuration/?module=portal&func=show&name=aging">Aging & Age-Related Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=cancer">Cancer</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=cardio">Cardiovascular Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=develop">Developmental Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=diabetes">Diabetes</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=blood">Hematologic Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=immune">Immune & Inflammatory Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=nuro">Neurological Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=obesity">Obesity & Metabolic Syndrome</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=renal">Renal Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=respir">Respiratory Disease</a>
+                                        <a href="/rgdCuration/?module=portal&func=show&name=sensory">Sensory Organ Disease</a>
+                                    </div>
+                                </div>
+                                <div class="rgd-dropdown">
+                                    <button class="rgd-dropbtn" style="cursor:pointer" onclick="javascript:location.href='/wg/physiology/'">Phenotypes & Models
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="rgd-dropdown-content">
+                                        <a href="/rgdweb/models/allModels.html">Genetic Models</a>
+                                        <a href="/rgdweb/phenominer/home.jsp">PhenoMiner (Quantitative Phenotypes)</a>
+                                        <a href="/rgdweb/phenominer/phenominerExpectedRanges/views/home.html">Expected Ranges (Quantitative Phenotype)</a>
+                                        <a href="/rgdweb/pa/termCompare.html?term1=RS%3A0000457&term2=CMO%3A0000000&countType=rec&species=3">Phenominer Term Comparison</a>
+                                        <a href="/wg/phenotype-data13/">Phenotypes</a>
+                                        <a href="/wg/gerrc/">GERRC (Gene Editing Rat Resource Center)</a>
+                                        <a href="/wg/physiology/additionalmodels/">Phenotypes in Other Animal Models</a>
+                                        <a href="/wg/strain-maintenance/">Animal Husbandry</a>
+                                        <a href="/wg/physiology/strain-medical-records/">Strain Medical Records</a>
+                                        <a href="/wg/phylogenetics/">Phylogenetics</a>
+                                        <a href="/wg/strain-availability/">Strain Availability</a>
+                                        <a href="ftp://ftp.rgd.mcw.edu/pub/data_release/Hi-res_Rat_Calendars/">Calendar</a>
+                                        <a href="/wg/physiology/rats101/">Rats 101</a>
+                                        <a href="/wg/photos-and-images/community-submissions/">Community</a>
+                                        <a href="/wg/photos-and-images/physgen-photo-archive2/">Photo Archive</a>
+                                    </div>
+                                </div>
+
+                                <a href="/wg/home/pathway2/">Pathways</a>
+
+                                <div class="rgd-dropdown">
+                                    <button class="rgd-dropbtn" style="cursor:pointer" onclick="javascript:location.href='/wg/com-menu/'">Community
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="rgd-dropdown-content">
+                                        <a href="http://mailman.mcw.edu/mailman/listinfo/rat-forum">Rat Community Forum</a>
+                                        <a href="/wg/com-menu/directory-of-rat-laboratories2/">Directory of Rat Laboratories</a>
+                                        <a href="/wg/home/rgd_rat_community_videos/">Video Tutorials</a>
+                                        <a href="/wg/news2/">News</a>
+                                        <a href="/wg/home/rat-genome-database-publications/">RGD Publications</a>
+                                        <a href="/wg/com-menu/poster_archive/">RGD Poster Archive</a>
+                                        <a href="/nomen/nomen.shtml">Nomenclature Guidelines</a>
+                                        <a href="/wg/resource-links/">Resource Links</a>
+                                        <a href="/wg/resource-links/laboratory-resources/">Laboratory Resources</a>
+                                        <a href="/wg/resource-links/employment-resources/">Employment Resources</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td align="center" id="search-td">
+
+
+                                        <form  name="elasticSearchForm" class="form-inline" action="/rgdweb/elasticResults.html" id="elasticSearchForm" role="search" method="post">
+                                            <input type="hidden" name="log" value="true" />
+                                            <table border="0">
+                                                <tr>
+
+                                                    <td>
+                                                        <input type="hidden" name="category" id="category" value="General"/>
+                                                        <input  type=text class="form-control searchgroup" id="term" name=term size="50" placeholder="Enter Search Term..." value="" style="border:1px solid #2865A3">
+                                                    </td>
+                                                    <td>
+                                                        <!--<input type="image" src="/rgdweb/common/images/searchGlass.gif" class="searchButtonSmall"/>-->
+                                                        <input class="btn btn-info btn-sm form-control" style="background-color:#2B84C8;padding:1px 10px;font-size:12px;line-height:1.5;border-radius:3px" type="submit" value="Search RGD"/>
+
+                                                    </td>
+                                                    <td colspan="2"  align="center"><br><a href="/rgdweb/generator/list.html" >Advanced Search (OLGA)</a></td>
+                                                </tr>
+                                            </table>
+
+                                        </form>
+
+
+
+
+                            </td>
+                            <td>
+                                <a href="https://www.facebook.com/pg/RatGenomeDatabase/posts/"><img src="/rgdweb/common/images/social/facebook-20.png"/></a>
+                                <a href="https://twitter.com/ratgenome"><img src="/rgdweb/common/images/social/twitter-20.png"/></a>
+                                <a href="https://www.linkedin.com/company/ratgenome/about/"><img src="/rgdweb/common/images/social/linkedin-20.png"/></a>
+                                <a href="https://www.youtube.com/channel/UCMpex8AfXd_JSTH3DIxMGFw?view_as=subscriber"><img src="/rgdweb/common/images/social/youtube-20.png"/></a>
+
+                        </td>
+                    </tr>
+
+
+                    </table>
+                </div>
+
+                <input type="hidden" id="speciesType" value="">
+
+
+
+
             </div>
 
 
 
 
-    </td></tr>
-<tr>
-	<td>
-	<table><tr><td>
-       <a class="homeLink" href="/wg/home"><img border="0" src="/common/images/rgd_LOGO_blue_rgd.gif"></a>
-       </td>
-       </tr>
-       </table>
+
+            </DIV>
+            <!--end headwrapper -->
+            </div>
+
+            <script>
+                if (location.href.indexOf("") == -1 &&
+                        location.href.indexOf("https://www.rgd.mcw.edu") == -1 &&
+                        location.href.indexOf("osler") == -1 &&
+                        location.href.indexOf("horan") == -1 &&
+                        location.href.indexOf("owen") == -1 &&
+                        location.href.indexOf("hancock") == -1 &&
+                        location.href.indexOf("preview.rgd.mcw.edu") == -1) {
+
+                    document.getElementById("curation-top").style.visibility='visible';
+                }
+            </script>
+
+        </td></tr>
+</table>
+
+
+<div id="mainBody">
+    <div id="contentArea" class="content-area">
+        <table cellpadding="5" border=0 align="center" width="100%">
+            <tr>
+                <td colspan="3" align="left" valign="top">
+
+
+     <!--#include virtual="${main}"-->
+
+
+
+
 
 </td>
-<td width=200 align="right"><a href="/wg/gerrc"><img src="/common/images/gerrc/GERRC-35.png" border=0/></a></td>
-<td width=200 align="center"><a href="http://alliancegenome.org"><img src="/common/images/alliance_logo.png" height="80" width="133" border=0/></a></td>
-<!--td width=200 align="right"><a href="/wg/physgenknockouts"><img src="/common/images/knockOuts.jpg" border=0/></a></td-->
-<td width=200 align="center"><a href="http://pga.mcw.edu"><img src="/common/images/physGen_logo.gif" border=0/></a></td>
-<td align="right">
-
-      <!--div class="searchBorder">
-      <table border=0 cellpadding=0 cellspacing=0 >
-        <form method="post" action='/rgdweb/search/search.html' onSubmit="return verify(this);">
-          <input type="hidden" name="type" value="nav" />
-          <tr>
-	    <td class="searchKeywordLabel">Keyword</td>
-
-            <td class="atitle" align="right">                <input type=text name=term size=12 value="" onFocus="JavaScript:document.forms[0].term.value=''" class="searchKeywordSmall">
-              </td>
-            <td>
-<input type="image" src="/common/images/searchGlass.gif" class="searchButtonSmall"/>
-</td>
-          </tr>
-        </form>
-      </table>
-      </div-->
-
-</td>
-<td>&nbsp;&nbsp;</td>
 </tr>
 </table>
 
-<div id="ddtabs4" class="ddcolortabs">
-<ul>
-<li class="current" style="margin-left: 1px"><a href="/"  rel="ct1"><span>Home</span></a></li>
-<li><a href="/wg/data-menu" rel="ct2"><span>Data</span></a></li>
-<li><a href="/wg/tool-menu" rel="ct3"><span>ANALYSIS & VISUALIZATION</span></a></li>
-<li><a href="/wg/portals/" rel="ct4"><span>Diseases</span></a></li>
-<li><a href="/wg/physiology" rel="ct5"><span>Phenotypes & Models</span></a></li>
-
-<li><a href="/rgdweb/models/allModels.html" rel="ct6"><span>Genetic Models</span></a></li>
-<li><a href="/wg/home/pathway2" rel="ct7"><span>Pathways</span></a></li>
-<li><a href="/wg/com-menu" rel="ct8"><span>Community</span></a></li>
-<li id="curation-top" style="visibility: hidden;"><a href="/curation" rel="ct9"><span>Curation Web</span></a></li>
-</ul>
 </div>
-<div class="ddcolortabsline"><img src="/common/images/squareBullet.gif" /></div>
-
-<!--<div style="width:100%; height:5px; font-size:1px; background-color: #2865a3">&nbsp;</div>-->
-
-<DIV class="tabcontainer">
-
-<div id="ct1" class="tabcontent">
-
-<div id="subnav">
-     <ul>
-<li class="first"><a href="/wg/general-search" rel="ct2"><span>Search RGD</span></a></li>
-<li><a href="/wg/grants" rel="ct2"><span>Grant Resources</span></a></li>
-<li><a href="/wg/citing-rgd" rel="ct2"><span>Citing RGD</span></a></li>
-<li ><a href="/wg/about-us"  rel="ct1"><span>About Us</span></a></li>
-<li><a href="/contact/index.shtml" rel="ct2"><span>Contact Us</span></a></li>
-     </ul>
-</div>
-</div>
-
-<div id="ct2" class="tabcontent">
-<div id="subnav">
-     <ul>
-     <li class=first><a href="/rgdweb/search/genes.html?100" rel="ct1"><span>Genes</span></a></li>
-     <li><a href="/rgdweb/search/qtls.html?100" rel="ct2"><span>QTLs</span></a></li>
-     <li><a href="/rgdweb/search/strains.html?100" rel="ct3"><span>Strains</span></a></li>
-     <li><a href="/rgdweb/search/markers.html?100" rel="ct4"><span>Markers</span></a></li>
-
-     <li><a href="/maps" rel="ct3"><span>Maps</span></a></li>
-     <li><a href="/rgdweb/ontology/search.html" rel="ct5"><span>Ontologies</span></a></li>
-     <li><a href="/sequences" rel="ct6"><span>Sequences</span></a></li>
-     <li><a href="/rgdweb/search/references.html?100" rel="ct7"><span>References</span></a></li>
-     <li><a href="ftp://ftp.rgd.mcw.edu/pub/" rel="ct7"><span>FTP Download</span></a></li>
-     <li><a href="/registration-entry.shtml" rel="ct7"><span>Submit Data</span></a></li>
-
-     </ul>
-</div>
-</div>
-
-<div id="ct3" class="tabcontent">
-<div id="subnav">
-     <ul>
-     <li class="first"><a href="/fgb2/gbrowse/rgd_904/" rel="ct4"><span>Rat GBrowse</span></a></li>
-     <li ><a href="http://bioneos.com/VCMap/" rel="ct1"><span>VCMap</span></a></li>
-     <li ><a href="http://snplotyper.mcw.edu" rel="ct1"><span>SNPlotyper</span></a></li>
-
-     <li><a href="/rgdweb/gTool/Gviewer.jsp" rel="ct3"><span>GViewer</span></a></li>
-     <li><a href="/ACPHAPLOTYPER" rel="ct7"><span>ACP Haplotyper</span></a></li>
-     <li><a href="/GENOMESCANNER" rel="ct7"><span>Genome Scanner</span></a></li>
-     <li ><a href="/gbreport/gbrowser_error_conflicts.shtml" rel="ct3"><span>Genome Conflicts</span></a></li>
-     <li><a href="http://ratmine.mcw.edu" rel="ct8"><span>RatMine</span></a></li>
-</div>
-</div>
-
-<div id="ct4" class="tabcontent">
-<div id="subnav">
-     <ul>
-     <li class=first><a href="/rgdCuration/?module=portal&func=show&name=diabetes" rel="ct1"><span>Diabetes</span></a></li>
-     <li ><a href="/rgdCuration/?module=portal&func=show&name=cardio" rel="ct2"><span>Cardiovascular</span></a></li>
-     <li><a href="/rgdCuration/?module=portal&func=show&name=nuro" rel="ct2"><span>Neurological</span></a></li>
-     <li><a href="/rgdCuration/?module=portal&func=show&name=obesity" rel="ct2"><span>Obesity/Metabolic Syndrome</span></a></li>
-
-     <li><a href="/rgdCuration/?module=portal&func=show&name=cancer" rel="ct2"><span>Cancer</span></a></li>
-     <li><a href="/rgdCuration/?module=portal&func=show&name=respir" rel="ct2"><span>Respiratory</span></a></li>
-     </ul>
-</div>
-</div>
-
-<div id="ct5" class="tabcontent">
-<div id="subnav">
-     <ul>
-     <li class=first><a href="/wg/phenotype-data13" rel="ct1"><span>Phenotypes</span></a></li>
-
-     <li ><a href="/wg/strains-and-models2" rel="ct3"><span>Strains & Models</span></a></li>
-     <li ><a href="/phenotypes" rel="ct3"><span>PhenoMiner Database</span></a></li>
-     </ul>
-</div>
-</div>
-
-<div id="ct6" class="tabcontent">
-<div id="subnav">
-</div>
-</div>
-
-<div id="ct7" class="tabcontent">
-<div id="subnav">
-     <ul>
-     <li class=first><a href="/wg/home/pathway2/molecular-pathways2" rel="ct1"><span>Molecular Pathways</span></a></li>
-     <li ><a href="/wg/home/pathway2/physiological-pathways" rel="ct1"><span>Physiological Pathways</span></a></li>
-     </ul>
+<br>
+<div class="bottom-bar" >
+    <table align=center class="headerTable"> <tr><td align="left" style="color:white;">
+        <a href="/contact/index.shtml">Contact Us</a>&nbsp;|&nbsp;
+        <a href="/wg/about-us">About Us</a>&nbsp;|&nbsp;
+        <a href="https://creativecommons.org/licenses/by/4.0/">License CC BY 4.0</a>&nbsp;|&nbsp;
+        <a href="/wg/home/disclaimer">Legal Disclaimer</a>&nbsp;|&nbsp;
+        <a href="http://www.mcw.edu/">&copy; Medical College of Wisconsin</a>
+    </td></tr></table>
 </div>
 </div>
 
 
-<div id="ct8" class="tabcontent">
-
-<div id="subnav">
-     <ul>
-     <li class=first><a href="/nomen/nomen.shtml" rel="ct1"><span>Nomenclature</span></a></li>
-     <li ><a href="http://mailman.mcw.edu/mailman/listinfo/rat-forum" rel="ct1"><span>Rat Community Forum (RCF)</span></a></li>
-     <li ><a href="/registration-entry.shtml" rel="ct2"><span>Submit Data</span></a></li>
-     </ul>
-</div>
-</div>
-
-<div id="ct9" class="tabcontent">
-<div id="subnav">
-
-     <ul>
-         <li class=first><a href="/rgdweb/curation/edit/editObject.html" rel="ct1"><span>Object Edit</span></a></li>
-         <li><a href="/rgdCuration/" rel="ct2"><span>Curation Tools</span></a></li>
-         <li><a href="/rgdweb/curation/nomen/nomenSearch.html" rel="ct3"><span>Nomenclature</span></a></li>
-         <li><a href="/rgdweb/score/board.jsp" rel="ct1"><span>Score Board</span></a></li>
-
-         <li><a href="/rgdweb/curation/pipeline/list.html" rel="ct4"><span>Pipeline Logs</span></a></li>
-         <li><a href="/rgdweb/curation/phenominer/home.html" rel="ct5"><span>Phenominer</span></a></li>
-     </ul>
-</div>
-</div>
-
-
-
-</DIV>
-<!--end headwrapper -->
-</div>
-
-<script>
-if (location.href.indexOf("http://rgd.mcw.edu") == -1 &&
-	location.href.indexOf("http://www.rgd.mcw.edu") == -1 &&
-    location.href.indexOf("osler") == -1 &&
-    location.href.indexOf("horan") == -1 &&
-    location.href.indexOf("preview.rgd.mcw.edu") == -1) {
-	
-	document.getElementById("curation-top").style.visibility='visible';
-}
-
-
-ddtabmenu.definemenu("ddtabs4", getTabIndex()) //initialize Tab Menu
-</script>
-
-	<div id="mainBody">
-		<div id="contentArea" class="content-area">
-			<div id="layout3f7342bad77460be364638b044032ac2" class="layout default">
-
-<a name="idP3NCutd0YL42RjiwRAMqwg" id="idP3NCutd0YL42RjiwRAMqwg"></a>
-
-
-
-
-
-
-<!-- begin position 1 -->
-<div class="wg-content-position">
-
-    
-     <!--#include virtual="${main}"-->
-    
-    
-    
-
-<!-- end position 1 -->  
-</div>
-
-<div class="wg-clear"></div>
-
-  
-
-<!--/layout3f7342bad77460be364638b044032ac2 /layout default-->
-</div>
-
-		</div>
-
-		<br>
- 		<div class="bottom-bar" >
-<table align=center class="headerTable"> <tr><td align="left" style="color:white;">
-		<a href="/contact/index.shtml">Contact Us</a>&nbsp;|&nbsp;
-		<a href="/wg/about-us">About Us</a>&nbsp;|&nbsp;
-		<a href="/wg/jobs">Jobs at RGD</a>
-
-</td></tr></table>
-		</div>
-	</div>
-</div>
-
-<!-- end page wrapper -->	
-</div>
-</td></tr>
+<table align="center">
+    <tr>
+        <td><a href="/wg/wp-admin/post.php?post=15&action=edit"><img src="/rgdweb/common/images/nhlbilogo.gif" alt="NHLBI Logo" title="National Heart Lung and Blood Institute logo"></a><br><br></td>
+        <td width=100 align="center"><a href="http://alliancegenome.org"><img src="/rgdweb/common/images/alliance_logo.png" height="80" width="133" border=0/></a></td>
+        <td width=100 align="right"><a href="/wg/gerrc"><img src="/rgdweb/common/images/GERRC-35.png" border=0/></a></td>
+        <td width=100 align="right"><a href="/wg/physgenknockouts"><img src="/rgdweb/common/images/knockOuts.jpg" border=0/></a></td>
+    </tr>
 </table>
+
+<p align="center">RGD is funded by grant HL64541 from the National Heart, Lung, and Blood Institute on behalf of the NIH.<br>
 
 
 <div id="copyright">
-	<p>&copy; <a href="http://hmgc.mcw.edu/bp">Bioinformatics Program, HMGC</a> at the <a href="http://www.mcw.edu/">Medical
-        College of Wisconsin</a></p>
-
-	<p align="center">RGD is funded by grant HL64541 from the National Heart, Lung, and Blood Institute on behalf of the NIH.<br><img src="/common/images/nhlbilogo.gif" alt="NHLBI Logo" title="National Heart Lung and Blood Institute logo">
-<br><br><div class="loginBox">
-
-	
-		Hello <a href="/wg/template?op=auth;method=displayAccount">Admin</a>.
-                          <a href="/wg/template?op=auth;method=logout">Click here to log out.</a>
-	
-
-</div>
-
 
 </div>
 
 <script language="javascript" src="/common/js/killerZebraStripes.js" type="text/javascript"></script>
 <script>
-var arr = document.getElementsByTagName("table");
-for (i=0; i< arr.length; i++) {
-	if (arr[i].className == "striped-table") {
-		if (!arr[i].id) {
-			arr[i].id = "striped-table-" + i;
-		}
-		stripeTables(arr[i].id);
-      }
-}
+    var arr = document.getElementsByTagName("table");
+    for (i=0; i< arr.length; i++) {
+        if (arr[i].className == "striped-table") {
+            if (!arr[i].id) {
+                arr[i].id = "striped-table-" + i;
+            }
+            stripeTables(arr[i].id);
+        }
+    }
 
 </script>
 
-<script type="text/javascript">
-var uservoiceOptions = {
-   /* required */
-   key: 'rgd',
-   host: 'rgd.uservoice.com',
-   forum: '33675',
-   showTab: true,
-   /* optional */
-   alignment: 'left',
-   background_color:'#f00',
-   text_color: 'white',
-   hover_color: '#06C',
-   lang: 'en'
-};
-
-function _loadUserVoice() {
-   var s = document.createElement('script');
-   s.setAttribute('type', 'text/javascript');
-   s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
-   document.getElementsByTagName('head')[0].appendChild(s);
-}
-_loadSuper = window.onload;
-window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
-</script>
 
 
-
+</div>
 </body>
-
 </html>
-
-
-
-
