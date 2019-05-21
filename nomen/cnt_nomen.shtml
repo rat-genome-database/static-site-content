@@ -107,9 +107,11 @@ Questions?  RGD has put together an introduction to biological nomenclature vide
             <p>JavaScript is required to view this email address</p>
 </noscript>
 <ul>
-  <li><A href='http://www.informatics.jax.org/mgihome/nomen/strains.shtml'>Rules for Nomenclature of Mouse and Rat Strains</A></li>
+  <li><A href='http://www.informatics.jax.org/mgihome/nomen/index.shtml '>Quick Guide to Mouse Strain Nomenclature</A></li>
   <!--original link, now out-of-date, was /nomen/rules-for-nomen.shtm --mt mar-2011 -->
   <li><A href='<!--#echo var="webroot"-->/nomen/quick_guide_strain_nomenclature.html'>Quick Guide to Rat Strain Nomenclature</A></li>
+
+    <li><A href='http://www.genenames.org/'>Quick Guide to Human Gene Nomenclature</A></li>
 </ul>
 <p>&nbsp;</p>
 <p><a href='<!--#echo var="webroot"-->/'>Back to RGD Home</a></p>
