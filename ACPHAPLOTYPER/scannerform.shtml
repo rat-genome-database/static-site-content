@@ -9,7 +9,7 @@ function start_help(anchor) {
   	<!-- the main page goes in this cell --> 
     <td> 
       <h2><A name=help"></a>ACP Haplotyper<a name="top"></a> <a href="/tu/acphaplotyper/"><img src="/common/images/help.gif" width="20" height="20" border="0" alt="(help)"></a></h2>
-  
+        <h2>The ACP Haplotyper has been retired.</h2>
       <p> ACP Haplotyper creates a visual haplotype that can be used 
         to identify conserved and non-conserved chromosomal regions between any of the 48 rat strains characterized as part of the ACP project.  For the selected chromosome and between the selected strains, the tool compares the allele size data for microsatellite markers on the selected genetic or RH map.
         
