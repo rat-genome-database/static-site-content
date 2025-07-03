@@ -24,12 +24,12 @@
     <link href="/rgdweb/common/rgd_styles-3.css" rel="stylesheet" type="text/css" />
 
     <!-- adding link for OntoSolr (Pushkala) -->
-    <link rel="stylesheet" href="/OntoSolr/files/jquery.autocomplete.css" type="text/css" />
+    <link rel="stylesheet" href="/solr/OntoSolr/files/jquery.autocomplete.css" type="text/css" />
 
 
     <script type="text/javascript" src="/rgdweb/common/modalDialog/common.js"></script>
     <script type="text/javascript" src="/rgdweb/common/modalDialog/subModal.js"></script>
-    <script src="/rgdweb/js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="/rgdweb/js/jquery/jquery-3.7.1.min.js"></script>
     <script src="/rgdweb/js/jquery/jquery-ui-1.8.18.custom.min.js"></script>
     <script src="/rgdweb/js/jquery/jquery_combo_box.js"></script>
 
@@ -61,7 +61,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/rgdweb/css/elasticsearch/elasticsearch.css">
    <!-- <link rel="stylesheet" href="/rgdweb/common/bootstrap/css/bootstrap.css">-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/rgdweb/js/jquery/jquery-3.7.1.min.js"></script>
     <!--<script src="/rgdweb/common/bootstrap/js/bootstrap.js"></script>-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
@@ -525,7 +525,9 @@
                                     </button>
 
                                     <div class="rgd-dropdown-content">
+                                        <a href="/rgdweb/models/findModels.html">Find Models&nbsp;&nbsp;&nbsp;<span style="font-weight: bold;color:red">new</span></a>
                                         <a href="/rgdweb/models/allModels.html">Genetic Models</a>
+                                        <a href="/wg/autism-rat-model-resource/">Autism Models</a>
                                         <a href="/rgdweb/phenominer/home.jsp">PhenoMiner (Quantitative Phenotypes)</a>
                                         <a href="/rgdweb/phenominer/phenominerExpectedRanges/views/home.html">Expected Ranges (Quantitative Phenotype)</a>
                                         <a href="/rgdweb/pa/termCompare.html?term1=RS%3A0000457&term2=CMO%3A0000000&countType=rec&species=3">Phenominer Term Comparison</a>
